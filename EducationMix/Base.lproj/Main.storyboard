@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-449" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6YC-8c-KAb"/>
                         <viewControllerLayoutGuide type="bottom" id="PvC-Xu-XIf"/>
@@ -237,6 +237,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="tfu-O5-sia"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="MbR-cf-PiQ" id="LKi-yJ-uhR"/>
+                        <outlet property="phoneView" destination="1ma-2W-jQy" id="idl-ps-SGP"/>
+                        <outlet property="pwdView" destination="Xxl-cd-xEG" id="ghz-hs-bBK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

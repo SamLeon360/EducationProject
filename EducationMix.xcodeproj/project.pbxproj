@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EDCA02A2D344289374D725C /* libPods-EducationMixUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */; };
 		22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380202235FF7D005A0AD7 /* AppDelegate.m */; };
 		22F380272235FF7D005A0AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F380252235FF7D005A0AD7 /* Main.storyboard */; };
 		22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F380282235FF7F005A0AD7 /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		22F380392235FF7F005A0AD7 /* EducationMixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380382235FF7F005A0AD7 /* EducationMixTests.m */; };
 		22F380442235FF7F005A0AD7 /* EducationMixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380432235FF7F005A0AD7 /* EducationMixUITests.m */; };
 		22F3805422363420005A0AD7 /* EduNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3805322363420005A0AD7 /* EduNavController.m */; };
+		22F380572236367E005A0AD7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380562236367E005A0AD7 /* LoginViewController.m */; };
+		2F7314590B836FD7D6E45AA9 /* libPods-EducationMixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */; };
+		990C8DF481E1671B535C37DC /* libPods-EducationMix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30ABDBB326B0A33EBE9F47E /* libPods-EducationMix.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,17 @@
 		22F380452235FF7F005A0AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F3805222363420005A0AD7 /* EduNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduNavController.h; sourceTree = "<group>"; };
 		22F3805322363420005A0AD7 /* EduNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduNavController.m; sourceTree = "<group>"; };
+		22F380552236367E005A0AD7 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		22F380562236367E005A0AD7 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4641F8ABD98F755CCD02D71A /* Pods-EducationMixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixTests/Pods-EducationMixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A2C397B066478E0C78E651 /* Pods-EducationMixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixTests/Pods-EducationMixTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
+		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3FBA555E6AEEEB4AC59132B /* Pods-EducationMix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.debug.xcconfig"; sourceTree = "<group>"; };
+		F30ABDBB326B0A33EBE9F47E /* libPods-EducationMix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990C8DF481E1671B535C37DC /* libPods-EducationMix.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7314590B836FD7D6E45AA9 /* libPods-EducationMixTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDCA02A2D344289374D725C /* libPods-EducationMixUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,8 @@
 				22F380372235FF7F005A0AD7 /* EducationMixTests */,
 				22F380422235FF7F005A0AD7 /* EducationMixUITests */,
 				22F3801D2235FF7D005A0AD7 /* Products */,
+				C958D3675AE6E1F256086D8F /* Pods */,
+				D221530A4850E37749103676 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,8 +156,33 @@
 			children = (
 				22F3805222363420005A0AD7 /* EduNavController.h */,
 				22F3805322363420005A0AD7 /* EduNavController.m */,
+				22F380552236367E005A0AD7 /* LoginViewController.h */,
+				22F380562236367E005A0AD7 /* LoginViewController.m */,
 			);
 			path = loginViewController;
+			sourceTree = "<group>";
+		};
+		C958D3675AE6E1F256086D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3FBA555E6AEEEB4AC59132B /* Pods-EducationMix.debug.xcconfig */,
+				C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */,
+				4641F8ABD98F755CCD02D71A /* Pods-EducationMixTests.debug.xcconfig */,
+				A6A2C397B066478E0C78E651 /* Pods-EducationMixTests.release.xcconfig */,
+				64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */,
+				CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D221530A4850E37749103676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F30ABDBB326B0A33EBE9F47E /* libPods-EducationMix.a */,
+				68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */,
+				C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F380482235FF7F005A0AD7 /* Build configuration list for PBXNativeTarget "EducationMix" */;
 			buildPhases = (
+				C757FE4CFF8868A5C3A6FE21 /* [CP] Check Pods Manifest.lock */,
 				22F380182235FF7D005A0AD7 /* Sources */,
 				22F380192235FF7D005A0AD7 /* Frameworks */,
 				22F3801A2235FF7D005A0AD7 /* Resources */,
+				6C7BABBCE432931E05129DCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F3804B2235FF7F005A0AD7 /* Build configuration list for PBXNativeTarget "EducationMixTests" */;
 			buildPhases = (
+				A7A553C2C2F4DF66C5A8B518 /* [CP] Check Pods Manifest.lock */,
 				22F380302235FF7F005A0AD7 /* Sources */,
 				22F380312235FF7F005A0AD7 /* Frameworks */,
 				22F380322235FF7F005A0AD7 /* Resources */,
@@ -182,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F3804E2235FF7F005A0AD7 /* Build configuration list for PBXNativeTarget "EducationMixUITests" */;
 			buildPhases = (
+				D8C11A9799339667BC933327 /* [CP] Check Pods Manifest.lock */,
 				22F3803B2235FF7F005A0AD7 /* Sources */,
 				22F3803C2235FF7F005A0AD7 /* Frameworks */,
 				22F3803D2235FF7F005A0AD7 /* Resources */,
@@ -265,11 +314,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C7BABBCE432931E05129DCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/PYPhotoBrowser/PYPhotoBrowser/PYPhotosView.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoActionSheet.xib",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowserCell.xib",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowser.bundle",
+				"${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Required/ShareSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PYPhotosView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoActionSheet.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoBrowserCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZLPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A553C2C2F4DF66C5A8B518 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EducationMixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C757FE4CFF8868A5C3A6FE21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EducationMix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8C11A9799339667BC933327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EducationMixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22F380182235FF7D005A0AD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
 				22F3805422363420005A0AD7 /* EduNavController.m in Sources */,
 				22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */,
@@ -441,40 +602,45 @@
 		};
 		22F380492235FF7F005A0AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FBA555E6AEEEB4AC59132B /* Pods-EducationMix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7WUGVM28W;
 				INFOPLIST_FILE = EducationMix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.TXProject.xd.EducationMix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		22F3804A2235FF7F005A0AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7WUGVM28W;
 				INFOPLIST_FILE = EducationMix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.TXProject.xd.EducationMix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		22F3804C2235FF7F005A0AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4641F8ABD98F755CCD02D71A /* Pods-EducationMixTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +660,7 @@
 		};
 		22F3804D2235FF7F005A0AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A2C397B066478E0C78E651 /* Pods-EducationMixTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +680,7 @@
 		};
 		22F3804F2235FF7F005A0AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7WUGVM28W;
@@ -531,6 +699,7 @@
 		};
 		22F380502235FF7F005A0AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7WUGVM28W;

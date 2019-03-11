@@ -1,0 +1,194 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (15.5.9)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bugly (2.5.0)
+  - DACircularProgress (2.3.1)
+  - EBForeNotification (1.0.8)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GPUImage (0.1.7)
+  - GVUserDefaults (1.0.2)
+  - IMYWebView (0.8.1)
+  - IQKeyboardManager (6.2.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.15.7)
+  - mob_sharesdk (4.2.2):
+    - mob_sharesdk/ShareSDK (= 4.2.2)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.2.2):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.2.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull (4.2.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.2.1)
+  - PYPhotoBrowser (1.3.2):
+    - DACircularProgress
+    - MBProgressHUD
+    - SDWebImage (~> 3.8.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RealReachability (1.3.0):
+    - RealReachability/Connection (= 1.3.0)
+    - RealReachability/Ping (= 1.3.0)
+  - RealReachability/Connection (1.3.0)
+  - RealReachability/Ping (1.3.0)
+  - RongCloudIM/IMKit (2.8.32):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.32)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.2.5)
+  - TXScrollLabelView (1.3.2)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - VTMagic (1.2.4):
+    - VTMagic/Core (= 1.2.4)
+  - VTMagic/Core (1.2.4)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - ZLPhotoBrowser (2.7.3):
+    - GPUImage
+    - SDWebImage
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - AlipaySDK-iOS
+  - BlocksKit
+  - Bugly
+  - EBForeNotification
+  - FMDB (~> 2.6.2)
+  - GVUserDefaults (~> 1.0.1)
+  - IMYWebView
+  - IQKeyboardManager
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 0.9.2)
+  - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull
+  - PYPhotoBrowser (~> 1.3.1)
+  - ReactiveCocoa (= 2.5)
+  - RealReachability
+  - RongCloudIM/IMKit (~> 2.8.3)
+  - RongCloudIM/IMLib (~> 2.8.3)
+  - SDCycleScrollView (= 1.65)
+  - SDWebImage (~> 3.8.0)
+  - SVProgressHUD
+  - TXScrollLabelView
+  - "UITableView+FDTemplateLayoutCell"
+  - VTMagic (~> 1.2.3)
+  - YYCache
+  - YYModel
+  - YYText
+  - ZLPhotoBrowser (= 2.7.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AlipaySDK-iOS
+    - BlocksKit
+    - Bugly
+    - DACircularProgress
+    - EBForeNotification
+    - FMDB
+    - GPUImage
+    - GVUserDefaults
+    - IMYWebView
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
+    - PYPhotoBrowser
+    - ReactiveCocoa
+    - RealReachability
+    - RongCloudIM
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - TXScrollLabelView
+    - "UITableView+FDTemplateLayoutCell"
+    - VTMagic
+    - YYCache
+    - YYModel
+    - YYText
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  EBForeNotification: 9ae5e440272ae52364db1dd34916b9c2ccb58377
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  IMYWebView: a6a9a52718ba6a44fb927d65f6d60930a8218cea
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  mob_sharesdk: e36e88015480f4d0c28e99ef8875ce1e10ca3a9e
+  MOBFoundation: ce2ba976fd435b0cb06897466b2746e639895b7d
+  PYPhotoBrowser: 46b5d9e92e67244e3575db55b485f318de8b2095
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RealReachability: eae9c58d2db52fadd8e1cba4b5d4c028454fbc47
+  RongCloudIM: 48bfc2fcb8d7cae8ce1e19cb5fb26d6d90616375
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZLPhotoBrowser: 8a2c8402ac36c398f7729876fb9e5171f8efceff
+
+PODFILE CHECKSUM: 3e1d22d43dbd8778eeb91274b0be6f0a49cde16c
+
+COCOAPODS: 1.5.0
