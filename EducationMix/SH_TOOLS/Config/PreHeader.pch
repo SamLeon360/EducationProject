@@ -1,0 +1,64 @@
+//
+//  PreHeader.pch
+//  TXProject
+//
+//  Created by Sam on 2018/12/25.
+//  Copyright © 2018年 sam. All rights reserved.
+//
+
+#ifndef PreHeader_h
+#define PreHeader_h
+
+
+//FrameWorks
+#import <ReactiveCocoa.h>
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import "APIDefine.h"
+
+#import "AlertView.h"
+#import "WXApi.h"
+//#import "BCDefine.h"
+
+//self
+//#import "WebConfig.h"
+#import "CustomFountion.h"
+#import "UIImageView+CustomImageView.h"
+#import "GVUserDefaults+Properties.h"
+//#import "MBProgressHUD+ZH.h"
+//#import "YKBottomAlertView.h"
+//#import "YMAlertBottomView.h"
+//#import "HelpImageView.h"
+//Util
+#import "SVProgressHUD.h"
+#import "TXConst.h"
+#import <YYModel.h>
+#import "UINavigationItem+AddBarItem.h"
+#import "Common.h"
+#import <UIImageView+WebCache.h>
+
+#import "AppDelegate.h"
+
+
+#import <RongIMKit/RongIMKit.h>
+
+//Category
+#import "UIView+Extension.h"
+#import "UIButton+Extension.h"
+#import "UINavigationController+Category.h"
+#import "UIImage+Category.h"
+#import "NSString+Category.h"
+#import "UIFont+Category.h"
+#import "UIColor+RGBHex.h"
+#import <ShareSDK/ShareSDK.h>
+
+//Managers
+#import "RequestManager.h"
+//#import "LocationManager.h"
+
+#endif /* PreHeader_h */

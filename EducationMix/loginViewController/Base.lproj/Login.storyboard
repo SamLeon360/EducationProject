@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eDZ-Wq-lqS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -227,8 +227,7 @@
                             <constraint firstItem="vmz-HL-rjW" firstAttribute="top" secondItem="JGL-qT-XLG" secondAttribute="bottom" constant="10" id="iSH-tE-v6R"/>
                             <constraint firstItem="BXk-e0-EPJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jDa-A5-2dK"/>
                             <constraint firstItem="1ma-2W-jQy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="qoi-6t-3d9"/>
-                            <constraint firstItem="KFs-ZN-jH2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="rfO-Qs-Q86"/>
-                            <constraint firstItem="Rny-rp-PI2" firstAttribute="leading" secondItem="KFs-ZN-jH2" secondAttribute="trailing" constant="171" id="tQt-7K-e23"/>
+                            <constraint firstItem="KFs-ZN-jH2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="rfO-Qs-Q86"/>
                             <constraint firstAttribute="trailing" secondItem="BXk-e0-EPJ" secondAttribute="trailing" id="vzD-7t-fPS"/>
                             <constraint firstItem="PvC-Xu-XIf" firstAttribute="top" secondItem="BXk-e0-EPJ" secondAttribute="bottom" id="xob-Np-mAm"/>
                             <constraint firstItem="Rny-rp-PI2" firstAttribute="top" secondItem="MbR-cf-PiQ" secondAttribute="bottom" constant="19" id="y7x-Yb-4T5"/>

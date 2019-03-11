@@ -18,11 +18,18 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+   
     [super viewDidLoad];
     
+    
+}
+-(void)viewDidLayoutSubviews{
+    [self setupViews];
 }
 -(void)setupViews{
-    
+    [self.phoneView makeCorner:self.phoneView.frame.size.height/2];
+    [self.pwdView makeCorner:self.pwdView.frame.size.height/2];
+    [self.loginBtn makeCorner:self.loginBtn.frame.size.height/2];
 }
 
 /*
