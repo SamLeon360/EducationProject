@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 target 'EducationMix' do
-  pod 'AFNetworking', '~> 3.0'
+pod 'AFNetworking', '~> 3.0'
 pod 'SDWebImage','~> 3.8.0'
 pod 'GVUserDefaults', '~> 1.0.1'
 pod 'BlocksKit'

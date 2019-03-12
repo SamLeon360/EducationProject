@@ -18,7 +18,7 @@
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 #define FULL_SCREEN CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-#define kScale    [UIScreen mainScreen].bounds.size.width/375.0f  //屏幕宽度相对iPhone6屏幕宽度的比例
+#define kScale    [UIScreen mainScreen].bounds.size.width/414.0f  //屏幕宽度相对iPhone6屏幕宽度的比例
 #define KWidth_Scale    [UIScreen mainScreen].bounds.size.width/375.0f
 #define kScaleByView    [UIScreen mainScreen].bounds.size.width/320.0f
 

@@ -124,4 +124,7 @@
 
 #define SH_ADD_COLLECTION @"common/add_collection"
 #define SH_DELETE_COLLECTION @"common/delete_collection"
+
+
+#define SH_TUIJIAN_JOB @"common/list_demand_talent"
 #endif /* APIDefine_h */

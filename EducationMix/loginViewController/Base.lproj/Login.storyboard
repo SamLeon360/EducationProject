@@ -109,7 +109,7 @@
                                             <constraint firstAttribute="width" constant="19" id="lBP-Pe-C5s"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Olb-Xh-V9Z">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Olb-Xh-V9Z">
                                         <rect key="frame" x="53" y="15" width="222" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="k5K-qr-CDB"/>
@@ -139,7 +139,7 @@
                                             <constraint firstAttribute="width" constant="19" id="boM-eb-Cqu"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-q5-XzN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-q5-XzN">
                                         <rect key="frame" x="53" y="15" width="222" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="6aN-xB-8tg"/>
@@ -148,7 +148,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-Ik-9nw">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-Ik-9nw">
                                         <rect key="frame" x="210" y="5" width="77" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="0.94509803920000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,7 +184,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-rp-PI2">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-rp-PI2">
                                 <rect key="frame" x="273" y="445" width="62" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,19 +237,27 @@
                     <navigationItem key="navigationItem" id="tfu-O5-sia"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="codeLabel" destination="Mbd-Ik-9nw" id="MFN-a0-JWQ"/>
+                        <outlet property="codeLoginLabel" destination="KFs-ZN-jH2" id="WYR-Co-Q5K"/>
                         <outlet property="loginBtn" destination="MbR-cf-PiQ" id="LKi-yJ-uhR"/>
+                        <outlet property="oneLabel" destination="Kzj-ji-7oq" id="eh0-0U-lgb"/>
+                        <outlet property="phoneTF" destination="Olb-Xh-V9Z" id="t2f-LJ-Yzd"/>
                         <outlet property="phoneView" destination="1ma-2W-jQy" id="idl-ps-SGP"/>
+                        <outlet property="pwdTF" destination="dTi-q5-XzN" id="rOs-pA-prk"/>
                         <outlet property="pwdView" destination="Xxl-cd-xEG" id="ghz-hs-bBK"/>
+                        <outlet property="registerLabel" destination="Rny-rp-PI2" id="OBR-Qx-Lbw"/>
+                        <outlet property="threeLabel" destination="vmz-HL-rjW" id="ts5-hT-ooM"/>
+                        <outlet property="twoLabel" destination="JGL-qT-XLG" id="Ihb-p9-01H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.80000000000001" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--No Pwd Login Controller-->
         <scene sceneID="aYx-Gj-T5B">
             <objects>
-                <viewController id="Ndc-Zx-q8c" sceneMemberID="viewController">
+                <viewController id="Ndc-Zx-q8c" customClass="NoPwdLoginController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8EZ-bN-XbQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,6 +311,9 @@
                                 <state key="normal" title="确  认">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickToLogin:" destination="Ndc-Zx-q8c" eventType="touchUpInside" id="cVB-yf-FU2"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gs-c1-qvp">
                                 <rect key="frame" x="25" y="108.5" width="325" height="49"/>
@@ -375,7 +386,9 @@
                     <connections>
                         <outlet property="codeTF" destination="ocV-oO-2fs" id="Pym-Dz-tO5"/>
                         <outlet property="getCodeBtn" destination="v9d-jF-ake" id="XuP-KQ-VIt"/>
-                        <outlet property="phoneTF" destination="fsg-Wh-IjN" id="GaI-ag-oCe"/>
+                        <outlet property="getCodeLabel" destination="v9d-jF-ake" id="ucH-tw-2cD"/>
+                        <outlet property="loginBtn" destination="ixx-Hz-0r8" id="GVj-Je-jCa"/>
+                        <outlet property="loginPhoneTF" destination="fsg-Wh-IjN" id="rJ2-0G-nly"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMB-EO-e9E" userLabel="First Responder" sceneMemberID="firstResponder"/>

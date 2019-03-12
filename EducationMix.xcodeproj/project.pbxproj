@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EDCA02A2D344289374D725C /* libPods-EducationMixUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */; };
+		18BF6CDF699DAE857CC53115 /* libPods-EducationMix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30ABDBB326B0A33EBE9F47E /* libPods-EducationMix.a */; };
 		22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380202235FF7D005A0AD7 /* AppDelegate.m */; };
 		22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F380252235FF7D005A0AD7 /* Login.storyboard */; };
 		22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F380282235FF7F005A0AD7 /* Assets.xcassets */; };
@@ -74,6 +75,32 @@
 		22F3815122363C00005A0AD7 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3810C22363BFF005A0AD7 /* UITabBar+badge.m */; };
 		22F3815222363C00005A0AD7 /* UITextField+WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3810E22363BFF005A0AD7 /* UITextField+WJ.m */; };
 		22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F38154223652AB005A0AD7 /* MainView.storyboard */; };
+		22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F3815922374A4C005A0AD7 /* HomeXib.xib */; };
+		22F3816F22375DFB005A0AD7 /* NSMutableArray+LPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3815E22375DFB005A0AD7 /* NSMutableArray+LPKit.m */; };
+		22F3817022375DFB005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816322375DFB005A0AD7 /* UIViewController+BackButtonHandler.m */; };
+		22F3817122375DFB005A0AD7 /* LPTagTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816522375DFB005A0AD7 /* LPTagTextFieldCell.m */; };
+		22F3817222375DFB005A0AD7 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F3816622375DFB005A0AD7 /* avatar.png */; };
+		22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816722375DFB005A0AD7 /* UIColor+SelectTags.m */; };
+		22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816922375DFB005A0AD7 /* LPTagCollectionView.m */; };
+		22F3817522375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816C22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m */; };
+		22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816D22375DFB005A0AD7 /* LPTagModel.m */; };
+		22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3816E22375DFB005A0AD7 /* LPTagCell.m */; };
+		22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3817922378B1C005A0AD7 /* HomeViewController.m */; };
+		22F3817D22378B57005A0AD7 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3817C22378B57005A0AD7 /* HomeHeaderView.m */; };
+		22F3818022378CD0005A0AD7 /* HomeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3817F22378CD0005A0AD7 /* HomeSectionView.m */; };
+		22F381832237983E005A0AD7 /* HomeJobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381822237983E005A0AD7 /* HomeJobCell.m */; };
+		22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F3818422379EA0005A0AD7 /* HomeNewPostCell.xib */; };
+		22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381872237B96F005A0AD7 /* NoPwdLoginController.m */; };
+		22F3819C2237C6E8005A0AD7 /* commerceDetailSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3818A2237C6E8005A0AD7 /* commerceDetailSection.m */; };
+		22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F3818B2237C6E8005A0AD7 /* CommerceCell.xib */; };
+		22F3819E2237C6E8005A0AD7 /* CommerceDetailFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3818C2237C6E8005A0AD7 /* CommerceDetailFooter.m */; };
+		22F3819F2237C6E8005A0AD7 /* commerceDetailHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3818D2237C6E8005A0AD7 /* commerceDetailHeader.m */; };
+		22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F3818E2237C6E8005A0AD7 /* CommerceView.storyboard */; };
+		22F381A12237C6E8005A0AD7 /* SearchCommerceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381902237C6E8005A0AD7 /* SearchCommerceController.m */; };
+		22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381912237C6E8005A0AD7 /* CommerceDetailController.m */; };
+		22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381922237C6E8005A0AD7 /* CommerceCell.m */; };
+		22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381932237C6E8005A0AD7 /* CommerceDetailCell.m */; };
+		22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F381972237C6E8005A0AD7 /* BottomView.m */; };
 		2F7314590B836FD7D6E45AA9 /* libPods-EducationMixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +262,53 @@
 		22F3810E22363BFF005A0AD7 /* UITextField+WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WJ.m"; sourceTree = "<group>"; };
 		22F3810F22363BFF005A0AD7 /* UITextField+WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WJ.h"; sourceTree = "<group>"; };
 		22F38154223652AB005A0AD7 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		22F3815922374A4C005A0AD7 /* HomeXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeXib.xib; sourceTree = "<group>"; };
+		22F3815C22375DFB005A0AD7 /* LPTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTagCollectionView.h; sourceTree = "<group>"; };
+		22F3815D22375DFB005A0AD7 /* UIColor+SelectTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SelectTags.h"; sourceTree = "<group>"; };
+		22F3815E22375DFB005A0AD7 /* NSMutableArray+LPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LPKit.m"; sourceTree = "<group>"; };
+		22F3815F22375DFB005A0AD7 /* LPTagTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTagTextFieldCell.h; sourceTree = "<group>"; };
+		22F3816022375DFB005A0AD7 /* LPTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTagModel.h; sourceTree = "<group>"; };
+		22F3816122375DFB005A0AD7 /* LPTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTagCell.h; sourceTree = "<group>"; };
+		22F3816322375DFB005A0AD7 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		22F3816422375DFB005A0AD7 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		22F3816522375DFB005A0AD7 /* LPTagTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTagTextFieldCell.m; sourceTree = "<group>"; };
+		22F3816622375DFB005A0AD7 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		22F3816722375DFB005A0AD7 /* UIColor+SelectTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SelectTags.m"; sourceTree = "<group>"; };
+		22F3816822375DFB005A0AD7 /* NSMutableArray+LPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LPKit.h"; sourceTree = "<group>"; };
+		22F3816922375DFB005A0AD7 /* LPTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTagCollectionView.m; sourceTree = "<group>"; };
+		22F3816B22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		22F3816C22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		22F3816D22375DFB005A0AD7 /* LPTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTagModel.m; sourceTree = "<group>"; };
+		22F3816E22375DFB005A0AD7 /* LPTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTagCell.m; sourceTree = "<group>"; };
+		22F3817822378B1C005A0AD7 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		22F3817922378B1C005A0AD7 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		22F3817B22378B57005A0AD7 /* HomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
+		22F3817C22378B57005A0AD7 /* HomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		22F3817E22378CD0005A0AD7 /* HomeSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSectionView.h; sourceTree = "<group>"; };
+		22F3817F22378CD0005A0AD7 /* HomeSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSectionView.m; sourceTree = "<group>"; };
+		22F381812237983E005A0AD7 /* HomeJobCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeJobCell.h; sourceTree = "<group>"; };
+		22F381822237983E005A0AD7 /* HomeJobCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeJobCell.m; sourceTree = "<group>"; };
+		22F3818422379EA0005A0AD7 /* HomeNewPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNewPostCell.xib; sourceTree = "<group>"; };
+		22F381862237B96F005A0AD7 /* NoPwdLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoPwdLoginController.h; sourceTree = "<group>"; };
+		22F381872237B96F005A0AD7 /* NoPwdLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoPwdLoginController.m; sourceTree = "<group>"; };
+		22F3818A2237C6E8005A0AD7 /* commerceDetailSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commerceDetailSection.m; sourceTree = "<group>"; };
+		22F3818B2237C6E8005A0AD7 /* CommerceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommerceCell.xib; sourceTree = "<group>"; };
+		22F3818C2237C6E8005A0AD7 /* CommerceDetailFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommerceDetailFooter.m; sourceTree = "<group>"; };
+		22F3818D2237C6E8005A0AD7 /* commerceDetailHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commerceDetailHeader.m; sourceTree = "<group>"; };
+		22F3818E2237C6E8005A0AD7 /* CommerceView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommerceView.storyboard; sourceTree = "<group>"; };
+		22F3818F2237C6E8005A0AD7 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		22F381902237C6E8005A0AD7 /* SearchCommerceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCommerceController.m; sourceTree = "<group>"; };
+		22F381912237C6E8005A0AD7 /* CommerceDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommerceDetailController.m; sourceTree = "<group>"; };
+		22F381922237C6E8005A0AD7 /* CommerceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommerceCell.m; sourceTree = "<group>"; };
+		22F381932237C6E8005A0AD7 /* CommerceDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommerceDetailCell.m; sourceTree = "<group>"; };
+		22F381942237C6E8005A0AD7 /* commerceDetailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commerceDetailHeader.h; sourceTree = "<group>"; };
+		22F381952237C6E8005A0AD7 /* CommerceDetailFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommerceDetailFooter.h; sourceTree = "<group>"; };
+		22F381962237C6E8005A0AD7 /* commerceDetailSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commerceDetailSection.h; sourceTree = "<group>"; };
+		22F381972237C6E8005A0AD7 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		22F381982237C6E8005A0AD7 /* CommerceDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommerceDetailController.h; sourceTree = "<group>"; };
+		22F381992237C6E8005A0AD7 /* SearchCommerceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCommerceController.h; sourceTree = "<group>"; };
+		22F3819A2237C6E8005A0AD7 /* CommerceDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommerceDetailCell.h; sourceTree = "<group>"; };
+		22F3819B2237C6E8005A0AD7 /* CommerceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommerceCell.h; sourceTree = "<group>"; };
 		4641F8ABD98F755CCD02D71A /* Pods-EducationMixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixTests/Pods-EducationMixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +325,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BF6CDF699DAE857CC53115 /* libPods-EducationMix.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				22F3805822363BFF005A0AD7 /* SH_TOOLS */,
+				22F381892237C6E8005A0AD7 /* CommerceView */,
 				22F3815322364E93005A0AD7 /* MainViewController */,
 				22F3805122361297005A0AD7 /* loginViewController */,
 				22F3801F2235FF7D005A0AD7 /* AppDelegate.h */,
@@ -337,6 +413,8 @@
 				22F3805322363420005A0AD7 /* EduNavController.m */,
 				22F380552236367E005A0AD7 /* LoginViewController.h */,
 				22F380562236367E005A0AD7 /* LoginViewController.m */,
+				22F381862237B96F005A0AD7 /* NoPwdLoginController.h */,
+				22F381872237B96F005A0AD7 /* NoPwdLoginController.m */,
 			);
 			path = loginViewController;
 			sourceTree = "<group>";
@@ -381,6 +459,7 @@
 		22F3806822363BFF005A0AD7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				22F3815B22375DFB005A0AD7 /* LPTags */,
 				22F3806922363BFF005A0AD7 /* WeChatSDK1.8.4 */,
 				22F3807622363BFF005A0AD7 /* Navgation */,
 				22F3807922363BFF005A0AD7 /* WebViewJavascriptBridge */,
@@ -1025,8 +1104,83 @@
 			isa = PBXGroup;
 			children = (
 				22F38154223652AB005A0AD7 /* MainView.storyboard */,
+				22F3815922374A4C005A0AD7 /* HomeXib.xib */,
+				22F3817822378B1C005A0AD7 /* HomeViewController.h */,
+				22F3817922378B1C005A0AD7 /* HomeViewController.m */,
+				22F3817B22378B57005A0AD7 /* HomeHeaderView.h */,
+				22F3817C22378B57005A0AD7 /* HomeHeaderView.m */,
+				22F3817E22378CD0005A0AD7 /* HomeSectionView.h */,
+				22F3817F22378CD0005A0AD7 /* HomeSectionView.m */,
+				22F381812237983E005A0AD7 /* HomeJobCell.h */,
+				22F381822237983E005A0AD7 /* HomeJobCell.m */,
+				22F3818422379EA0005A0AD7 /* HomeNewPostCell.xib */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		22F3815B22375DFB005A0AD7 /* LPTags */ = {
+			isa = PBXGroup;
+			children = (
+				22F3815C22375DFB005A0AD7 /* LPTagCollectionView.h */,
+				22F3815D22375DFB005A0AD7 /* UIColor+SelectTags.h */,
+				22F3815E22375DFB005A0AD7 /* NSMutableArray+LPKit.m */,
+				22F3815F22375DFB005A0AD7 /* LPTagTextFieldCell.h */,
+				22F3816022375DFB005A0AD7 /* LPTagModel.h */,
+				22F3816122375DFB005A0AD7 /* LPTagCell.h */,
+				22F3816222375DFB005A0AD7 /* UIViewController-BackButtonHandler-master */,
+				22F3816522375DFB005A0AD7 /* LPTagTextFieldCell.m */,
+				22F3816622375DFB005A0AD7 /* avatar.png */,
+				22F3816722375DFB005A0AD7 /* UIColor+SelectTags.m */,
+				22F3816822375DFB005A0AD7 /* NSMutableArray+LPKit.h */,
+				22F3816922375DFB005A0AD7 /* LPTagCollectionView.m */,
+				22F3816A22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout */,
+				22F3816D22375DFB005A0AD7 /* LPTagModel.m */,
+				22F3816E22375DFB005A0AD7 /* LPTagCell.m */,
+			);
+			path = LPTags;
+			sourceTree = "<group>";
+		};
+		22F3816222375DFB005A0AD7 /* UIViewController-BackButtonHandler-master */ = {
+			isa = PBXGroup;
+			children = (
+				22F3816322375DFB005A0AD7 /* UIViewController+BackButtonHandler.m */,
+				22F3816422375DFB005A0AD7 /* UIViewController+BackButtonHandler.h */,
+			);
+			path = "UIViewController-BackButtonHandler-master";
+			sourceTree = "<group>";
+		};
+		22F3816A22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				22F3816B22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.h */,
+				22F3816C22375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = UICollectionViewLeftAlignedLayout;
+			sourceTree = "<group>";
+		};
+		22F381892237C6E8005A0AD7 /* CommerceView */ = {
+			isa = PBXGroup;
+			children = (
+				22F3818A2237C6E8005A0AD7 /* commerceDetailSection.m */,
+				22F3818B2237C6E8005A0AD7 /* CommerceCell.xib */,
+				22F3818C2237C6E8005A0AD7 /* CommerceDetailFooter.m */,
+				22F3818D2237C6E8005A0AD7 /* commerceDetailHeader.m */,
+				22F3818E2237C6E8005A0AD7 /* CommerceView.storyboard */,
+				22F3818F2237C6E8005A0AD7 /* BottomView.h */,
+				22F381902237C6E8005A0AD7 /* SearchCommerceController.m */,
+				22F381912237C6E8005A0AD7 /* CommerceDetailController.m */,
+				22F381922237C6E8005A0AD7 /* CommerceCell.m */,
+				22F381932237C6E8005A0AD7 /* CommerceDetailCell.m */,
+				22F381942237C6E8005A0AD7 /* commerceDetailHeader.h */,
+				22F381952237C6E8005A0AD7 /* CommerceDetailFooter.h */,
+				22F381962237C6E8005A0AD7 /* commerceDetailSection.h */,
+				22F381972237C6E8005A0AD7 /* BottomView.m */,
+				22F381982237C6E8005A0AD7 /* CommerceDetailController.h */,
+				22F381992237C6E8005A0AD7 /* SearchCommerceController.h */,
+				22F3819A2237C6E8005A0AD7 /* CommerceDetailCell.h */,
+				22F3819B2237C6E8005A0AD7 /* CommerceCell.h */,
+			);
+			path = CommerceView;
 			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
@@ -1159,11 +1313,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
+				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
+				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
+				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
+				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
 			);
@@ -1301,6 +1460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F3817022375DFB005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
 				22F3814422363C00005A0AD7 /* UIView+Genie.m in Sources */,
 				22F3813C22363C00005A0AD7 /* NSDictionary+Json.m in Sources */,
 				22F3813F22363C00005A0AD7 /* UIButton+Badge.m in Sources */,
@@ -1311,13 +1471,23 @@
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
 				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
+				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
+				22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
+				22F3817122375DFB005A0AD7 /* LPTagTextFieldCell.m in Sources */,
+				22F3819E2237C6E8005A0AD7 /* CommerceDetailFooter.m in Sources */,
 				22F3811722363C00005A0AD7 /* GVUserDefaults+Properties.m in Sources */,
 				22F3813D22363C00005A0AD7 /* UILabel+TextSize.m in Sources */,
+				22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */,
+				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
+				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
+				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
+				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
 				22F3814222363C00005A0AD7 /* UIWebView+Custom.m in Sources */,
 				22F3812722363C00005A0AD7 /* MMReachabilityViewController.m in Sources */,
 				22F3813922363C00005A0AD7 /* UIImage+UIImageScale.m in Sources */,
+				22F3819C2237C6E8005A0AD7 /* commerceDetailSection.m in Sources */,
 				22F3812E22363C00005A0AD7 /* InvitationManager.m in Sources */,
 				22F3812222363C00005A0AD7 /* WebViewJavascriptBridgeBase.m in Sources */,
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
@@ -1325,33 +1495,43 @@
 				22F3813522363C00005A0AD7 /* UIImage+Color.m in Sources */,
 				22F3812A22363C00005A0AD7 /* NewEditAlertView.m in Sources */,
 				22F3812122363C00005A0AD7 /* YKNavigationController.m in Sources */,
+				22F3817D22378B57005A0AD7 /* HomeHeaderView.m in Sources */,
 				22F3811B22363C00005A0AD7 /* UITabBar+XSDExt.m in Sources */,
 				22F3812522363C00005A0AD7 /* WebViewJavascriptBridge_JS.m in Sources */,
+				22F381832237983E005A0AD7 /* HomeJobCell.m in Sources */,
 				22F3812922363C00005A0AD7 /* AlertViewModel.m in Sources */,
 				22F3815122363C00005A0AD7 /* UITabBar+badge.m in Sources */,
 				22F3814B22363C00005A0AD7 /* NSString+Utils.m in Sources */,
 				22F3813622363C00005A0AD7 /* CustomFountion.m in Sources */,
 				22F3815222363C00005A0AD7 /* UITextField+WJ.m in Sources */,
+				22F381A12237C6E8005A0AD7 /* SearchCommerceController.m in Sources */,
 				22F3814322363C00005A0AD7 /* UIView+Extension.m in Sources */,
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
+				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
 				22F3813222363C00005A0AD7 /* UIImage+SubImage.m in Sources */,
 				22F3812D22363C00005A0AD7 /* RequestManager.m in Sources */,
+				22F3816F22375DFB005A0AD7 /* NSMutableArray+LPKit.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,
+				22F3817522375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				22F3814822363C00005A0AD7 /* UIBarButtonItem+Badge.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
 				22F3812C22363C00005A0AD7 /* AlertView.m in Sources */,
 				22F3805422363420005A0AD7 /* EduNavController.m in Sources */,
 				22F3812322363C00005A0AD7 /* WKWebViewJavascriptBridge.m in Sources */,
+				22F3818022378CD0005A0AD7 /* HomeSectionView.m in Sources */,
 				22F3812022363C00005A0AD7 /* WXApiManager.m in Sources */,
 				22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */,
 				22F3813822363C00005A0AD7 /* UIImage+Custom.m in Sources */,
 				22F3815022363C00005A0AD7 /* UINavigationController+Category.m in Sources */,
+				22F3819F2237C6E8005A0AD7 /* commerceDetailHeader.m in Sources */,
 				22F3814F22363C00005A0AD7 /* CatchCrash.m in Sources */,
 				22F3812622363C00005A0AD7 /* Reachability.m in Sources */,
 				22F3814E22363C00005A0AD7 /* Common.m in Sources */,
+				22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */,
+				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,
 				22F3811E22363C00005A0AD7 /* WXApiResponseHandler.m in Sources */,
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,
 				22F3813422363C00005A0AD7 /* UIImage+Rotate.m in Sources */,
