@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YKEditTreePhotoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="68" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="68" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q8I-Va-Jin">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="120"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXH-fL-hYD">
+                        <rect key="frame" x="48" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iXH-fL-hYD" secondAttribute="height" multiplier="1:1" id="GM1-On-I7t"/>
+                            <constraint firstAttribute="height" constant="20" id="Pt4-xI-Siq"/>
+                        </constraints>
+                        <state key="normal" image="delPhoto_icon"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jT-cA-3ea">
+                        <rect key="frame" x="0.0" y="120" width="68" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first_bottom_icon" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-nE-qy7">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="封面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-wM-YmL">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9bL-nE-qy7" firstAttribute="leading" secondItem="7jT-cA-3ea" secondAttribute="leading" id="2JD-ts-7nK"/>
+                            <constraint firstAttribute="bottom" secondItem="9bL-nE-qy7" secondAttribute="bottom" id="2Lp-u9-n5S"/>
+                            <constraint firstAttribute="trailing" secondItem="9bL-nE-qy7" secondAttribute="trailing" id="IQC-gF-1Ve"/>
+                            <constraint firstItem="OFX-wM-YmL" firstAttribute="top" secondItem="7jT-cA-3ea" secondAttribute="top" id="Jmr-8p-D0f"/>
+                            <constraint firstAttribute="bottom" secondItem="OFX-wM-YmL" secondAttribute="bottom" id="M2L-FO-KlH"/>
+                            <constraint firstItem="9bL-nE-qy7" firstAttribute="top" secondItem="7jT-cA-3ea" secondAttribute="top" id="jeQ-IS-dc9"/>
+                            <constraint firstItem="OFX-wM-YmL" firstAttribute="leading" secondItem="7jT-cA-3ea" secondAttribute="leading" id="kg9-yz-dcg"/>
+                            <constraint firstAttribute="trailing" secondItem="OFX-wM-YmL" secondAttribute="trailing" id="wwM-81-CYl"/>
+                            <constraint firstAttribute="height" constant="20" id="ywe-zu-dr9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7jT-cA-3ea" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Io-Jg-YGu"/>
+                <constraint firstItem="iXH-fL-hYD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HEg-qt-6QK"/>
+                <constraint firstAttribute="bottom" secondItem="7jT-cA-3ea" secondAttribute="bottom" id="LFx-6F-dGn"/>
+                <constraint firstItem="q8I-Va-Jin" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NDe-zt-Kn8"/>
+                <constraint firstAttribute="trailing" secondItem="q8I-Va-Jin" secondAttribute="trailing" id="NbF-uP-IgX"/>
+                <constraint firstAttribute="bottom" secondItem="q8I-Va-Jin" secondAttribute="bottom" constant="20" id="OS1-xZ-6I1"/>
+                <constraint firstAttribute="trailing" secondItem="7jT-cA-3ea" secondAttribute="trailing" id="fg8-7d-Rx4"/>
+                <constraint firstAttribute="trailing" secondItem="iXH-fL-hYD" secondAttribute="trailing" id="qEX-Qh-Vhb"/>
+                <constraint firstItem="q8I-Va-Jin" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rlC-ai-aXF"/>
+            </constraints>
+            <size key="customSize" width="267" height="188"/>
+            <connections>
+                <outlet property="bottomView" destination="7jT-cA-3ea" id="nR9-RP-dMb"/>
+                <outlet property="bottomViewAutoHeight" destination="ywe-zu-dr9" id="2Tz-Yb-XN4"/>
+                <outlet property="delBtn" destination="iXH-fL-hYD" id="Ge4-kN-o9O"/>
+                <outlet property="imageView" destination="q8I-Va-Jin" id="RIq-rI-v8Z"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="43"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delPhoto_icon" width="22" height="21"/>
+        <image name="first_bottom_icon" width="67" height="17"/>
+    </resources>
+</document>

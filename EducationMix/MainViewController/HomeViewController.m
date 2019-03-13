@@ -31,7 +31,17 @@
     
     
 }
-
+-(void)GetTJJob{
+    NSDictionary *param = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"affiliated_area",@"",@"allow_publish",@"",@"commerce_id",@"",@"education",@"",@"enterprise_id",@"",@"ios",@"",@"job_name",@"",@"job_type",@"",@"page",@"",@"receive_fresh_graduate",@"",@"work_type", nil];
+    [HTTPREQUEST_SINGLE postWithURLString:SH_TUIJIAN_JOB parameters:param withHub:YES withCache:NO success:^(NSDictionary *responseDic) {
+        if ([responseDic[@"code"] integerValue] == 1) {
+            self.dataArray = responseDic[@"data"];
+            [self.tableView reloadData];
+        }
+    } failure:^(NSError *error) {
+        [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
+    }];
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -46,6 +56,12 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeJobCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeJobCell"];
+    NSDictionary *dic  = self.dataArray[indexPath.row];
+    cell.cellName.text = dic[@"job_name"];
+    cell.cellMoney.text = [NSString stringWithFormat:@"%d-%d元/月",[dic[@"salary_min"] integerValue],[dic[@"salary_max"] integerValue]];
+    cell.cellCompany.text = dic[@"enterprise_name"];
+    
+    
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

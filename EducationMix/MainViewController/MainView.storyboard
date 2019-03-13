@@ -150,6 +150,15 @@
                                                 <constraint firstAttribute="trailing" secondItem="XTL-ej-MEl" secondAttribute="trailing" id="mwF-EX-4Xi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellAddress" destination="tQQ-KB-fT2" id="WCQ-ow-fQP"/>
+                                            <outlet property="cellCompany" destination="zOk-5A-Bwj" id="elK-MO-t6z"/>
+                                            <outlet property="cellJob" destination="rKu-34-eiT" id="Ft3-nf-RpA"/>
+                                            <outlet property="cellMoney" destination="APR-yN-G5P" id="o7Q-Sq-HFf"/>
+                                            <outlet property="cellName" destination="2kE-Qb-2OF" id="GFP-ln-zXh"/>
+                                            <outlet property="cellTag" destination="xAn-pM-wZO" id="FZP-sb-wfC"/>
+                                            <outlet property="cellTypeTag" destination="OlE-mD-Cna" id="I5e-UK-Jt1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -228,8 +237,73 @@
             </objects>
             <point key="canvasLocation" x="-226.40000000000001" y="147.97601199400302"/>
         </scene>
+        <!--Edu Main View Controller-->
+        <scene sceneID="LYn-sT-t2C">
+            <objects>
+                <viewController storyboardIdentifier="EduMainViewController" id="ScQ-iS-Xug" customClass="EduMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXK-tJ-GYV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qox-WJ-9wC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EduMineCell" rowHeight="60" id="ytG-Ss-fAN" customClass="EduMineCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ytG-Ss-fAN" id="7yW-GO-EBb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGK-OC-y6G">
+                                                    <rect key="frame" x="22" y="19.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click_nav_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-If-Pnk">
+                                                    <rect key="frame" x="334" y="20.5" width="19" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="19" id="Kws-HR-kuV"/>
+                                                        <constraint firstAttribute="height" constant="19" id="u1s-aa-hkp"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nGK-OC-y6G" firstAttribute="leading" secondItem="7yW-GO-EBb" secondAttribute="leading" constant="22" id="Dpk-Px-jf6"/>
+                                                <constraint firstItem="nGK-OC-y6G" firstAttribute="centerY" secondItem="7yW-GO-EBb" secondAttribute="centerY" id="Q8v-uE-WQ0"/>
+                                                <constraint firstItem="Fv6-If-Pnk" firstAttribute="centerY" secondItem="7yW-GO-EBb" secondAttribute="centerY" id="VOD-Ij-JzN"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fv6-If-Pnk" secondAttribute="trailing" constant="22" id="co8-Ln-kco"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellTitleLabel" destination="nGK-OC-y6G" id="yA0-eu-Njh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qox-WJ-9wC" firstAttribute="leading" secondItem="3dd-7h-WPG" secondAttribute="leading" id="2JD-pR-XrK"/>
+                            <constraint firstItem="Qox-WJ-9wC" firstAttribute="trailing" secondItem="3dd-7h-WPG" secondAttribute="trailing" id="7cz-sK-CUT"/>
+                            <constraint firstItem="Qox-WJ-9wC" firstAttribute="top" secondItem="3dd-7h-WPG" secondAttribute="top" id="atg-hb-y7M"/>
+                            <constraint firstItem="3dd-7h-WPG" firstAttribute="bottom" secondItem="Qox-WJ-9wC" secondAttribute="bottom" id="iHI-wR-1br"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3dd-7h-WPG"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Qox-WJ-9wC" id="Uca-VN-DSD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzP-YM-MOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="146.17691154422789"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="click_nav_icon" width="19.333333969116211" height="35"/>
         <image name="kefu_icon" width="74.333335876464844" height="69.333335876464844"/>
         <image name="nav_msg_icon" width="82.333335876464844" height="69.333335876464844"/>
         <image name="navigation_bg" width="414.33334350585938" height="83"/>
