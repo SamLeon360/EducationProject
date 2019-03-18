@@ -127,4 +127,10 @@
 
 
 #define SH_TUIJIAN_JOB @"common/list_demand_talent"
+#define SH_NEWS_POST_HOME @"common/list_demand_technology"
+
+#define SH_SCHOOL_DETAIL @"academy/detail_academy"
+#define SH_STUDENT_DETAIL @"student/detail_student"
+#define SH_TEACHER_DETAIL @"expert/detail_expert_info"
+
 #endif /* APIDefine_h */

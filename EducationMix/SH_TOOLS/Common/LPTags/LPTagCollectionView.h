@@ -33,4 +33,8 @@
 @property (nonatomic, strong) NSArray *tagArray;/**<标签数组,数组里存放LPTagModel*/
 @property (nonatomic, strong) id <LPSwitchTagDelegate> tagDelegate;
 
+@property (nonatomic) NSInteger fontSize;
+@property (nonatomic) CGFloat cellHeight;
+@property (nonatomic) UIColor *fontColor;
+@property (nonatomic) UIColor *borderColor;
 @end

@@ -58,6 +58,28 @@
         }
     }
 }
+-(void)setColorModel:(LPTagModel *)model andFontColor:(UIColor *)fontColor andBorderColor:(UIColor *)borderColor{
+    _model = model;
+    _textLabel.text = model.name;
+    if (self.type == LPTagCellTypeSelected1) {
+        
+        _textLabel.layer.cornerRadius = 4;
+        _textLabel.layer.backgroundColor = [UIColor ST_009788_mainColor].CGColor;
+        [_textLabel setTextColor:[UIColor whiteColor]];
+    } else {
+        if (model.isChoose) {
+            [_textLabel setTextColor:[UIColor ST_969696_subMainColor]];
+            _textLabel.layer.cornerRadius = 4;
+            _textLabel.layer.borderColor = [UIColor ST_969696_subMainColor].CGColor;
+            _textLabel.layer.borderWidth = 0.5;
+        } else {
+            [_textLabel setTextColor:fontColor];
+            _textLabel.layer.borderWidth = 0.5;
+            _textLabel.layer.cornerRadius = 4;
+            _textLabel.layer.borderColor = borderColor.CGColor;
+        }
+    }
+}
 
 - (BOOL)canBecomeFirstResponder {
     return YES;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0EDCA02A2D344289374D725C /* libPods-EducationMixUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */; };
 		18BF6CDF699DAE857CC53115 /* libPods-EducationMix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30ABDBB326B0A33EBE9F47E /* libPods-EducationMix.a */; };
+		22E16323223BA0C700821A1C /* LoginBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E16320223BA0C600821A1C /* LoginBottomView.m */; };
+		22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E16321223BA0C700821A1C /* LoginBottomView.xib */; };
 		22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F380202235FF7D005A0AD7 /* AppDelegate.m */; };
 		22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F380252235FF7D005A0AD7 /* Login.storyboard */; };
 		22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F380282235FF7F005A0AD7 /* Assets.xcassets */; };
@@ -142,6 +144,7 @@
 		22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3822E22390637005A0AD7 /* EduSchoolHeader.m */; };
 		22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823122390655005A0AD7 /* EduStuTeaHeader.m */; };
 		22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823722390B98005A0AD7 /* EduMineCell.m */; };
+		22F3823B223A365E005A0AD7 /* HomeNewPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823A223A365E005A0AD7 /* HomeNewPostCell.m */; };
 		2F7314590B836FD7D6E45AA9 /* libPods-EducationMixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +166,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22E16320223BA0C600821A1C /* LoginBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBottomView.m; sourceTree = "<group>"; };
+		22E16321223BA0C700821A1C /* LoginBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginBottomView.xib; sourceTree = "<group>"; };
+		22E16322223BA0C700821A1C /* LoginBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBottomView.h; sourceTree = "<group>"; };
 		22F3801C2235FF7D005A0AD7 /* EducationMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducationMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F3801F2235FF7D005A0AD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22F380202235FF7D005A0AD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -427,6 +433,8 @@
 		22F3823122390655005A0AD7 /* EduStuTeaHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduStuTeaHeader.m; sourceTree = "<group>"; };
 		22F3823622390B98005A0AD7 /* EduMineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduMineCell.h; sourceTree = "<group>"; };
 		22F3823722390B98005A0AD7 /* EduMineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduMineCell.m; sourceTree = "<group>"; };
+		22F38239223A365E005A0AD7 /* HomeNewPostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNewPostCell.h; sourceTree = "<group>"; };
+		22F3823A223A365E005A0AD7 /* HomeNewPostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNewPostCell.m; sourceTree = "<group>"; };
 		4641F8ABD98F755CCD02D71A /* Pods-EducationMixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixTests/Pods-EducationMixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1242,8 +1250,13 @@
 				22F3822E22390637005A0AD7 /* EduSchoolHeader.m */,
 				22F3823022390655005A0AD7 /* EduStuTeaHeader.h */,
 				22F3823122390655005A0AD7 /* EduStuTeaHeader.m */,
+				22E16322223BA0C700821A1C /* LoginBottomView.h */,
+				22E16320223BA0C600821A1C /* LoginBottomView.m */,
+				22E16321223BA0C700821A1C /* LoginBottomView.xib */,
 				22F3823622390B98005A0AD7 /* EduMineCell.h */,
 				22F3823722390B98005A0AD7 /* EduMineCell.m */,
+				22F38239223A365E005A0AD7 /* HomeNewPostCell.h */,
+				22F3823A223A365E005A0AD7 /* HomeNewPostCell.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -1553,6 +1566,7 @@
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
+				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
 				22F382132238DB88005A0AD7 /* MineView.storyboard in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
@@ -1728,6 +1742,7 @@
 				22F3814222363C00005A0AD7 /* UIWebView+Custom.m in Sources */,
 				22F3820F2238DB88005A0AD7 /* FriendListCell.m in Sources */,
 				22F3812722363C00005A0AD7 /* MMReachabilityViewController.m in Sources */,
+				22F3823B223A365E005A0AD7 /* HomeNewPostCell.m in Sources */,
 				22F3813922363C00005A0AD7 /* UIImage+UIImageScale.m in Sources */,
 				22F3821B2238DB88005A0AD7 /* MemberDetailController.m in Sources */,
 				22F382112238DB88005A0AD7 /* LogoutViewController.m in Sources */,
@@ -1740,6 +1755,7 @@
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
 				22F3813E22363C00005A0AD7 /* UIButton+Custom.m in Sources */,
 				22F3813522363C00005A0AD7 /* UIImage+Color.m in Sources */,
+				22E16323223BA0C700821A1C /* LoginBottomView.m in Sources */,
 				22F3812A22363C00005A0AD7 /* NewEditAlertView.m in Sources */,
 				22F3812122363C00005A0AD7 /* YKNavigationController.m in Sources */,
 				22F3820C2238DB88005A0AD7 /* YKEditTreeCameraPhotoView.m in Sources */,

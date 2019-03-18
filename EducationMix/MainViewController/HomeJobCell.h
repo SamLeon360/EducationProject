@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LPTagCollectionView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeJobCell : UITableViewCell

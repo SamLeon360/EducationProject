@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "EduMainViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *phoneView;
 @property (weak, nonatomic) IBOutlet UIView *pwdView;
@@ -31,7 +31,8 @@
     self.typeStatus = 1;
     self.phoneTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入手机号码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:self.phoneTF.font}];
     self.pwdTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:self.pwdTF.font}];
-    
+    [self setupClickAction];
+
 }
 -(void)viewDidLayoutSubviews{
     [self setupViews];
@@ -101,6 +102,9 @@
 //                [JPUSHService setAlias:USER_SINGLE.token completion:^(NSInteger iResCode, NSString *iAlias, NSInteger seq) {
 //
 //                } seq:1];
+            
+            EduMainViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMainViewController"];
+            [self.navigationController pushViewController:vc animated:YES];
             }else{
                 [AlertView showYMAlertView:blockSelf.view andtitle:responseDic[@"message"]];
             }

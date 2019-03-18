@@ -22,7 +22,8 @@ typedef NS_ENUM(NSInteger, LPTagCellType) {
 @property (nonatomic, strong) LPTagModel *model;
 @property (nonatomic, assign) LPTagCellType type;
 @property (nonatomic, strong) UILabel *textLabel;
-
+@property (nonatomic) UIColor *fontColor;
+@property (nonatomic) UIColor *borderColor;
 + (NSString *)cellReuseIdentifier;
-
+-(void)setColorModel:(LPTagModel *)model andFontColor:(UIColor *)fontColor andBorderColor:(UIColor *)borderColor;
 @end
