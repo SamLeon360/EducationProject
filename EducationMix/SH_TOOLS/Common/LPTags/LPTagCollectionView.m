@@ -52,10 +52,16 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LPTagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[LPTagCell cellReuseIdentifier] forIndexPath:indexPath];
-    cell.model = _tagArray[indexPath.row];
+    if (self.fontColor == nil) {
+        cell.model = _tagArray[indexPath.row];
+    }else{
+        [cell setColorModel:_tagArray[indexPath.row] andFontColor:self.fontColor andBorderColor:self.borderColor];
+    }
+    
     if (cell.model.isChoose) {
         _lastChoose = indexPath;
     }
+   
     return cell;
 }
 
@@ -132,8 +138,8 @@
 #pragma mark - UICollectionViewDelegateLeftAlignedLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = [((LPTagModel *)_tagArray[indexPath.row]).name sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]}];
-    return CGSizeMake(pixel(size.width + 16), 30);
+    CGSize size = [((LPTagModel *)_tagArray[indexPath.row]).name sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.fontSize]}];
+    return CGSizeMake(pixel(size.width + 16), self.cellHeight);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -145,7 +151,7 @@
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(12, 12, 12, 12);
+    return UIEdgeInsetsMake(8, 0, 12, 5);
 }
 
 extern float pixel(float num) {

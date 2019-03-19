@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger,YKUserStatusType){
 @property (nonatomic, assign) NSString *member_id;
 @property (nonatomic,assign) NSString *member_name;
 @property (nonatomic, assign) NSString *role_type;//1-秘书处，2-普通会员
+@property (nonatomic,assign) NSString *academy_id;
 @property (nonatomic, assign) NSString *token;
 @property (nonatomic, assign) NSString *lastTimeShowHUD;
 @property (nonatomic, assign) NSString *isSecretary;

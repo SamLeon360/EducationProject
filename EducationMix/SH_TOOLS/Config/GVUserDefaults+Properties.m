@@ -58,6 +58,9 @@
     if ([dic.allKeys containsObject:@"commerceDic"]) {
         self.commerceDic = dic[@"commerceDic"];
     }
+    if ([dic.allKeys containsObject:@"academy_id"]) {
+        self.academy_id = dic[@"academy_id"];
+    }
     NSLog(@"%@",self.isSecretary);
     
 //    self.address = dic[@"address"];

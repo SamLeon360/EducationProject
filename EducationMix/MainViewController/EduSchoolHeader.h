@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EduSchoolHeader : UIView
+@property (weak, nonatomic) IBOutlet UILabel *schoolName;
+@property (weak, nonatomic) IBOutlet UIImageView *schoolImage;
 
 @end
 

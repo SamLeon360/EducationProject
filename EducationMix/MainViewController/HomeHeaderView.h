@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///滚动内容
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+
+@property (nonatomic) NSArray *postArray;
 -(void)setupTableView;
 @end
 
