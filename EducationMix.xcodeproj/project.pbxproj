@@ -155,6 +155,25 @@
 		B22909CB223D3EC2009D91AC /* TSINSTMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909CA223D3EC2009D91AC /* TSINSTMsgViewController.m */; };
 		B22909CE223D3EDB009D91AC /* TSINSTMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909CD223D3EDB009D91AC /* TSINSTMsgModel.m */; };
 		B22909D1223D3EEC009D91AC /* TSINSTMsgView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909D0223D3EEC009D91AC /* TSINSTMsgView.m */; };
+		B22909E82241369F009D91AC /* TSInstitutionDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909E72241369F009D91AC /* TSInstitutionDetailViewModel.m */; };
+		B22909EB224136AB009D91AC /* TSInstitutionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909EA224136AB009D91AC /* TSInstitutionDetailViewController.m */; };
+		B22909EE224136B9009D91AC /* TSInstitutionDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909ED224136B9009D91AC /* TSInstitutionDetailModel.m */; };
+		B22909F2224136DA009D91AC /* TSInstitutionDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909F0224136DA009D91AC /* TSInstitutionDetailTableViewCell.m */; };
+		B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22909F1224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib */; };
+		B22909F6224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909F5224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m */; };
+		B22909FE22413719009D91AC /* TSInstitutionMsgBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909FD22413719009D91AC /* TSInstitutionMsgBoardViewController.m */; };
+		B2290A0122413727009D91AC /* TSInstitutionMsgBoardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A0022413727009D91AC /* TSInstitutionMsgBoardModel.m */; };
+		B2290A0422413739009D91AC /* TSInstitutionMsgBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A0322413739009D91AC /* TSInstitutionMsgBoardView.m */; };
+		B2290A0722413749009D91AC /* TSInstitutionStudentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A0622413749009D91AC /* TSInstitutionStudentViewModel.m */; };
+		B2290A0A22413759009D91AC /* TSInstitutionStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A0922413759009D91AC /* TSInstitutionStudentViewController.m */; };
+		B2290A0D22413777009D91AC /* TSInstitutionStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A0C22413777009D91AC /* TSInstitutionStudentModel.m */; };
+		B2290A13224137A9009D91AC /* TSInstitutionTeacherViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A12224137A9009D91AC /* TSInstitutionTeacherViewModel.m */; };
+		B2290A16224137B4009D91AC /* TSInstitutionTeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A15224137B4009D91AC /* TSInstitutionTeacherViewController.m */; };
+		B2290A19224137C2009D91AC /* TSInstitutionTeacherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A18224137C2009D91AC /* TSInstitutionTeacherModel.m */; };
+		B2290A1D224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A1B224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m */; };
+		B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2290A1C224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib */; };
+		B2290A22224137FF009D91AC /* TSInstitutionStudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A20224137FF009D91AC /* TSInstitutionStudentTableViewCell.m */; };
+		B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2290A21224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -465,6 +484,41 @@
 		B22909CD223D3EDB009D91AC /* TSINSTMsgModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSINSTMsgModel.m; sourceTree = "<group>"; };
 		B22909CF223D3EEC009D91AC /* TSINSTMsgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSINSTMsgView.h; sourceTree = "<group>"; };
 		B22909D0223D3EEC009D91AC /* TSINSTMsgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSINSTMsgView.m; sourceTree = "<group>"; };
+		B22909E62241369F009D91AC /* TSInstitutionDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionDetailViewModel.h; sourceTree = "<group>"; };
+		B22909E72241369F009D91AC /* TSInstitutionDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionDetailViewModel.m; sourceTree = "<group>"; };
+		B22909E9224136AB009D91AC /* TSInstitutionDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionDetailViewController.h; sourceTree = "<group>"; };
+		B22909EA224136AB009D91AC /* TSInstitutionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionDetailViewController.m; sourceTree = "<group>"; };
+		B22909EC224136B9009D91AC /* TSInstitutionDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionDetailModel.h; sourceTree = "<group>"; };
+		B22909ED224136B9009D91AC /* TSInstitutionDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionDetailModel.m; sourceTree = "<group>"; };
+		B22909EF224136DA009D91AC /* TSInstitutionDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionDetailTableViewCell.h; sourceTree = "<group>"; };
+		B22909F0224136DA009D91AC /* TSInstitutionDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionDetailTableViewCell.m; sourceTree = "<group>"; };
+		B22909F1224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInstitutionDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B22909F4224136F0009D91AC /* TSInstitutionMsgBoardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionMsgBoardViewModel.h; sourceTree = "<group>"; };
+		B22909F5224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionMsgBoardViewModel.m; sourceTree = "<group>"; };
+		B22909FC22413719009D91AC /* TSInstitutionMsgBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionMsgBoardViewController.h; sourceTree = "<group>"; };
+		B22909FD22413719009D91AC /* TSInstitutionMsgBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionMsgBoardViewController.m; sourceTree = "<group>"; };
+		B22909FF22413727009D91AC /* TSInstitutionMsgBoardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionMsgBoardModel.h; sourceTree = "<group>"; };
+		B2290A0022413727009D91AC /* TSInstitutionMsgBoardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionMsgBoardModel.m; sourceTree = "<group>"; };
+		B2290A0222413739009D91AC /* TSInstitutionMsgBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionMsgBoardView.h; sourceTree = "<group>"; };
+		B2290A0322413739009D91AC /* TSInstitutionMsgBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionMsgBoardView.m; sourceTree = "<group>"; };
+		B2290A0522413749009D91AC /* TSInstitutionStudentViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionStudentViewModel.h; sourceTree = "<group>"; };
+		B2290A0622413749009D91AC /* TSInstitutionStudentViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionStudentViewModel.m; sourceTree = "<group>"; };
+		B2290A0822413759009D91AC /* TSInstitutionStudentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionStudentViewController.h; sourceTree = "<group>"; };
+		B2290A0922413759009D91AC /* TSInstitutionStudentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionStudentViewController.m; sourceTree = "<group>"; };
+		B2290A0B22413777009D91AC /* TSInstitutionStudentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionStudentModel.h; sourceTree = "<group>"; };
+		B2290A0C22413777009D91AC /* TSInstitutionStudentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionStudentModel.m; sourceTree = "<group>"; };
+		B2290A11224137A9009D91AC /* TSInstitutionTeacherViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionTeacherViewModel.h; sourceTree = "<group>"; };
+		B2290A12224137A9009D91AC /* TSInstitutionTeacherViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionTeacherViewModel.m; sourceTree = "<group>"; };
+		B2290A14224137B4009D91AC /* TSInstitutionTeacherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionTeacherViewController.h; sourceTree = "<group>"; };
+		B2290A15224137B4009D91AC /* TSInstitutionTeacherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionTeacherViewController.m; sourceTree = "<group>"; };
+		B2290A17224137C2009D91AC /* TSInstitutionTeacherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionTeacherModel.h; sourceTree = "<group>"; };
+		B2290A18224137C2009D91AC /* TSInstitutionTeacherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionTeacherModel.m; sourceTree = "<group>"; };
+		B2290A1A224137E4009D91AC /* TSInstitutionTeacherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionTeacherTableViewCell.h; sourceTree = "<group>"; };
+		B2290A1B224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionTeacherTableViewCell.m; sourceTree = "<group>"; };
+		B2290A1C224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInstitutionTeacherTableViewCell.xib; sourceTree = "<group>"; };
+		B2290A1F224137FF009D91AC /* TSInstitutionStudentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionStudentTableViewCell.h; sourceTree = "<group>"; };
+		B2290A20224137FF009D91AC /* TSInstitutionStudentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionStudentTableViewCell.m; sourceTree = "<group>"; };
+		B2290A21224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInstitutionStudentTableViewCell.xib; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1547,6 +1601,10 @@
 				B22909C0223D3DC0009D91AC /* Controller */,
 				B22909C1223D3DC0009D91AC /* Model */,
 				B22909C2223D3DC0009D91AC /* View */,
+				B22909DC2241366D009D91AC /* InstitutionDetail */,
+				B22909D72241366D009D91AC /* InstitutionMsgBoard */,
+				B22909E12241366D009D91AC /* InstitutionStudent */,
+				B22909D22241366C009D91AC /* InstitutionTeacher */,
 			);
 			path = InstitutionMessage;
 			sourceTree = "<group>";
@@ -1583,6 +1641,197 @@
 			children = (
 				B22909CF223D3EEC009D91AC /* TSINSTMsgView.h */,
 				B22909D0223D3EEC009D91AC /* TSINSTMsgView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B22909D22241366C009D91AC /* InstitutionTeacher */ = {
+			isa = PBXGroup;
+			children = (
+				B22909D32241366C009D91AC /* ViewModel */,
+				B22909D42241366C009D91AC /* Controller */,
+				B22909D52241366C009D91AC /* Model */,
+				B22909D62241366C009D91AC /* View */,
+			);
+			path = InstitutionTeacher;
+			sourceTree = "<group>";
+		};
+		B22909D32241366C009D91AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A11224137A9009D91AC /* TSInstitutionTeacherViewModel.h */,
+				B2290A12224137A9009D91AC /* TSInstitutionTeacherViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22909D42241366C009D91AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A14224137B4009D91AC /* TSInstitutionTeacherViewController.h */,
+				B2290A15224137B4009D91AC /* TSInstitutionTeacherViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B22909D52241366C009D91AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A17224137C2009D91AC /* TSInstitutionTeacherModel.h */,
+				B2290A18224137C2009D91AC /* TSInstitutionTeacherModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B22909D62241366C009D91AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A1A224137E4009D91AC /* TSInstitutionTeacherTableViewCell.h */,
+				B2290A1B224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m */,
+				B2290A1C224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B22909D72241366D009D91AC /* InstitutionMsgBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B22909D82241366D009D91AC /* ViewModel */,
+				B22909D92241366D009D91AC /* Controller */,
+				B22909DA2241366D009D91AC /* Model */,
+				B22909DB2241366D009D91AC /* View */,
+			);
+			path = InstitutionMsgBoard;
+			sourceTree = "<group>";
+		};
+		B22909D82241366D009D91AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B22909F4224136F0009D91AC /* TSInstitutionMsgBoardViewModel.h */,
+				B22909F5224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22909D92241366D009D91AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B22909FC22413719009D91AC /* TSInstitutionMsgBoardViewController.h */,
+				B22909FD22413719009D91AC /* TSInstitutionMsgBoardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B22909DA2241366D009D91AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22909FF22413727009D91AC /* TSInstitutionMsgBoardModel.h */,
+				B2290A0022413727009D91AC /* TSInstitutionMsgBoardModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B22909DB2241366D009D91AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A0222413739009D91AC /* TSInstitutionMsgBoardView.h */,
+				B2290A0322413739009D91AC /* TSInstitutionMsgBoardView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B22909DC2241366D009D91AC /* InstitutionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B22909DD2241366D009D91AC /* ViewModel */,
+				B22909DE2241366D009D91AC /* Controller */,
+				B22909DF2241366D009D91AC /* Model */,
+				B22909E02241366D009D91AC /* View */,
+			);
+			path = InstitutionDetail;
+			sourceTree = "<group>";
+		};
+		B22909DD2241366D009D91AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B22909E62241369F009D91AC /* TSInstitutionDetailViewModel.h */,
+				B22909E72241369F009D91AC /* TSInstitutionDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22909DE2241366D009D91AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B22909E9224136AB009D91AC /* TSInstitutionDetailViewController.h */,
+				B22909EA224136AB009D91AC /* TSInstitutionDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B22909DF2241366D009D91AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22909EC224136B9009D91AC /* TSInstitutionDetailModel.h */,
+				B22909ED224136B9009D91AC /* TSInstitutionDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B22909E02241366D009D91AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B22909EF224136DA009D91AC /* TSInstitutionDetailTableViewCell.h */,
+				B22909F0224136DA009D91AC /* TSInstitutionDetailTableViewCell.m */,
+				B22909F1224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B22909E12241366D009D91AC /* InstitutionStudent */ = {
+			isa = PBXGroup;
+			children = (
+				B22909E22241366D009D91AC /* ViewModel */,
+				B22909E32241366D009D91AC /* Controller */,
+				B22909E42241366D009D91AC /* Model */,
+				B22909E52241366D009D91AC /* View */,
+			);
+			path = InstitutionStudent;
+			sourceTree = "<group>";
+		};
+		B22909E22241366D009D91AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A0522413749009D91AC /* TSInstitutionStudentViewModel.h */,
+				B2290A0622413749009D91AC /* TSInstitutionStudentViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22909E32241366D009D91AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A0822413759009D91AC /* TSInstitutionStudentViewController.h */,
+				B2290A0922413759009D91AC /* TSInstitutionStudentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B22909E42241366D009D91AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A0B22413777009D91AC /* TSInstitutionStudentModel.h */,
+				B2290A0C22413777009D91AC /* TSInstitutionStudentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B22909E52241366D009D91AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A1F224137FF009D91AC /* TSInstitutionStudentTableViewCell.h */,
+				B2290A20224137FF009D91AC /* TSInstitutionStudentTableViewCell.m */,
+				B2290A21224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1719,7 +1968,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
+				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
+				B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
@@ -1730,6 +1981,7 @@
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
 				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
+				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
@@ -1882,6 +2134,7 @@
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
+				B2290A0D22413777009D91AC /* TSInstitutionStudentModel.m in Sources */,
 				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
 				22F382172238DB88005A0AD7 /* NotifyListController.m in Sources */,
 				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
@@ -1898,6 +2151,7 @@
 				22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */,
 				22F382162238DB88005A0AD7 /* EditUserDataController.m in Sources */,
 				22F381B42238D9D8005A0AD7 /* UploadSelectTypeView.m in Sources */,
+				B22909E82241369F009D91AC /* TSInstitutionDetailViewModel.m in Sources */,
 				22F382142238DB88005A0AD7 /* FriendListController.m in Sources */,
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
@@ -1908,16 +2162,20 @@
 				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
 				22F3814222363C00005A0AD7 /* UIWebView+Custom.m in Sources */,
 				22F3820F2238DB88005A0AD7 /* FriendListCell.m in Sources */,
+				B2290A0422413739009D91AC /* TSInstitutionMsgBoardView.m in Sources */,
 				22F3812722363C00005A0AD7 /* MMReachabilityViewController.m in Sources */,
 				22F3823B223A365E005A0AD7 /* HomeNewPostCell.m in Sources */,
+				B2290A0A22413759009D91AC /* TSInstitutionStudentViewController.m in Sources */,
 				22F3813922363C00005A0AD7 /* UIImage+UIImageScale.m in Sources */,
 				22F3821B2238DB88005A0AD7 /* MemberDetailController.m in Sources */,
 				22F382112238DB88005A0AD7 /* LogoutViewController.m in Sources */,
 				22F3819C2237C6E8005A0AD7 /* commerceDetailSection.m in Sources */,
+				B2290A19224137C2009D91AC /* TSInstitutionTeacherModel.m in Sources */,
 				22F3812E22363C00005A0AD7 /* InvitationManager.m in Sources */,
 				22F382152238DB88005A0AD7 /* YKEditTreeCameraBottomView.m in Sources */,
 				22F382082238DB88005A0AD7 /* FriendNotifyListController.m in Sources */,
 				22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */,
+				B22909EE224136B9009D91AC /* TSInstitutionDetailModel.m in Sources */,
 				22F3812222363C00005A0AD7 /* WebViewJavascriptBridgeBase.m in Sources */,
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
 				22F3813E22363C00005A0AD7 /* UIButton+Custom.m in Sources */,
@@ -1949,13 +2207,18 @@
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
+				B2290A16224137B4009D91AC /* TSInstitutionTeacherViewController.m in Sources */,
 				22F3820A2238DB88005A0AD7 /* MemberHeaderSection.m in Sources */,
 				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
+				B22909FE22413719009D91AC /* TSInstitutionMsgBoardViewController.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
+				B2290A22224137FF009D91AC /* TSInstitutionStudentTableViewCell.m in Sources */,
 				22F3820B2238DB88005A0AD7 /* FriendNotifyCell.m in Sources */,
 				22F3813222363C00005A0AD7 /* UIImage+SubImage.m in Sources */,
+				B22909F6224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m in Sources */,
 				22F3812D22363C00005A0AD7 /* RequestManager.m in Sources */,
+				B2290A0722413749009D91AC /* TSInstitutionStudentViewModel.m in Sources */,
 				22F381C42238DAF2005A0AD7 /* AddCommerceController.m in Sources */,
 				B22909D1223D3EEC009D91AC /* TSINSTMsgView.m in Sources */,
 				22F3816F22375DFB005A0AD7 /* NSMutableArray+LPKit.m in Sources */,
@@ -1963,6 +2226,7 @@
 				22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */,
 				22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,
+				B2290A0122413727009D91AC /* TSInstitutionMsgBoardModel.m in Sources */,
 				22F381C02238DA94005A0AD7 /* MemberListController.m in Sources */,
 				B2154736223BF314000AD9D8 /* InstitutionViewModel.m in Sources */,
 				22F3817522375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m in Sources */,
@@ -1970,6 +2234,7 @@
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
 				22F3812C22363C00005A0AD7 /* AlertView.m in Sources */,
+				B2290A1D224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m in Sources */,
 				22F3805422363420005A0AD7 /* EduNavController.m in Sources */,
 				22F3812322363C00005A0AD7 /* WKWebViewJavascriptBridge.m in Sources */,
 				B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */,
@@ -1980,11 +2245,13 @@
 				22F3815022363C00005A0AD7 /* UINavigationController+Category.m in Sources */,
 				22F3819F2237C6E8005A0AD7 /* commerceDetailHeader.m in Sources */,
 				22F3814F22363C00005A0AD7 /* CatchCrash.m in Sources */,
+				B22909EB224136AB009D91AC /* TSInstitutionDetailViewController.m in Sources */,
 				22F381AE2238D9B0005A0AD7 /* HomeCommerceCell.m in Sources */,
 				22F3812622363C00005A0AD7 /* Reachability.m in Sources */,
 				22F3814E22363C00005A0AD7 /* Common.m in Sources */,
 				22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */,
 				22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */,
+				B22909F2224136DA009D91AC /* TSInstitutionDetailTableViewCell.m in Sources */,
 				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,
 				22F381B32238D9D8005A0AD7 /* UploadCommerceControllerController.m in Sources */,
 				22F3811E22363C00005A0AD7 /* WXApiResponseHandler.m in Sources */,
@@ -1995,6 +2262,7 @@
 				22F382102238DB88005A0AD7 /* AccountMsgController.m in Sources */,
 				22F3821D2238DB88005A0AD7 /* MemberDetailAvatarCell.m in Sources */,
 				22F3814022363C00005A0AD7 /* UIButton+Extension.m in Sources */,
+				B2290A13224137A9009D91AC /* TSInstitutionTeacherViewModel.m in Sources */,
 				22F3813722363C00005A0AD7 /* UIImage+Wechat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
