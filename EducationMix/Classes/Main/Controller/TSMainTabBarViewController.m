@@ -11,6 +11,8 @@
 #import "TSINSTMsgViewController.h"
 #import "EduMeViewController.h"
 
+#import "TSINSTMsgViewController.h"
+
 @interface TSMainTabBarViewController ()
 
 @end
@@ -25,7 +27,7 @@
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
     homeVC.title = @"主页";
 
-    UIViewController *tmpVC1 = [[UIViewController alloc]init];
+    TSINSTMsgViewController *tmpVC1 = [[TSINSTMsgViewController alloc]init];
     tmpVC1.title = @"咨询";
     
     UIViewController *tmpVC2 = [[UIViewController alloc]init];
