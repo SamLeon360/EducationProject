@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "EduMainViewController.h"
+#import "EduMeViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *phoneView;
 @property (weak, nonatomic) IBOutlet UIView *pwdView;
@@ -103,7 +103,7 @@
 //
 //                } seq:1];
             
-            EduMainViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMainViewController"];
+            EduMeViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMeViewController"];
             [self.navigationController pushViewController:vc animated:YES];
             }else{
                 [AlertView showYMAlertView:blockSelf.view andtitle:responseDic[@"message"]];

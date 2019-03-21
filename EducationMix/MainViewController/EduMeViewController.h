@@ -1,5 +1,5 @@
 //
-//  EduMainViewController.h
+//  EduMeViewController.h
 //  EducationMix
 //
 //  Created by Sam on 2019/3/13.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EduMainViewController : UIViewController
+@interface EduMeViewController : UIViewController
 
 @end
 

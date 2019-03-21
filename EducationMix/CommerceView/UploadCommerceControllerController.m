@@ -11,6 +11,8 @@
 #import "UploadSelectTypeView.h"
 #import "ZLPhotoActionSheet.h"
 #import <IQKeyboardManager.h>
+#import "AlertView.h"
+
 @interface UploadCommerceControllerController ()<UIPickerViewDataSource,UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *commerceNameLabel;
 @property (weak, nonatomic) IBOutlet UIView *oneView;

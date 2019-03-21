@@ -14,7 +14,7 @@
 #import "HomeSectionView.h"
 #import "EduNavController.h"
 #import "LoginBottomView.h"
-#import "EduMainViewController.h"
+#import "EduMeViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,LPSwitchTagDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *kefuImage;

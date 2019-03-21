@@ -140,7 +140,7 @@
 		22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F382212238DC64005A0AD7 /* MineCompanyListController.m */; };
 		22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F382222238DC64005A0AD7 /* CompanyView.storyboard */; };
 		22F382292238DC64005A0AD7 /* CompanyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F382232238DC64005A0AD7 /* CompanyListCell.m */; };
-		22F3822C2238F0BC005A0AD7 /* EduMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3822B2238F0BC005A0AD7 /* EduMainViewController.m */; };
+		22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3822B2238F0BC005A0AD7 /* EduMeViewController.m */; };
 		22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3822E22390637005A0AD7 /* EduSchoolHeader.m */; };
 		22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823122390655005A0AD7 /* EduStuTeaHeader.m */; };
 		22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823722390B98005A0AD7 /* EduMineCell.m */; };
@@ -174,6 +174,12 @@
 		B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2290A1C224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib */; };
 		B2290A22224137FF009D91AC /* TSInstitutionStudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A20224137FF009D91AC /* TSInstitutionStudentTableViewCell.m */; };
 		B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2290A21224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib */; };
+		B2290A5722432444009D91AC /* TSMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A5622432444009D91AC /* TSMainTabBarViewController.m */; };
+		B2290A5922432515009D91AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2290A5822432515009D91AC /* Main.storyboard */; };
+		B2290A6C22433483009D91AC /* JQRefreshHeaader.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A6A22433483009D91AC /* JQRefreshHeaader.m */; };
+		B2290A6D22433483009D91AC /* JQHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A6B22433483009D91AC /* JQHeaderView.m */; };
+		B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7922433AC0009D91AC /* UIImage+JQImage.m */; };
+		B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7A22433AC0009D91AC /* UIButton+Size.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -453,8 +459,8 @@
 		22F382232238DC64005A0AD7 /* CompanyListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyListCell.m; sourceTree = "<group>"; };
 		22F382242238DC64005A0AD7 /* EditCompanyMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCompanyMessageController.h; sourceTree = "<group>"; };
 		22F382252238DC64005A0AD7 /* MineCompanyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCompanyListController.h; sourceTree = "<group>"; };
-		22F3822A2238F0BC005A0AD7 /* EduMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduMainViewController.h; sourceTree = "<group>"; };
-		22F3822B2238F0BC005A0AD7 /* EduMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduMainViewController.m; sourceTree = "<group>"; };
+		22F3822A2238F0BC005A0AD7 /* EduMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduMeViewController.h; sourceTree = "<group>"; };
+		22F3822B2238F0BC005A0AD7 /* EduMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduMeViewController.m; sourceTree = "<group>"; };
 		22F3822D22390637005A0AD7 /* EduSchoolHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduSchoolHeader.h; sourceTree = "<group>"; };
 		22F3822E22390637005A0AD7 /* EduSchoolHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduSchoolHeader.m; sourceTree = "<group>"; };
 		22F3823022390655005A0AD7 /* EduStuTeaHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EduStuTeaHeader.h; sourceTree = "<group>"; };
@@ -519,6 +525,17 @@
 		B2290A1F224137FF009D91AC /* TSInstitutionStudentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionStudentTableViewCell.h; sourceTree = "<group>"; };
 		B2290A20224137FF009D91AC /* TSInstitutionStudentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionStudentTableViewCell.m; sourceTree = "<group>"; };
 		B2290A21224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInstitutionStudentTableViewCell.xib; sourceTree = "<group>"; };
+		B2290A5522432444009D91AC /* TSMainTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainTabBarViewController.h; sourceTree = "<group>"; };
+		B2290A5622432444009D91AC /* TSMainTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainTabBarViewController.m; sourceTree = "<group>"; };
+		B2290A5822432515009D91AC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B2290A6822433483009D91AC /* JQRefreshHeaader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRefreshHeaader.h; sourceTree = "<group>"; };
+		B2290A6922433483009D91AC /* JQHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQHeaderView.h; sourceTree = "<group>"; };
+		B2290A6A22433483009D91AC /* JQRefreshHeaader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRefreshHeaader.m; sourceTree = "<group>"; };
+		B2290A6B22433483009D91AC /* JQHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQHeaderView.m; sourceTree = "<group>"; };
+		B2290A7922433AC0009D91AC /* UIImage+JQImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JQImage.m"; sourceTree = "<group>"; };
+		B2290A7A22433AC0009D91AC /* UIButton+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Size.m"; sourceTree = "<group>"; };
+		B2290A7B22433AC0009D91AC /* UIImage+JQImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JQImage.h"; sourceTree = "<group>"; };
+		B2290A7C22433AC0009D91AC /* UIButton+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Size.h"; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -579,6 +596,8 @@
 		22F3801E2235FF7D005A0AD7 /* EducationMix */ = {
 			isa = PBXGroup;
 			children = (
+				22F3801F2235FF7D005A0AD7 /* AppDelegate.h */,
+				22F380202235FF7D005A0AD7 /* AppDelegate.m */,
 				B215472B223BF16F000AD9D8 /* Classes */,
 				22F3821E2238DC64005A0AD7 /* CompanyList */,
 				22F381D82238DB88005A0AD7 /* MineView */,
@@ -588,12 +607,11 @@
 				22F381892237C6E8005A0AD7 /* CommerceView */,
 				22F3815322364E93005A0AD7 /* MainViewController */,
 				22F3805122361297005A0AD7 /* loginViewController */,
-				22F3801F2235FF7D005A0AD7 /* AppDelegate.h */,
-				22F380202235FF7D005A0AD7 /* AppDelegate.m */,
 				22F380282235FF7F005A0AD7 /* Assets.xcassets */,
 				22F3802A2235FF7F005A0AD7 /* LaunchScreen.storyboard */,
 				22F3802D2235FF7F005A0AD7 /* Info.plist */,
 				22F3802E2235FF7F005A0AD7 /* main.m */,
+				B2290A5822432515009D91AC /* Main.storyboard */,
 			);
 			path = EducationMix;
 			sourceTree = "<group>";
@@ -1325,8 +1343,8 @@
 				22F381812237983E005A0AD7 /* HomeJobCell.h */,
 				22F381822237983E005A0AD7 /* HomeJobCell.m */,
 				22F3818422379EA0005A0AD7 /* HomeNewPostCell.xib */,
-				22F3822A2238F0BC005A0AD7 /* EduMainViewController.h */,
-				22F3822B2238F0BC005A0AD7 /* EduMainViewController.m */,
+				22F3822A2238F0BC005A0AD7 /* EduMeViewController.h */,
+				22F3822B2238F0BC005A0AD7 /* EduMeViewController.m */,
 				22F3822D22390637005A0AD7 /* EduSchoolHeader.h */,
 				22F3822E22390637005A0AD7 /* EduSchoolHeader.m */,
 				22F3823022390655005A0AD7 /* EduStuTeaHeader.h */,
@@ -1507,8 +1525,10 @@
 		B215472B223BF16F000AD9D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B215472E223BF2FD000AD9D8 /* Sections */,
+				B2290A7822433AC0009D91AC /* Extension */,
 				B215472C223BF16F000AD9D8 /* Main */,
+				B215472E223BF2FD000AD9D8 /* Sections */,
+				B2290A6622433483009D91AC /* Vendor */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1524,6 +1544,8 @@
 		B215472D223BF16F000AD9D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B2290A5522432444009D91AC /* TSMainTabBarViewController.h */,
+				B2290A5622432444009D91AC /* TSMainTabBarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1836,6 +1858,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B2290A6622433483009D91AC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A6722433483009D91AC /* MenuControl */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B2290A6722433483009D91AC /* MenuControl */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A6822433483009D91AC /* JQRefreshHeaader.h */,
+				B2290A6922433483009D91AC /* JQHeaderView.h */,
+				B2290A6A22433483009D91AC /* JQRefreshHeaader.m */,
+				B2290A6B22433483009D91AC /* JQHeaderView.m */,
+			);
+			path = MenuControl;
+			sourceTree = "<group>";
+		};
+		B2290A7822433AC0009D91AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A7922433AC0009D91AC /* UIImage+JQImage.m */,
+				B2290A7A22433AC0009D91AC /* UIButton+Size.m */,
+				B2290A7B22433AC0009D91AC /* UIImage+JQImage.h */,
+				B2290A7C22433AC0009D91AC /* UIButton+Size.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1979,6 +2031,7 @@
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
+				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
 				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
@@ -2156,7 +2209,7 @@
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
-				22F3822C2238F0BC005A0AD7 /* EduMainViewController.m in Sources */,
+				22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */,
 				22F382262238DC64005A0AD7 /* EditCompanyMessageController.m in Sources */,
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
 				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
@@ -2223,8 +2276,10 @@
 				B22909D1223D3EEC009D91AC /* TSINSTMsgView.m in Sources */,
 				22F3816F22375DFB005A0AD7 /* NSMutableArray+LPKit.m in Sources */,
 				22F381A82238D94D005A0AD7 /* SearchCommerceNameView.m in Sources */,
+				B2290A6D22433483009D91AC /* JQHeaderView.m in Sources */,
 				22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */,
 				22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */,
+				B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,
 				B2290A0122413727009D91AC /* TSInstitutionMsgBoardModel.m in Sources */,
 				22F381C02238DA94005A0AD7 /* MemberListController.m in Sources */,
@@ -2237,6 +2292,7 @@
 				B2290A1D224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m in Sources */,
 				22F3805422363420005A0AD7 /* EduNavController.m in Sources */,
 				22F3812322363C00005A0AD7 /* WKWebViewJavascriptBridge.m in Sources */,
+				B2290A6C22433483009D91AC /* JQRefreshHeaader.m in Sources */,
 				B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */,
 				22F3818022378CD0005A0AD7 /* HomeSectionView.m in Sources */,
 				22F3812022363C00005A0AD7 /* WXApiManager.m in Sources */,
@@ -2255,7 +2311,9 @@
 				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,
 				22F381B32238D9D8005A0AD7 /* UploadCommerceControllerController.m in Sources */,
 				22F3811E22363C00005A0AD7 /* WXApiResponseHandler.m in Sources */,
+				B2290A5722432444009D91AC /* TSMainTabBarViewController.m in Sources */,
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,
+				B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */,
 				22F3813422363C00005A0AD7 /* UIImage+Rotate.m in Sources */,
 				22F3814622363C00005A0AD7 /* UIFont+Category.m in Sources */,
 				22F382292238DC64005A0AD7 /* CompanyListCell.m in Sources */,

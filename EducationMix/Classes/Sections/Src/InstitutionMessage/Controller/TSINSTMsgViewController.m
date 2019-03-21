@@ -7,6 +7,10 @@
 //
 
 #import "TSINSTMsgViewController.h"
+#import "JQHeaderView.h"
+#import "SDCycleScrollView.h"
+#import "JQRefreshHeaader.h"
+
 
 @interface TSINSTMsgViewController ()
 

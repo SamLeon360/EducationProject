@@ -1,16 +1,16 @@
 //
-//  EduMainViewController.m
+//  EduMeViewController.m
 //  EducationMix
 //
 //  Created by Sam on 2019/3/13.
 //  Copyright © 2019 sam. All rights reserved.
 //
 
-#import "EduMainViewController.h"
+#import "EduMeViewController.h"
 #import "EduStuTeaHeader.h"
 #import "EduSchoolHeader.h"
 #import "EduMineCell.h"
-@interface EduMainViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface EduMeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic) NSInteger typeIndex; ///1--学生,2--老师,3--院校
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -23,7 +23,7 @@
 @property (nonatomic) NSDictionary *detailDic;
 @end
 
-@implementation EduMainViewController
+@implementation EduMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

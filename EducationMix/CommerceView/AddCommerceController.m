@@ -8,6 +8,8 @@
 
 #import "AddCommerceController.h"
 #import "ZLPhotoActionSheet.h"
+#import "AlertView.h"
+
 @interface AddCommerceController ()
 @property (weak, nonatomic) IBOutlet UITextField *commerceNameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *companyNameLabel;
