@@ -7,6 +7,7 @@
 //
 
 #import "TSInstitutionTeacherViewController.h"
+#import "TSINstitutionTeacherTableViewCell.h"
 
 @interface TSInstitutionTeacherViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -48,17 +49,18 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 300;
+    return 100;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    return nil;
+    TSInstitutionTeacherTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TSInstitutionTeacherTableViewCell"];
+    return cell;
 }
 
 

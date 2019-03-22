@@ -43,19 +43,35 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 300;
+    
+    return 100;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 10;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"uitablviewcell"];
+    NSString *identifier = @"";
+    if (indexPath.row > 2) {
+        identifier = @"TSInstitutionDetailTableViewCellSecond";
+    } else {
+        
+        identifier = @"TSInstitutionDetailTableViewCellFirst";
+
+    }
+//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"uitablviewcell"];
     
-//    TSInstitutionDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TSInstitutionDetailTableViewCell"];
+        TSInstitutionDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if(!cell){
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:indexPath.row < 1 ? 0:1 ];
+    }
+    
+    
+    
+
     return cell;
 }
 
@@ -74,9 +90,11 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
+        _tableView.separatorStyle = UITableViewCellEditingStyleNone;
+        _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
         [self.tableView registerNib:[UINib nibWithNibName:@"JHCell" bundle:nil] forCellReuseIdentifier:@"JHCELL"];
         
-        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TSInstitutionDetailTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"TSInstitutionDetailTableViewCell"];
+//        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TSInstitutionDetailTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"TSInstitutionDetailTableViewCell"];
         
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];
         tableHeaderView.backgroundColor = [UIColor whiteColor];

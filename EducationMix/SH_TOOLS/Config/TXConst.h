@@ -26,6 +26,11 @@
 #define TEXT_COLOR_BLACK [UIColor colorWithRGB:0x2a2a2a]
 #define TEXT_COLOR_ORANGE [UIColor colorWithRGB:0xff9900]
 
+/** RGB颜色 */
+#define TSColor_RGB(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
+#define TSColor_RGBA(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
+#define TSColor_RGBA_256(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a) / 255.0]
+
 #define LOGIN_SUCCESS_REFRESH_DATA @"loginSuccessRefreshData"//登录成功刷新主页数据
 
 // 注册通知

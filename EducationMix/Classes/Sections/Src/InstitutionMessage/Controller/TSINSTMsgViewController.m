@@ -71,7 +71,6 @@
         [self.view addSubview:self.bottomScrollView];
         self.jqHeaderView.tableViews = [NSMutableArray arrayWithArray:self.tableViews];
         
-        
         [self.view addSubview:self.cycleScrollView];
         [self.view addSubview:self.segmentScrollView];
         //[self.view addSubview:self.jqHeaderView];
@@ -83,7 +82,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.automaticallyAdjustsScrollViewInsets = YES;
     
     // Do any additional setup after loading the view.
 }
@@ -257,27 +256,32 @@
         
         NSArray *colors = @[[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor],[UIColor purpleColor],[UIColor orangeColor],[UIColor whiteColor],[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor]];
         
+        
+        
         for (int i = 0; i<CATEGORY.count; i++) {
-
-            TSInstitutionDetailViewController *jsdTableViewController = [[TSInstitutionDetailViewController alloc] init];
-            jsdTableViewController.view.frame = CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-
-            jsdTableViewController.view.backgroundColor = colors[i];
-            [self.bottomScrollView addSubview:jsdTableViewController.view];
-
-            [self.controlleres addObject:jsdTableViewController];
-            [self.tableViews addObject:jsdTableViewController.tableView];
+            
+            TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
+            
+            detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            
+            //jsdTableViewController.view.backgroundColor = colors[i];
+            [self.bottomScrollView addSubview:detailViewController.view];
+            
+            [self.controlleres addObject:detailViewController];
+            [self.tableViews addObject:detailViewController.tableView];
             
             //下拉刷新动画
             JQRefreshHeaader *jqRefreshHeader  = [[JQRefreshHeaader alloc] initWithFrame:CGRectMake(0, 212, SCREEN_WIDTH, 30)];
             jqRefreshHeader.backgroundColor = [UIColor whiteColor];
-            jqRefreshHeader.tableView = jsdTableViewController.tableView;
-            [jsdTableViewController.tableView.tableHeaderView addSubview:jqRefreshHeader];
-
-
+            jqRefreshHeader.tableView = detailViewController.tableView;
+            [detailViewController.tableView.tableHeaderView addSubview:jqRefreshHeader];
+            
+            
             NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-            [jsdTableViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-
+            [detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+            
+            
+            
         }
         
         self.currentTableView = self.tableViews[0];
@@ -286,6 +290,28 @@
     }
     return _bottomScrollView;
 }
+
+
+
+- (NSMutableArray *)controlleres {
+    
+    if(!_controlleres){
+        TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
+        TSInstitutionTeacherViewController *teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
+        TSInstitutionStudentViewController *studentViewController = [[TSInstitutionStudentViewController alloc] init];
+        TSInstitutionMsgBoardViewController *msgBoardViewController = [[TSInstitutionMsgBoardViewController alloc] init];
+        
+        [self.controlleres addObject:detailViewController];
+        [self.controlleres addObject:teacherViewController];
+        [self.controlleres addObject:studentViewController];
+        [self.controlleres addObject:msgBoardViewController];
+
+    }
+    return  _controlleres;
+}
+
+
+
 
 - (UIScrollView *)segmentScrollView {
     
