@@ -18,7 +18,7 @@
 #import "TSInstitutionMsgBoardViewController.h"
 
 
-#define CATEGORY  @[@"院校信息",@"专家教授",@"优秀学生",@"留言板"]
+#define CATEGORY  @[@"院校信息",@"专家教授",@"优秀学生"]
 
 #define NAVBARHEIGHT 64.0f
 
@@ -258,11 +258,10 @@
         
         
         
-        for (int i = 0; i<CATEGORY.count; i++) {
-            
+        
             TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
             
-            detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
             
             //jsdTableViewController.view.backgroundColor = colors[i];
             [self.bottomScrollView addSubview:detailViewController.view];
@@ -270,19 +269,46 @@
             [self.controlleres addObject:detailViewController];
             [self.tableViews addObject:detailViewController.tableView];
             
+            TSInstitutionTeacherViewController *teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
+            teacherViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            
+            //jsdTableViewController.view.backgroundColor = colors[i];
+            [self.bottomScrollView addSubview:teacherViewController.view];
+            
+            [self.controlleres addObject:teacherViewController];
+            [self.tableViews addObject:teacherViewController.tableView];
+        
+        
+            TSInstitutionStudentViewController *studentViewController = [[TSInstitutionStudentViewController alloc] init];
+            studentViewController.view.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        
+            //jsdTableViewController.view.backgroundColor = colors[i];
+            [self.bottomScrollView addSubview:studentViewController.view];
+        
+            [self.controlleres addObject:studentViewController];
+            [self.tableViews addObject:studentViewController.tableView];
+        
+//            TSInstitutionMsgBoardViewController *msgBoardViewController = [[TSInstitutionMsgBoardViewController alloc] init];
+//            msgBoardViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+//
+//            //jsdTableViewController.view.backgroundColor = colors[i];
+//            [self.bottomScrollView addSubview:msgBoardViewController.view];
+//
+//            [self.controlleres addObject:msgBoardViewController];
+//            [self.tableViews addObject:msgBoardViewController.tableView];
             //下拉刷新动画
-            JQRefreshHeaader *jqRefreshHeader  = [[JQRefreshHeaader alloc] initWithFrame:CGRectMake(0, 212, SCREEN_WIDTH, 30)];
-            jqRefreshHeader.backgroundColor = [UIColor whiteColor];
-            jqRefreshHeader.tableView = detailViewController.tableView;
-            [detailViewController.tableView.tableHeaderView addSubview:jqRefreshHeader];
+//            JQRefreshHeaader *jqRefreshHeader  = [[JQRefreshHeaader alloc] initWithFrame:CGRectMake(0, 212, SCREEN_WIDTH, 30)];
+//            jqRefreshHeader.backgroundColor = [UIColor whiteColor];
+//            jqRefreshHeader.tableView = detailViewController.tableView;
+//            [detailViewController.tableView.tableHeaderView addSubview:jqRefreshHeader];
+            
             
             
             NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
             [detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-            
-            
-            
-        }
+            [teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+            [studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+        
         
         self.currentTableView = self.tableViews[0];
         self.bottomScrollView.contentSize = CGSizeMake(self.controlleres.count * SCREEN_WIDTH, 0);

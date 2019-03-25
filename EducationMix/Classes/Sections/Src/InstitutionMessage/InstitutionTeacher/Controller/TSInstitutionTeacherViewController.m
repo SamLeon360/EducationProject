@@ -53,13 +53,17 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 9;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     TSInstitutionTeacherTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TSInstitutionTeacherTableViewCell"];
+    if(!cell){
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionTeacherTableViewCell" owner:self options:nil] objectAtIndex:0];
+            
+    }
     return cell;
 }
 
@@ -79,8 +83,9 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
-        [self.tableView registerNib:[UINib nibWithNibName:@"JHCell" bundle:nil] forCellReuseIdentifier:@"JHCELL"];
-        
+        _tableView.separatorStyle = UITableViewCellEditingStyleNone;
+        _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
+
         [_tableView registerNib:[UINib nibWithNibName:@"TSInstitutionTeacherTableViewCell" bundle:nil] forCellReuseIdentifier:@"TSInstitutionTeacherTableViewCell"];
         
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];

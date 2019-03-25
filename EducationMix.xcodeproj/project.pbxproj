@@ -180,6 +180,8 @@
 		B2290A6D22433483009D91AC /* JQHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A6B22433483009D91AC /* JQHeaderView.m */; };
 		B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7922433AC0009D91AC /* UIImage+JQImage.m */; };
 		B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7A22433AC0009D91AC /* UIButton+Size.m */; };
+		B2290A832245CEEF009D91AC /* 学生头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A812245CEEF009D91AC /* 学生头像.png */; };
+		B2290A842245CEEF009D91AC /* 教师头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A822245CEEF009D91AC /* 教师头像.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -536,6 +538,8 @@
 		B2290A7A22433AC0009D91AC /* UIButton+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Size.m"; sourceTree = "<group>"; };
 		B2290A7B22433AC0009D91AC /* UIImage+JQImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JQImage.h"; sourceTree = "<group>"; };
 		B2290A7C22433AC0009D91AC /* UIButton+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Size.h"; sourceTree = "<group>"; };
+		B2290A812245CEEF009D91AC /* 学生头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学生头像.png"; sourceTree = "<group>"; };
+		B2290A822245CEEF009D91AC /* 教师头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "教师头像.png"; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1525,6 +1529,7 @@
 		B215472B223BF16F000AD9D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B2290A802245CEEF009D91AC /* Icon */,
 				B2290A7822433AC0009D91AC /* Extension */,
 				B215472C223BF16F000AD9D8 /* Main */,
 				B215472E223BF2FD000AD9D8 /* Sections */,
@@ -1888,6 +1893,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		B2290A802245CEEF009D91AC /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B2290A812245CEEF009D91AC /* 学生头像.png */,
+				B2290A822245CEEF009D91AC /* 教师头像.png */,
+			);
+			name = Icon;
+			path = EducationMix/Icon;
+			sourceTree = SOURCE_ROOT;
+		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2022,11 +2037,13 @@
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
+				B2290A832245CEEF009D91AC /* 学生头像.png in Resources */,
 				B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
+				B2290A842245CEEF009D91AC /* 教师头像.png in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,

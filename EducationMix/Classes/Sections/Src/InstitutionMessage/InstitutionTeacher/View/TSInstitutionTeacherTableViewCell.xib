@@ -20,43 +20,43 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王磊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4g-dx-dMK">
-                        <rect key="frame" x="108" y="16" width="35" height="20"/>
+                        <rect key="frame" x="108.5" y="16" width="35" height="20"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-6v-2Wo">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="学生头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-6v-2Wo">
                         <rect key="frame" x="8" y="8" width="92.5" height="92.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="X6x-6v-2Wo" secondAttribute="height" multiplier="1:1" id="dMF-57-e8C"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irC-Ga-Rlx">
-                        <rect key="frame" x="174.5" y="84.5" width="33" height="16"/>
+                        <rect key="frame" x="175" y="84.5" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXk-cO-Bfk">
-                        <rect key="frame" x="174.5" y="60.5" width="33" height="16"/>
+                        <rect key="frame" x="175" y="60.5" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业领域：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpV-CR-Pa0">
-                        <rect key="frame" x="108" y="84.5" width="66.5" height="16"/>
+                        <rect key="frame" x="108.5" y="84.5" width="66.5" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业方向：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aym-nz-2YV">
-                        <rect key="frame" x="108" y="60.5" width="66.5" height="16"/>
+                        <rect key="frame" x="108.5" y="60.5" width="66.5" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教授" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY9-qn-IWB">
-                        <rect key="frame" x="151" y="21" width="25" height="15"/>
+                        <rect key="frame" x="151.5" y="21" width="25" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -71,17 +71,27 @@
                     <constraint firstItem="KY9-qn-IWB" firstAttribute="leading" secondItem="E4g-dx-dMK" secondAttribute="trailing" constant="8" id="KEH-1t-GcT"/>
                     <constraint firstItem="SpV-CR-Pa0" firstAttribute="bottom" secondItem="X6x-6v-2Wo" secondAttribute="bottom" id="Ot0-Bg-J9g"/>
                     <constraint firstItem="Aym-nz-2YV" firstAttribute="leading" secondItem="SpV-CR-Pa0" secondAttribute="leading" id="Pdg-vk-eTb"/>
-                    <constraint firstItem="E4g-dx-dMK" firstAttribute="leading" secondItem="X6x-6v-2Wo" secondAttribute="trailing" constant="7.5" id="YeD-lU-oF0"/>
+                    <constraint firstItem="E4g-dx-dMK" firstAttribute="leading" secondItem="X6x-6v-2Wo" secondAttribute="trailing" constant="8" id="YeD-lU-oF0"/>
                     <constraint firstItem="irC-Ga-Rlx" firstAttribute="centerY" secondItem="SpV-CR-Pa0" secondAttribute="centerY" id="cxg-mR-zLF"/>
                     <constraint firstItem="X6x-6v-2Wo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kcX-aB-85f"/>
-                    <constraint firstItem="SpV-CR-Pa0" firstAttribute="leading" secondItem="X6x-6v-2Wo" secondAttribute="trailing" constant="7.5" id="nO9-uP-m3M"/>
+                    <constraint firstItem="SpV-CR-Pa0" firstAttribute="leading" secondItem="X6x-6v-2Wo" secondAttribute="trailing" constant="8" id="nO9-uP-m3M"/>
                     <constraint firstItem="irC-Ga-Rlx" firstAttribute="leading" secondItem="SpV-CR-Pa0" secondAttribute="trailing" id="uqY-cU-StL"/>
                     <constraint firstItem="X6x-6v-2Wo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wMC-CH-Vx0"/>
                     <constraint firstItem="EXk-cO-Bfk" firstAttribute="leading" secondItem="Aym-nz-2YV" secondAttribute="trailing" id="z80-DD-fKb"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="name" destination="E4g-dx-dMK" id="mJx-aK-miW"/>
+                <outlet property="professionalDirection" destination="EXk-cO-Bfk" id="Uwb-kY-DYW"/>
+                <outlet property="professionalField" destination="irC-Ga-Rlx" id="lPS-NW-xCp"/>
+                <outlet property="teacherImageView" destination="X6x-6v-2Wo" id="2sJ-Yt-0uk"/>
+                <outlet property="type" destination="KY9-qn-IWB" id="CsB-mL-hUf"/>
+            </connections>
             <point key="canvasLocation" x="179.19999999999999" y="168.6656671664168"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="学生头像.png" width="500" height="500"/>
+    </resources>
 </document>
