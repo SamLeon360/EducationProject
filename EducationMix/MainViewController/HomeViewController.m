@@ -41,7 +41,10 @@
     
    
 }
--(void)GetTJJob{
+
+
+
+- (void)GetTJJob {
     NSDictionary *param = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"affiliated_area",@"",@"allow_publish",@"",@"commerce_id",@"",@"education",@"",@"enterprise_id",@"",@"ios",@"",@"job_name",@"",@"job_type",@"1",@"page",@"",@"receive_fresh_graduate",@"",@"work_type", nil];
     [HTTPREQUEST_SINGLE postWithURLString:SH_TUIJIAN_JOB parameters:param withHub:YES withCache:NO success:^(NSDictionary *responseDic) {
         if ([responseDic[@"code"] integerValue] == 1) {

@@ -8,8 +8,11 @@
 
 #import "TSInstitutionDetailViewController.h"
 #import "TSInstitutionDetailTableViewCell.h"
+#import "TSInstitutionDetailViewModel.h"
 
 @interface TSInstitutionDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong)TSInstitutionDetailViewModel *detailVM;
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
 @property (nonatomic, strong) UIViewController *controller;
@@ -17,6 +20,15 @@
 @end
 
 @implementation TSInstitutionDetailViewController
+
+
+- (TSInstitutionDetailViewModel *)detailVM {
+    
+    if(!_detailVM) {
+        _detailVM = [[TSInstitutionDetailViewModel alloc] init];
+    }
+    return _detailVM;
+}
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
@@ -78,7 +90,20 @@
 
 - (void)loadData {
     
-    [self.tableView reloadData];
+    [self.detailVM loadDataArrFromNetwork];
+    RACSignal *recommendContentSignal = [self.detailVM.requestCommand execute:nil];
+    
+    @weakify(self);
+    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
+        
+        @strongify(self);
+        // 刷新tableView数据源
+        [self.tableView reloadData];
+        
+    } error:^(NSError *error) {
+        [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
+        //        [_contentTableView.mj_header endRefreshing];
+    }];
 }
 
 

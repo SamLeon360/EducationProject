@@ -10,6 +10,8 @@
 #import "InstitutionTableViewCell.h"
 #import "InstitutionViewModel.h"
 
+#import "TSINSTMsgViewController.h"
+
 @interface InstitutionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
@@ -52,6 +54,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.contentVM.model = _contentVM.modelArr[indexPath.row];
+    if(![self.contentVM.model isEqual:[NSNull null]]) {
+        TSINSTMsgViewController *viewControlle = [[TSINSTMsgViewController alloc]init];
+        viewControlle.academy_id =_contentVM.model.academy_id;
+        
+        [self.navigationController pushViewController:viewControlle animated:YES];
+    }
+    
+
+//    _contentVM.modelArr
+//    NSString *academy_id =  _contentVM.modelArr[indexPath.row].academy_id;
 }
 
 

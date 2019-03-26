@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TSINSTMsgViewController : UIViewController
 
+@property (nonatomic, assign)NSInteger academy_id;
+
 @end
 
 NS_ASSUME_NONNULL_END

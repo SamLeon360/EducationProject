@@ -257,15 +257,14 @@
         NSArray *colors = @[[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor],[UIColor purpleColor],[UIColor orangeColor],[UIColor whiteColor],[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor]];
         
         
-        
-        
             TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
-            
+        
+            detailViewController.academy_id = self.academy_id;
             detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
             
             //jsdTableViewController.view.backgroundColor = colors[i];
             [self.bottomScrollView addSubview:detailViewController.view];
-            
+        
             [self.controlleres addObject:detailViewController];
             [self.tableViews addObject:detailViewController.tableView];
             

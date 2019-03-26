@@ -7,11 +7,13 @@
 //
 
 #import "TSMainTabBarViewController.h"
+
+#import "TSMainNavigationController.h"
+
 #import "HomeViewController.h"
 #import "TSINSTMsgViewController.h"
 #import "EduMeViewController.h"
 #import "InstitutionViewController.h"
-
 #import "TSINSTMsgViewController.h"
 
 @interface TSMainTabBarViewController ()
@@ -25,9 +27,11 @@
     
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"MainView" bundle:[NSBundle mainBundle]];
     
+    
+    
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
-    homeVC.title = @"主页";
-
+    homeVC.title = @"产教融";
+    
     TSINSTMsgViewController *tmpVC1 = [[TSINSTMsgViewController alloc]init];
     tmpVC1.title = @"咨询";
     
@@ -37,7 +41,10 @@
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
     meVC.title = @"我的";
     
-    self.viewControllers = @[homeVC,tmpVC1,tmpVC2,meVC];
+    self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC1]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC2]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
 
     // Do any additional setup after loading the view.
 }
