@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "TSINSTMsgViewController.h"
 #import "EduMeViewController.h"
+#import "InstitutionViewController.h"
 
 #import "TSINSTMsgViewController.h"
 
@@ -30,7 +31,7 @@
     TSINSTMsgViewController *tmpVC1 = [[TSINSTMsgViewController alloc]init];
     tmpVC1.title = @"咨询";
     
-    UIViewController *tmpVC2 = [[UIViewController alloc]init];
+    InstitutionViewController *tmpVC2 = [[InstitutionViewController alloc]init];
     tmpVC2.title = @"聊天";
     
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];

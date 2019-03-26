@@ -182,6 +182,10 @@
 		B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7A22433AC0009D91AC /* UIButton+Size.m */; };
 		B2290A832245CEEF009D91AC /* 学生头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A812245CEEF009D91AC /* 学生头像.png */; };
 		B2290A842245CEEF009D91AC /* 教师头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A822245CEEF009D91AC /* 教师头像.png */; };
+		B24B752E2248C07000C293B7 /* NSString+TSAcademyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B752D2248C07000C293B7 /* NSString+TSAcademyType.m */; };
+		B24B75322248CD6100C293B7 /* UIImage+YPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B75302248CD6100C293B7 /* UIImage+YPExtension.m */; };
+		B24B75342248CDF600C293B7 /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = B24B75332248CDF600C293B7 /* school.png */; };
+		B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B75362248D66200C293B7 /* UIImage+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -540,6 +544,13 @@
 		B2290A7C22433AC0009D91AC /* UIButton+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Size.h"; sourceTree = "<group>"; };
 		B2290A812245CEEF009D91AC /* 学生头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学生头像.png"; sourceTree = "<group>"; };
 		B2290A822245CEEF009D91AC /* 教师头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "教师头像.png"; sourceTree = "<group>"; };
+		B24B752C2248C07000C293B7 /* NSString+TSAcademyType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TSAcademyType.h"; sourceTree = "<group>"; };
+		B24B752D2248C07000C293B7 /* NSString+TSAcademyType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TSAcademyType.m"; sourceTree = "<group>"; };
+		B24B75302248CD6100C293B7 /* UIImage+YPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YPExtension.m"; sourceTree = "<group>"; };
+		B24B75312248CD6100C293B7 /* UIImage+YPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YPExtension.h"; sourceTree = "<group>"; };
+		B24B75332248CDF600C293B7 /* school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school.png; sourceTree = "<group>"; };
+		B24B75352248D66200C293B7 /* UIImage+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		B24B75362248D66200C293B7 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1529,6 +1540,7 @@
 		B215472B223BF16F000AD9D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B24B752F2248CD6100C293B7 /* Category */,
 				B2290A802245CEEF009D91AC /* Icon */,
 				B2290A7822433AC0009D91AC /* Extension */,
 				B215472C223BF16F000AD9D8 /* Main */,
@@ -1889,6 +1901,8 @@
 				B2290A7A22433AC0009D91AC /* UIButton+Size.m */,
 				B2290A7B22433AC0009D91AC /* UIImage+JQImage.h */,
 				B2290A7C22433AC0009D91AC /* UIButton+Size.h */,
+				B24B752C2248C07000C293B7 /* NSString+TSAcademyType.h */,
+				B24B752D2248C07000C293B7 /* NSString+TSAcademyType.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1896,12 +1910,24 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B24B75332248CDF600C293B7 /* school.png */,
 				B2290A812245CEEF009D91AC /* 学生头像.png */,
 				B2290A822245CEEF009D91AC /* 教师头像.png */,
 			);
 			name = Icon;
 			path = EducationMix/Icon;
 			sourceTree = SOURCE_ROOT;
+		};
+		B24B752F2248CD6100C293B7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B24B75302248CD6100C293B7 /* UIImage+YPExtension.m */,
+				B24B75312248CD6100C293B7 /* UIImage+YPExtension.h */,
+				B24B75352248D66200C293B7 /* UIImage+Util.h */,
+				B24B75362248D66200C293B7 /* UIImage+Util.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
 			isa = PBXGroup;
@@ -2045,6 +2071,7 @@
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				B2290A842245CEEF009D91AC /* 教师头像.png in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
+				B24B75342248CDF600C293B7 /* school.png in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
@@ -2085,7 +2112,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh",
 				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
@@ -2130,7 +2157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EducationMix/Pods-EducationMix-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7A553C2C2F4DF66C5A8B518 /* [CP] Check Pods Manifest.lock */ = {
@@ -2216,6 +2243,7 @@
 				22F381AB2238D982005A0AD7 /* SearchCommerceTypeView.m in Sources */,
 				22F3813D22363C00005A0AD7 /* UILabel+TextSize.m in Sources */,
 				22F382062238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.m in Sources */,
+				B24B75322248CD6100C293B7 /* UIImage+YPExtension.m in Sources */,
 				22F381C12238DA94005A0AD7 /* MemberListCell.m in Sources */,
 				B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */,
 				22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */,
@@ -2304,6 +2332,7 @@
 				22F3817522375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				22F3814822363C00005A0AD7 /* UIBarButtonItem+Badge.m in Sources */,
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
+				B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
 				22F3812C22363C00005A0AD7 /* AlertView.m in Sources */,
 				B2290A1D224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m in Sources */,
@@ -2315,6 +2344,7 @@
 				22F3812022363C00005A0AD7 /* WXApiManager.m in Sources */,
 				22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */,
 				22F3813822363C00005A0AD7 /* UIImage+Custom.m in Sources */,
+				B24B752E2248C07000C293B7 /* NSString+TSAcademyType.m in Sources */,
 				22F3815022363C00005A0AD7 /* UINavigationController+Category.m in Sources */,
 				22F3819F2237C6E8005A0AD7 /* commerceDetailHeader.m in Sources */,
 				22F3814F22363C00005A0AD7 /* CatchCrash.m in Sources */,

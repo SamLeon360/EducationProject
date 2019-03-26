@@ -38,16 +38,18 @@
                 
                 if ([responseDic[@"code"] integerValue] == 1) {
                     
-//                    self.modelArr = [NSArray modelArrayWithClass:[InstitutionModel class] json:responseObject[@"data"]];
-                    
+                    self.modelArr = [InstitutionModel mj_objectArrayWithKeyValuesArray:responseDic[@"data"]];
+                    [subscriber sendNext:self.modelArr];
+                    [subscriber sendCompleted];
                     
                 }
             } failure:^(NSError *error) {
                 
+                [subscriber sendError:error];
+                
                 //[AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
             }];
             
-            [subscriber sendCompleted];
             
             return nil;
             

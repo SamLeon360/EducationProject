@@ -35,6 +35,7 @@
 //#import "YMAlertBottomView.h"
 //#import "HelpImageView.h"
 //Util
+#import "MJExtension.h"
 #import "SVProgressHUD.h"
 #import "TXConst.h"
 #import <YYModel.h>

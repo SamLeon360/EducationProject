@@ -8,16 +8,27 @@
 
 #import "InstitutionViewController.h"
 #import "InstitutionTableViewCell.h"
+#import "InstitutionViewModel.h"
 
 @interface InstitutionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
 @property (nonatomic, strong) UIViewController *controller;
 
+@property (nonatomic, strong) InstitutionViewModel *contentVM;
+
 @end
 
 @implementation InstitutionViewController
 
+- (InstitutionViewModel *)contentVM {
+    
+    if(!_contentVM){
+        _contentVM = [[InstitutionViewModel alloc]init];
+    }
+    return _contentVM;
+    
+}
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
@@ -52,11 +63,11 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 140;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.contentVM.modelArr.count;
 }
 
 
@@ -66,15 +77,31 @@
     if(!cell){
         cell = [[[NSBundle mainBundle] loadNibNamed:@"InstitutionTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-    
+    cell.model = self.contentVM.modelArr[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     return cell;
 }
 
 
 - (void)loadData {
     
-    
+    [self.contentVM loadDataArrFromNetwork];
     [self.tableView reloadData];
+    
+    RACSignal *recommendContentSignal = [self.contentVM.requestCommand execute:nil];
+    @weakify(self);
+    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
+        
+        @strongify(self);
+        
+        // 刷新tableView数据源
+        [self.tableView reloadData];
+        
+    } error:^(NSError *error) {
+        [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
+//        [_contentTableView.mj_header endRefreshing];
+    }];
 }
 
 
@@ -91,10 +118,10 @@
         
         [_tableView registerNib:[UINib nibWithNibName:@"InstitutionTableViewCell" bundle:nil] forCellReuseIdentifier:@"InstitutionTableViewCell"];
         
-        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];
+        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
         tableHeaderView.backgroundColor = [UIColor whiteColor];
         
-        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(182, 0, 0, 0);
+        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 44, 0);
         _tableView.tableHeaderView = tableHeaderView;
         
         
