@@ -21,11 +21,11 @@
 
 @implementation TSInstitutionDetailViewController
 
-
 - (TSInstitutionDetailViewModel *)detailVM {
     
     if(!_detailVM) {
         _detailVM = [[TSInstitutionDetailViewModel alloc] init];
+        _detailVM.academy_id = _academy_id;
     }
     return _detailVM;
 }
@@ -34,8 +34,6 @@
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self.view addSubview:self.tableView];
-        [self loadData];
     }
     return self;
 }
@@ -43,6 +41,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.tableView];
+
+    [self loadData];
+
     // Do any additional setup after loading the view.
 }
 
@@ -98,6 +100,9 @@
         
         @strongify(self);
         // 刷新tableView数据源
+        
+        
+        
         [self.tableView reloadData];
         
     } error:^(NSError *error) {
@@ -139,6 +144,14 @@
         _modelArray = [NSMutableArray array];
     }
     return _modelArray;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+//    [self removeObserver:self.tableView forKeyPath:@"contentOffset"];
+
 }
 
 /*

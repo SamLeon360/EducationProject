@@ -8,6 +8,10 @@
 
 #import "TSInstitutionDetailViewModel.h"
 
+
+#import "TSRequestTool.h"
+#import "TSProgressHUD.h"
+
 @implementation TSInstitutionDetailViewModel
 
 - (instancetype)initWithModel:(TSInstitutionDetailModel *)model {
@@ -24,30 +28,45 @@
     _requestCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             
-            NSString *url = @"academy/detail_academy";
             NSMutableDictionary *params = [NSMutableDictionary dictionary];
             
             params[@"academy_id"] = [NSNumber numberWithInteger:self.academy_id];
+        
+            NSString *url = [NSString stringWithFormat:@"%@%@",TX_HOST_URL,@"academy/detail_academy"];
             
-            [HTTPREQUEST_SINGLE postWithURLString:url parameters:params withHub:YES withCache:NO success:^(NSDictionary *responseDic) {
+            [TSRequestTool POST:url parameters:params headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
-                if ([responseDic[@"code"] integerValue] == 1) {
+                if ([responseObject[@"code"] integerValue] == 0) {
                     
-                    TSInstitutionDetailModel *model = [TSInstitutionDetailModel mj_objectWithKeyValues:responseDic[@"data"]];
+                    TSInstitutionDetailModel *model = [TSInstitutionDetailModel mj_objectWithKeyValues:responseObject[@"data"][0]];
                     
                     [subscriber sendNext:model];
+                    
+                    NSArray *mArr = @[@{@"academy_id":[NSNumber numberWithInteger:model.academy_id],@"address":model.address},
+                                      @{@"college_introduction":model.college_introduction},
+                                      @{@"cooperation":model.cooperation}];
+                    
+//                    NSArray *advance_subjectArr = [model.advance_subject componentsSeparatedByString: ];
+                    
+                    NSDictionary *advance_subjectDic = [self dictionaryWithJsonString:model.advance_subject];
+//                    TSTSInstitutionDetailAdvanceSubjectModel *dasModel = []
+                    
+                    
+                    self.modelArr = [TSInstitutionDetailModel mj_objectArrayWithKeyValuesArray:mArr];
+                    
+                    
                 } else {
                     
+                    [TSProgressHUD showError:responseObject[@"msg"]];
                     
                 }
-
+                
                 [subscriber sendCompleted];
+
                 
-            } failure:^(NSError *error) {
-                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [subscriber sendError:error];
                 [subscriber sendCompleted];
-
             }];
             
             
@@ -57,6 +76,23 @@
         return signal;
     }];
     
+}
+
+
+- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err) {
+        NSLog(@"json解析失败：%@",err);
+        return nil;
+    }
+    return dic;
 }
 
 @end

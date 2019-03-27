@@ -30,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)NSString *excellent_graduates;
 @property (nonatomic, strong)NSString *graphic_attachments;
 
+@property (nonatomic, strong)NSString *advance_subject;
+
+
 @property (nonatomic, assign)NSInteger academy_id;
 @property (nonatomic, assign)NSInteger member_id;
 @property (nonatomic, assign)NSInteger academy_type;

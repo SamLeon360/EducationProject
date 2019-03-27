@@ -187,6 +187,11 @@
 		B24B75342248CDF600C293B7 /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = B24B75332248CDF600C293B7 /* school.png */; };
 		B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B75362248D66200C293B7 /* UIImage+Util.m */; };
 		B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B753F224A163B00C293B7 /* TSMainNavigationController.m */; };
+		B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89989224B12C800F759D8 /* TSInternshipViewController.m */; };
+		B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */; };
+		B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998D224B5B0D00F759D8 /* TSNetManager.m */; };
+		B2C89994224B5D5F00F759D8 /* TSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89993224B5D5E00F759D8 /* TSProgressHUD.m */; };
+		B2C8999A224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89999224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -554,6 +559,16 @@
 		B24B75362248D66200C293B7 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		B24B753E224A163B00C293B7 /* TSMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainNavigationController.h; sourceTree = "<group>"; };
 		B24B753F224A163B00C293B7 /* TSMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainNavigationController.m; sourceTree = "<group>"; };
+		B2C89988224B12C800F759D8 /* TSInternshipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipViewController.h; sourceTree = "<group>"; };
+		B2C89989224B12C800F759D8 /* TSInternshipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipViewController.m; sourceTree = "<group>"; };
+		B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequestTool.m; sourceTree = "<group>"; };
+		B2C8998D224B5B0D00F759D8 /* TSNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNetManager.m; sourceTree = "<group>"; };
+		B2C8998E224B5B0D00F759D8 /* TSRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRequestTool.h; sourceTree = "<group>"; };
+		B2C8998F224B5B0D00F759D8 /* TSNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNetManager.h; sourceTree = "<group>"; };
+		B2C89992224B5D5E00F759D8 /* TSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProgressHUD.h; sourceTree = "<group>"; };
+		B2C89993224B5D5E00F759D8 /* TSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProgressHUD.m; sourceTree = "<group>"; };
+		B2C89998224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTSInstitutionDetailAdvanceSubjectModel.h; sourceTree = "<group>"; };
+		B2C89999224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTSInstitutionDetailAdvanceSubjectModel.m; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1543,6 +1558,7 @@
 		B215472B223BF16F000AD9D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B2C8998B224B5B0D00F759D8 /* Tool */,
 				B24B752F2248CD6100C293B7 /* Category */,
 				B2290A802245CEEF009D91AC /* Icon */,
 				B2290A7822433AC0009D91AC /* Extension */,
@@ -1575,12 +1591,13 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				B215472F223BF2FD000AD9D8 /* Institution */,
+				B2C89983224B11F500F759D8 /* Internship(实习就业) */,
+				B215472F223BF2FD000AD9D8 /* Institution(院校) */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
 		};
-		B215472F223BF2FD000AD9D8 /* Institution */ = {
+		B215472F223BF2FD000AD9D8 /* Institution(院校) */ = {
 			isa = PBXGroup;
 			children = (
 				B22909BD223D3DC0009D91AC /* Src */,
@@ -1589,7 +1606,7 @@
 				B2154732223BF2FD000AD9D8 /* Model */,
 				B2154733223BF2FD000AD9D8 /* View */,
 			);
-			path = Institution;
+			path = "Institution(院校)";
 			sourceTree = "<group>";
 		};
 		B2154730223BF2FD000AD9D8 /* ViewModel */ = {
@@ -1818,6 +1835,8 @@
 			children = (
 				B22909EC224136B9009D91AC /* TSInstitutionDetailModel.h */,
 				B22909ED224136B9009D91AC /* TSInstitutionDetailModel.m */,
+				B2C89998224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.h */,
+				B2C89999224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1932,6 +1951,60 @@
 				B24B75362248D66200C293B7 /* UIImage+Util.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B2C89983224B11F500F759D8 /* Internship(实习就业) */ = {
+			isa = PBXGroup;
+			children = (
+				B2C89987224B126200F759D8 /* Controller */,
+				B2C89984224B126200F759D8 /* Model */,
+				B2C89986224B126200F759D8 /* View */,
+				B2C89985224B126200F759D8 /* ViewModel */,
+			);
+			path = "Internship(实习就业)";
+			sourceTree = "<group>";
+		};
+		B2C89984224B126200F759D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2C89985224B126200F759D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2C89986224B126200F759D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2C89987224B126200F759D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2C89988224B12C800F759D8 /* TSInternshipViewController.h */,
+				B2C89989224B12C800F759D8 /* TSInternshipViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2C8998B224B5B0D00F759D8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B2C89992224B5D5E00F759D8 /* TSProgressHUD.h */,
+				B2C89993224B5D5E00F759D8 /* TSProgressHUD.m */,
+				B2C8998F224B5B0D00F759D8 /* TSNetManager.h */,
+				B2C8998D224B5B0D00F759D8 /* TSNetManager.m */,
+				B2C8998E224B5B0D00F759D8 /* TSRequestTool.h */,
+				B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
@@ -2233,6 +2306,7 @@
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
 				22F3812422363C00005A0AD7 /* WebViewJavascriptBridge.m in Sources */,
+				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
@@ -2250,6 +2324,7 @@
 				22F382062238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.m in Sources */,
 				B24B75322248CD6100C293B7 /* UIImage+YPExtension.m in Sources */,
 				22F381C12238DA94005A0AD7 /* MemberListCell.m in Sources */,
+				B2C89994224B5D5F00F759D8 /* TSProgressHUD.m in Sources */,
 				B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */,
 				22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */,
 				22F382162238DB88005A0AD7 /* EditUserDataController.m in Sources */,
@@ -2259,6 +2334,7 @@
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
+				B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */,
 				22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */,
 				22F382262238DC64005A0AD7 /* EditCompanyMessageController.m in Sources */,
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
@@ -2287,6 +2363,7 @@
 				22F3812A22363C00005A0AD7 /* NewEditAlertView.m in Sources */,
 				B22909CE223D3EDB009D91AC /* TSINSTMsgModel.m in Sources */,
 				22F3812122363C00005A0AD7 /* YKNavigationController.m in Sources */,
+				B2C8999A224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m in Sources */,
 				22F3820C2238DB88005A0AD7 /* YKEditTreeCameraPhotoView.m in Sources */,
 				22F3817D22378B57005A0AD7 /* HomeHeaderView.m in Sources */,
 				22F382092238DB88005A0AD7 /* SHEditCommidityCameraController.m in Sources */,
@@ -2309,6 +2386,7 @@
 				22F3820D2238DB88005A0AD7 /* ChangePwdController.m in Sources */,
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
+				B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
 				B2290A16224137B4009D91AC /* TSInstitutionTeacherViewController.m in Sources */,
 				22F3820A2238DB88005A0AD7 /* MemberHeaderSection.m in Sources */,

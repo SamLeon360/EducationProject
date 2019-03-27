@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TSInstitutionDetailModel.h"
+#import "TSTSInstitutionDetailAdvanceSubjectModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSInstitutionDetailViewModel : NSObject
@@ -15,8 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)NSInteger academy_id;
 @property (nonatomic, strong)TSInstitutionDetailModel *model;
+@property (nonatomic, strong)NSArray *modelArr;
 
 - (instancetype)initWithModel:(TSInstitutionDetailModel *)model;
+
+
 
 /** 请求命令 */
 @property (nonatomic, strong, readonly) RACCommand *requestCommand;

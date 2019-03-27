@@ -32,10 +32,10 @@
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
     homeVC.title = @"产教融";
     
-    TSINSTMsgViewController *tmpVC1 = [[TSINSTMsgViewController alloc]init];
+    InstitutionViewController *tmpVC1 = [[InstitutionViewController alloc]init];
     tmpVC1.title = @"咨询";
     
-    InstitutionViewController *tmpVC2 = [[InstitutionViewController alloc]init];
+    UIViewController *tmpVC2 = [[UIViewController alloc]init];
     tmpVC2.title = @"聊天";
     
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];

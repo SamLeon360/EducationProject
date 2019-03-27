@@ -47,8 +47,6 @@
     itemDisabledAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
     [item setTitleTextAttributes:itemDisabledAttrs forState:UIControlStateDisabled];
     
-    
-    
 
 }
 /*

@@ -62,17 +62,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        self.automaticallyAdjustsScrollViewInsets = NO;
-        
-        self.titleButtons = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
-        self.controlleres = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
-        self.tableViews = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
-        
-        [self.view addSubview:self.bottomScrollView];
-        self.jqHeaderView.tableViews = [NSMutableArray arrayWithArray:self.tableViews];
-        
-        [self.view addSubview:self.cycleScrollView];
-        [self.view addSubview:self.segmentScrollView];
+
         //[self.view addSubview:self.jqHeaderView];
         
     }
@@ -82,6 +72,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.titleButtons = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
+    self.controlleres = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
+    self.tableViews = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
+    
+    [self.view addSubview:self.bottomScrollView];
+    self.jqHeaderView.tableViews = [NSMutableArray arrayWithArray:self.tableViews];
+    
+    [self.view addSubview:self.cycleScrollView];
+    [self.view addSubview:self.segmentScrollView];
+    
     self.automaticallyAdjustsScrollViewInsets = YES;
     
     // Do any additional setup after loading the view.
@@ -89,16 +92,16 @@
 
 
 #pragma observe
-
-
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
-    
+    if([object isEqual:[NSNull null]]) {
+        
+        return;
+    }
     
     UITableView *tableView = (UITableView *)object;
     
-    
-    if (!(self.currentTableView == tableView)) {
+    if (!(self.currentTableView == tableView) ) {
         return;
     }
     
@@ -189,9 +192,9 @@
 }
 
 
-#pragma  mark - 选项卡点击事件
+#pragma  - mark 选项卡点击事件
 
--(void)changeSelectedItem:(UIButton *)currentButton{
+-(void)changeSelectedItem:(UIButton *)currentButton {
     
     //     for (UIButton *button in self.titleButtons) {
     //         button.selected = NO;
@@ -254,9 +257,6 @@
         _bottomScrollView.pagingEnabled = YES;
         
         
-        NSArray *colors = @[[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor],[UIColor purpleColor],[UIColor orangeColor],[UIColor whiteColor],[UIColor redColor],[UIColor blueColor],[UIColor grayColor],[UIColor greenColor]];
-        
-        
             TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
         
             detailViewController.academy_id = self.academy_id;
@@ -276,7 +276,6 @@
             
             [self.controlleres addObject:teacherViewController];
             [self.tableViews addObject:teacherViewController.tableView];
-        
         
             TSInstitutionStudentViewController *studentViewController = [[TSInstitutionStudentViewController alloc] init];
             studentViewController.view.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -303,17 +302,25 @@
             
             
             
-            NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-            [detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-            [teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-            [studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+//            [detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            [teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            [studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//
         
+//        [detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
         
         self.currentTableView = self.tableViews[0];
         self.bottomScrollView.contentSize = CGSizeMake(self.controlleres.count * SCREEN_WIDTH, 0);
         
     }
     return _bottomScrollView;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
 }
 
 

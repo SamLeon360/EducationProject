@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)NSInteger academy_id;
 @property (nonatomic, assign)NSInteger member_id;
 
+
 @end
 
 NS_ASSUME_NONNULL_END

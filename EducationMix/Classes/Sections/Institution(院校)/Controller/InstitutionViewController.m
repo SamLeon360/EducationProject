@@ -9,8 +9,11 @@
 #import "InstitutionViewController.h"
 #import "InstitutionTableViewCell.h"
 #import "InstitutionViewModel.h"
+#import "InstitutionModel.h"
 
 #import "TSINSTMsgViewController.h"
+
+#import "TSInternshipViewController.h"
 
 @interface InstitutionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -57,10 +60,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.contentVM.model = _contentVM.modelArr[indexPath.row];
+    InstitutionModel *model = self.contentVM.modelArr[indexPath.row];
+    
     if(![self.contentVM.model isEqual:[NSNull null]]) {
         TSINSTMsgViewController *viewControlle = [[TSINSTMsgViewController alloc]init];
-        viewControlle.academy_id =_contentVM.model.academy_id;
+        viewControlle.academy_id = model.academy_id;
         
         [self.navigationController pushViewController:viewControlle animated:YES];
     }
