@@ -107,7 +107,6 @@
 - (void)loadData {
     
     [self.contentVM loadDataArrFromNetwork];
-    [self.tableView reloadData];
     
     RACSignal *recommendContentSignal = [self.contentVM.requestCommand execute:nil];
     @weakify(self);

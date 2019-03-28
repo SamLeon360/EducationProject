@@ -40,28 +40,33 @@
                     
                     TSInstitutionDetailModel *model = [TSInstitutionDetailModel mj_objectWithKeyValues:responseObject[@"data"][0]];
                     
-                    [subscriber sendNext:model];
                     
-                    NSArray *mArr = @[@{@"academy_id":[NSNumber numberWithInteger:model.academy_id],@"address":model.address},
-                                      @{@"college_introduction":model.college_introduction},
-                                      @{@"cooperation":model.cooperation}];
+                    NSArray *mArr = @[@{@"academy_type":[NSNumber numberWithInteger:model.academy_type],@"address":model.address},
+                                      @{@"content":model.college_introduction},
+                                      @{@"content":model.cooperation}];
                     
 //                    NSArray *advance_subjectArr = [model.advance_subject componentsSeparatedByString: ];
                     
-                    NSDictionary *advance_subjectDic = [self dictionaryWithJsonString:model.advance_subject];
-//                    TSTSInstitutionDetailAdvanceSubjectModel *dasModel = []
-                    
-                    
+
                     self.modelArr = [TSInstitutionDetailModel mj_objectArrayWithKeyValuesArray:mArr];
+
+                    NSDictionary *advance_subjectDic = [self dictionaryWithJsonString:model.advance_subject];
                     
+                    NSArray *asArr = [TSTSInstitutionDetailAdvanceSubjectModel mj_objectArrayWithKeyValuesArray:advance_subjectDic];
                     
+                    for (TSTSInstitutionDetailAdvanceSubjectModel *obj in asArr) {
+                        [self.modelArr addObject: obj];
+                    }
+                    
+                    [subscriber sendNext:self.modelArr];
+
                 } else {
                     
                     [TSProgressHUD showError:responseObject[@"msg"]];
                     
                 }
-                
                 [subscriber sendCompleted];
+
 
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -76,6 +81,14 @@
         return signal;
     }];
     
+}
+
+- (NSMutableArray *)modelArr {
+    
+    if(!_modelArr) {
+        _modelArr = [[NSMutableArray alloc] init];
+    }
+    return _modelArr;
 }
 
 

@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TSInstitutionDetailModel.h"
+#import "TSTSInstitutionDetailAdvanceSubjectModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSInstitutionDetailTableViewCell : UITableViewCell
+
+@property (nonatomic, strong)TSInstitutionDetailModel *model;
+@property (nonatomic, strong)TSTSInstitutionDetailAdvanceSubjectModel *asModel;
+
+
 
 
 @end

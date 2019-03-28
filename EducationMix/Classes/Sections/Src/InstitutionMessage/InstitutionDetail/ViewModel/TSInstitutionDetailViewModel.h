@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)NSInteger academy_id;
 @property (nonatomic, strong)TSInstitutionDetailModel *model;
-@property (nonatomic, strong)NSArray *modelArr;
+@property (nonatomic, strong)NSMutableArray *modelArr;
 
 - (instancetype)initWithModel:(TSInstitutionDetailModel *)model;
 

@@ -58,34 +58,47 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 100;
+    if (indexPath.row == 0) {
+        return 80;
+        
+    } else if (indexPath.row == 1 || indexPath.row == 2) {
+        
+        return 100;
+    } else if (indexPath.row > 2) {
+        return 44;
+    }
+    return 44;
+    
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+- (NSInteger)tableView:(UITableView *)tableVie numberOfRowsInSection:(NSInteger)section {
+    
+    return self.detailVM.modelArr.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    TSInstitutionDetailTableViewCell *cell = nil;
+
     NSString *identifier = @"";
-    if (indexPath.row > 2) {
-        identifier = @"TSInstitutionDetailTableViewCellSecond";
-    } else {
-        
+    if (indexPath.row == 0) {
         identifier = @"TSInstitutionDetailTableViewCellFirst";
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:0];
+        cell.model = self.detailVM.modelArr[indexPath.row];
+        
+    } else if (indexPath.row == 1 || indexPath.row == 2) {
+        
+        identifier = @"TSInstitutionDetailTableViewCellSecond";
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:1];
+        cell.model = self.detailVM.modelArr[indexPath.row];
+
+    } else if (indexPath.row > 2) {
+        identifier = @"TSInstitutionDetailTableViewCellFirstThree";
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:2];
+        cell.asModel = self.detailVM.modelArr[indexPath.row];
 
     }
-//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"uitablviewcell"];
-    
-        TSInstitutionDetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if(!cell){
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:indexPath.row < 1 ? 0:1 ];
-    }
-    
-    
-    
-
     return cell;
 }
 
@@ -100,8 +113,6 @@
         
         @strongify(self);
         // 刷新tableView数据源
-        
-        
         
         [self.tableView reloadData];
         

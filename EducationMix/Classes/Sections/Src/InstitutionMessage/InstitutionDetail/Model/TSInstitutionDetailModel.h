@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)NSString *establishment_date;
 @property (nonatomic, strong)NSString *college_introduction;
 
+@property (nonatomic, strong)NSString *content;
+
 @property (nonatomic, strong)NSString *address;
 @property (nonatomic, strong)NSString *website;
 @property (nonatomic, strong)NSString *cooperation;
