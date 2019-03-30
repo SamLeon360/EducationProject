@@ -151,6 +151,8 @@
 		B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B215473B223BF33C000AD9D8 /* InstitutionModel.m */; };
 		B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B215473E223BF3DC000AD9D8 /* InstitutionTableViewCell.m */; };
 		B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B215473F223BF3DC000AD9D8 /* InstitutionTableViewCell.xib */; };
+		B21DD94B224DF07600699355 /* NSString+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B21DD94A224DF07600699355 /* NSString+TSExtension.m */; };
+		B21DD951224DFDA800699355 /* NSDate+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B21DD950224DFDA800699355 /* NSDate+TSExtension.m */; };
 		B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909C7223D3EB0009D91AC /* TSINSTMsgViewModel.m */; };
 		B22909CB223D3EC2009D91AC /* TSINSTMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909CA223D3EC2009D91AC /* TSINSTMsgViewController.m */; };
 		B22909CE223D3EDB009D91AC /* TSINSTMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909CD223D3EDB009D91AC /* TSINSTMsgModel.m */; };
@@ -494,6 +496,10 @@
 		B215473D223BF3DC000AD9D8 /* InstitutionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstitutionTableViewCell.h; sourceTree = "<group>"; };
 		B215473E223BF3DC000AD9D8 /* InstitutionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstitutionTableViewCell.m; sourceTree = "<group>"; };
 		B215473F223BF3DC000AD9D8 /* InstitutionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutionTableViewCell.xib; sourceTree = "<group>"; };
+		B21DD949224DF07600699355 /* NSString+TSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TSExtension.h"; sourceTree = "<group>"; };
+		B21DD94A224DF07600699355 /* NSString+TSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TSExtension.m"; sourceTree = "<group>"; };
+		B21DD94F224DFDA800699355 /* NSDate+TSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TSExtension.h"; sourceTree = "<group>"; };
+		B21DD950224DFDA800699355 /* NSDate+TSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TSExtension.m"; sourceTree = "<group>"; };
 		B22909C6223D3EB0009D91AC /* TSINSTMsgViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSINSTMsgViewModel.h; sourceTree = "<group>"; };
 		B22909C7223D3EB0009D91AC /* TSINSTMsgViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSINSTMsgViewModel.m; sourceTree = "<group>"; };
 		B22909C9223D3EC2009D91AC /* TSINSTMsgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSINSTMsgViewController.h; sourceTree = "<group>"; };
@@ -1949,6 +1955,10 @@
 				B24B75312248CD6100C293B7 /* UIImage+YPExtension.h */,
 				B24B75352248D66200C293B7 /* UIImage+Util.h */,
 				B24B75362248D66200C293B7 /* UIImage+Util.m */,
+				B21DD949224DF07600699355 /* NSString+TSExtension.h */,
+				B21DD94A224DF07600699355 /* NSString+TSExtension.m */,
+				B21DD94F224DFDA800699355 /* NSDate+TSExtension.h */,
+				B21DD950224DFDA800699355 /* NSDate+TSExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2388,6 +2398,7 @@
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
 				B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
+				B21DD951224DFDA800699355 /* NSDate+TSExtension.m in Sources */,
 				B2290A16224137B4009D91AC /* TSInstitutionTeacherViewController.m in Sources */,
 				22F3820A2238DB88005A0AD7 /* MemberHeaderSection.m in Sources */,
 				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
@@ -2408,6 +2419,7 @@
 				22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */,
 				22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */,
 				B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */,
+				B21DD94B224DF07600699355 /* NSString+TSExtension.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,
 				B2290A0122413727009D91AC /* TSInstitutionMsgBoardModel.m in Sources */,
 				22F381C02238DA94005A0AD7 /* MemberListController.m in Sources */,

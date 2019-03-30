@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSInstitutionTeacherModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSInstitutionTeacherTableViewCell : UITableViewCell
+
+@property (nonatomic, strong)TSInstitutionTeacherModel *model;
+
+
 
 @end
 

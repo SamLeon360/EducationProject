@@ -47,7 +47,7 @@
                     
 //                    NSArray *advance_subjectArr = [model.advance_subject componentsSeparatedByString: ];
                     
-
+                    
                     self.modelArr = [TSInstitutionDetailModel mj_objectArrayWithKeyValuesArray:mArr];
 
                     NSDictionary *advance_subjectDic = [self dictionaryWithJsonString:model.advance_subject];

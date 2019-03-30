@@ -17,7 +17,6 @@
 @property (nonatomic, strong)IBOutlet UILabel *professionalDirection;
 @property (nonatomic, strong)IBOutlet UILabel *professionalField;
 
-
 @end
 
 @implementation TSInstitutionTeacherTableViewCell
@@ -36,6 +35,12 @@
 //    self.imageView.layer.mask = maskLayer;
 
     // Initialization code
+}
+
+- (void)setModel:(TSInstitutionTeacherModel *)model {
+    
+    
+    
 }
 
 - (void)setFrame:(CGRect)frame{

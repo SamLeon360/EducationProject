@@ -58,6 +58,11 @@
 #import "UIColor+RGBHex.h"
 #import <ShareSDK/ShareSDK.h>
 
+//Thomas Coder
+#import "TSRequestTool.h"
+#import "TSProgressHUD.h"
+#import "NSString+TSExtension.h"
+#import "NSDate+TSExtension.h"
 //Managers
 #import "RequestManager.h"
 //#import "LocationManager.h"

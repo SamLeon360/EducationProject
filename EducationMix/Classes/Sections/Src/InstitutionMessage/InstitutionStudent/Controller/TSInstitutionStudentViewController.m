@@ -9,14 +9,27 @@
 #import "TSInstitutionStudentViewController.h"
 #import "TSInstitutionStudentTableViewCell.h"
 
+#import "TSInstitutionStudentViewModel.h"
+
 @interface TSInstitutionStudentViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
 @property (nonatomic, strong) UIViewController *controller;
 
+@property (nonatomic, strong) TSInstitutionStudentViewModel *studentVM;
+
 @end
 
 @implementation TSInstitutionStudentViewController
+
+
+- (TSInstitutionStudentViewModel *)studentVM {
+    if(!_studentVM) {
+        _studentVM = [[TSInstitutionStudentViewModel alloc] init];
+    }
+    return _studentVM;
+    
+}
 
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -24,7 +37,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self.view addSubview:self.tableView];
-        [self loadData];
     }
     return self;
 }
@@ -32,6 +44,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadData];
+
     // Do any additional setup after loading the view.
 }
 
@@ -56,7 +70,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.studentVM.modelArr.count;
 }
 
 
@@ -66,15 +80,30 @@
     if(!cell){
         cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionStudentTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-    
+    cell.model = self.studentVM.modelArr[indexPath.row];
+
     return cell;
 }
 
 
 - (void)loadData {
     
+    [self.studentVM loadDataArrFromNetwork];
     
-    [self.tableView reloadData];
+    RACSignal *recommendContentSignal = [self.studentVM.requestCommand execute:nil];
+    
+    @weakify(self);
+    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
+        
+        @strongify(self);
+        [self.tableView reloadData];
+        
+        
+    } error:^(NSError *error) {
+        [TSProgressHUD showError:error.description];
+        
+    }];
+    
 }
 
 

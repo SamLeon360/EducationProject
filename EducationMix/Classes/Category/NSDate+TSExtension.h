@@ -1,8 +1,8 @@
 //
-//  TSINSTMsgViewModel.h
+//  NSDate+TSExtension.h
 //  EducationMix
 //
-//  Created by Taosky on 2019/3/16.
+//  Created by Taosky on 2019/3/29.
 //  Copyright © 2019 iTaosky. All rights reserved.
 //
 
@@ -10,10 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSINSTMsgViewModel : NSObject
+@interface NSDate (TSExtension)
 
-
-
++ (NSInteger)getDateTimeIntervalWithStartDate:(id)startDate;
 
 @end
 

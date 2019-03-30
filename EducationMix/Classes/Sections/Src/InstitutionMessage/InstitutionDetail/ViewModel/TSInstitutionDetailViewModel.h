@@ -21,8 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithModel:(TSInstitutionDetailModel *)model;
 
-
-
 /** 请求命令 */
 @property (nonatomic, strong, readonly) RACCommand *requestCommand;
 
