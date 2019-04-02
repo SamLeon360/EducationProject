@@ -23,13 +23,6 @@
 @implementation TSInstitutionStudentViewController
 
 
-- (TSInstitutionStudentViewModel *)studentVM {
-    if(!_studentVM) {
-        _studentVM = [[TSInstitutionStudentViewModel alloc] init];
-    }
-    return _studentVM;
-    
-}
 
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -48,9 +41,6 @@
 
     // Do any additional setup after loading the view.
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -106,8 +96,7 @@
     
 }
 
-
-
+#pragma mark - lazy
 - (UITableView *)tableView {
     if (!_tableView) {
         
@@ -118,7 +107,7 @@
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
         
-        [_tableView registerNib:[UINib nibWithNibName:@"TSInstitutionStudentTableViewCell" bundle:nil] forCellReuseIdentifier:@"TSInstitutionStudentTableViewCell"];
+//        [_tableView registerNib:[UINib nibWithNibName:@"TSInstitutionStudentTableViewCell" bundle:nil] forCellReuseIdentifier:@"TSInstitutionStudentTableViewCell"];
         
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];
         tableHeaderView.backgroundColor = [UIColor whiteColor];
@@ -131,6 +120,15 @@
     }
     return _tableView;
 }
+
+- (TSInstitutionStudentViewModel *)studentVM {
+    if(!_studentVM) {
+        _studentVM = [[TSInstitutionStudentViewModel alloc] init];
+    }
+    return _studentVM;
+    
+}
+
 
 - (NSMutableArray *)modelArray {
     if (!_modelArray) {

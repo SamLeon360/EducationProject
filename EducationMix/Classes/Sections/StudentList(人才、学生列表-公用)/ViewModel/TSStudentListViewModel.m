@@ -1,50 +1,51 @@
 //
-//  TSInstitutionTeacherViewModel.m
+//  TSStudentListViewModel.m
 //  EducationMix
 //
-//  Created by Taosky on 2019/3/19.
+//  Created by Taosky on 2019/4/1.
 //  Copyright © 2019 iTaosky. All rights reserved.
 //
 
-#import "TSInstitutionTeacherViewModel.h"
+#import "TSStudentListViewModel.h"
 
-@implementation TSInstitutionTeacherViewModel
+@implementation TSStudentListViewModel
 
-- (instancetype)initWithModel:(TSInstitutionTeacherModel *)model {
+
+- (instancetype)initWithModel:(TSStudentListModel *)model {
     
-    if(!self){
+    if(!self) {
         self = [super init];
         _model = model;
     }
     return self;
+    
 }
 
--(void)loadDataArrFromNetwork {
+- (void)loadDataArrFromNetwork {
+    
     
     _requestCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         
         RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             
-            NSString *url = [NSString stringWithFormat:@"%@%@",TX_HOST_URL,@"common/list_common_expert"];
+            NSString *url = [NSString stringWithFormat:@"%@%@",TX_HOST_URL,@"student/list_student"];
             
             NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
             params[@"page"] = @1;
-            params[@"expert_type"] = @"";
-            params[@"academic_title"] = @"";
-            params[@"industrial_field"] = @"";
-            params[@"academy_type"] = @"";
+            params[@"education"] = @"";
+            params[@"sex"] = @"";
             params[@"affiliated_area"] = @"";
-            params[@"expert_name"] = @"";
+            params[@"major"] = @"";
+            params[@"student_name"] = @"";
+            params[@"graduation_time"] = @"";
             
-        
-//{"page":1,"expert_type":"","academic_title":"","industrial_field":"","academy_type":"","affiliated_area":"","expert_name":""}
-            
+            //            {"page":1,"education":"","sex":"","affiliated_area":"","major":"","student_name":"","graduation_time":""}
             
             [TSRequestTool POST:url parameters:params headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
                 if ([responseObject[@"code"] integerValue] == 1) {
                     
-                    self.modelArr = [TSInstitutionTeacherModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
+                    self.modelArr = [TSStudentListModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
                     [subscriber sendNext:self.modelArr];
                     
                 } else {
@@ -65,12 +66,12 @@
             
             
             return nil;
+            
         }];
+        
         
         return signal;
     }];
-    
-    
     
     
 }

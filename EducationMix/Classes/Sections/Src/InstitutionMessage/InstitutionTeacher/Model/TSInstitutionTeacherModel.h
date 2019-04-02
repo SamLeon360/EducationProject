@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)NSString *industrial_field;
 @property (nonatomic, strong)NSString *academy_name;
 @property (nonatomic, strong)NSString *major_field;
-@property (nonatomic, assign)NSString *photo;
+@property (nonatomic, strong)NSString *photo;
 
 @property (nonatomic, assign)NSInteger expert_id;
 @property (nonatomic, assign)NSInteger member_id;

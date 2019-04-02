@@ -12,7 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (TSExtension)
 
+//因接口缺陷，需要在本地映射基础资料（性别）-----大坑
 + (NSString *)getSexWithSexData:(NSString *)sex;
+
+//因接口缺陷，需要在本地映射基础资料（专业领域）
++ (NSString *)getProfessionalField:(NSInteger)professionalFieldId;
 
 @end
 

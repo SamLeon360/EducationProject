@@ -1,52 +1,58 @@
 //
-//  TSInstitutionTeacherViewController.m
+//  TSStudentListViewController.m
 //  EducationMix
 //
-//  Created by Taosky on 2019/3/19.
+//  Created by Taosky on 2019/4/1.
 //  Copyright © 2019 iTaosky. All rights reserved.
 //
 
-#import "TSInstitutionTeacherViewController.h"
-#import "TSINstitutionTeacherTableViewCell.h"
-#import "TSInstitutionTeacherViewModel.h"
+#import "TSStudentListViewController.h"
+#import "TSStudentListTableViewCell.h"
+#import "TSStudentListViewModel.h"
 
-@interface TSInstitutionTeacherViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface TSStudentListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
 @property (nonatomic, strong) UIViewController *controller;
 
-@property (nonatomic, strong) TSInstitutionTeacherViewModel *teacherVM;
+@property (nonatomic, strong) TSStudentListViewModel *studentVM;
+
+@property (nonatomic, strong) UITableView *tableView;
+
 
 @end
 
-@implementation TSInstitutionTeacherViewController
+@implementation TSStudentListViewController
 
-
+// 非storyBoard(xib或非xib)都走这个方法
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self.view addSubview:self.tableView];
-        [self loadData];
+        
     }
     return self;
 }
 
-- (TSInstitutionTeacherViewModel *)teacherVM {
- 
-    if(!_teacherVM) {
-        
-        _teacherVM = [[TSInstitutionTeacherViewModel alloc] init];
+// 如果连接了串联图storyBoard 走这个方法
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+
     }
-    return  _teacherVM;
+    return self;
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self.view addSubview:self.tableView];
+    
+    [self loadData];
+    
     // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -66,36 +72,37 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.teacherVM.modelArr count];
+    return self.studentVM.modelArr.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    TSInstitutionTeacherTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TSInstitutionTeacherTableViewCell"];
+    
+    TSStudentListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TSStudentListTableViewCell"];
     if(!cell){
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionTeacherTableViewCell" owner:self options:nil] objectAtIndex:0];
-
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSStudentListTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-    cell.model = self.teacherVM.modelArr[indexPath.row];
-
+    cell.model = self.studentVM.modelArr[indexPath.row];
+    
     return cell;
 }
 
 
 - (void)loadData {
     
-    [self.teacherVM loadDataArrFromNetwork];
+    [self.studentVM loadDataArrFromNetwork];
     
-    RACSignal *recommendContentSignal = [self.teacherVM.requestCommand execute:nil];
+    RACSignal *recommendContentSignal = [self.studentVM.requestCommand execute:nil];
     
     @weakify(self);
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
-        @strongify(self);
         
+        @strongify(self);
         [self.tableView reloadData];
         
+        
     } error:^(NSError *error) {
+        [TSProgressHUD showError:error.description];
         
     }];
     
@@ -103,31 +110,39 @@
     
 }
 
-
-
+#pragma mark - lazy
 - (UITableView *)tableView {
     if (!_tableView) {
         
-        _tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
-
-//        [_tableView registerNib:[UINib nibWithNibName:@"TSInstitutionTeacherTableViewCell" bundle:nil] forCellReuseIdentifier:@"TSInstitutionTeacherTableViewCell"];
         
-        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];
-        tableHeaderView.backgroundColor = [UIColor whiteColor];
+        //        [_tableView registerNib:[UINib nibWithNibName:@"TSInstitutionStudentTableViewCell" bundle:nil] forCellReuseIdentifier:@"TSInstitutionStudentTableViewCell"];
         
-        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(182, 0, 0, 0);
-        _tableView.tableHeaderView = tableHeaderView;
+//        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, 242)];
+//        tableHeaderView.backgroundColor = [UIColor whiteColor];
+        
+        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+//        _tableView.tableHeaderView = tableHeaderView;
         
         
         
     }
     return _tableView;
 }
+
+- (TSStudentListViewModel *)studentVM {
+    if(!_studentVM) {
+        _studentVM = [[TSStudentListViewModel alloc] init];
+    }
+    return _studentVM;
+    
+}
+
 
 - (NSMutableArray *)modelArray {
     if (!_modelArray) {
@@ -136,8 +151,6 @@
     }
     return _modelArray;
 }
-
-
 
 /*
 #pragma mark - Navigation

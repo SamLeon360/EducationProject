@@ -39,8 +39,18 @@
 
 - (void)setModel:(TSInstitutionTeacherModel *)model {
     
+    _name.text = model.expert_name;
+    _type.text = model.major_field;
     
+    _professionalField.text = [NSString getProfessionalField:[model.industrial_field integerValue]];
+    _professionalDirection.text = model.major_field;
     
+    if (model.photo) {
+        NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.photo];
+        
+        [_teacherImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+    }
+//    _professionalField.text = model.major_field
 }
 
 - (void)setFrame:(CGRect)frame{
