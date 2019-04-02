@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSStudentDetailModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSStudentDetailView : UIView
+
+@property (nonatomic, strong)TSStudentDetailModel *model;
 
 @end
 

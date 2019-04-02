@@ -2,4 +2,86 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/View/TSStudentDetailView.m"
+            timestampString = "575898900.638114"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-setModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/Controller/TSStudentDetailViewController.m"
+            timestampString = "575898900.638194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-loadData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/Controller/TSStudentDetailViewController.m"
+            timestampString = "575898924.919475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-loadData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/Controller/TSStudentDetailViewController.m"
+            timestampString = "575898925.787951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-loadData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/ViewModel/TSStudentDetailViewModel.m"
+            timestampString = "575898965.4144681"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-loadDataArrFromNetwork"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

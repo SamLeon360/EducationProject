@@ -10,6 +10,8 @@
 #import "TSStudentListTableViewCell.h"
 #import "TSStudentListViewModel.h"
 
+#import "TSStudentDetailViewController.h"
+
 @interface TSStudentListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
@@ -59,6 +61,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - TableViewDelegate
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
+    TSStudentListModel *model = self.studentVM.modelArr[indexPath.row];
+    vc.student_id = model.student_id;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {

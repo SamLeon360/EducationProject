@@ -199,11 +199,13 @@
 		B24B75342248CDF600C293B7 /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = B24B75332248CDF600C293B7 /* school.png */; };
 		B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B75362248D66200C293B7 /* UIImage+Util.m */; };
 		B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B753F224A163B00C293B7 /* TSMainNavigationController.m */; };
-		B2B4EF222252F8F0002267D8 /* TSStudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF212252F8F0002267D8 /* TSStudentDetailViewController.m */; };
 		B2B4EF252252F8FD002267D8 /* TSStudentDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */; };
 		B2B4EF282252F90F002267D8 /* TSStudentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF272252F90F002267D8 /* TSStudentDetailView.m */; };
 		B2B4EF2B2252F926002267D8 /* TSStudentDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF2A2252F926002267D8 /* TSStudentDetailViewModel.m */; };
 		B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B4EF2C2252FA9A002267D8 /* StudentList.storyboard */; };
+		B2B4EF31225306DB002267D8 /* TSStudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF2F225306DB002267D8 /* TSStudentDetailViewController.m */; };
+		B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B4EF30225306DB002267D8 /* TSStudentDetailViewController.xib */; };
+		B2B4EF342253420C002267D8 /* TSStudentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B4EF332253420C002267D8 /* TSStudentDetailView.xib */; };
 		B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89989224B12C800F759D8 /* TSInternshipViewController.m */; };
 		B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */; };
 		B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998D224B5B0D00F759D8 /* TSNetManager.m */; };
@@ -598,8 +600,6 @@
 		B24B75362248D66200C293B7 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		B24B753E224A163B00C293B7 /* TSMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainNavigationController.h; sourceTree = "<group>"; };
 		B24B753F224A163B00C293B7 /* TSMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainNavigationController.m; sourceTree = "<group>"; };
-		B2B4EF202252F8F0002267D8 /* TSStudentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailViewController.h; sourceTree = "<group>"; };
-		B2B4EF212252F8F0002267D8 /* TSStudentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailViewController.m; sourceTree = "<group>"; };
 		B2B4EF232252F8FD002267D8 /* TSStudentDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailModel.h; sourceTree = "<group>"; };
 		B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailModel.m; sourceTree = "<group>"; };
 		B2B4EF262252F90F002267D8 /* TSStudentDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailView.h; sourceTree = "<group>"; };
@@ -607,6 +607,10 @@
 		B2B4EF292252F926002267D8 /* TSStudentDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailViewModel.h; sourceTree = "<group>"; };
 		B2B4EF2A2252F926002267D8 /* TSStudentDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailViewModel.m; sourceTree = "<group>"; };
 		B2B4EF2C2252FA9A002267D8 /* StudentList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentList.storyboard; sourceTree = "<group>"; };
+		B2B4EF2E225306DB002267D8 /* TSStudentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailViewController.h; sourceTree = "<group>"; };
+		B2B4EF2F225306DB002267D8 /* TSStudentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailViewController.m; sourceTree = "<group>"; };
+		B2B4EF30225306DB002267D8 /* TSStudentDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSStudentDetailViewController.xib; sourceTree = "<group>"; };
+		B2B4EF332253420C002267D8 /* TSStudentDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSStudentDetailView.xib; sourceTree = "<group>"; };
 		B2C89988224B12C800F759D8 /* TSInternshipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipViewController.h; sourceTree = "<group>"; };
 		B2C89989224B12C800F759D8 /* TSInternshipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipViewController.m; sourceTree = "<group>"; };
 		B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequestTool.m; sourceTree = "<group>"; };
@@ -2129,6 +2133,7 @@
 			children = (
 				B2B4EF262252F90F002267D8 /* TSStudentDetailView.h */,
 				B2B4EF272252F90F002267D8 /* TSStudentDetailView.m */,
+				B2B4EF332253420C002267D8 /* TSStudentDetailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2154,8 +2159,9 @@
 		B2B4EF1F2252F8CB002267D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B2B4EF202252F8F0002267D8 /* TSStudentDetailViewController.h */,
-				B2B4EF212252F8F0002267D8 /* TSStudentDetailViewController.m */,
+				B2B4EF2E225306DB002267D8 /* TSStudentDetailViewController.h */,
+				B2B4EF2F225306DB002267D8 /* TSStudentDetailViewController.m */,
+				B2B4EF30225306DB002267D8 /* TSStudentDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2348,6 +2354,7 @@
 				B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */,
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
+				B2B4EF342253420C002267D8 /* TSStudentDetailView.xib in Resources */,
 				B24525CB2252045200180FCA /* TSStudentListTableViewCell.xib in Resources */,
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
 				B2290A832245CEEF009D91AC /* 学生头像.png in Resources */,
@@ -2357,6 +2364,7 @@
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				B2290A842245CEEF009D91AC /* 教师头像.png in Resources */,
+				B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				B24B75342248CDF600C293B7 /* school.png in Resources */,
 				B24525D92252049A00180FCA /* TSTeacherListTableViewCell.xib in Resources */,
@@ -2519,6 +2527,7 @@
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
+				B2B4EF31225306DB002267D8 /* TSStudentDetailViewController.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
 				B2290A0D22413777009D91AC /* TSInstitutionStudentModel.m in Sources */,
 				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
@@ -2645,7 +2654,6 @@
 				22F3805422363420005A0AD7 /* EduNavController.m in Sources */,
 				22F3812322363C00005A0AD7 /* WKWebViewJavascriptBridge.m in Sources */,
 				B2290A6C22433483009D91AC /* JQRefreshHeaader.m in Sources */,
-				B2B4EF222252F8F0002267D8 /* TSStudentDetailViewController.m in Sources */,
 				B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */,
 				22F3818022378CD0005A0AD7 /* HomeSectionView.m in Sources */,
 				22F3812022363C00005A0AD7 /* WXApiManager.m in Sources */,
