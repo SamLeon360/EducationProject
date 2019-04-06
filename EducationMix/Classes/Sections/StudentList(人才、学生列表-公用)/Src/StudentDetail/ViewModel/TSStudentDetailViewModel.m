@@ -38,19 +38,21 @@
                     
                     self.model = [TSStudentDetailModel mj_objectWithKeyValues:responseObject[@"data"][0]];
                     
-//                    [subscriber sendNext:self.model];
+                    [subscriber sendNext:self.model];
                     
                 } else {
                     
                     [TSProgressHUD showError:responseObject[@"msg"]];
                     
                 }
-                
+                [subscriber sendNext:self.model];
+
                 [subscriber sendCompleted];
                 
                 
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
+                [subscriber sendError:error];
                 [subscriber sendCompleted];
 
             }];

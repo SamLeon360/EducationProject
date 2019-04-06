@@ -16,6 +16,7 @@
 #import "InstitutionViewController.h"
 #import "TSINSTMsgViewController.h"
 
+#import "TSInternshipViewController.h"
 #import "TSStudentListViewController.h"
 
 @interface TSMainTabBarViewController ()
@@ -29,8 +30,6 @@
     
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"MainView" bundle:[NSBundle mainBundle]];
     
-    
-    
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
     homeVC.title = @"产教融";
     
@@ -41,12 +40,15 @@
     TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
     studentListVC.title = @"聊天";
     
+    TSInternshipViewController *teacherListVC = [[TSInternshipViewController alloc] init];
+    teacherListVC.title = @"教授";
+    
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
     meVC.title = @"我的";
     
     self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC1]
-                             ,[[TSMainNavigationController alloc]initWithRootViewController:studentListVC]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:teacherListVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
 
     // Do any additional setup after loading the view.

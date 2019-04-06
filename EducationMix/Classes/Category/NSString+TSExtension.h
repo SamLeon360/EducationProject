@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 //因接口缺陷，需要在本地映射基础资料（专业领域）
 + (NSString *)getProfessionalField:(NSInteger)professionalFieldId;
 
+//因接口缺陷，需要在本地映射基础资料（教师级别）
++ (NSString *)getAcademicTitle:(NSInteger)academicTitleId;
+
 @end
 
 NS_ASSUME_NONNULL_END

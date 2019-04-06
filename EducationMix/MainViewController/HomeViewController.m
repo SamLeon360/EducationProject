@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *kefuImage;
 @property (weak, nonatomic) IBOutlet UIImageView *msgIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *shareImage;
+
 @property (nonatomic) HomeHeaderView *headerView;
 @property (nonatomic) HomeSectionView *sectionView;
 @property (nonatomic) NSArray *workTypeArray ;
@@ -38,6 +39,27 @@
     self.workTypeArray =  @[@"全部",@"电子信息",@"装备制造", @"能源环保",@"生物技术与医药",@"新材料",@"现代农药", @"其他"];
     [self GetTJJob];
     [self GetNewPost];
+    
+    
+//    self.headerView.oneView.userInteractionEnabled = YES;
+//
+////
+//    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]init];
+//    
+//    [tapGesturRecognizer.rac_gestureSignal subscribeNext:^(id x) {
+//        NSLog(@"点击");
+//
+//    }];
+//    
+//    [[tapGesturRecognizer rac_gestureSignal] subscribeNext:^(id x) {
+//        NSLog(@"点击");
+//    }];
+
+//     [self.headerView.oneView addGestureRecognizer:tapGesturRecognizer];
+
+//    [[self.headerView.oneView rac_signalForSelector:UIControlEventTouchDown] subscribeNext:^(id x) {
+//        NSLog(@"点击");
+//    }];
     
    
 }
@@ -129,7 +151,9 @@
 -(HomeHeaderView *)headerView{
     if (_headerView == nil) {
         _headerView = [[NSBundle mainBundle] loadNibNamed:@"HomeXib" owner:self options:nil][0];
-        _headerView.frame = CGRectMake(0, 0, ScreenW, 435*kScale);
+//        _headerView.frame = CGRectMake(0, 0, ScreenW, 435*kScale);
+        _headerView.frame = CGRectMake(0, 0, ScreenW, 347);
+
         _headerView.cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
         _headerView.postArray = self.posterArray;
         [_headerView setupTableView];

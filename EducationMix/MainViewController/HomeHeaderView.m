@@ -17,6 +17,7 @@
 -(void)setupTableView{
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.scrollEnabled = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"HomeNewPostCell" bundle:nil] forCellReuseIdentifier:@"HomeNewPostCell"];
   self.index = 0;
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -44,6 +45,16 @@
     dispatch_resume(self.timer);
     [self.tableView reloadData];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSDictionary *dic = self.postArray[indexPath.row];
+    NSString *content = dic[@"technology_name"];
+    
+    NSLog(content);
+}
+
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -53,6 +64,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 59;
 }
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeNewPostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeNewPostCell"];
     NSDictionary *dic = self.postArray[indexPath.row];

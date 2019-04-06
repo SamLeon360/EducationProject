@@ -151,6 +151,12 @@
 		B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B215473B223BF33C000AD9D8 /* InstitutionModel.m */; };
 		B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B215473E223BF3DC000AD9D8 /* InstitutionTableViewCell.m */; };
 		B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B215473F223BF3DC000AD9D8 /* InstitutionTableViewCell.xib */; };
+		B21C973422548BE400257774 /* TSTeacherDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C973322548BE400257774 /* TSTeacherDetailModel.m */; };
+		B21C973722548C0900257774 /* TSTeacherDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C973622548C0900257774 /* TSTeacherDetailView.m */; };
+		B21C973A22548C1300257774 /* TSTeacherDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C973922548C1300257774 /* TSTeacherDetailViewModel.m */; };
+		B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21C973B22548CC600257774 /* TSTeacherDetailView.xib */; };
+		B21C97432254A2C300257774 /* TSTeacherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C97412254A2C300257774 /* TSTeacherDetailViewController.m */; };
+		B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21C97422254A2C300257774 /* TSTeacherDetailViewController.xib */; };
 		B21DD94B224DF07600699355 /* NSString+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B21DD94A224DF07600699355 /* NSString+TSExtension.m */; };
 		B21DD951224DFDA800699355 /* NSDate+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B21DD950224DFDA800699355 /* NSDate+TSExtension.m */; };
 		B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B22909C7223D3EB0009D91AC /* TSINSTMsgViewModel.m */; };
@@ -183,7 +189,10 @@
 		B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7922433AC0009D91AC /* UIImage+JQImage.m */; };
 		B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B2290A7A22433AC0009D91AC /* UIButton+Size.m */; };
 		B2290A832245CEEF009D91AC /* 学生头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A812245CEEF009D91AC /* 学生头像.png */; };
-		B2290A842245CEEF009D91AC /* 教师头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B2290A822245CEEF009D91AC /* 教师头像.png */; };
+		B23295B22255DD62003F9548 /* TSInternshipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B12255DD62003F9548 /* TSInternshipModel.m */; };
+		B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B42255DD72003F9548 /* TSInternshipTableViewCell.m */; };
+		B23295B72255DD72003F9548 /* TSInternshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23295B52255DD72003F9548 /* TSInternshipTableViewCell.xib */; };
+		B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B92255DD81003F9548 /* TSInternshipViewModel.m */; };
 		B24525C32252042500180FCA /* TSStudentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C22252042500180FCA /* TSStudentListViewController.m */; };
 		B24525C62252043D00180FCA /* TSStudentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C52252043D00180FCA /* TSStudentListModel.m */; };
 		B24525CA2252045200180FCA /* TSStudentListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C82252045200180FCA /* TSStudentListTableViewCell.m */; };
@@ -211,6 +220,12 @@
 		B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998D224B5B0D00F759D8 /* TSNetManager.m */; };
 		B2C89994224B5D5F00F759D8 /* TSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89993224B5D5E00F759D8 /* TSProgressHUD.m */; };
 		B2C8999A224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89999224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m */; };
+		B2DB37C02255F18100B17ACE /* TSInternshipDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37BF2255F18100B17ACE /* TSInternshipDetailModel.m */; };
+		B2DB37C32255F18E00B17ACE /* TSInternshipDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37C22255F18E00B17ACE /* TSInternshipDetailView.m */; };
+		B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37C72255F1A700B17ACE /* TSInternshipDetailViewModel.m */; };
+		B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37C922587E5B00B17ACE /* TSInternshipDetailView.xib */; };
+		B2DB37CE225881EE00B17ACE /* TSInternshipDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37CC225881EE00B17ACE /* TSInternshipDetailViewController.m */; };
+		B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37CD225881EE00B17ACE /* TSInternshipDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +528,16 @@
 		B215473D223BF3DC000AD9D8 /* InstitutionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstitutionTableViewCell.h; sourceTree = "<group>"; };
 		B215473E223BF3DC000AD9D8 /* InstitutionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstitutionTableViewCell.m; sourceTree = "<group>"; };
 		B215473F223BF3DC000AD9D8 /* InstitutionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstitutionTableViewCell.xib; sourceTree = "<group>"; };
+		B21C973222548BE400257774 /* TSTeacherDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeacherDetailModel.h; sourceTree = "<group>"; };
+		B21C973322548BE400257774 /* TSTeacherDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeacherDetailModel.m; sourceTree = "<group>"; };
+		B21C973522548C0900257774 /* TSTeacherDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeacherDetailView.h; sourceTree = "<group>"; };
+		B21C973622548C0900257774 /* TSTeacherDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeacherDetailView.m; sourceTree = "<group>"; };
+		B21C973822548C1300257774 /* TSTeacherDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeacherDetailViewModel.h; sourceTree = "<group>"; };
+		B21C973922548C1300257774 /* TSTeacherDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeacherDetailViewModel.m; sourceTree = "<group>"; };
+		B21C973B22548CC600257774 /* TSTeacherDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTeacherDetailView.xib; sourceTree = "<group>"; };
+		B21C97402254A2C300257774 /* TSTeacherDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeacherDetailViewController.h; sourceTree = "<group>"; };
+		B21C97412254A2C300257774 /* TSTeacherDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeacherDetailViewController.m; sourceTree = "<group>"; };
+		B21C97422254A2C300257774 /* TSTeacherDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTeacherDetailViewController.xib; sourceTree = "<group>"; };
 		B21DD949224DF07600699355 /* NSString+TSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TSExtension.h"; sourceTree = "<group>"; };
 		B21DD94A224DF07600699355 /* NSString+TSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TSExtension.m"; sourceTree = "<group>"; };
 		B21DD94F224DFDA800699355 /* NSDate+TSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TSExtension.h"; sourceTree = "<group>"; };
@@ -572,7 +597,13 @@
 		B2290A7B22433AC0009D91AC /* UIImage+JQImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JQImage.h"; sourceTree = "<group>"; };
 		B2290A7C22433AC0009D91AC /* UIButton+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Size.h"; sourceTree = "<group>"; };
 		B2290A812245CEEF009D91AC /* 学生头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学生头像.png"; sourceTree = "<group>"; };
-		B2290A822245CEEF009D91AC /* 教师头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "教师头像.png"; sourceTree = "<group>"; };
+		B23295B02255DD62003F9548 /* TSInternshipModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipModel.h; sourceTree = "<group>"; };
+		B23295B12255DD62003F9548 /* TSInternshipModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipModel.m; sourceTree = "<group>"; };
+		B23295B32255DD72003F9548 /* TSInternshipTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipTableViewCell.h; sourceTree = "<group>"; };
+		B23295B42255DD72003F9548 /* TSInternshipTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipTableViewCell.m; sourceTree = "<group>"; };
+		B23295B52255DD72003F9548 /* TSInternshipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInternshipTableViewCell.xib; sourceTree = "<group>"; };
+		B23295B82255DD81003F9548 /* TSInternshipViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipViewModel.h; sourceTree = "<group>"; };
+		B23295B92255DD81003F9548 /* TSInternshipViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipViewModel.m; sourceTree = "<group>"; };
 		B24525C12252042500180FCA /* TSStudentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListViewController.h; sourceTree = "<group>"; };
 		B24525C22252042500180FCA /* TSStudentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentListViewController.m; sourceTree = "<group>"; };
 		B24525C42252043D00180FCA /* TSStudentListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListModel.h; sourceTree = "<group>"; };
@@ -621,6 +652,16 @@
 		B2C89993224B5D5E00F759D8 /* TSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProgressHUD.m; sourceTree = "<group>"; };
 		B2C89998224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTSInstitutionDetailAdvanceSubjectModel.h; sourceTree = "<group>"; };
 		B2C89999224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTSInstitutionDetailAdvanceSubjectModel.m; sourceTree = "<group>"; };
+		B2DB37BE2255F18100B17ACE /* TSInternshipDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipDetailModel.h; sourceTree = "<group>"; };
+		B2DB37BF2255F18100B17ACE /* TSInternshipDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipDetailModel.m; sourceTree = "<group>"; };
+		B2DB37C12255F18E00B17ACE /* TSInternshipDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipDetailView.h; sourceTree = "<group>"; };
+		B2DB37C22255F18E00B17ACE /* TSInternshipDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipDetailView.m; sourceTree = "<group>"; };
+		B2DB37C62255F1A700B17ACE /* TSInternshipDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipDetailViewModel.h; sourceTree = "<group>"; };
+		B2DB37C72255F1A700B17ACE /* TSInternshipDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipDetailViewModel.m; sourceTree = "<group>"; };
+		B2DB37C922587E5B00B17ACE /* TSInternshipDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInternshipDetailView.xib; sourceTree = "<group>"; };
+		B2DB37CB225881EE00B17ACE /* TSInternshipDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipDetailViewController.h; sourceTree = "<group>"; };
+		B2DB37CC225881EE00B17ACE /* TSInternshipDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipDetailViewController.m; sourceTree = "<group>"; };
+		B2DB37CD225881EE00B17ACE /* TSInternshipDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInternshipDetailViewController.xib; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1700,6 +1741,63 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B21C9729225489AE00257774 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B21C972A225489C400257774 /* TeacherDetail */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B21C972A225489C400257774 /* TeacherDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B21C972D22548B5300257774 /* Controller */,
+				B21C972B22548B5300257774 /* Model */,
+				B21C972E22548B5300257774 /* View */,
+				B21C972C22548B5300257774 /* ViewModel */,
+			);
+			path = TeacherDetail;
+			sourceTree = "<group>";
+		};
+		B21C972B22548B5300257774 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B21C973222548BE400257774 /* TSTeacherDetailModel.h */,
+				B21C973322548BE400257774 /* TSTeacherDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B21C972C22548B5300257774 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B21C973822548C1300257774 /* TSTeacherDetailViewModel.h */,
+				B21C973922548C1300257774 /* TSTeacherDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B21C972D22548B5300257774 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B21C97402254A2C300257774 /* TSTeacherDetailViewController.h */,
+				B21C97412254A2C300257774 /* TSTeacherDetailViewController.m */,
+				B21C97422254A2C300257774 /* TSTeacherDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B21C972E22548B5300257774 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B21C973522548C0900257774 /* TSTeacherDetailView.h */,
+				B21C973622548C0900257774 /* TSTeacherDetailView.m */,
+				B21C973B22548CC600257774 /* TSTeacherDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B22909BD223D3DC0009D91AC /* Src */ = {
 			isa = PBXGroup;
 			children = (
@@ -1990,7 +2088,6 @@
 			children = (
 				B24B75332248CDF600C293B7 /* school.png */,
 				B2290A812245CEEF009D91AC /* 学生头像.png */,
-				B2290A822245CEEF009D91AC /* 教师头像.png */,
 			);
 			name = Icon;
 			path = EducationMix/Icon;
@@ -1999,6 +2096,7 @@
 		B24525B72252037B00180FCA /* TeacherList(教授列表-公用) */ = {
 			isa = PBXGroup;
 			children = (
+				B21C9729225489AE00257774 /* Src */,
 				B24525B9225203E800180FCA /* Controller */,
 				B24525BB225203E900180FCA /* Model */,
 				B24525BC225203E900180FCA /* View */,
@@ -2169,6 +2267,7 @@
 		B2C89983224B11F500F759D8 /* Internship(实习就业) */ = {
 			isa = PBXGroup;
 			children = (
+				B2DB37B52255F0E800B17ACE /* Src */,
 				B2C89987224B126200F759D8 /* Controller */,
 				B2C89984224B126200F759D8 /* Model */,
 				B2C89986224B126200F759D8 /* View */,
@@ -2180,6 +2279,8 @@
 		B2C89984224B126200F759D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B23295B02255DD62003F9548 /* TSInternshipModel.h */,
+				B23295B12255DD62003F9548 /* TSInternshipModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2187,6 +2288,8 @@
 		B2C89985224B126200F759D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B23295B82255DD81003F9548 /* TSInternshipViewModel.h */,
+				B23295B92255DD81003F9548 /* TSInternshipViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -2194,6 +2297,9 @@
 		B2C89986224B126200F759D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B23295B32255DD72003F9548 /* TSInternshipTableViewCell.h */,
+				B23295B42255DD72003F9548 /* TSInternshipTableViewCell.m */,
+				B23295B52255DD72003F9548 /* TSInternshipTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2218,6 +2324,63 @@
 				B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		B2DB37B52255F0E800B17ACE /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37B62255F11900B17ACE /* InternshipDetail(实习就业详细) */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B2DB37B62255F11900B17ACE /* InternshipDetail(实习就业详细) */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37B82255F15C00B17ACE /* Controller */,
+				B2DB37B92255F15D00B17ACE /* Model */,
+				B2DB37B72255F15C00B17ACE /* View */,
+				B2DB37BA2255F15D00B17ACE /* ViewModel */,
+			);
+			path = "InternshipDetail(实习就业详细)";
+			sourceTree = "<group>";
+		};
+		B2DB37B72255F15C00B17ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37C12255F18E00B17ACE /* TSInternshipDetailView.h */,
+				B2DB37C22255F18E00B17ACE /* TSInternshipDetailView.m */,
+				B2DB37C922587E5B00B17ACE /* TSInternshipDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DB37B82255F15C00B17ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37CB225881EE00B17ACE /* TSInternshipDetailViewController.h */,
+				B2DB37CC225881EE00B17ACE /* TSInternshipDetailViewController.m */,
+				B2DB37CD225881EE00B17ACE /* TSInternshipDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DB37B92255F15D00B17ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37BE2255F18100B17ACE /* TSInternshipDetailModel.h */,
+				B2DB37BF2255F18100B17ACE /* TSInternshipDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DB37BA2255F15D00B17ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37C62255F1A700B17ACE /* TSInternshipDetailViewModel.h */,
+				B2DB37C72255F1A700B17ACE /* TSInternshipDetailViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
@@ -2354,7 +2517,9 @@
 				B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */,
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
+				B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */,
 				B2B4EF342253420C002267D8 /* TSStudentDetailView.xib in Resources */,
+				B23295B72255DD72003F9548 /* TSInternshipTableViewCell.xib in Resources */,
 				B24525CB2252045200180FCA /* TSStudentListTableViewCell.xib in Resources */,
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
 				B2290A832245CEEF009D91AC /* 学生头像.png in Resources */,
@@ -2362,8 +2527,8 @@
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
+				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
-				B2290A842245CEEF009D91AC /* 教师头像.png in Resources */,
 				B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				B24B75342248CDF600C293B7 /* school.png in Resources */,
@@ -2376,9 +2541,11 @@
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
+				B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
 				22F382132238DB88005A0AD7 /* MineView.storyboard in Resources */,
+				B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
@@ -2527,8 +2694,12 @@
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
+				B2DB37C32255F18E00B17ACE /* TSInternshipDetailView.m in Sources */,
 				B2B4EF31225306DB002267D8 /* TSStudentDetailViewController.m in Sources */,
+				B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
+				B21C973722548C0900257774 /* TSTeacherDetailView.m in Sources */,
+				B23295B22255DD62003F9548 /* TSInternshipModel.m in Sources */,
 				B2290A0D22413777009D91AC /* TSInstitutionStudentModel.m in Sources */,
 				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
 				B2B4EF282252F90F002267D8 /* TSStudentDetailView.m in Sources */,
@@ -2537,12 +2708,14 @@
 				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
 				22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
+				B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */,
 				22F3817122375DFB005A0AD7 /* LPTagTextFieldCell.m in Sources */,
 				22F3819E2237C6E8005A0AD7 /* CommerceDetailFooter.m in Sources */,
 				22F3811722363C00005A0AD7 /* GVUserDefaults+Properties.m in Sources */,
 				22F381AB2238D982005A0AD7 /* SearchCommerceTypeView.m in Sources */,
 				22F3813D22363C00005A0AD7 /* UILabel+TextSize.m in Sources */,
 				22F382062238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.m in Sources */,
+				B21C97432254A2C300257774 /* TSTeacherDetailViewController.m in Sources */,
 				B24B75322248CD6100C293B7 /* UIImage+YPExtension.m in Sources */,
 				22F381C12238DA94005A0AD7 /* MemberListCell.m in Sources */,
 				B2C89994224B5D5F00F759D8 /* TSProgressHUD.m in Sources */,
@@ -2550,11 +2723,13 @@
 				22F381A42237C6E8005A0AD7 /* CommerceDetailCell.m in Sources */,
 				22F382162238DB88005A0AD7 /* EditUserDataController.m in Sources */,
 				22F381B42238D9D8005A0AD7 /* UploadSelectTypeView.m in Sources */,
+				B21C973422548BE400257774 /* TSTeacherDetailModel.m in Sources */,
 				B22909E82241369F009D91AC /* TSInstitutionDetailViewModel.m in Sources */,
 				22F382142238DB88005A0AD7 /* FriendListController.m in Sources */,
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
+				B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */,
 				B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */,
 				22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */,
 				22F382262238DC64005A0AD7 /* EditCompanyMessageController.m in Sources */,
@@ -2605,9 +2780,11 @@
 				22F3814B22363C00005A0AD7 /* NSString+Utils.m in Sources */,
 				B22909CB223D3EC2009D91AC /* TSINSTMsgViewController.m in Sources */,
 				22F3813622363C00005A0AD7 /* CustomFountion.m in Sources */,
+				B21C973A22548C1300257774 /* TSTeacherDetailViewModel.m in Sources */,
 				22F381B82238D9FE005A0AD7 /* TXWebViewController.m in Sources */,
 				22F3815222363C00005A0AD7 /* UITextField+WJ.m in Sources */,
 				22F381A12237C6E8005A0AD7 /* SearchCommerceController.m in Sources */,
+				B2DB37C02255F18100B17ACE /* TSInternshipDetailModel.m in Sources */,
 				22F3814322363C00005A0AD7 /* UIView+Extension.m in Sources */,
 				22F382182238DB88005A0AD7 /* NotifyListCell.m in Sources */,
 				22F3820D2238DB88005A0AD7 /* ChangePwdController.m in Sources */,
@@ -2656,6 +2833,7 @@
 				B2290A6C22433483009D91AC /* JQRefreshHeaader.m in Sources */,
 				B22909C8223D3EB0009D91AC /* TSINSTMsgViewModel.m in Sources */,
 				22F3818022378CD0005A0AD7 /* HomeSectionView.m in Sources */,
+				B2DB37CE225881EE00B17ACE /* TSInternshipDetailViewController.m in Sources */,
 				22F3812022363C00005A0AD7 /* WXApiManager.m in Sources */,
 				22F380212235FF7D005A0AD7 /* AppDelegate.m in Sources */,
 				22F3813822363C00005A0AD7 /* UIImage+Custom.m in Sources */,

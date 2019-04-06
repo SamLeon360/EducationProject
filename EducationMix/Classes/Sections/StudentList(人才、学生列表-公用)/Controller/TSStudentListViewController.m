@@ -56,6 +56,29 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)loadData {
+    
+    [self.studentVM loadDataArrFromNetwork];
+    
+    RACSignal *recommendContentSignal = [self.studentVM.requestCommand execute:nil];
+    
+    @weakify(self);
+    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
+        
+        @strongify(self);
+        [self.tableView reloadData];
+        
+        
+    } error:^(NSError *error) {
+        [TSProgressHUD showError:error.description];
+        
+    }];
+    
+    [TSProgressHUD dismiss];
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -101,27 +124,6 @@
 }
 
 
-- (void)loadData {
-    
-    [self.studentVM loadDataArrFromNetwork];
-    
-    RACSignal *recommendContentSignal = [self.studentVM.requestCommand execute:nil];
-    
-    @weakify(self);
-    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
-        
-        @strongify(self);
-        [self.tableView reloadData];
-        
-        
-    } error:^(NSError *error) {
-        [TSProgressHUD showError:error.description];
-        
-    }];
-    
-    [TSProgressHUD dismiss];
-    
-}
 
 #pragma mark - lazy
 - (UITableView *)tableView {

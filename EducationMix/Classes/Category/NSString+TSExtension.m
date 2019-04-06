@@ -88,4 +88,45 @@
     
 }
 
+
+
++ (NSString *)getAcademicTitle:(NSInteger)academicTitleId {
+    
+    NSString *result = @"";
+    
+    //1:教授|2:副教授|3:高级工程师|4:中级工程师|5:初级工程师
+
+    switch (academicTitleId) {
+        case 1:
+            result = @"教授";
+            break;
+        case 2:
+            result = @"副教授";
+
+            break;
+        case 3:
+            result = @"高级工程师";
+
+            break;
+        case 4:
+            result = @"中级工程师";
+
+            break;
+        case 5:
+            result = @"初级工程师";
+
+            break;
+            
+        default:
+            result = @"其他";
+
+            break;
+    }
+    
+    return result;
+    
+    
+}
+
+
 @end

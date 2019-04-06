@@ -69,8 +69,13 @@
     _phone.text = model.phone;
     _academy_name.text = model.academy_name;
     
-    _sex.text = [NSString getSexWithSexData:[NSString stringWithFormat:@"%d",model.sex]];
-    _expect_salary.text = [NSString stringWithFormat:@"%d",model.expect_salary];
+    NSInteger age = [NSDate getDateTimeIntervalWithStartDate:model.birthday];
+    NSString *sexStr = [NSString getSexWithSexData:[NSString stringWithFormat:@"%ld",model.sex]];
+    
+    _sex.text = [NSString stringWithFormat:@"%@. %ld岁",sexStr,age];
+    
+//    _sex.text = [NSString getSexWithSexData:[NSString stringWithFormat:@"%ld",model.sex]];
+    _expect_salary.text = [NSString stringWithFormat:@"%ld",model.expect_salary];
     _major_skill.text = model.major_skill;
 
     

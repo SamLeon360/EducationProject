@@ -34,7 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (nonatomic) NSArray *postArray;
+
 -(void)setupTableView;
+
 @end
 
 NS_ASSUME_NONNULL_END

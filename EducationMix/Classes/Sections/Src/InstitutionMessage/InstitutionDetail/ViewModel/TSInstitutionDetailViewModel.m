@@ -40,6 +40,7 @@
                     
                     TSInstitutionDetailModel *model = [TSInstitutionDetailModel mj_objectWithKeyValues:responseObject[@"data"][0]];
                     
+//                    NSMutableArray *mArr = [[NSMutableArray alloc] init];
                     
                     NSArray *mArr = @[@{@"academy_type":[NSNumber numberWithInteger:model.academy_type],@"address":model.address},
                                       @{@"content":model.college_introduction},

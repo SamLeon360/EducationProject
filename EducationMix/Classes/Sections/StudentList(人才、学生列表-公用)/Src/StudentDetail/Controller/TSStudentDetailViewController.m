@@ -40,11 +40,8 @@
     @weakify(self);
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
-        
         @strongify(self);
-        
         self.tableHeaderView.model = self.viewModel.model;
-
         
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
@@ -55,6 +52,7 @@
     
 }
 
+#pragma mark - lazy
 
 - (UITableView *)tableView {
     if (!_tableView) {
@@ -72,8 +70,6 @@
     
 }
 
-
-#pragma mark - lazy
 - (TSStudentDetailViewModel *)viewModel {
  
     if(!_viewModel){

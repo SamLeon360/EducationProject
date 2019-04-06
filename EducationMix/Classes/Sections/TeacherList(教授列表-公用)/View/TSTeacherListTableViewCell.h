@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TSTeacherListModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSTeacherListTableViewCell : UITableViewCell
+
+@property (nonatomic, strong)TSTeacherListModel *model;
 
 @end
 

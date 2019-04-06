@@ -117,9 +117,11 @@
         [self.tableView reloadData];
         
     } error:^(NSError *error) {
-        [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
-        //        [_contentTableView.mj_header endRefreshing];
+        [TSProgressHUD showError:@"网络出错"];        //        [_contentTableView.mj_header endRefreshing];
     }];
+    
+    [TSProgressHUD dismiss];
+
 }
 
 
