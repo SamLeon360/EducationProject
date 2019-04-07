@@ -226,6 +226,11 @@
 		B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37C922587E5B00B17ACE /* TSInternshipDetailView.xib */; };
 		B2DB37CE225881EE00B17ACE /* TSInternshipDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37CC225881EE00B17ACE /* TSInternshipDetailViewController.m */; };
 		B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37CD225881EE00B17ACE /* TSInternshipDetailViewController.xib */; };
+		B2DB37D92259D06E00B17ACE /* TSAdvisoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37D72259D06E00B17ACE /* TSAdvisoryViewController.m */; };
+		B2DB37DA2259D06E00B17ACE /* TSAdvisoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37D82259D06E00B17ACE /* TSAdvisoryViewController.xib */; };
+		B2DB37DD2259D07800B17ACE /* TSAdvisoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37DC2259D07800B17ACE /* TSAdvisoryModel.m */; };
+		B2DB37E02259D08800B17ACE /* TSAdvisoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */; };
+		B2DB37E32259D09700B17ACE /* TSAdvisoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37E22259D09700B17ACE /* TSAdvisoryViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -662,6 +667,15 @@
 		B2DB37CB225881EE00B17ACE /* TSInternshipDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipDetailViewController.h; sourceTree = "<group>"; };
 		B2DB37CC225881EE00B17ACE /* TSInternshipDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipDetailViewController.m; sourceTree = "<group>"; };
 		B2DB37CD225881EE00B17ACE /* TSInternshipDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInternshipDetailViewController.xib; sourceTree = "<group>"; };
+		B2DB37D62259D06E00B17ACE /* TSAdvisoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryViewController.h; sourceTree = "<group>"; };
+		B2DB37D72259D06E00B17ACE /* TSAdvisoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryViewController.m; sourceTree = "<group>"; };
+		B2DB37D82259D06E00B17ACE /* TSAdvisoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAdvisoryViewController.xib; sourceTree = "<group>"; };
+		B2DB37DB2259D07800B17ACE /* TSAdvisoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryModel.h; sourceTree = "<group>"; };
+		B2DB37DC2259D07800B17ACE /* TSAdvisoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryModel.m; sourceTree = "<group>"; };
+		B2DB37DE2259D08800B17ACE /* TSAdvisoryHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryHeaderView.h; sourceTree = "<group>"; };
+		B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryHeaderView.m; sourceTree = "<group>"; };
+		B2DB37E12259D09700B17ACE /* TSAdvisoryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryViewModel.h; sourceTree = "<group>"; };
+		B2DB37E22259D09700B17ACE /* TSAdvisoryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryViewModel.m; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1684,6 +1698,7 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B2DB37D02259CD3A00B17ACE /* Advisory(咨询) */,
 				B24525B8225203A900180FCA /* StudentList(人才、学生列表-公用) */,
 				B24525B72252037B00180FCA /* TeacherList(教授列表-公用) */,
 				B2C89983224B11F500F759D8 /* Internship(实习就业) */,
@@ -2383,6 +2398,62 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B2DB37D02259CD3A00B17ACE /* Advisory(咨询) */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37D12259CF3C00B17ACE /* Src */,
+				B2DB37D52259D02900B17ACE /* Controller */,
+				B2DB37D42259D02900B17ACE /* Model */,
+				B2DB37D22259D02900B17ACE /* View */,
+				B2DB37D32259D02900B17ACE /* ViewModel */,
+			);
+			path = "Advisory(咨询)";
+			sourceTree = "<group>";
+		};
+		B2DB37D12259CF3C00B17ACE /* Src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B2DB37D22259D02900B17ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37DE2259D08800B17ACE /* TSAdvisoryHeaderView.h */,
+				B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DB37D32259D02900B17ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37E12259D09700B17ACE /* TSAdvisoryViewModel.h */,
+				B2DB37E22259D09700B17ACE /* TSAdvisoryViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2DB37D42259D02900B17ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37DB2259D07800B17ACE /* TSAdvisoryModel.h */,
+				B2DB37DC2259D07800B17ACE /* TSAdvisoryModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DB37D52259D02900B17ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37D62259D06E00B17ACE /* TSAdvisoryViewController.h */,
+				B2DB37D72259D06E00B17ACE /* TSAdvisoryViewController.m */,
+				B2DB37D82259D06E00B17ACE /* TSAdvisoryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2530,6 +2601,7 @@
 				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */,
+				B2DB37DA2259D06E00B17ACE /* TSAdvisoryViewController.xib in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				B24B75342248CDF600C293B7 /* school.png in Resources */,
 				B24525D92252049A00180FCA /* TSTeacherListTableViewCell.xib in Resources */,
@@ -2726,12 +2798,14 @@
 				B21C973422548BE400257774 /* TSTeacherDetailModel.m in Sources */,
 				B22909E82241369F009D91AC /* TSInstitutionDetailViewModel.m in Sources */,
 				22F382142238DB88005A0AD7 /* FriendListController.m in Sources */,
+				B2DB37E32259D09700B17ACE /* TSAdvisoryViewModel.m in Sources */,
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
 				B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */,
 				B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */,
 				22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */,
+				B2DB37DD2259D07800B17ACE /* TSAdvisoryModel.m in Sources */,
 				22F382262238DC64005A0AD7 /* EditCompanyMessageController.m in Sources */,
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
 				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
@@ -2752,6 +2826,7 @@
 				22F3812E22363C00005A0AD7 /* InvitationManager.m in Sources */,
 				B24525C62252043D00180FCA /* TSStudentListModel.m in Sources */,
 				22F382152238DB88005A0AD7 /* YKEditTreeCameraBottomView.m in Sources */,
+				B2DB37D92259D06E00B17ACE /* TSAdvisoryViewController.m in Sources */,
 				22F382082238DB88005A0AD7 /* FriendNotifyListController.m in Sources */,
 				22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */,
 				B22909EE224136B9009D91AC /* TSInstitutionDetailModel.m in Sources */,
@@ -2847,6 +2922,7 @@
 				22F3814E22363C00005A0AD7 /* Common.m in Sources */,
 				22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */,
 				22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */,
+				B2DB37E02259D08800B17ACE /* TSAdvisoryHeaderView.m in Sources */,
 				B24525D12252047900180FCA /* TSTeacherListViewController.m in Sources */,
 				B22909F2224136DA009D91AC /* TSInstitutionDetailTableViewCell.m in Sources */,
 				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,

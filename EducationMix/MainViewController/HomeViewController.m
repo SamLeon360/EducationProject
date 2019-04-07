@@ -45,12 +45,12 @@
 //
 ////
 //    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]init];
-//    
+//
 //    [tapGesturRecognizer.rac_gestureSignal subscribeNext:^(id x) {
 //        NSLog(@"点击");
 //
 //    }];
-//    
+//
 //    [[tapGesturRecognizer rac_gestureSignal] subscribeNext:^(id x) {
 //        NSLog(@"点击");
 //    }];
