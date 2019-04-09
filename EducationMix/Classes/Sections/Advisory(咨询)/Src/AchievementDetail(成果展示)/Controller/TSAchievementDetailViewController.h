@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TSAchievementDetailViewController : UIViewController
 
+@property(nonatomic, assign)NSInteger results_id;
+
 @end
 
 NS_ASSUME_NONNULL_END

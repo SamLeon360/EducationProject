@@ -51,11 +51,11 @@
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
     meVC.title = @"我的";
     
-    self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:VC3]
+    self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC1]
-                             ,[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:VC3]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
-
+    
     // Do any additional setup after loading the view.
 }
 

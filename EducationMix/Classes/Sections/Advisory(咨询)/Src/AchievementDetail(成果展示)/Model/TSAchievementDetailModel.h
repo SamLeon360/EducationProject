@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *cooperation_method;
 @property(nonatomic, strong)NSString *address;
 
+
 @property(nonatomic, assign)NSInteger results_id;
 @property(nonatomic, assign)NSInteger research_level;
 @property(nonatomic, assign)NSInteger domain;

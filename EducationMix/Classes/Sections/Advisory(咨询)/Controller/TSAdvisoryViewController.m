@@ -11,6 +11,9 @@
 
 #import "TSTSAdvisoryTableViewCell.h"
 #import "TSAdvisoryViewModel.h"
+#import "TSAdvisoryModel.h"
+
+#import "TSAchievementDetailViewController.h"
 
 @interface TSAdvisoryViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -98,7 +101,7 @@
     self.advisoryVM.mapping_type = index + 1;
     [self loadData];
     
-    NSLog(@"%ld",index);
+//    NSLog(@"%ld",index);
     
     
 }
@@ -107,10 +110,11 @@
 #pragma mark - Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
-//    TSStudentListModel *model = self.studentVM.modelArr[indexPath.row];
-//    vc.student_id = model.student_id;
-//    [self.navigationController pushViewController:vc animated:YES];
+    TSAchievementDetailViewController *vc = [[TSAchievementDetailViewController alloc] init];
+    vc.title = @"成果详细";
+    TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
+    vc.results_id = model.Id;
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

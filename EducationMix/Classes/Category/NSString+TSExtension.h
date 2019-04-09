@@ -21,6 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 //因接口缺陷，需要在本地映射基础资料（教师级别）
 + (NSString *)getAcademicTitle:(NSInteger)academicTitleId;
 
+//因接口缺陷，需要在本地映射基础资料（成果级别）
++ (NSString *)getResearchLevel:(NSInteger)researchLevel;
+
+//因接口缺陷，需要在本地映射基础资料（技术成熟度）
++ (NSString *)getOwnType:(NSInteger)OwnType;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

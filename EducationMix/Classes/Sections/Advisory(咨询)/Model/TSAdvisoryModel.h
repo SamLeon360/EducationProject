@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TSAdvisoryModel : NSObject
 
 
-@property(nonatomic, strong)NSString *Id;
 @property(nonatomic, strong)NSString *name;
 @property(nonatomic, strong)NSString *user_name;
 @property(nonatomic, strong)NSString *member_id;
 @property(nonatomic, strong)NSString *time;
 
 @property(nonatomic, assign)NSInteger type;
+@property(nonatomic, assign)NSInteger Id;
 
 
 //"id":74,
