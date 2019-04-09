@@ -1,5 +1,5 @@
 //
-//  TSAdvisoryHeaderView.h
+//  TSAdvisoryHeaderViewCollectionViewCell.h
 //  EducationMix
 //
 //  Created by Taosky on 2019/4/7.
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSAdvisoryHeaderView : UIView
-@property (nonatomic, strong)NSArray *dataSource;
+@interface TSAdvisoryHeaderViewCollectionViewCell : UICollectionViewCell
 
 @end
 

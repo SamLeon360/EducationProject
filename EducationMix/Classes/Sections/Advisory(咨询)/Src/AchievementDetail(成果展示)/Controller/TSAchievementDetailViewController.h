@@ -1,8 +1,8 @@
 //
-//  TSAdvisoryHeaderView.h
+//  TSAchievementDetailViewController.h
 //  EducationMix
 //
-//  Created by Taosky on 2019/4/7.
+//  Created by Taosky on 2019/4/8.
 //  Copyright © 2019 iTaosky. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSAdvisoryHeaderView : UIView
-@property (nonatomic, strong)NSArray *dataSource;
+@interface TSAchievementDetailViewController : UIViewController
 
 @end
 

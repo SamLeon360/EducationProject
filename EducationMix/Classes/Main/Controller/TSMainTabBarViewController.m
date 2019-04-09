@@ -15,6 +15,7 @@
 #import "EduMeViewController.h"
 #import "InstitutionViewController.h"
 #import "TSINSTMsgViewController.h"
+#import "TSAdvisoryViewController.h"
 
 #import "TSInternshipViewController.h"
 #import "TSStudentListViewController.h"
@@ -34,11 +35,15 @@
     homeVC.title = @"产教融";
     
     InstitutionViewController *tmpVC1 = [[InstitutionViewController alloc]init];
-    tmpVC1.title = @"咨询";
+    tmpVC1.title = @"聊天";
     
-    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
-    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
-    studentListVC.title = @"聊天";
+//    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
+//    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
+    TSAdvisoryViewController *VC3 = [[TSAdvisoryViewController alloc] init];
+    
+    
+    
+    VC3.title = @"咨询";
     
     TSInternshipViewController *teacherListVC = [[TSInternshipViewController alloc] init];
     teacherListVC.title = @"教授";
@@ -46,9 +51,9 @@
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
     meVC.title = @"我的";
     
-    self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
+    self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:VC3]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC1]
-                             ,[[TSMainNavigationController alloc]initWithRootViewController:teacherListVC]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
 
     // Do any additional setup after loading the view.

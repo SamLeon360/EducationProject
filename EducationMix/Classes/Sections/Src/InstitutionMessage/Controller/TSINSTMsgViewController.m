@@ -386,6 +386,7 @@
                 
                 _currentSelectedItemImageView.frame = CGRectMake(PADDING, self.segmentScrollView.frame.size.height - 2, btn.frame.size.width, 2);
             }
+            
         }
         
         _segmentScrollView.contentSize = CGSizeMake(btnoffset+PADDING, 25);

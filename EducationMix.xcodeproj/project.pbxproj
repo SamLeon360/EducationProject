@@ -231,6 +231,16 @@
 		B2DB37DD2259D07800B17ACE /* TSAdvisoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37DC2259D07800B17ACE /* TSAdvisoryModel.m */; };
 		B2DB37E02259D08800B17ACE /* TSAdvisoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */; };
 		B2DB37E32259D09700B17ACE /* TSAdvisoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37E22259D09700B17ACE /* TSAdvisoryViewModel.m */; };
+		B2DB37EB2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37E92259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m */; };
+		B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37EA2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib */; };
+		B2DB37F0225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37EE225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m */; };
+		B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37EF225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib */; };
+		B2DB37FA225B50E700B17ACE /* TSAchievementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37F8225B50E700B17ACE /* TSAchievementDetailViewController.m */; };
+		B2DB37FB225B50E700B17ACE /* TSAchievementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB37F9225B50E700B17ACE /* TSAchievementDetailViewController.xib */; };
+		B2DB37FE225B50F800B17ACE /* TSAchievementDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB37FD225B50F800B17ACE /* TSAchievementDetailModel.m */; };
+		B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3800225B510900B17ACE /* TSAchievementDetailView.m */; };
+		B2DB3804225B511900B17ACE /* TSAchievementDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3803225B511900B17ACE /* TSAchievementDetailViewModel.m */; };
+		B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB3805225B519B00B17ACE /* TSAchievementDetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -676,6 +686,22 @@
 		B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryHeaderView.m; sourceTree = "<group>"; };
 		B2DB37E12259D09700B17ACE /* TSAdvisoryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryViewModel.h; sourceTree = "<group>"; };
 		B2DB37E22259D09700B17ACE /* TSAdvisoryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryViewModel.m; sourceTree = "<group>"; };
+		B2DB37E82259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryHeaderViewCollectionViewCell.h; sourceTree = "<group>"; };
+		B2DB37E92259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryHeaderViewCollectionViewCell.m; sourceTree = "<group>"; };
+		B2DB37EA2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAdvisoryHeaderViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2DB37ED225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTSAdvisoryTableViewCell.h; sourceTree = "<group>"; };
+		B2DB37EE225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTSAdvisoryTableViewCell.m; sourceTree = "<group>"; };
+		B2DB37EF225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTSAdvisoryTableViewCell.xib; sourceTree = "<group>"; };
+		B2DB37F7225B50E700B17ACE /* TSAchievementDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAchievementDetailViewController.h; sourceTree = "<group>"; };
+		B2DB37F8225B50E700B17ACE /* TSAchievementDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAchievementDetailViewController.m; sourceTree = "<group>"; };
+		B2DB37F9225B50E700B17ACE /* TSAchievementDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAchievementDetailViewController.xib; sourceTree = "<group>"; };
+		B2DB37FC225B50F800B17ACE /* TSAchievementDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAchievementDetailModel.h; sourceTree = "<group>"; };
+		B2DB37FD225B50F800B17ACE /* TSAchievementDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAchievementDetailModel.m; sourceTree = "<group>"; };
+		B2DB37FF225B510900B17ACE /* TSAchievementDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAchievementDetailView.h; sourceTree = "<group>"; };
+		B2DB3800225B510900B17ACE /* TSAchievementDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAchievementDetailView.m; sourceTree = "<group>"; };
+		B2DB3802225B511900B17ACE /* TSAchievementDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAchievementDetailViewModel.h; sourceTree = "<group>"; };
+		B2DB3803225B511900B17ACE /* TSAchievementDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAchievementDetailViewModel.m; sourceTree = "<group>"; };
+		B2DB3805225B519B00B17ACE /* TSAchievementDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAchievementDetailView.xib; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -2413,6 +2439,7 @@
 		B2DB37D12259CF3C00B17ACE /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				B2DB37F2225B4F0D00B17ACE /* AchievementDetail(成果展示) */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -2422,6 +2449,12 @@
 			children = (
 				B2DB37DE2259D08800B17ACE /* TSAdvisoryHeaderView.h */,
 				B2DB37DF2259D08800B17ACE /* TSAdvisoryHeaderView.m */,
+				B2DB37E82259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.h */,
+				B2DB37E92259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m */,
+				B2DB37EA2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib */,
+				B2DB37ED225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.h */,
+				B2DB37EE225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m */,
+				B2DB37EF225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2452,6 +2485,55 @@
 				B2DB37D82259D06E00B17ACE /* TSAdvisoryViewController.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DB37F2225B4F0D00B17ACE /* AchievementDetail(成果展示) */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37F4225B50CD00B17ACE /* Controller */,
+				B2DB37F6225B50CD00B17ACE /* Model */,
+				B2DB37F5225B50CD00B17ACE /* View */,
+				B2DB37F3225B50CD00B17ACE /* ViewModel */,
+			);
+			path = "AchievementDetail(成果展示)";
+			sourceTree = "<group>";
+		};
+		B2DB37F3225B50CD00B17ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3802225B511900B17ACE /* TSAchievementDetailViewModel.h */,
+				B2DB3803225B511900B17ACE /* TSAchievementDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2DB37F4225B50CD00B17ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37F7225B50E700B17ACE /* TSAchievementDetailViewController.h */,
+				B2DB37F8225B50E700B17ACE /* TSAchievementDetailViewController.m */,
+				B2DB37F9225B50E700B17ACE /* TSAchievementDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DB37F5225B50CD00B17ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37FF225B510900B17ACE /* TSAchievementDetailView.h */,
+				B2DB3800225B510900B17ACE /* TSAchievementDetailView.m */,
+				B2DB3805225B519B00B17ACE /* TSAchievementDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DB37F6225B50CD00B17ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB37FC225B50F800B17ACE /* TSAchievementDetailModel.h */,
+				B2DB37FD225B50F800B17ACE /* TSAchievementDetailModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
@@ -2587,6 +2669,7 @@
 			files = (
 				B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */,
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
+				B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */,
 				B2B4EF342253420C002267D8 /* TSStudentDetailView.xib in Resources */,
@@ -2604,6 +2687,7 @@
 				B2DB37DA2259D06E00B17ACE /* TSAdvisoryViewController.xib in Resources */,
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				B24B75342248CDF600C293B7 /* school.png in Resources */,
+				B2DB37FB225B50E700B17ACE /* TSAchievementDetailViewController.xib in Resources */,
 				B24525D92252049A00180FCA /* TSTeacherListTableViewCell.xib in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
@@ -2615,9 +2699,11 @@
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
+				B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
 				22F382132238DB88005A0AD7 /* MineView.storyboard in Resources */,
 				B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */,
+				B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
@@ -2763,11 +2849,13 @@
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
 				22F3812422363C00005A0AD7 /* WebViewJavascriptBridge.m in Sources */,
+				B2DB37FE225B50F800B17ACE /* TSAchievementDetailModel.m in Sources */,
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
 				B2DB37C32255F18E00B17ACE /* TSInternshipDetailView.m in Sources */,
 				B2B4EF31225306DB002267D8 /* TSStudentDetailViewController.m in Sources */,
+				B2DB3804225B511900B17ACE /* TSAchievementDetailViewModel.m in Sources */,
 				B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
 				B21C973722548C0900257774 /* TSTeacherDetailView.m in Sources */,
@@ -2780,6 +2868,7 @@
 				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
 				22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
+				B2DB37FA225B50E700B17ACE /* TSAchievementDetailViewController.m in Sources */,
 				B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */,
 				22F3817122375DFB005A0AD7 /* LPTagTextFieldCell.m in Sources */,
 				22F3819E2237C6E8005A0AD7 /* CommerceDetailFooter.m in Sources */,
@@ -2830,6 +2919,7 @@
 				22F382082238DB88005A0AD7 /* FriendNotifyListController.m in Sources */,
 				22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */,
 				B22909EE224136B9009D91AC /* TSInstitutionDetailModel.m in Sources */,
+				B2DB37F0225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m in Sources */,
 				22F3812222363C00005A0AD7 /* WebViewJavascriptBridgeBase.m in Sources */,
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
 				22F3813E22363C00005A0AD7 /* UIButton+Custom.m in Sources */,
@@ -2874,6 +2964,7 @@
 				B22909FE22413719009D91AC /* TSInstitutionMsgBoardViewController.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
+				B2DB37EB2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m in Sources */,
 				B2290A22224137FF009D91AC /* TSInstitutionStudentTableViewCell.m in Sources */,
 				22F3820B2238DB88005A0AD7 /* FriendNotifyCell.m in Sources */,
 				22F3813222363C00005A0AD7 /* UIImage+SubImage.m in Sources */,
@@ -2898,6 +2989,7 @@
 				22F3814822363C00005A0AD7 /* UIBarButtonItem+Badge.m in Sources */,
 				B24525C32252042500180FCA /* TSStudentListViewController.m in Sources */,
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
+				B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */,
 				B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */,
 				B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
