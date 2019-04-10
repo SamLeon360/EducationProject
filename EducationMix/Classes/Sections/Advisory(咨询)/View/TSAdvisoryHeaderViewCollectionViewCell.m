@@ -8,11 +8,29 @@
 
 #import "TSAdvisoryHeaderViewCollectionViewCell.h"
 
+@interface TSAdvisoryHeaderViewCollectionViewCell ()
+
+@property(nonatomic, strong)IBOutlet UILabel *name;
+@property(nonatomic, strong)IBOutlet UILabel *engName;
+@property(nonatomic, strong)IBOutlet UIImageView *iconImageView;
+
+
+@end
+
 @implementation TSAdvisoryHeaderViewCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
 }
+
+- (void)setModel:(TSAdvisoryHeaderViewCollectionViewCellModel *)model {
+    
+    _name.text = model.name;
+    _engName.text = model.englishName;
+    _iconImageView.image = [UIImage imageNamed:model.image];
+    
+}
+
 
 @end

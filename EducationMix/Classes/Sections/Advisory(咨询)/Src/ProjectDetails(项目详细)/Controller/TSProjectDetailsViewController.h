@@ -1,8 +1,8 @@
 //
-//  TSAdvisoryHeaderView.h
+//  TSProjectDetailsViewController.h
 //  EducationMix
 //
-//  Created by Taosky on 2019/4/7.
+//  Created by Taosky on 2019/4/9.
 //  Copyright © 2019 iTaosky. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSAdvisoryHeaderView : UIView
+@interface TSProjectDetailsViewController : UIViewController
 
 @end
 

@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TSAdvisoryHeaderViewCollectionViewCellModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSAdvisoryHeaderViewCollectionViewCell : UICollectionViewCell
+
+@property(nonatomic, strong)TSAdvisoryHeaderViewCollectionViewCellModel *model;
+
 
 @end
 

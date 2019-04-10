@@ -229,5 +229,51 @@
     
 }
 
+//     //                case '1':
+//                    return '本科院校';
+//                case '2':
+//                    return '大专院校';
+//                case '3':
+//                    return '高职院校';
+//                case '4':
+//                    return '事业单位';
+//                case '5':
+//                    return '企业';
+
++(NSString *)getUnitType:(NSInteger)unitType {
+    
+    NSString *result = @"";
+    
+    switch (unitType) {
+        case 1:
+            result = @"本科院校";
+            break;
+        case 2:
+            result = @"大专院校";
+            
+            break;
+        case 3:
+            result = @"高职院校";
+            
+            break;
+        case 4:
+            result = @"事业单位";
+            
+            break;
+        case 5:
+            result = @"企业";
+            
+            break;
+            
+        default:
+            result = @"其他";
+            
+            break;
+    }
+    
+    return result;
+
+}
+
 
 @end

@@ -20,26 +20,26 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平台新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyH-Pn-sL6">
-                        <rect key="frame" x="110" y="18" width="70" height="21"/>
+                        <rect key="frame" x="109" y="22" width="70" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRF-Ph-TUK">
-                        <rect key="frame" x="12" y="18" width="54" height="53"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="新闻.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FRF-Ph-TUK">
+                        <rect key="frame" x="12" y="12" width="66" height="65"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="FRF-Ph-TUK" secondAttribute="height" multiplier="1:1" constant="1" id="LVd-p3-PXp"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfk-OT-viV">
-                        <rect key="frame" x="91" y="18" width="1" height="53"/>
+                        <rect key="frame" x="90" y="22" width="1" height="45"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="dFo-5u-Wr2"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSM-p7-373">
-                        <rect key="frame" x="111" y="50" width="43" height="21"/>
+                        <rect key="frame" x="110" y="46" width="43" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -48,14 +48,14 @@
             </view>
             <color key="backgroundColor" red="0.23018704354763031" green="0.77713233232498169" blue="0.3158949613571167" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="FRF-Ph-TUK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="E19-pO-f3R"/>
-                <constraint firstItem="Qfk-OT-viV" firstAttribute="height" secondItem="FRF-Ph-TUK" secondAttribute="height" id="Jya-1x-bXj"/>
+                <constraint firstItem="FRF-Ph-TUK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="E19-pO-f3R"/>
+                <constraint firstItem="Qfk-OT-viV" firstAttribute="height" secondItem="FRF-Ph-TUK" secondAttribute="height" constant="-20" id="Jya-1x-bXj"/>
                 <constraint firstItem="qyH-Pn-sL6" firstAttribute="top" secondItem="Qfk-OT-viV" secondAttribute="top" id="PeV-9x-YtI"/>
                 <constraint firstItem="YSM-p7-373" firstAttribute="leading" secondItem="Qfk-OT-viV" secondAttribute="trailing" constant="19" id="RJ9-X6-8Ne"/>
                 <constraint firstItem="Qfk-OT-viV" firstAttribute="centerY" secondItem="FRF-Ph-TUK" secondAttribute="centerY" id="UIv-lb-fki"/>
                 <constraint firstItem="qyH-Pn-sL6" firstAttribute="leading" secondItem="Qfk-OT-viV" secondAttribute="trailing" constant="18" id="V1G-JS-4tk"/>
-                <constraint firstAttribute="bottom" secondItem="FRF-Ph-TUK" secondAttribute="bottom" constant="18" id="W05-I1-kEC"/>
-                <constraint firstItem="Qfk-OT-viV" firstAttribute="leading" secondItem="FRF-Ph-TUK" secondAttribute="trailing" constant="25" id="kid-zE-F2d"/>
+                <constraint firstAttribute="bottom" secondItem="FRF-Ph-TUK" secondAttribute="bottom" constant="12" id="W05-I1-kEC"/>
+                <constraint firstItem="Qfk-OT-viV" firstAttribute="leading" secondItem="FRF-Ph-TUK" secondAttribute="trailing" constant="12" id="kid-zE-F2d"/>
                 <constraint firstItem="FRF-Ph-TUK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="lDs-aU-nyU"/>
                 <constraint firstItem="YSM-p7-373" firstAttribute="bottom" secondItem="Qfk-OT-viV" secondAttribute="bottom" id="t5Z-Rw-j11"/>
             </constraints>
@@ -65,7 +65,15 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="engName" destination="YSM-p7-373" id="uij-E0-uuD"/>
+                <outlet property="iconImageView" destination="FRF-Ph-TUK" id="V9P-Pl-4hh"/>
+                <outlet property="name" destination="qyH-Pn-sL6" id="ESk-oC-1i0"/>
+            </connections>
             <point key="canvasLocation" x="274.63768115942031" y="100.78125"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="新闻.jpg" width="200" height="200"/>
+    </resources>
 </document>

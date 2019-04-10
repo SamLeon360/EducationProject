@@ -15,6 +15,10 @@ static NSString *const TSAdvisoryHeaderViewCollectionViewCellID = @"TSAdvisoryHe
 
 @property (nonatomic, strong)IBOutlet UICollectionView *collectionView;
 
+//装collectionCell内容 （静态）
+@property (nonatomic, strong)NSArray *dataSource;
+//装collectionCell背景颜色 （静态）
+@property(nonatomic, strong)NSMutableArray *colorArr;
 
 
 @end
@@ -54,11 +58,30 @@ static NSString *const TSAdvisoryHeaderViewCollectionViewCellID = @"TSAdvisoryHe
 - (NSArray *)dataSource {
     
     if(!_dataSource){
-        _dataSource = @[@"",@"",@"",@""];
+        
+
+        _dataSource = @[ @{@"image":@"法规.jpg",@"name":@"政策法规",@"englishName":@"Policy"},
+                        @{@"image":@"文库.jpg",@"name":@"文库",@"englishName":@"Library"},
+                        @{@"image":@"公告.jpg",@"name":@"通知公告",@"englishName":@"Notice"},
+                        @{@"image":@"新闻.jpg",@"name":@"平台新闻",@"englishName":@"News"}];
     }
     return  _dataSource;
 }
 
+- (NSMutableArray *)colorArr {
+    
+    if(!_colorArr){
+        
+        _colorArr = [[NSMutableArray alloc] init];
+        
+        [_colorArr addObject: TSColor_RGB(154, 202, 64)];
+        [_colorArr addObject: TSColor_RGB(253, 152, 39)];
+        [_colorArr addObject: TSColor_RGB(253, 203, 46)];
+        [_colorArr addObject: TSColor_RGB(106, 204, 203)];
+
+    }
+    return _colorArr;
+}
 
 // MARK: - UICollectionViewDataSource
 
@@ -68,8 +91,12 @@ static NSString *const TSAdvisoryHeaderViewCollectionViewCellID = @"TSAdvisoryHe
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TSAdvisoryHeaderViewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TSAdvisoryHeaderViewCollectionViewCellID forIndexPath:indexPath];
+    
+    TSAdvisoryHeaderViewCollectionViewCellModel *model = [TSAdvisoryHeaderViewCollectionViewCellModel mj_objectWithKeyValues:self.dataSource[indexPath.row]];
+    
+    cell.backgroundColor = self.colorArr[indexPath.row];
 //    cell.backgroundColor =self.cellBgColorArr[indexPath.row];
-//    cell.model = self.dataSource[indexPath.item];
+    cell.model = model;
     return cell;
 }
 

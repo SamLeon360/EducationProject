@@ -241,6 +241,22 @@
 		B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3800225B510900B17ACE /* TSAchievementDetailView.m */; };
 		B2DB3804225B511900B17ACE /* TSAchievementDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3803225B511900B17ACE /* TSAchievementDetailViewModel.m */; };
 		B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB3805225B519B00B17ACE /* TSAchievementDetailView.xib */; };
+		B2DB380C225C742500B17ACE /* 新闻.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB3808225C742400B17ACE /* 新闻.jpg */; };
+		B2DB380D225C742500B17ACE /* 文库.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB3809225C742400B17ACE /* 文库.jpg */; };
+		B2DB380E225C742500B17ACE /* 公告.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB380A225C742400B17ACE /* 公告.jpg */; };
+		B2DB380F225C742500B17ACE /* 法规.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB380B225C742400B17ACE /* 法规.jpg */; };
+		B2DB3812225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3811225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.m */; };
+		B2DB3820225C821300B17ACE /* TSTeamDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB381E225C821200B17ACE /* TSTeamDetailsViewController.m */; };
+		B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB381F225C821200B17ACE /* TSTeamDetailsViewController.xib */; };
+		B2DB3824225C821F00B17ACE /* TSTeamDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3823225C821F00B17ACE /* TSTeamDetailsModel.m */; };
+		B2DB3827225C823200B17ACE /* TSTeamDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3826225C823200B17ACE /* TSTeamDetailsView.m */; };
+		B2DB382A225C824000B17ACE /* TSTeamDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3829225C824000B17ACE /* TSTeamDetailsViewModel.m */; };
+		B2DB382C225C824B00B17ACE /* TSTeamDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB382B225C824B00B17ACE /* TSTeamDetailsView.xib */; };
+		B2DB3830225C826300B17ACE /* TSProjectDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB382E225C826300B17ACE /* TSProjectDetailsViewController.m */; };
+		B2DB3831225C826300B17ACE /* TSProjectDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB382F225C826300B17ACE /* TSProjectDetailsViewController.xib */; };
+		B2DB3834225C826E00B17ACE /* TSProjectDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3833225C826E00B17ACE /* TSProjectDetailsModel.m */; };
+		B2DB3837225C827900B17ACE /* TSProjectDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */; };
+		B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3839225C828800B17ACE /* TSProjectDetailsViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -702,6 +718,31 @@
 		B2DB3802225B511900B17ACE /* TSAchievementDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAchievementDetailViewModel.h; sourceTree = "<group>"; };
 		B2DB3803225B511900B17ACE /* TSAchievementDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAchievementDetailViewModel.m; sourceTree = "<group>"; };
 		B2DB3805225B519B00B17ACE /* TSAchievementDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAchievementDetailView.xib; sourceTree = "<group>"; };
+		B2DB3808225C742400B17ACE /* 新闻.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "新闻.jpg"; sourceTree = "<group>"; };
+		B2DB3809225C742400B17ACE /* 文库.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文库.jpg"; sourceTree = "<group>"; };
+		B2DB380A225C742400B17ACE /* 公告.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "公告.jpg"; sourceTree = "<group>"; };
+		B2DB380B225C742400B17ACE /* 法规.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "法规.jpg"; sourceTree = "<group>"; };
+		B2DB3810225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAdvisoryHeaderViewCollectionViewCellModel.h; sourceTree = "<group>"; };
+		B2DB3811225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAdvisoryHeaderViewCollectionViewCellModel.m; sourceTree = "<group>"; };
+		B2DB381D225C821200B17ACE /* TSTeamDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsViewController.h; sourceTree = "<group>"; };
+		B2DB381E225C821200B17ACE /* TSTeamDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsViewController.m; sourceTree = "<group>"; };
+		B2DB381F225C821200B17ACE /* TSTeamDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTeamDetailsViewController.xib; sourceTree = "<group>"; };
+		B2DB3822225C821F00B17ACE /* TSTeamDetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsModel.h; sourceTree = "<group>"; };
+		B2DB3823225C821F00B17ACE /* TSTeamDetailsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsModel.m; sourceTree = "<group>"; };
+		B2DB3825225C823200B17ACE /* TSTeamDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsView.h; sourceTree = "<group>"; };
+		B2DB3826225C823200B17ACE /* TSTeamDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsView.m; sourceTree = "<group>"; };
+		B2DB3828225C824000B17ACE /* TSTeamDetailsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsViewModel.h; sourceTree = "<group>"; };
+		B2DB3829225C824000B17ACE /* TSTeamDetailsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsViewModel.m; sourceTree = "<group>"; };
+		B2DB382B225C824B00B17ACE /* TSTeamDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTeamDetailsView.xib; sourceTree = "<group>"; };
+		B2DB382D225C826300B17ACE /* TSProjectDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectDetailsViewController.h; sourceTree = "<group>"; };
+		B2DB382E225C826300B17ACE /* TSProjectDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsViewController.m; sourceTree = "<group>"; };
+		B2DB382F225C826300B17ACE /* TSProjectDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSProjectDetailsViewController.xib; sourceTree = "<group>"; };
+		B2DB3832225C826E00B17ACE /* TSProjectDetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectDetailsModel.h; sourceTree = "<group>"; };
+		B2DB3833225C826E00B17ACE /* TSProjectDetailsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsModel.m; sourceTree = "<group>"; };
+		B2DB3835225C827900B17ACE /* TSProjectDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectDetailsView.h; sourceTree = "<group>"; };
+		B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsView.m; sourceTree = "<group>"; };
+		B2DB3838225C828800B17ACE /* TSProjectDetailsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectDetailsViewModel.h; sourceTree = "<group>"; };
+		B2DB3839225C828800B17ACE /* TSProjectDetailsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsViewModel.m; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -2127,6 +2168,10 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B2DB380B225C742400B17ACE /* 法规.jpg */,
+				B2DB380A225C742400B17ACE /* 公告.jpg */,
+				B2DB3809225C742400B17ACE /* 文库.jpg */,
+				B2DB3808225C742400B17ACE /* 新闻.jpg */,
 				B24B75332248CDF600C293B7 /* school.png */,
 				B2290A812245CEEF009D91AC /* 学生头像.png */,
 			);
@@ -2439,6 +2484,8 @@
 		B2DB37D12259CF3C00B17ACE /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				B2DB3814225C819F00B17ACE /* ProjectDetails(项目详细) */,
+				B2DB3813225C816000B17ACE /* TeamDetails(团队详细) */,
 				B2DB37F2225B4F0D00B17ACE /* AchievementDetail(成果展示) */,
 			);
 			path = Src;
@@ -2473,6 +2520,8 @@
 			children = (
 				B2DB37DB2259D07800B17ACE /* TSAdvisoryModel.h */,
 				B2DB37DC2259D07800B17ACE /* TSAdvisoryModel.m */,
+				B2DB3810225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.h */,
+				B2DB3811225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2532,6 +2581,103 @@
 			children = (
 				B2DB37FC225B50F800B17ACE /* TSAchievementDetailModel.h */,
 				B2DB37FD225B50F800B17ACE /* TSAchievementDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DB3813225C816000B17ACE /* TeamDetails(团队详细) */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3816225C81E500B17ACE /* Controller */,
+				B2DB3815225C81E500B17ACE /* Model */,
+				B2DB3818225C81E500B17ACE /* View */,
+				B2DB3817225C81E500B17ACE /* ViewModel */,
+			);
+			path = "TeamDetails(团队详细)";
+			sourceTree = "<group>";
+		};
+		B2DB3814225C819F00B17ACE /* ProjectDetails(项目详细) */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3819225C81EE00B17ACE /* Controller */,
+				B2DB381C225C81EE00B17ACE /* Model */,
+				B2DB381B225C81EE00B17ACE /* View */,
+				B2DB381A225C81EE00B17ACE /* ViewModel */,
+			);
+			path = "ProjectDetails(项目详细)";
+			sourceTree = "<group>";
+		};
+		B2DB3815225C81E500B17ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3822225C821F00B17ACE /* TSTeamDetailsModel.h */,
+				B2DB3823225C821F00B17ACE /* TSTeamDetailsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DB3816225C81E500B17ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB381D225C821200B17ACE /* TSTeamDetailsViewController.h */,
+				B2DB381E225C821200B17ACE /* TSTeamDetailsViewController.m */,
+				B2DB381F225C821200B17ACE /* TSTeamDetailsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DB3817225C81E500B17ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3828225C824000B17ACE /* TSTeamDetailsViewModel.h */,
+				B2DB3829225C824000B17ACE /* TSTeamDetailsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2DB3818225C81E500B17ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3825225C823200B17ACE /* TSTeamDetailsView.h */,
+				B2DB3826225C823200B17ACE /* TSTeamDetailsView.m */,
+				B2DB382B225C824B00B17ACE /* TSTeamDetailsView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DB3819225C81EE00B17ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB382D225C826300B17ACE /* TSProjectDetailsViewController.h */,
+				B2DB382E225C826300B17ACE /* TSProjectDetailsViewController.m */,
+				B2DB382F225C826300B17ACE /* TSProjectDetailsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2DB381A225C81EE00B17ACE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3838225C828800B17ACE /* TSProjectDetailsViewModel.h */,
+				B2DB3839225C828800B17ACE /* TSProjectDetailsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2DB381B225C81EE00B17ACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3835225C827900B17ACE /* TSProjectDetailsView.h */,
+				B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DB381C225C81EE00B17ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB3832225C826E00B17ACE /* TSProjectDetailsModel.h */,
+				B2DB3833225C826E00B17ACE /* TSProjectDetailsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2672,6 +2818,7 @@
 				B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */,
+				B2DB380D225C742500B17ACE /* 文库.jpg in Resources */,
 				B2B4EF342253420C002267D8 /* TSStudentDetailView.xib in Resources */,
 				B23295B72255DD72003F9548 /* TSInternshipTableViewCell.xib in Resources */,
 				B24525CB2252045200180FCA /* TSStudentListTableViewCell.xib in Resources */,
@@ -2680,8 +2827,10 @@
 				B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
+				B2DB380E225C742500B17ACE /* 公告.jpg in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
+				B2DB3831225C826300B17ACE /* TSProjectDetailsViewController.xib in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */,
 				B2DB37DA2259D06E00B17ACE /* TSAdvisoryViewController.xib in Resources */,
@@ -2690,10 +2839,12 @@
 				B2DB37FB225B50E700B17ACE /* TSAchievementDetailViewController.xib in Resources */,
 				B24525D92252049A00180FCA /* TSTeacherListTableViewCell.xib in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
+				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
 				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
 				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
+				B2DB380C225C742500B17ACE /* 新闻.jpg in Resources */,
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
@@ -2702,7 +2853,9 @@
 				B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
 				22F382132238DB88005A0AD7 /* MineView.storyboard in Resources */,
+				B2DB380F225C742500B17ACE /* 法规.jpg in Resources */,
 				B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */,
+				B2DB382C225C824B00B17ACE /* TSTeamDetailsView.xib in Resources */,
 				B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
@@ -2848,6 +3001,7 @@
 				22F3813F22363C00005A0AD7 /* UIButton+Badge.m in Sources */,
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
+				B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */,
 				22F3812422363C00005A0AD7 /* WebViewJavascriptBridge.m in Sources */,
 				B2DB37FE225B50F800B17ACE /* TSAchievementDetailModel.m in Sources */,
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
@@ -2867,6 +3021,8 @@
 				B24525DC225204A800180FCA /* TSTeacherListViewModel.m in Sources */,
 				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
 				22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */,
+				B2DB3827225C823200B17ACE /* TSTeamDetailsView.m in Sources */,
+				B2DB3820225C821300B17ACE /* TSTeamDetailsViewController.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
 				B2DB37FA225B50E700B17ACE /* TSAchievementDetailViewController.m in Sources */,
 				B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */,
@@ -2912,6 +3068,7 @@
 				22F3819C2237C6E8005A0AD7 /* commerceDetailSection.m in Sources */,
 				B2290A19224137C2009D91AC /* TSInstitutionTeacherModel.m in Sources */,
 				B24525CA2252045200180FCA /* TSStudentListTableViewCell.m in Sources */,
+				B2DB3812225C774B00B17ACE /* TSAdvisoryHeaderViewCollectionViewCellModel.m in Sources */,
 				22F3812E22363C00005A0AD7 /* InvitationManager.m in Sources */,
 				B24525C62252043D00180FCA /* TSStudentListModel.m in Sources */,
 				22F382152238DB88005A0AD7 /* YKEditTreeCameraBottomView.m in Sources */,
@@ -2946,8 +3103,10 @@
 				B22909CB223D3EC2009D91AC /* TSINSTMsgViewController.m in Sources */,
 				22F3813622363C00005A0AD7 /* CustomFountion.m in Sources */,
 				B21C973A22548C1300257774 /* TSTeacherDetailViewModel.m in Sources */,
+				B2DB3834225C826E00B17ACE /* TSProjectDetailsModel.m in Sources */,
 				22F381B82238D9FE005A0AD7 /* TXWebViewController.m in Sources */,
 				22F3815222363C00005A0AD7 /* UITextField+WJ.m in Sources */,
+				B2DB3837225C827900B17ACE /* TSProjectDetailsView.m in Sources */,
 				22F381A12237C6E8005A0AD7 /* SearchCommerceController.m in Sources */,
 				B2DB37C02255F18100B17ACE /* TSInternshipDetailModel.m in Sources */,
 				22F3814322363C00005A0AD7 /* UIView+Extension.m in Sources */,
@@ -2988,6 +3147,7 @@
 				22F3817522375DFB005A0AD7 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				22F3814822363C00005A0AD7 /* UIBarButtonItem+Badge.m in Sources */,
 				B24525C32252042500180FCA /* TSStudentListViewController.m in Sources */,
+				B2DB3824225C821F00B17ACE /* TSTeamDetailsModel.m in Sources */,
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
 				B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */,
 				B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */,
@@ -3019,6 +3179,8 @@
 				B22909F2224136DA009D91AC /* TSInstitutionDetailTableViewCell.m in Sources */,
 				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,
 				22F381B32238D9D8005A0AD7 /* UploadCommerceControllerController.m in Sources */,
+				B2DB3830225C826300B17ACE /* TSProjectDetailsViewController.m in Sources */,
+				B2DB382A225C824000B17ACE /* TSTeamDetailsViewModel.m in Sources */,
 				22F3811E22363C00005A0AD7 /* WXApiResponseHandler.m in Sources */,
 				B2290A5722432444009D91AC /* TSMainTabBarViewController.m in Sources */,
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,

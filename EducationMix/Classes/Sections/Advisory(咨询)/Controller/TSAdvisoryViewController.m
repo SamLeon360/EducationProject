@@ -14,6 +14,7 @@
 #import "TSAdvisoryModel.h"
 
 #import "TSAchievementDetailViewController.h"
+#import "TSTeamDetailsViewController.h"
 
 @interface TSAdvisoryViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,10 +29,13 @@
 @property(nonatomic, strong)IBOutlet UIButton *button3;
 @property(nonatomic, strong)IBOutlet UIButton *button4;
 
+
 //记录上一个button
 @property (nonatomic, strong) UIButton *previousButton;
 //装按钮
 @property(nonatomic, strong)NSArray *buttonArr;
+//记录当前页面按钮
+@property(nonatomic, assign)NSInteger btnInx;
 
 @end
 
@@ -100,7 +104,7 @@
     self.mapping_type = index + 1 ;
     self.advisoryVM.mapping_type = index + 1;
     [self loadData];
-    
+    self.btnInx = index;
 //    NSLog(@"%ld",index);
     
     
@@ -110,11 +114,23 @@
 #pragma mark - Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TSAchievementDetailViewController *vc = [[TSAchievementDetailViewController alloc] init];
-    vc.title = @"成果详细";
-    TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
-    vc.results_id = model.Id;
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if(self.btnInx == 0){
+        TSAchievementDetailViewController *vc = [[TSAchievementDetailViewController alloc] init];
+        vc.title = @"成果详细";
+        TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
+        vc.results_id = model.Id;
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(self.btnInx == 1){
+        
+        TSTeamDetailsViewController *vc = [[TSTeamDetailsViewController alloc] init];
+        vc.title = @"成果详细";
+        TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
+        vc.team_id = model.Id;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+
     
 }
 
@@ -161,6 +177,8 @@
             if (i == 0) {
                 btn.selected = YES;
                 _previousButton = btn;
+                self.btnInx = 0;
+
                 
             }
         }

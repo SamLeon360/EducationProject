@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 //因接口缺陷，需要在本地映射基础资料（技术成熟度）
 + (NSString *)getOwnType:(NSInteger)OwnType;
 
+//因接口缺陷，需要在本地映射基础资料（院校类型）
++(NSString *)getUnitType:(NSInteger)unitType;
+
 
 @end
 
