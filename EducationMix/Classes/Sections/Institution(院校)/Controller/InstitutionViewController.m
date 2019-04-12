@@ -65,8 +65,10 @@
     if(![self.contentVM.model isEqual:[NSNull null]]) {
         TSINSTMsgViewController *viewControlle = [[TSINSTMsgViewController alloc]init];
         viewControlle.academy_id = model.academy_id;
-        
+        viewControlle.hidesBottomBarWhenPushed = YES;
+
         [self.navigationController pushViewController:viewControlle animated:YES];
+
     }
     
 
@@ -137,11 +139,11 @@
         
         [_tableView registerNib:[UINib nibWithNibName:@"InstitutionTableViewCell" bundle:nil] forCellReuseIdentifier:@"InstitutionTableViewCell"];
         
-        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
-        tableHeaderView.backgroundColor = [UIColor whiteColor];
+//        UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+//        tableHeaderView.backgroundColor = [UIColor whiteColor];
         
-        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 44, 0);
-        _tableView.tableHeaderView = tableHeaderView;
+        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+//        _tableView.tableHeaderView = tableHeaderView;
         
         
         

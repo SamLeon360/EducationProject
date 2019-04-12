@@ -208,6 +208,14 @@
 		B24B75342248CDF600C293B7 /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = B24B75332248CDF600C293B7 /* school.png */; };
 		B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B75362248D66200C293B7 /* UIImage+Util.m */; };
 		B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24B753F224A163B00C293B7 /* TSMainNavigationController.m */; };
+		B25F402D225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F402B225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m */; };
+		B25F402E225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F402C225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib */; };
+		B25F4037225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4035225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.m */; };
+		B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F4036225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.xib */; };
+		B25F403B225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F403A225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m */; };
+		B25F403F225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F403D225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.m */; };
+		B25F4040225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F403E225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.xib */; };
+		B25F4043225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4042225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m */; };
 		B2B4EF252252F8FD002267D8 /* TSStudentDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */; };
 		B2B4EF282252F90F002267D8 /* TSStudentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF272252F90F002267D8 /* TSStudentDetailView.m */; };
 		B2B4EF2B2252F926002267D8 /* TSStudentDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF2A2252F926002267D8 /* TSStudentDetailViewModel.m */; };
@@ -257,6 +265,19 @@
 		B2DB3834225C826E00B17ACE /* TSProjectDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3833225C826E00B17ACE /* TSProjectDetailsModel.m */; };
 		B2DB3837225C827900B17ACE /* TSProjectDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */; };
 		B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB3839225C828800B17ACE /* TSProjectDetailsViewModel.m */; };
+		B2E2B221225D883600CB8441 /* TSTechnicalRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B21F225D883600CB8441 /* TSTechnicalRequirementsViewController.m */; };
+		B2E2B222225D883600CB8441 /* TSTechnicalRequirementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2B220225D883600CB8441 /* TSTechnicalRequirementsViewController.xib */; };
+		B2E2B225225D884300CB8441 /* TSTechnicalRequirementsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B224225D884300CB8441 /* TSTechnicalRequirementsModel.m */; };
+		B2E2B229225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B227225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m */; };
+		B2E2B22A225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2B228225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib */; };
+		B2E2B22D225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B22C225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m */; };
+		B2E2B23B225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B239225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.m */; };
+		B2E2B23C225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2B23A225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib */; };
+		B2E2B23F225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B23E225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m */; };
+		B2E2B242225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B241225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m */; };
+		B2E2B245225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B244225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m */; };
+		B2E2B247225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2B246225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib */; };
+		B2E2B249225DD44400CB8441 /* TSProjectDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2B248225DD44400CB8441 /* TSProjectDetailsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -662,6 +683,19 @@
 		B24B75362248D66200C293B7 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		B24B753E224A163B00C293B7 /* TSMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMainNavigationController.h; sourceTree = "<group>"; };
 		B24B753F224A163B00C293B7 /* TSMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMainNavigationController.m; sourceTree = "<group>"; };
+		B25F402A225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInstitutionDetailTableViewCellSecond.h; sourceTree = "<group>"; };
+		B25F402B225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionDetailTableViewCellSecond.m; sourceTree = "<group>"; };
+		B25F402C225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInstitutionDetailTableViewCellSecond.xib; sourceTree = "<group>"; };
+		B25F4034225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsViewController.h; sourceTree = "<group>"; };
+		B25F4035225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsViewController.m; sourceTree = "<group>"; };
+		B25F4036225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPoliciesAndRegulationsViewController.xib; sourceTree = "<group>"; };
+		B25F4039225F3ADA001218ED /* TSPoliciesAndRegulationsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsModel.h; sourceTree = "<group>"; };
+		B25F403A225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsModel.m; sourceTree = "<group>"; };
+		B25F403C225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsTableViewCell.h; sourceTree = "<group>"; };
+		B25F403D225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsTableViewCell.m; sourceTree = "<group>"; };
+		B25F403E225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPoliciesAndRegulationsTableViewCell.xib; sourceTree = "<group>"; };
+		B25F4041225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsViewModel.h; sourceTree = "<group>"; };
+		B25F4042225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsViewModel.m; sourceTree = "<group>"; };
 		B2B4EF232252F8FD002267D8 /* TSStudentDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailModel.h; sourceTree = "<group>"; };
 		B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailModel.m; sourceTree = "<group>"; };
 		B2B4EF262252F90F002267D8 /* TSStudentDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailView.h; sourceTree = "<group>"; };
@@ -743,6 +777,27 @@
 		B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsView.m; sourceTree = "<group>"; };
 		B2DB3838225C828800B17ACE /* TSProjectDetailsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectDetailsViewModel.h; sourceTree = "<group>"; };
 		B2DB3839225C828800B17ACE /* TSProjectDetailsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSProjectDetailsViewModel.m; sourceTree = "<group>"; };
+		B2E2B21E225D883600CB8441 /* TSTechnicalRequirementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsViewController.h; sourceTree = "<group>"; };
+		B2E2B21F225D883600CB8441 /* TSTechnicalRequirementsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsViewController.m; sourceTree = "<group>"; };
+		B2E2B220225D883600CB8441 /* TSTechnicalRequirementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTechnicalRequirementsViewController.xib; sourceTree = "<group>"; };
+		B2E2B223225D884300CB8441 /* TSTechnicalRequirementsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsModel.h; sourceTree = "<group>"; };
+		B2E2B224225D884300CB8441 /* TSTechnicalRequirementsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsModel.m; sourceTree = "<group>"; };
+		B2E2B226225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsTableViewCell.h; sourceTree = "<group>"; };
+		B2E2B227225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsTableViewCell.m; sourceTree = "<group>"; };
+		B2E2B228225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTechnicalRequirementsTableViewCell.xib; sourceTree = "<group>"; };
+		B2E2B22B225D885B00CB8441 /* TSTechnicalRequirementsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsViewModel.h; sourceTree = "<group>"; };
+		B2E2B22C225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsViewModel.m; sourceTree = "<group>"; };
+		B2E2B238225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsDetailViewController.h; sourceTree = "<group>"; };
+		B2E2B239225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsDetailViewController.m; sourceTree = "<group>"; };
+		B2E2B23A225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTechnicalRequirementsDetailViewController.xib; sourceTree = "<group>"; };
+		B2E2B23D225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsDetailModel.h; sourceTree = "<group>"; };
+		B2E2B23E225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsDetailModel.m; sourceTree = "<group>"; };
+		B2E2B240225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsDetailView.h; sourceTree = "<group>"; };
+		B2E2B241225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsDetailView.m; sourceTree = "<group>"; };
+		B2E2B243225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTechnicalRequirementsDetailViewModel.h; sourceTree = "<group>"; };
+		B2E2B244225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTechnicalRequirementsDetailViewModel.m; sourceTree = "<group>"; };
+		B2E2B246225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSTechnicalRequirementsDetailView.xib; sourceTree = "<group>"; };
+		B2E2B248225DD44400CB8441 /* TSProjectDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSProjectDetailsView.xib; sourceTree = "<group>"; };
 		C3450617FAFD2E3E974647E7 /* libPods-EducationMixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984F82AA17EFD9474C0DAAA /* Pods-EducationMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMix.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMix/Pods-EducationMix.release.xcconfig"; sourceTree = "<group>"; };
 		CDB92BA1945C4550E3D48AC5 /* Pods-EducationMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1765,6 +1820,7 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B2E2B218225D87AF00CB8441 /* TechnicalRequirements(技术需求) */,
 				B2DB37D02259CD3A00B17ACE /* Advisory(咨询) */,
 				B24525B8225203A900180FCA /* StudentList(人才、学生列表-公用) */,
 				B24525B72252037B00180FCA /* TeacherList(教授列表-公用) */,
@@ -2081,6 +2137,9 @@
 				B22909EF224136DA009D91AC /* TSInstitutionDetailTableViewCell.h */,
 				B22909F0224136DA009D91AC /* TSInstitutionDetailTableViewCell.m */,
 				B22909F1224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib */,
+				B25F402A225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.h */,
+				B25F402B225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m */,
+				B25F402C225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2293,6 +2352,55 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		B25F402F225F3A59001218ED /* PoliciesAndRegulations(政策法规) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4031225F3ABA001218ED /* Controller */,
+				B25F4033225F3ABA001218ED /* Model */,
+				B25F4030225F3AB9001218ED /* View */,
+				B25F4032225F3ABA001218ED /* ViewModel */,
+			);
+			path = "PoliciesAndRegulations(政策法规)";
+			sourceTree = "<group>";
+		};
+		B25F4030225F3AB9001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F403C225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.h */,
+				B25F403D225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.m */,
+				B25F403E225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F4031225F3ABA001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4034225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.h */,
+				B25F4035225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.m */,
+				B25F4036225F3ACF001218ED /* TSPoliciesAndRegulationsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F4032225F3ABA001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4041225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.h */,
+				B25F4042225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F4033225F3ABA001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4039225F3ADA001218ED /* TSPoliciesAndRegulationsModel.h */,
+				B25F403A225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B2B4EF1A2252F838002267D8 /* Src */ = {
 			isa = PBXGroup;
 			children = (
@@ -2484,6 +2592,7 @@
 		B2DB37D12259CF3C00B17ACE /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				B25F402F225F3A59001218ED /* PoliciesAndRegulations(政策法规) */,
 				B2DB3814225C819F00B17ACE /* ProjectDetails(项目详细) */,
 				B2DB3813225C816000B17ACE /* TeamDetails(团队详细) */,
 				B2DB37F2225B4F0D00B17ACE /* AchievementDetail(成果展示) */,
@@ -2669,6 +2778,7 @@
 			children = (
 				B2DB3835225C827900B17ACE /* TSProjectDetailsView.h */,
 				B2DB3836225C827900B17ACE /* TSProjectDetailsView.m */,
+				B2E2B248225DD44400CB8441 /* TSProjectDetailsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2680,6 +2790,113 @@
 				B2DB3833225C826E00B17ACE /* TSProjectDetailsModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B2E2B218225D87AF00CB8441 /* TechnicalRequirements(技术需求) */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B219225D881C00CB8441 /* Src */,
+				B2E2B21D225D881D00CB8441 /* Controller */,
+				B2E2B21A225D881D00CB8441 /* Model */,
+				B2E2B21B225D881D00CB8441 /* View */,
+				B2E2B21C225D881D00CB8441 /* ViewModel */,
+			);
+			path = "TechnicalRequirements(技术需求)";
+			sourceTree = "<group>";
+		};
+		B2E2B219225D881C00CB8441 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B22E225D99DE00CB8441 /* TechnicalRequirementsDetail(技术需求详细) */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B2E2B21A225D881D00CB8441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B223225D884300CB8441 /* TSTechnicalRequirementsModel.h */,
+				B2E2B224225D884300CB8441 /* TSTechnicalRequirementsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2E2B21B225D881D00CB8441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B226225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.h */,
+				B2E2B227225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m */,
+				B2E2B228225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2E2B21C225D881D00CB8441 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B22B225D885B00CB8441 /* TSTechnicalRequirementsViewModel.h */,
+				B2E2B22C225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2E2B21D225D881D00CB8441 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B21E225D883600CB8441 /* TSTechnicalRequirementsViewController.h */,
+				B2E2B21F225D883600CB8441 /* TSTechnicalRequirementsViewController.m */,
+				B2E2B220225D883600CB8441 /* TSTechnicalRequirementsViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2E2B22E225D99DE00CB8441 /* TechnicalRequirementsDetail(技术需求详细) */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B236225D9A4900CB8441 /* Controller */,
+				B2E2B235225D9A4900CB8441 /* Model */,
+				B2E2B234225D9A4900CB8441 /* View */,
+				B2E2B237225D9A4900CB8441 /* ViewModel */,
+			);
+			path = "TechnicalRequirementsDetail(技术需求详细)";
+			sourceTree = "<group>";
+		};
+		B2E2B234225D9A4900CB8441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B240225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.h */,
+				B2E2B241225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m */,
+				B2E2B246225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2E2B235225D9A4900CB8441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B23D225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.h */,
+				B2E2B23E225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2E2B236225D9A4900CB8441 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B238225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.h */,
+				B2E2B239225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.m */,
+				B2E2B23A225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2E2B237225D9A4900CB8441 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2B243225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.h */,
+				B2E2B244225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C958D3675AE6E1F256086D8F /* Pods */ = {
@@ -2816,6 +3033,7 @@
 				B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */,
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
 				B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */,
+				B25F402E225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */,
 				B2DB380D225C742500B17ACE /* 文库.jpg in Resources */,
@@ -2825,6 +3043,7 @@
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
 				B2290A832245CEEF009D91AC /* 学生头像.png in Resources */,
 				B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */,
+				B25F4040225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				B2DB380E225C742500B17ACE /* 公告.jpg in Resources */,
@@ -2841,6 +3060,7 @@
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
+				B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */,
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
 				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
 				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
@@ -2849,17 +3069,22 @@
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */,
+				B2E2B249225DD44400CB8441 /* TSProjectDetailsView.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
 				B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
 				22F382132238DB88005A0AD7 /* MineView.storyboard in Resources */,
 				B2DB380F225C742500B17ACE /* 法规.jpg in Resources */,
 				B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */,
+				B2E2B23C225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib in Resources */,
 				B2DB382C225C824B00B17ACE /* TSTeamDetailsView.xib in Resources */,
 				B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
+				B2E2B247225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib in Resources */,
+				B2E2B222225D883600CB8441 /* TSTechnicalRequirementsViewController.xib in Resources */,
+				B2E2B22A225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2999,7 +3224,9 @@
 				22F3814422363C00005A0AD7 /* UIView+Genie.m in Sources */,
 				22F3813C22363C00005A0AD7 /* NSDictionary+Json.m in Sources */,
 				22F3813F22363C00005A0AD7 /* UIButton+Badge.m in Sources */,
+				B2E2B242225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m in Sources */,
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
+				B25F403B225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
 				B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */,
 				22F3812422363C00005A0AD7 /* WebViewJavascriptBridge.m in Sources */,
@@ -3027,6 +3254,7 @@
 				B2DB37FA225B50E700B17ACE /* TSAchievementDetailViewController.m in Sources */,
 				B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */,
 				22F3817122375DFB005A0AD7 /* LPTagTextFieldCell.m in Sources */,
+				B25F4037225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.m in Sources */,
 				22F3819E2237C6E8005A0AD7 /* CommerceDetailFooter.m in Sources */,
 				22F3811722363C00005A0AD7 /* GVUserDefaults+Properties.m in Sources */,
 				22F381AB2238D982005A0AD7 /* SearchCommerceTypeView.m in Sources */,
@@ -3046,6 +3274,7 @@
 				B2DB37E32259D09700B17ACE /* TSAdvisoryViewModel.m in Sources */,
 				22F381A22237C6E8005A0AD7 /* CommerceDetailController.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
+				B2E2B22D225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
 				B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */,
 				B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */,
@@ -3053,16 +3282,19 @@
 				B2DB37DD2259D07800B17ACE /* TSAdvisoryModel.m in Sources */,
 				22F382262238DC64005A0AD7 /* EditCompanyMessageController.m in Sources */,
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
+				B25F402D225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m in Sources */,
 				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
 				22F3814222363C00005A0AD7 /* UIWebView+Custom.m in Sources */,
 				22F3820F2238DB88005A0AD7 /* FriendListCell.m in Sources */,
 				B2290A0422413739009D91AC /* TSInstitutionMsgBoardView.m in Sources */,
+				B2E2B221225D883600CB8441 /* TSTechnicalRequirementsViewController.m in Sources */,
 				22F3812722363C00005A0AD7 /* MMReachabilityViewController.m in Sources */,
 				22F3823B223A365E005A0AD7 /* HomeNewPostCell.m in Sources */,
 				B2290A0A22413759009D91AC /* TSInstitutionStudentViewController.m in Sources */,
 				B2B4EF252252F8FD002267D8 /* TSStudentDetailModel.m in Sources */,
 				22F3813922363C00005A0AD7 /* UIImage+UIImageScale.m in Sources */,
 				22F3821B2238DB88005A0AD7 /* MemberDetailController.m in Sources */,
+				B25F403F225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.m in Sources */,
 				22F382112238DB88005A0AD7 /* LogoutViewController.m in Sources */,
 				B24525D42252048300180FCA /* TSTeacherListModel.m in Sources */,
 				22F3819C2237C6E8005A0AD7 /* commerceDetailSection.m in Sources */,
@@ -3077,12 +3309,14 @@
 				22F3822F22390637005A0AD7 /* EduSchoolHeader.m in Sources */,
 				B22909EE224136B9009D91AC /* TSInstitutionDetailModel.m in Sources */,
 				B2DB37F0225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.m in Sources */,
+				B2E2B23B225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.m in Sources */,
 				22F3812222363C00005A0AD7 /* WebViewJavascriptBridgeBase.m in Sources */,
 				22F3802F2235FF7F005A0AD7 /* main.m in Sources */,
 				22F3813E22363C00005A0AD7 /* UIButton+Custom.m in Sources */,
 				22F3813522363C00005A0AD7 /* UIImage+Color.m in Sources */,
 				22E16323223BA0C700821A1C /* LoginBottomView.m in Sources */,
 				22F3812A22363C00005A0AD7 /* NewEditAlertView.m in Sources */,
+				B2E2B245225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m in Sources */,
 				B22909CE223D3EDB009D91AC /* TSINSTMsgModel.m in Sources */,
 				22F3812122363C00005A0AD7 /* YKNavigationController.m in Sources */,
 				B2C8999A224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m in Sources */,
@@ -3091,6 +3325,7 @@
 				22F382092238DB88005A0AD7 /* SHEditCommidityCameraController.m in Sources */,
 				B2B4EF2B2252F926002267D8 /* TSStudentDetailViewModel.m in Sources */,
 				22F3820E2238DB88005A0AD7 /* MemberOtherMessageCell.m in Sources */,
+				B25F4043225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m in Sources */,
 				22F3811B22363C00005A0AD7 /* UITabBar+XSDExt.m in Sources */,
 				B2154739223BF32F000AD9D8 /* InstitutionViewController.m in Sources */,
 				B24525CE2252046200180FCA /* TSStudentListViewModel.m in Sources */,
@@ -3113,6 +3348,7 @@
 				22F382182238DB88005A0AD7 /* NotifyListCell.m in Sources */,
 				22F3820D2238DB88005A0AD7 /* ChangePwdController.m in Sources */,
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
+				B2E2B23F225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
 				B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
@@ -3130,6 +3366,7 @@
 				B22909F6224136F0009D91AC /* TSInstitutionMsgBoardViewModel.m in Sources */,
 				B24525D82252049A00180FCA /* TSTeacherListTableViewCell.m in Sources */,
 				22F3812D22363C00005A0AD7 /* RequestManager.m in Sources */,
+				B2E2B229225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m in Sources */,
 				B2290A0722413749009D91AC /* TSInstitutionStudentViewModel.m in Sources */,
 				22F381C42238DAF2005A0AD7 /* AddCommerceController.m in Sources */,
 				B22909D1223D3EEC009D91AC /* TSINSTMsgView.m in Sources */,
@@ -3138,6 +3375,7 @@
 				B2290A6D22433483009D91AC /* JQHeaderView.m in Sources */,
 				22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */,
 				22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */,
+				B2E2B225225D884300CB8441 /* TSTechnicalRequirementsModel.m in Sources */,
 				B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */,
 				B21DD94B224DF07600699355 /* NSString+TSExtension.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,

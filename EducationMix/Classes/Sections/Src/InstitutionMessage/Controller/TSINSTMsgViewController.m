@@ -23,7 +23,7 @@
 #define NAVBARHEIGHT 64.0f
 
 #define FONTMAX 15.0
-#define FONTMIN 14.0
+#define FONTMIN 16.0
 #define PADDING 15.0
 
 
@@ -54,6 +54,11 @@
 
 //记录上一个偏移量
 @property (nonatomic, assign) CGFloat lastTableViewOffsetY;
+
+@property(nonatomic, strong)TSInstitutionDetailViewController *detailViewController;
+@property(nonatomic, strong)TSInstitutionTeacherViewController *teacherViewController;
+@property(nonatomic, strong)TSInstitutionStudentViewController *studentViewController;
+
 @end
 
 @implementation TSINSTMsgViewController
@@ -70,11 +75,18 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, ScreenH - 64);
+
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.titleButtons = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
     self.controlleres = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
     self.tableViews = [[NSMutableArray alloc] initWithCapacity:CATEGORY.count];
@@ -85,9 +97,14 @@
     [self.view addSubview:self.cycleScrollView];
     [self.view addSubview:self.segmentScrollView];
     
-    self.automaticallyAdjustsScrollViewInsets = YES;
+//    self.automaticallyAdjustsScrollViewInsets = YES;
     
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillLayoutSubviews
+{
+//    self.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, ScreenH - 64);
 }
 
 
@@ -115,10 +132,10 @@
     
     self.lastTableViewOffsetY = tableViewoffsetY;
     
-    if ( tableViewoffsetY>=0 && tableViewoffsetY<=136) {
+    if ( tableViewoffsetY>=0 && tableViewoffsetY <= 136) {
         
-        self.segmentScrollView.frame = CGRectMake(0, 200-tableViewoffsetY, SCREEN_WIDTH, 40);
-        self.cycleScrollView.frame = CGRectMake(0, 0-tableViewoffsetY, SCREEN_WIDTH, 200);
+        self.segmentScrollView.frame = CGRectMake(0, 200-tableViewoffsetY , SCREEN_WIDTH, 40);
+        self.cycleScrollView.frame = CGRectMake(0, 0-tableViewoffsetY , SCREEN_WIDTH, 200);
         
     }else if( tableViewoffsetY < 0){
         
@@ -252,39 +269,39 @@
 - (UIScrollView *)bottomScrollView {
     
     if (!_bottomScrollView) {
-        _bottomScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _bottomScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, NAVBARHEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
         _bottomScrollView.delegate = self;
         _bottomScrollView.pagingEnabled = YES;
         
         
-            TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
+            self.detailViewController = [[TSInstitutionDetailViewController alloc] init];
         
-            detailViewController.academy_id = self.academy_id;
-            detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            self.detailViewController.academy_id = self.academy_id;
+            self.detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
             
             //jsdTableViewController.view.backgroundColor = colors[i];
-            [self.bottomScrollView addSubview:detailViewController.view];
+            [self.bottomScrollView addSubview:self.detailViewController.view];
         
-            [self.controlleres addObject:detailViewController];
-            [self.tableViews addObject:detailViewController.tableView];
+            [self.controlleres addObject:self.detailViewController];
+            [self.tableViews addObject:self.detailViewController.tableView];
             
-            TSInstitutionTeacherViewController *teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
-            teacherViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            self.teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
+            self.teacherViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
             
             //jsdTableViewController.view.backgroundColor = colors[i];
-            [self.bottomScrollView addSubview:teacherViewController.view];
+            [self.bottomScrollView addSubview:self.teacherViewController.view];
             
-            [self.controlleres addObject:teacherViewController];
-            [self.tableViews addObject:teacherViewController.tableView];
+            [self.controlleres addObject:self.teacherViewController];
+            [self.tableViews addObject:self.teacherViewController.tableView];
         
-            TSInstitutionStudentViewController *studentViewController = [[TSInstitutionStudentViewController alloc] init];
-            studentViewController.view.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+            self.studentViewController = [[TSInstitutionStudentViewController alloc] init];
+            self.studentViewController.view.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
         
             //jsdTableViewController.view.backgroundColor = colors[i];
-            [self.bottomScrollView addSubview:studentViewController.view];
+            [self.bottomScrollView addSubview:self.studentViewController.view];
         
-            [self.controlleres addObject:studentViewController];
-            [self.tableViews addObject:studentViewController.tableView];
+            [self.controlleres addObject:self.studentViewController];
+            [self.tableViews addObject:self.studentViewController.tableView];
         
 //            TSInstitutionMsgBoardViewController *msgBoardViewController = [[TSInstitutionMsgBoardViewController alloc] init];
 //            msgBoardViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -303,9 +320,9 @@
             
             
 //            NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-//            [detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-//            [teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-//            [studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            [self.detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            [self.teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+//            [self.studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
 //
         
 //        [detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
@@ -320,7 +337,11 @@
 - (void)viewWillDisappear:(BOOL)animated {
     
     [super viewWillDisappear:animated];
-    
+//            [self.detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+//            [self.teacherViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+//            [self.studentViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+
+
 }
 
 
@@ -349,7 +370,7 @@
     
     if (!_segmentScrollView) {
         
-        _segmentScrollView =  [[UIScrollView alloc]initWithFrame:CGRectMake(0, 200, SCREEN_WIDTH, 40)];
+        _segmentScrollView =  [[UIScrollView alloc]initWithFrame:CGRectMake(0, 200+NAVBARHEIGHT, SCREEN_WIDTH, 40)];
         [_segmentScrollView addSubview:self.currentSelectedItemImageView];
         _segmentScrollView.showsHorizontalScrollIndicator = NO;
         _segmentScrollView.showsVerticalScrollIndicator = NO;
@@ -364,10 +385,15 @@
             btn.titleLabel.font = [UIFont systemFontOfSize:FONTMIN];
             CGSize size = [UIButton sizeOfLabelWithCustomMaxWidth:SCREEN_WIDTH systemFontSize:FONTMIN andFilledTextString:CATEGORY[i]];
             
+            CGFloat btnWidth = ScreenW/CATEGORY.count;
             
-            float originX =  i? PADDING*2+btnoffset:PADDING;
+//            float originX =  i? PADDING*2+btnoffset:PADDING;
+//            float originX =  i? btnWidth*2+btnoffset:btnWidth;
             
-            btn.frame = CGRectMake(originX, 14, size.width, size.height);
+            float originX =  i*btnWidth;
+            
+            
+            btn.frame = CGRectMake(originX, 14, btnWidth, size.height);
             btnoffset = CGRectGetMaxX(btn.frame);
             
             
@@ -414,7 +440,7 @@
             [imageMutableArray addObject:imageName];
         }
         
-        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200) imageNamesGroup:imageMutableArray];
+        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, NAVBARHEIGHT, SCREEN_WIDTH, 200) imageNamesGroup:imageMutableArray];
         
         
     }

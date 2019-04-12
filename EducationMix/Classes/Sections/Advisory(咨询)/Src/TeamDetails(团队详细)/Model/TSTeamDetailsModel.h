@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *team_name;
 @property(nonatomic,strong)NSString *formation_date;
 @property(nonatomic,strong)NSString *professional_field;
-@property(nonatomic,strong)NSString *unit_type;
+@property(nonatomic,assign)NSInteger unit_type;
 @property(nonatomic,strong)NSString *unit_name;
 
 @property(nonatomic,strong)NSString *team_profile;

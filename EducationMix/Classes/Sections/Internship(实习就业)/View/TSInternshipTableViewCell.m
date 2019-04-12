@@ -36,7 +36,6 @@
     _salary.text = [NSString stringWithFormat:@"%ld-%ld元/月",model.salary_min,model.salary_max];
     _area.text = model.area;
     
-    
 }
 
 - (void)setFrame:(CGRect)frame{

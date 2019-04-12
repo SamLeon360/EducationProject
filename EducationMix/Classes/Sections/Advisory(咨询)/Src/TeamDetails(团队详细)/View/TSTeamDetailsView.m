@@ -40,7 +40,8 @@
 - (void)setModel:(TSTeamDetailsModel *)model {
     
     _team_name.text = model.team_name;
-    _professional_field.text = model.professional_field;
+    _professional_field.text = [NSString getProfessionalField:[model.professional_field integerValue]];
+
     _unit_name.text = model.unit_name;
     _team_profile.text = model.team_profile;
     _scientific_research_achievements.text = model.scientific_research_achievements;
@@ -53,8 +54,20 @@
     
     _email.text = model.email;
     _research_subject.text = model.research_subject;
-    _unit_type.text = model.unit_type;
+    _unit_type.text = [NSString getUnitType:model.unit_type];
     
+    
+    //多张图片处理。但：为快速上线，先只显示第一张图片
+    NSArray *photoArr = [model.team_photo componentsSeparatedByString:@"|"]; //字符串按照【分隔成数组
+    if(photoArr.count > 0){
+        NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,photoArr[0]];
+        [_team_photo sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+    } else {
+        
+        NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.team_photo];
+        [_team_photo sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+    }
+
 }
 
 /*

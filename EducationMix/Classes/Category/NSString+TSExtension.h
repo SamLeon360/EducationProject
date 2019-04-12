@@ -30,7 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 //因接口缺陷，需要在本地映射基础资料（院校类型）
 +(NSString *)getUnitType:(NSInteger)unitType;
 
+//因接口缺陷，需要在本地映射基础资料（企业资质类型）
++(NSString *)getFltEnterpriseQualifications:(NSInteger)fltEnterpriseQualifications;
 
+//因接口缺陷，需要在本地映射基础资料（xx类型）
++(NSString *)getFltJoinType:(NSInteger)fltJoinType;
+
+//因接口缺陷，需要在本地映射基础资料（项目所属人类型）
++(NSString *)getProjectOwnerType:(NSInteger)projectOwnerType;
 @end
 
 NS_ASSUME_NONNULL_END

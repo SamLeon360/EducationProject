@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TSProjectDetailsViewController : UIViewController
 
+@property(nonatomic, assign)NSInteger project_id;
+
 @end
 
 NS_ASSUME_NONNULL_END

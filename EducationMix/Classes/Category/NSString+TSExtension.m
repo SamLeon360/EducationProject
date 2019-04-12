@@ -275,5 +275,138 @@
 
 }
 
+//case '1':
+//return '高新技术企业';
+//case '2':
+//return '科技型中小企业';
+//case '3':
+//return '规模以上企业';
+//case '4':
+//return '创新型企业';
+//case '5':
+//return '民营科技企业';
+//case '6':
+//return '大中型企业';
+//case '7':
+//return '其他';
++(NSString *)getFltEnterpriseQualifications:(NSInteger)fltEnterpriseQualifications {
+    
+    NSString *result = @"";
+    
+    switch (fltEnterpriseQualifications) {
+        case 1:
+            result = @"高新技术企业";
+            break;
+        case 2:
+            result = @"科技型中小企业";
+            
+            break;
+        case 3:
+            result = @"规模以上企业";
+            
+            break;
+        case 4:
+            result = @"创新型企业";
+            
+            break;
+        case 5:
+            result = @"民营科技企业";
+            
+            break;
+        case 6:
+            result = @"大中型企业";
+            
+            break;
+        case 7:
+            result = @"其他";
+            
+            break;
+            
+        default:
+            result = @"其他";
+            
+            break;
+    }
+    
+    return result;
+}
+//1
+//return '学生';
+//case '2':
+//return '专家';
+//case '3':
+//return '团队';
++(NSString *)getFltJoinType:(NSInteger)fltJoinType {
+    
+    
+    NSString *result = @"";
+    
+    switch (fltJoinType) {
+        case 1:
+            result = @"学生";
+            break;
+        case 2:
+            result = @"专家";
+            break;
+        case 3:
+            result = @"团队";
+            break;
+            
+        default:
+            result = @"其他";
+            
+            break;
+    }
+    
+    return result;
+
+}
+
+//'全部',
+//'院校',
+//'孵化园',
+//'团队',
+//'企业',
+//'个人',
+//'其他',
++(NSString *)getProjectOwnerType:(NSInteger)projectOwnerType {
+    
+    
+    NSString *result = @"";
+    
+    switch (projectOwnerType) {
+        case 0:
+            result = @"全部";
+            break;
+            
+        case 1:
+            result = @"院校";
+            break;
+        case 2:
+            result = @"孵化园";
+            
+            break;
+        case 3:
+            result = @"团队";
+            
+            break;
+        case 4:
+            result = @"个人";
+            
+            break;
+        case 5:
+            result = @"其他";
+            
+            break;
+            
+        default:
+            result = @"其他";
+            
+            break;
+    }
+    
+    return result;
+    
+}
 
 @end

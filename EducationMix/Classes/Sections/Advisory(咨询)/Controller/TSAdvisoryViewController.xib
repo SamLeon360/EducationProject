@@ -16,6 +16,7 @@
                 <outlet property="button2" destination="Mnr-Cf-LsZ" id="niT-zV-HdU"/>
                 <outlet property="button3" destination="daV-Tq-Ii2" id="Qt3-0Z-cFi"/>
                 <outlet property="button4" destination="HZe-iF-Dj6" id="40X-bd-ZXi"/>
+                <outlet property="collectionView" destination="rif-T2-MRa" id="Kzn-GD-XuC"/>
                 <outlet property="tableView" destination="RVN-H4-OR4" id="6QN-fT-MOb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

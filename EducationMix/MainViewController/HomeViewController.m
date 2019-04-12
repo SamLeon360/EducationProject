@@ -40,7 +40,10 @@
     [self GetTJJob];
     [self GetNewPost];
     
-    
+//    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+//
+//    [self.headerView.oneView addGestureRecognizer:tapGesturRecognizer];
+
 //    self.headerView.oneView.userInteractionEnabled = YES;
 //
 ////
@@ -62,6 +65,10 @@
 //    }];
     
    
+}
+
+-(void)tapAction:(id)tap {
+    NSLog(@"点击了tapView");
 }
 
 

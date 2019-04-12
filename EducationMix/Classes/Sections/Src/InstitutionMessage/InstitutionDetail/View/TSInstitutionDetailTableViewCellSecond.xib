@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TSInstitutionDetailTableViewCellSecond" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TSInstitutionDetailTableViewCellSecond" rowHeight="413" id="G1f-xP-5xa" userLabel="Institution Detail Table View CellSecond" customClass="TSInstitutionDetailTableViewCellSecond">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G1f-xP-5xa" id="PT8-t0-Xau">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="412.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="院校简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OB-S5-5Wc">
+                        <rect key="frame" x="12" y="8" width="58" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19.5" id="DAg-e3-9yN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMM-EA-ylW">
+                        <rect key="frame" x="12" y="39.5" width="351" height="361"/>
+                        <attributedString key="attributedText">
+                            <fragment content="无">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    <font key="NSOriginalFont" size="11" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CMM-EA-ylW" secondAttribute="bottom" constant="12" id="C39-fr-srX"/>
+                    <constraint firstItem="CMM-EA-ylW" firstAttribute="top" secondItem="7OB-S5-5Wc" secondAttribute="bottom" constant="12" id="QUT-Vr-uf7"/>
+                    <constraint firstItem="7OB-S5-5Wc" firstAttribute="leading" secondItem="PT8-t0-Xau" secondAttribute="leading" constant="12" id="R6a-lO-UY9"/>
+                    <constraint firstItem="CMM-EA-ylW" firstAttribute="leading" secondItem="PT8-t0-Xau" secondAttribute="leading" constant="12" id="iF7-au-974"/>
+                    <constraint firstItem="7OB-S5-5Wc" firstAttribute="top" secondItem="PT8-t0-Xau" secondAttribute="top" constant="8" id="wyD-Xq-D8e"/>
+                    <constraint firstAttribute="trailing" secondItem="CMM-EA-ylW" secondAttribute="trailing" constant="12" id="xO4-kX-gxh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="college_introduction" destination="CMM-EA-ylW" id="QkJ-AF-PPz"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="404.79910714285711"/>
+        </tableViewCell>
+    </objects>
+</document>

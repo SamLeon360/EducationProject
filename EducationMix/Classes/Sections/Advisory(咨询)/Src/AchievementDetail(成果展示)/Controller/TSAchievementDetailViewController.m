@@ -24,12 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
     [self loadData];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)loadData {
+    
+    [TSProgressHUD show];
     
     [self.viewModel loadDataArrFromNetwork];
     
@@ -39,14 +40,16 @@
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
         @strongify(self);
+        [self.view addSubview:self.tableView];
+
         self.tableHeaderView.model = self.viewModel.model;
-        
+        [TSProgressHUD dismiss];
+
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
         
     }];
     
-    [TSProgressHUD dismiss];
     
 }
 

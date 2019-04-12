@@ -8,7 +8,10 @@
 
 #import "TSInstitutionDetailViewController.h"
 #import "TSInstitutionDetailTableViewCell.h"
+#import "TSInstitutionDetailTableViewCellSecond.h"
 #import "TSInstitutionDetailViewModel.h"
+
+#import "UITableView+FDTemplateLayoutCell.h"
 
 @interface TSInstitutionDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -49,6 +52,12 @@
 }
 
 
+-(void)configCell:(TSInstitutionDetailTableViewCellSecond *)cell indexPath:(NSIndexPath *)indexPath {
+    
+    cell.model = self.detailVM.modelArr[indexPath.row];
+    
+}
+
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {
         [tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -59,13 +68,19 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
-        return 80;
+        return 100;
         
     } else if (indexPath.row == 1 || indexPath.row == 2) {
         
-        return 100;
+        return [tableView fd_heightForCellWithIdentifier:@"TSInstitutionDetailTableViewCellSecond" configuration:^(id cell) {
+            [self configCell:cell indexPath:indexPath];
+//            (TSInstitutionDetailTableViewCellSecond *)cell.model = self.detailVM.modelArr[indexPath.row];
+            
+
+        }];
+//        return 120;
     } else if (indexPath.row > 2) {
-        return 44;
+        return 50;
     }
     return 44;
     
@@ -89,16 +104,22 @@
         
     } else if (indexPath.row == 1 || indexPath.row == 2) {
         
-        identifier = @"TSInstitutionDetailTableViewCellSecond";
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:1];
-        cell.model = self.detailVM.modelArr[indexPath.row];
-
+        TSInstitutionDetailTableViewCellSecond *cell1 = [tableView dequeueReusableCellWithIdentifier:@"TSInstitutionDetailTableViewCellSecond"];
+//        identifier = @"TSInstitutionDetailTableViewCellSecond";
+//        cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:1];
+        cell1.model = self.detailVM.modelArr[indexPath.row];
+        
+        cell1.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell1;
+        
     } else if (indexPath.row > 2) {
         identifier = @"TSInstitutionDetailTableViewCellFirstThree";
         cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionDetailTableViewCell" owner:self options:nil] objectAtIndex:2];
         cell.asModel = self.detailVM.modelArr[indexPath.row];
 
     }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -135,9 +156,9 @@
         
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
-        [self.tableView registerNib:[UINib nibWithNibName:@"JHCell" bundle:nil] forCellReuseIdentifier:@"JHCELL"];
+        [self.tableView registerNib:[UINib nibWithNibName:@"TSInstitutionDetailTableViewCellSecond" bundle:nil] forCellReuseIdentifier:@"TSInstitutionDetailTableViewCellSecond"];
         
-//        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TSInstitutionDetailTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"TSInstitutionDetailTableViewCell"];
+//        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TSInstitutionDetailTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"TSInstitutionDetailTableViewCellSecond"];
         
         UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 242)];
         tableHeaderView.backgroundColor = [UIColor whiteColor];

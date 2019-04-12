@@ -15,8 +15,12 @@
 
 #import "TSAchievementDetailViewController.h"
 #import "TSTeamDetailsViewController.h"
+#import "TSTechnicalRequirementsDetailViewController.h"
+#import "TSProjectDetailsViewController.h"
 
-@interface TSAdvisoryViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "TSPoliciesAndRegulationsViewController.h"
+
+@interface TSAdvisoryViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate>
 
 @property(nonatomic, strong)TSAdvisoryViewModel *advisoryVM;
 
@@ -29,6 +33,10 @@
 @property(nonatomic, strong)IBOutlet UIButton *button3;
 @property(nonatomic, strong)IBOutlet UIButton *button4;
 
+@property (nonatomic, strong)IBOutlet UICollectionView *collectionView;
+
+//装collectionCell内容 （静态）
+@property (nonatomic, strong)NSArray *collectionDataSource;
 
 //记录上一个button
 @property (nonatomic, strong) UIButton *previousButton;
@@ -50,7 +58,7 @@
     [self loadData];
     self.buttonArr;
     
-    
+    _collectionView.delegate = self;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,7 +68,6 @@
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellEditingStyleNone;
     _tableView.backgroundColor = TSColor_RGB(235, 235, 235);
-    
     
     _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
 //    TSAdvisoryHeaderView *headerView = [[TSAdvisoryHeaderView alloc] init];
@@ -128,6 +135,19 @@
         TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
         vc.team_id = model.Id;
         [self.navigationController pushViewController:vc animated:YES];
+    } else if(self.btnInx == 2){
+        TSTechnicalRequirementsDetailViewController *vc = [[TSTechnicalRequirementsDetailViewController alloc] init];
+        TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
+        vc.technology_id = model.Id;
+        vc.commerce_id = 0;
+        vc.title = @"技术需求详细";
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(self.btnInx == 3){
+        TSProjectDetailsViewController *vc = [[TSProjectDetailsViewController alloc] init];
+        TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
+        vc.project_id = model.Id;
+        vc.title = @"项目信息";
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 
@@ -157,10 +177,18 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"TSTSAdvisoryTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
     cell.model = self.advisoryVM.modelArr[indexPath.row];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSPoliciesAndRegulationsViewController *vc = [[TSPoliciesAndRegulationsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    [vc hidesBottomBarWhenPushed];
+//    NSLog(@"点击");
+}
 
 #pragma mark - lazy
 - (NSArray *)buttonArr {
@@ -197,6 +225,17 @@
     
 }
 
+- (NSArray *)collectionDataSource {
+    
+    if(!_collectionDataSource) {
+        
+        _collectionDataSource = @[ @{@"image":@"法规.jpg",@"name":@"政策法规",@"englishName":@"Policy"},
+                         @{@"image":@"文库.jpg",@"name":@"文库",@"englishName":@"Library"},
+                         @{@"image":@"公告.jpg",@"name":@"通知公告",@"englishName":@"Notice"},
+                         @{@"image":@"新闻.jpg",@"name":@"平台新闻",@"englishName":@"News"}];
+    }
+    return _collectionDataSource;
+}
 /*
 #pragma mark - Navigation
 

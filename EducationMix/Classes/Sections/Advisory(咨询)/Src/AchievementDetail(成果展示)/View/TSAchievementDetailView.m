@@ -70,7 +70,10 @@
     
     NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.research_pictures];
     
+    
     [_research_pictures sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+    
+    
     
     
 }

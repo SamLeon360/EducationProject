@@ -11,7 +11,7 @@
 
 static NSString *const TSAdvisoryHeaderViewCollectionViewCellID = @"TSAdvisoryHeaderViewCollectionViewCell";
 
-@interface TSAdvisoryHeaderView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface TSAdvisoryHeaderView ()<UICollectionViewDataSource>
 
 @property (nonatomic, strong)IBOutlet UICollectionView *collectionView;
 

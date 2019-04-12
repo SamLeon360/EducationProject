@@ -19,6 +19,7 @@
 
 #import "TSInternshipViewController.h"
 #import "TSStudentListViewController.h"
+#import "TSTechnicalRequirementsViewController.h"
 
 @interface TSMainTabBarViewController ()
 
@@ -34,13 +35,14 @@
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
     homeVC.title = @"产教融";
     
-    InstitutionViewController *tmpVC1 = [[InstitutionViewController alloc]init];
+    TSTechnicalRequirementsViewController *tmpVC1 = [[TSTechnicalRequirementsViewController alloc]init];
     tmpVC1.title = @"聊天";
     
 //    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
 //    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
     TSAdvisoryViewController *VC3 = [[TSAdvisoryViewController alloc] init];
     
+    InstitutionViewController *VC44 = [[InstitutionViewController alloc] init];
     
     
     VC3.title = @"咨询";
@@ -52,7 +54,7 @@
     meVC.title = @"我的";
     
     self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
-                             ,[[TSMainNavigationController alloc]initWithRootViewController:tmpVC1]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:VC44]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:VC3]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
     
