@@ -48,6 +48,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"院校";
+
     // Do any additional setup after loading the view.
 }
 

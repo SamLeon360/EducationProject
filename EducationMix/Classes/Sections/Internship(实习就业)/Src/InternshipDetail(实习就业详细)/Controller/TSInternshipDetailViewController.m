@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
     [self loadData];
     // Do any additional setup after loading the view.
 }
@@ -32,6 +31,7 @@
 
 - (void)loadData {
     
+    [TSProgressHUD show];
     [self.viewModel loadDataArrFromNetwork];
     
     RACSignal *recommendContentSignal = [self.viewModel.requestCommand execute:nil];
@@ -40,15 +40,16 @@
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
         @strongify(self);
+        [self.view addSubview:self.tableView];
+
         self.tableHeaderView.model = self.viewModel.model;
-        
+        [TSProgressHUD dismiss];
+
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
         
     }];
-    
-    [TSProgressHUD dismiss];
-    
+        
 }
 
 #pragma mark - lazy

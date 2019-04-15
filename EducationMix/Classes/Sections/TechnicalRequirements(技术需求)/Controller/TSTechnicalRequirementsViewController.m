@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"技术需求";
     [self.view addSubview:self.tableView];
     [self loadData];
     // Do any additional setup after loading the view from its nib.

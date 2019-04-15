@@ -8,7 +8,7 @@
 
 #import "TSLibraryViewController.h"
 #import "TSLibraryTableViewCell.h"
-
+#import "TSEnterpriseLibraryViewController.h"
 @interface TSLibraryViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -31,10 +31,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
-//    TSStudentListModel *model = self.studentVM.modelArr[indexPath.row];
-//    vc.student_id = model.student_id;
-//    [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc = nil;
+    if(indexPath.row == 0) {
+        vc = [[TSEnterpriseLibraryViewController alloc] init];
+        
+    } else {
+        
+        
+    }
+    
+
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

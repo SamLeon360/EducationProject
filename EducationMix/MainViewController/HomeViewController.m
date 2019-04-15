@@ -15,6 +15,13 @@
 #import "EduNavController.h"
 #import "LoginBottomView.h"
 #import "EduMeViewController.h"
+#import "TSInternshipDetailViewController.h"
+#import "TSTechnicalRequirementsDetailViewController.h"
+
+#import "SearchCommerceController.h"
+#import "TSInternshipViewController.h"
+#import "InstitutionViewController.h"
+#import "TSTechnicalRequirementsViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,LPSwitchTagDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *kefuImage;
@@ -39,37 +46,9 @@
     self.workTypeArray =  @[@"全部",@"电子信息",@"装备制造", @"能源环保",@"生物技术与医药",@"新材料",@"现代农药", @"其他"];
     [self GetTJJob];
     [self GetNewPost];
-    
-//    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
-//
-//    [self.headerView.oneView addGestureRecognizer:tapGesturRecognizer];
-
-//    self.headerView.oneView.userInteractionEnabled = YES;
-//
-////
-//    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]init];
-//
-//    [tapGesturRecognizer.rac_gestureSignal subscribeNext:^(id x) {
-//        NSLog(@"点击");
-//
-//    }];
-//
-//    [[tapGesturRecognizer rac_gestureSignal] subscribeNext:^(id x) {
-//        NSLog(@"点击");
-//    }];
-
-//     [self.headerView.oneView addGestureRecognizer:tapGesturRecognizer];
-
-//    [[self.headerView.oneView rac_signalForSelector:UIControlEventTouchDown] subscribeNext:^(id x) {
-//        NSLog(@"点击");
-//    }];
-    
    
 }
 
--(void)tapAction:(id)tap {
-    NSLog(@"点击了tapView");
-}
 
 
 
@@ -102,6 +81,21 @@
         [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
     }];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSInternshipDetailViewController *vc = [[TSInternshipDetailViewController alloc] init];
+
+    NSDictionary *dic  = self.dataArray[indexPath.row];
+    vc.talent_id = [dic[@"talent_id"] integerValue];
+
+    vc.title = @"人才需求信息";
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -149,6 +143,7 @@
     tagCollectionView.scrollEnabled = NO;
     tagCollectionView.tagDelegate = self;
     [tagCollectionView reloadData];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -169,6 +164,58 @@
         [_headerView.cycleView setAutoScrollTimeInterval:5];
 //        _headerView.cycleView.autoScroll = self.posterArray.count >1?YES:NO;
         _headerView.cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+        
+        @weakify(self);
+
+        _headerView.callBackBlock = ^(NSDictionary * _Nonnull dic) {
+            @strongify(self);
+            TSTechnicalRequirementsDetailViewController *vc = [[TSTechnicalRequirementsDetailViewController alloc] init];
+            vc.technology_id = [dic[@"technology_id"] integerValue];
+            vc.commerce_id = [dic[@"commerce_id"] integerValue];
+            vc.title = @"技术需求详细";
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        };
+        
+        _headerView.headerTagCallBackBlcok = ^(NSInteger index) {
+            @strongify(self);
+            
+            if(index == 1){
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"CommerceView" bundle:[NSBundle mainBundle]];
+                SearchCommerceController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SearchCommerceController"];
+                vc.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            
+            UIViewController *vc = nil;
+            
+            switch (index) {
+                case 1:
+//                    vc = [[SearchCommerceController alloc] init];
+                    
+                    break;
+                case 2:
+                    vc = [[TSInternshipViewController alloc] init];
+                    break;
+                case 3:
+                    vc = [[TSTechnicalRequirementsViewController alloc] init];
+
+                    break;
+                case 4:
+                    vc = [[InstitutionViewController alloc] init];
+
+
+                    break;
+                    
+                default:
+                    
+                    break;
+            }
+            
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+
+        };
         
     }
     return _headerView;

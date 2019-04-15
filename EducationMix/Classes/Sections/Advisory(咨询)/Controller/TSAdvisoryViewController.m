@@ -130,6 +130,8 @@
         vc.title = @"成果详细";
         TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
         vc.results_id = model.Id;
+        vc.hidesBottomBarWhenPushed = YES;
+
         [self.navigationController pushViewController:vc animated:YES];
     } else if(self.btnInx == 1){
         
@@ -137,6 +139,8 @@
         vc.title = @"成果详细";
         TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
         vc.team_id = model.Id;
+        vc.hidesBottomBarWhenPushed = YES;
+
         [self.navigationController pushViewController:vc animated:YES];
     } else if(self.btnInx == 2){
         TSTechnicalRequirementsDetailViewController *vc = [[TSTechnicalRequirementsDetailViewController alloc] init];
@@ -144,12 +148,16 @@
         vc.technology_id = model.Id;
         vc.commerce_id = 0;
         vc.title = @"技术需求详细";
+        vc.hidesBottomBarWhenPushed = YES;
+
         [self.navigationController pushViewController:vc animated:YES];
     } else if(self.btnInx == 3){
         TSProjectDetailsViewController *vc = [[TSProjectDetailsViewController alloc] init];
         TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
         vc.project_id = model.Id;
         vc.title = @"项目信息";
+        vc.hidesBottomBarWhenPushed = YES;
+
         [self.navigationController pushViewController:vc animated:YES];
     }
     
@@ -201,7 +209,7 @@
     } else {
         return;
     }
-    [vc hidesBottomBarWhenPushed];
+    vc.hidesBottomBarWhenPushed = YES;
 
     [self.navigationController pushViewController:vc animated:YES];
 }

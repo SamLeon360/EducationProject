@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"实习就业";
     [self.view addSubview:self.tableView];
     
     [self loadData];
@@ -64,6 +65,7 @@
     TSInternshipDetailViewController *vc = [[TSInternshipDetailViewController alloc] init];
     TSInternshipModel *model = self.internshipVM.modelArr[indexPath.row];
     vc.talent_id = model.talent_id;
+    vc.title = @"人才需求信息";
     [self.navigationController pushViewController:vc animated:YES];
     
 }
