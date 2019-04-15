@@ -189,6 +189,10 @@
                 AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 appDelegate.window.rootViewController = vc;
                 [appDelegate.window makeKeyAndVisible];
+                
+//                [self presentViewController:vc animated:YES completion:nil];
+
+                
             });
         }];
         [_loginBtnView setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.7]];

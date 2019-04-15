@@ -10,6 +10,9 @@
 #import "TSPoliciesAndRegulationsModel.h"
 #import "TSPoliciesAndRegulationsTableViewCell.h"
 #import "TSPoliciesAndRegulationsViewModel.h"
+
+#import "TSPoliciesAndRegulationsDetailViewController.h"
+
 @interface TSPoliciesAndRegulationsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *modelArray;
 @property (nonatomic, strong) UIViewController *controller;
@@ -54,13 +57,12 @@
 
 
 #pragma  mark - UITablViewDelegate
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    TSInternshipDetailViewController *vc = [[TSInternshipDetailViewController alloc] init];
-//    TSInternshipModel *model = self.internshipVM.modelArr[indexPath.row];
-//    vc.talent_id = model.talent_id;
-//    [self.navigationController pushViewController:vc animated:YES];
+    TSPoliciesAndRegulationsDetailViewController *vc = [[TSPoliciesAndRegulationsDetailViewController alloc] init];
+    TSPoliciesAndRegulationsModel *model = self.viewModel.modelArr[indexPath.row];
+    vc.Id = model.Id;
+    [self.navigationController pushViewController:vc animated:YES];
+    [vc hidesBottomBarWhenPushed];
 //
 }
 
@@ -72,7 +74,7 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 130;
+    return 95;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

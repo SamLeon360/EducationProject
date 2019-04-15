@@ -19,6 +19,9 @@
 #import "TSProjectDetailsViewController.h"
 
 #import "TSPoliciesAndRegulationsViewController.h"
+#import "TSAnnouncementViewController.h"
+
+#import "TSLibraryViewController.h"
 
 @interface TSAdvisoryViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate>
 
@@ -184,10 +187,23 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    TSPoliciesAndRegulationsViewController *vc = [[TSPoliciesAndRegulationsViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc = nil;
+    
+    if(indexPath.row == 0) {
+        vc = [[TSPoliciesAndRegulationsViewController alloc] init];
+        
+    } else if(indexPath.row == 2 || indexPath.row == 3) {
+        vc = [[TSAnnouncementViewController alloc] init];
+        
+    } else if (indexPath.row == 1){
+        vc = [[TSLibraryViewController alloc] init];
+        
+    } else {
+        return;
+    }
     [vc hidesBottomBarWhenPushed];
-//    NSLog(@"点击");
+
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - lazy

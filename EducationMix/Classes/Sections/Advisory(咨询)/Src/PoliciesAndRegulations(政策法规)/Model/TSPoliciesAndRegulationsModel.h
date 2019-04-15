@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TSPoliciesAndRegulationsModel : NSObject
 
-@property(nonatomic, strong)NSString *Id;
+@property(nonatomic, assign)NSInteger Id;
 @property(nonatomic, strong)NSString *headlines;
 @property(nonatomic, strong)NSString *headlines2;
 @property(nonatomic, strong)NSString *headlines_img;

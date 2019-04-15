@@ -16,10 +16,13 @@
 #import "InstitutionViewController.h"
 #import "TSINSTMsgViewController.h"
 #import "TSAdvisoryViewController.h"
+#import "TSIMViewController.h"
 
 #import "TSInternshipViewController.h"
 #import "TSStudentListViewController.h"
 #import "TSTechnicalRequirementsViewController.h"
+
+#import "TSIMLoginTool.h"
 
 @interface TSMainTabBarViewController ()
 
@@ -35,8 +38,8 @@
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
     homeVC.title = @"产教融";
     
-    TSTechnicalRequirementsViewController *tmpVC1 = [[TSTechnicalRequirementsViewController alloc]init];
-    tmpVC1.title = @"聊天";
+    TSIMViewController *IMVC = [[TSIMViewController alloc]init];
+    IMVC.title = @"聊天";
     
 //    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
 //    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
@@ -54,9 +57,11 @@
     meVC.title = @"我的";
     
     self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
-                             ,[[TSMainNavigationController alloc]initWithRootViewController:VC44]
+                             ,[[TSMainNavigationController alloc]initWithRootViewController:IMVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:VC3]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
+    
+    [[TSIMLoginTool shareManager] login];
     
     // Do any additional setup after loading the view.
 }

@@ -216,6 +216,39 @@
 		B25F403F225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F403D225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.m */; };
 		B25F4040225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F403E225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.xib */; };
 		B25F4043225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4042225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m */; };
+		B25F404D226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F404B226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.m */; };
+		B25F404E226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F404C226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib */; };
+		B25F4051226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4050226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m */; };
+		B25F4054226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4053226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m */; };
+		B25F4057226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F4056226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.m */; };
+		B25F4059226021E4001218ED /* TSPoliciesAndRegulationsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F4058226021E4001218ED /* TSPoliciesAndRegulationsDetailView.xib */; };
+		B25F40692262C036001218ED /* TSAnnouncementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40672262C035001218ED /* TSAnnouncementViewController.m */; };
+		B25F406A2262C036001218ED /* TSAnnouncementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40682262C035001218ED /* TSAnnouncementViewController.xib */; };
+		B25F406D2262C058001218ED /* TSAnnouncementViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F406C2262C058001218ED /* TSAnnouncementViewModel.m */; };
+		B25F40732262C07C001218ED /* TSAnnouncementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40722262C07C001218ED /* TSAnnouncementModel.m */; };
+		B25F40792262C0C1001218ED /* TSAnnouncementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40772262C0C1001218ED /* TSAnnouncementTableViewCell.m */; };
+		B25F407A2262C0C1001218ED /* TSAnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40782262C0C1001218ED /* TSAnnouncementTableViewCell.xib */; };
+		B25F407E2262C7DF001218ED /* TSAnnouncementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F407C2262C7DE001218ED /* TSAnnouncementDetailViewController.m */; };
+		B25F407F2262C7DF001218ED /* TSAnnouncementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F407D2262C7DF001218ED /* TSAnnouncementDetailViewController.xib */; };
+		B25F40822262C7ED001218ED /* TSAnnouncementDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40812262C7ED001218ED /* TSAnnouncementDetailModel.m */; };
+		B25F40852262C7FF001218ED /* TSAnnouncementDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40842262C7FF001218ED /* TSAnnouncementDetailView.m */; };
+		B25F40882262C808001218ED /* TSAnnouncementDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40872262C808001218ED /* TSAnnouncementDetailViewModel.m */; };
+		B25F409722630E4E001218ED /* TSIMLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F409622630E4E001218ED /* TSIMLoginTool.m */; };
+		B25F409A22631020001218ED /* TSIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F409922631020001218ED /* TSIMViewController.m */; };
+		B25F40AE22642089001218ED /* TSLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40AC22642089001218ED /* TSLibraryViewController.m */; };
+		B25F40AF22642089001218ED /* TSLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40AD22642089001218ED /* TSLibraryViewController.xib */; };
+		B25F40B32264209B001218ED /* TSLibraryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40B12264209B001218ED /* TSLibraryTableViewCell.m */; };
+		B25F40B42264209B001218ED /* TSLibraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40B22264209B001218ED /* TSLibraryTableViewCell.xib */; };
+		B25F40B7226420A9001218ED /* TSLibraryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40B6226420A9001218ED /* TSLibraryViewModel.m */; };
+		B25F40BA226420C5001218ED /* TSLibraryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40B9226420C5001218ED /* TSLibraryModel.m */; };
+		B25F40BD22642160001218ED /* enterprise.png in Resources */ = {isa = PBXBuildFile; fileRef = B25F40BB22642160001218ED /* enterprise.png */; };
+		B25F40BE22642160001218ED /* association.png in Resources */ = {isa = PBXBuildFile; fileRef = B25F40BC22642160001218ED /* association.png */; };
+		B25F40C222642E85001218ED /* TSEnterpriseLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40C022642E85001218ED /* TSEnterpriseLibraryViewController.m */; };
+		B25F40C322642E85001218ED /* TSEnterpriseLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40C122642E85001218ED /* TSEnterpriseLibraryViewController.xib */; };
+		B25F40C622642E9A001218ED /* TSEnterpriseLibraryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40C522642E9A001218ED /* TSEnterpriseLibraryModel.m */; };
+		B25F40CA22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40C822642EA9001218ED /* TSEnterpriseLibraryTableViewCell.m */; };
+		B25F40CB22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25F40C922642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib */; };
+		B25F40CE22642EB7001218ED /* TSEnterpriseLibraryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F40CD22642EB7001218ED /* TSEnterpriseLibraryViewModel.m */; };
 		B2B4EF252252F8FD002267D8 /* TSStudentDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */; };
 		B2B4EF282252F90F002267D8 /* TSStudentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF272252F90F002267D8 /* TSStudentDetailView.m */; };
 		B2B4EF2B2252F926002267D8 /* TSStudentDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF2A2252F926002267D8 /* TSStudentDetailViewModel.m */; };
@@ -696,6 +729,61 @@
 		B25F403E225F3AEC001218ED /* TSPoliciesAndRegulationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPoliciesAndRegulationsTableViewCell.xib; sourceTree = "<group>"; };
 		B25F4041225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsViewModel.h; sourceTree = "<group>"; };
 		B25F4042225F3AF7001218ED /* TSPoliciesAndRegulationsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsViewModel.m; sourceTree = "<group>"; };
+		B25F404A226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsDetailViewController.h; sourceTree = "<group>"; };
+		B25F404B226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsDetailViewController.m; sourceTree = "<group>"; };
+		B25F404C226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPoliciesAndRegulationsDetailViewController.xib; sourceTree = "<group>"; };
+		B25F404F226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsDetailModel.h; sourceTree = "<group>"; };
+		B25F4050226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsDetailModel.m; sourceTree = "<group>"; };
+		B25F4052226021C6001218ED /* TSPoliciesAndRegulationsDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsDetailView.h; sourceTree = "<group>"; };
+		B25F4053226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsDetailView.m; sourceTree = "<group>"; };
+		B25F4055226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPoliciesAndRegulationsDetailViewModel.h; sourceTree = "<group>"; };
+		B25F4056226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPoliciesAndRegulationsDetailViewModel.m; sourceTree = "<group>"; };
+		B25F4058226021E4001218ED /* TSPoliciesAndRegulationsDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSPoliciesAndRegulationsDetailView.xib; sourceTree = "<group>"; };
+		B25F40662262C035001218ED /* TSAnnouncementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementViewController.h; sourceTree = "<group>"; };
+		B25F40672262C035001218ED /* TSAnnouncementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementViewController.m; sourceTree = "<group>"; };
+		B25F40682262C035001218ED /* TSAnnouncementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAnnouncementViewController.xib; sourceTree = "<group>"; };
+		B25F406B2262C058001218ED /* TSAnnouncementViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementViewModel.h; sourceTree = "<group>"; };
+		B25F406C2262C058001218ED /* TSAnnouncementViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementViewModel.m; sourceTree = "<group>"; };
+		B25F40712262C07C001218ED /* TSAnnouncementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementModel.h; sourceTree = "<group>"; };
+		B25F40722262C07C001218ED /* TSAnnouncementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementModel.m; sourceTree = "<group>"; };
+		B25F40762262C0C1001218ED /* TSAnnouncementTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementTableViewCell.h; sourceTree = "<group>"; };
+		B25F40772262C0C1001218ED /* TSAnnouncementTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementTableViewCell.m; sourceTree = "<group>"; };
+		B25F40782262C0C1001218ED /* TSAnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAnnouncementTableViewCell.xib; sourceTree = "<group>"; };
+		B25F407B2262C7DE001218ED /* TSAnnouncementDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementDetailViewController.h; sourceTree = "<group>"; };
+		B25F407C2262C7DE001218ED /* TSAnnouncementDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementDetailViewController.m; sourceTree = "<group>"; };
+		B25F407D2262C7DF001218ED /* TSAnnouncementDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSAnnouncementDetailViewController.xib; sourceTree = "<group>"; };
+		B25F40802262C7ED001218ED /* TSAnnouncementDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementDetailModel.h; sourceTree = "<group>"; };
+		B25F40812262C7ED001218ED /* TSAnnouncementDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementDetailModel.m; sourceTree = "<group>"; };
+		B25F40832262C7FF001218ED /* TSAnnouncementDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementDetailView.h; sourceTree = "<group>"; };
+		B25F40842262C7FF001218ED /* TSAnnouncementDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementDetailView.m; sourceTree = "<group>"; };
+		B25F40862262C808001218ED /* TSAnnouncementDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAnnouncementDetailViewModel.h; sourceTree = "<group>"; };
+		B25F40872262C808001218ED /* TSAnnouncementDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAnnouncementDetailViewModel.m; sourceTree = "<group>"; };
+		B25F409522630E4E001218ED /* TSIMLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSIMLoginTool.h; sourceTree = "<group>"; };
+		B25F409622630E4E001218ED /* TSIMLoginTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSIMLoginTool.m; sourceTree = "<group>"; };
+		B25F409822631020001218ED /* TSIMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSIMViewController.h; sourceTree = "<group>"; };
+		B25F409922631020001218ED /* TSIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSIMViewController.m; sourceTree = "<group>"; };
+		B25F40AB22642089001218ED /* TSLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLibraryViewController.h; sourceTree = "<group>"; };
+		B25F40AC22642089001218ED /* TSLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLibraryViewController.m; sourceTree = "<group>"; };
+		B25F40AD22642089001218ED /* TSLibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSLibraryViewController.xib; sourceTree = "<group>"; };
+		B25F40B02264209B001218ED /* TSLibraryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLibraryTableViewCell.h; sourceTree = "<group>"; };
+		B25F40B12264209B001218ED /* TSLibraryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLibraryTableViewCell.m; sourceTree = "<group>"; };
+		B25F40B22264209B001218ED /* TSLibraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSLibraryTableViewCell.xib; sourceTree = "<group>"; };
+		B25F40B5226420A9001218ED /* TSLibraryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLibraryViewModel.h; sourceTree = "<group>"; };
+		B25F40B6226420A9001218ED /* TSLibraryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLibraryViewModel.m; sourceTree = "<group>"; };
+		B25F40B8226420C5001218ED /* TSLibraryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLibraryModel.h; sourceTree = "<group>"; };
+		B25F40B9226420C5001218ED /* TSLibraryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLibraryModel.m; sourceTree = "<group>"; };
+		B25F40BB22642160001218ED /* enterprise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enterprise.png; sourceTree = "<group>"; };
+		B25F40BC22642160001218ED /* association.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = association.png; sourceTree = "<group>"; };
+		B25F40BF22642E85001218ED /* TSEnterpriseLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEnterpriseLibraryViewController.h; sourceTree = "<group>"; };
+		B25F40C022642E85001218ED /* TSEnterpriseLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEnterpriseLibraryViewController.m; sourceTree = "<group>"; };
+		B25F40C122642E85001218ED /* TSEnterpriseLibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSEnterpriseLibraryViewController.xib; sourceTree = "<group>"; };
+		B25F40C422642E9A001218ED /* TSEnterpriseLibraryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEnterpriseLibraryModel.h; sourceTree = "<group>"; };
+		B25F40C522642E9A001218ED /* TSEnterpriseLibraryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEnterpriseLibraryModel.m; sourceTree = "<group>"; };
+		B25F40C722642EA9001218ED /* TSEnterpriseLibraryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEnterpriseLibraryTableViewCell.h; sourceTree = "<group>"; };
+		B25F40C822642EA9001218ED /* TSEnterpriseLibraryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEnterpriseLibraryTableViewCell.m; sourceTree = "<group>"; };
+		B25F40C922642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSEnterpriseLibraryTableViewCell.xib; sourceTree = "<group>"; };
+		B25F40CC22642EB7001218ED /* TSEnterpriseLibraryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEnterpriseLibraryViewModel.h; sourceTree = "<group>"; };
+		B25F40CD22642EB7001218ED /* TSEnterpriseLibraryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEnterpriseLibraryViewModel.m; sourceTree = "<group>"; };
 		B2B4EF232252F8FD002267D8 /* TSStudentDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailModel.h; sourceTree = "<group>"; };
 		B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailModel.m; sourceTree = "<group>"; };
 		B2B4EF262252F90F002267D8 /* TSStudentDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailView.h; sourceTree = "<group>"; };
@@ -1820,6 +1908,7 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B25F40892262D06E001218ED /* IM(融云聊天) */,
 				B2E2B218225D87AF00CB8441 /* TechnicalRequirements(技术需求) */,
 				B2DB37D02259CD3A00B17ACE /* Advisory(咨询) */,
 				B24525B8225203A900180FCA /* StudentList(人才、学生列表-公用) */,
@@ -2227,6 +2316,8 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B25F40BC22642160001218ED /* association.png */,
+				B25F40BB22642160001218ED /* enterprise.png */,
 				B2DB380B225C742400B17ACE /* 法规.jpg */,
 				B2DB380A225C742400B17ACE /* 公告.jpg */,
 				B2DB3809225C742400B17ACE /* 文库.jpg */,
@@ -2355,6 +2446,7 @@
 		B25F402F225F3A59001218ED /* PoliciesAndRegulations(政策法规) */ = {
 			isa = PBXGroup;
 			children = (
+				B25F404422602131001218ED /* Src */,
 				B25F4031225F3ABA001218ED /* Controller */,
 				B25F4033225F3ABA001218ED /* Model */,
 				B25F4030225F3AB9001218ED /* View */,
@@ -2399,6 +2491,375 @@
 				B25F403A225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F404422602131001218ED /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B25F404522602165001218ED /* PoliciesAndRegulationsDetail */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B25F404522602165001218ED /* PoliciesAndRegulationsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40482260219C001218ED /* Controller */,
+				B25F40472260219B001218ED /* Model */,
+				B25F40462260219B001218ED /* View */,
+				B25F40492260219C001218ED /* ViewModel */,
+			);
+			path = PoliciesAndRegulationsDetail;
+			sourceTree = "<group>";
+		};
+		B25F40462260219B001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4052226021C6001218ED /* TSPoliciesAndRegulationsDetailView.h */,
+				B25F4053226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m */,
+				B25F4058226021E4001218ED /* TSPoliciesAndRegulationsDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40472260219B001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F404F226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.h */,
+				B25F4050226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F40482260219C001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F404A226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.h */,
+				B25F404B226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.m */,
+				B25F404C226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F40492260219C001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F4055226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.h */,
+				B25F4056226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F405B2262BCEF001218ED /* Announcement(通知公告) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40602262BCEF001218ED /* Src */,
+				B25F405D2262BCEF001218ED /* Controller */,
+				B25F405C2262BCEF001218ED /* ViewModel */,
+				B25F405F2262BCEF001218ED /* View */,
+				B25F405E2262BCEF001218ED /* Model */,
+			);
+			path = "Announcement(通知公告)";
+			sourceTree = "<group>";
+		};
+		B25F405C2262BCEF001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F406B2262C058001218ED /* TSAnnouncementViewModel.h */,
+				B25F406C2262C058001218ED /* TSAnnouncementViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F405D2262BCEF001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40662262C035001218ED /* TSAnnouncementViewController.h */,
+				B25F40672262C035001218ED /* TSAnnouncementViewController.m */,
+				B25F40682262C035001218ED /* TSAnnouncementViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F405E2262BCEF001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40712262C07C001218ED /* TSAnnouncementModel.h */,
+				B25F40722262C07C001218ED /* TSAnnouncementModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F405F2262BCEF001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40762262C0C1001218ED /* TSAnnouncementTableViewCell.h */,
+				B25F40772262C0C1001218ED /* TSAnnouncementTableViewCell.m */,
+				B25F40782262C0C1001218ED /* TSAnnouncementTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40602262BCEF001218ED /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40612262BCEF001218ED /* AnnouncementDetail(通知公告详细) */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B25F40612262BCEF001218ED /* AnnouncementDetail(通知公告详细) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40622262BCEF001218ED /* ViewModel */,
+				B25F40632262BCEF001218ED /* Controller */,
+				B25F40642262BCEF001218ED /* Model */,
+				B25F40652262BCEF001218ED /* View */,
+			);
+			path = "AnnouncementDetail(通知公告详细)";
+			sourceTree = "<group>";
+		};
+		B25F40622262BCEF001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40862262C808001218ED /* TSAnnouncementDetailViewModel.h */,
+				B25F40872262C808001218ED /* TSAnnouncementDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F40632262BCEF001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F407B2262C7DE001218ED /* TSAnnouncementDetailViewController.h */,
+				B25F407C2262C7DE001218ED /* TSAnnouncementDetailViewController.m */,
+				B25F407D2262C7DF001218ED /* TSAnnouncementDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F40642262BCEF001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40802262C7ED001218ED /* TSAnnouncementDetailModel.h */,
+				B25F40812262C7ED001218ED /* TSAnnouncementDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F40652262BCEF001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40832262C7FF001218ED /* TSAnnouncementDetailView.h */,
+				B25F40842262C7FF001218ED /* TSAnnouncementDetailView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40892262D06E001218ED /* IM(融云聊天) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F409422630E2F001218ED /* Other */,
+				B25F408A2262D081001218ED /* Src */,
+				B25F408B2262D0A0001218ED /* Controller */,
+				B25F408E2262D0A1001218ED /* Model */,
+				B25F408D2262D0A1001218ED /* View */,
+				B25F408C2262D0A1001218ED /* ViewModel */,
+			);
+			path = "IM(融云聊天)";
+			sourceTree = "<group>";
+		};
+		B25F408A2262D081001218ED /* Src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B25F408B2262D0A0001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F409822631020001218ED /* TSIMViewController.h */,
+				B25F409922631020001218ED /* TSIMViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F408C2262D0A1001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F408D2262D0A1001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F408E2262D0A1001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F409422630E2F001218ED /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B25F409522630E4E001218ED /* TSIMLoginTool.h */,
+				B25F409622630E4E001218ED /* TSIMLoginTool.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B25F409B2264109F001218ED /* Library(文库) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F409D22641125001218ED /* Src */,
+				B25F409C22641124001218ED /* Controller */,
+				B25F409F22641125001218ED /* Model */,
+				B25F40A022641125001218ED /* View */,
+				B25F40A122641125001218ED /* ViewModel */,
+			);
+			path = "Library(文库)";
+			sourceTree = "<group>";
+		};
+		B25F409C22641124001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40AB22642089001218ED /* TSLibraryViewController.h */,
+				B25F40AC22642089001218ED /* TSLibraryViewController.m */,
+				B25F40AD22642089001218ED /* TSLibraryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F409D22641125001218ED /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40A22264114F001218ED /* EnterpriseLibrary(企业文库) */,
+				B25F409E22641125001218ED /* SocietyLibrary(社团文库) */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B25F409E22641125001218ED /* SocietyLibrary(社团文库) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40A72264130A001218ED /* Controller */,
+				B25F40A82264130A001218ED /* Model */,
+				B25F40A92264130A001218ED /* View */,
+				B25F40AA2264130A001218ED /* ViewModel */,
+			);
+			path = "SocietyLibrary(社团文库)";
+			sourceTree = "<group>";
+		};
+		B25F409F22641125001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40B8226420C5001218ED /* TSLibraryModel.h */,
+				B25F40B9226420C5001218ED /* TSLibraryModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F40A022641125001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40B02264209B001218ED /* TSLibraryTableViewCell.h */,
+				B25F40B12264209B001218ED /* TSLibraryTableViewCell.m */,
+				B25F40B22264209B001218ED /* TSLibraryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40A122641125001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40B5226420A9001218ED /* TSLibraryViewModel.h */,
+				B25F40B6226420A9001218ED /* TSLibraryViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F40A22264114F001218ED /* EnterpriseLibrary(企业文库) */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40A322641302001218ED /* Controller */,
+				B25F40A422641303001218ED /* Model */,
+				B25F40A522641303001218ED /* View */,
+				B25F40A622641303001218ED /* ViewModel */,
+			);
+			path = "EnterpriseLibrary(企业文库)";
+			sourceTree = "<group>";
+		};
+		B25F40A322641302001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40BF22642E85001218ED /* TSEnterpriseLibraryViewController.h */,
+				B25F40C022642E85001218ED /* TSEnterpriseLibraryViewController.m */,
+				B25F40C122642E85001218ED /* TSEnterpriseLibraryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F40A422641303001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40C422642E9A001218ED /* TSEnterpriseLibraryModel.h */,
+				B25F40C522642E9A001218ED /* TSEnterpriseLibraryModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F40A522641303001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40C722642EA9001218ED /* TSEnterpriseLibraryTableViewCell.h */,
+				B25F40C822642EA9001218ED /* TSEnterpriseLibraryTableViewCell.m */,
+				B25F40C922642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40A622641303001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B25F40CC22642EB7001218ED /* TSEnterpriseLibraryViewModel.h */,
+				B25F40CD22642EB7001218ED /* TSEnterpriseLibraryViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B25F40A72264130A001218ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25F40A82264130A001218ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25F40A92264130A001218ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25F40AA2264130A001218ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B2B4EF1A2252F838002267D8 /* Src */ = {
@@ -2592,6 +3053,8 @@
 		B2DB37D12259CF3C00B17ACE /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				B25F409B2264109F001218ED /* Library(文库) */,
+				B25F405B2262BCEF001218ED /* Announcement(通知公告) */,
 				B25F402F225F3A59001218ED /* PoliciesAndRegulations(政策法规) */,
 				B2DB3814225C819F00B17ACE /* ProjectDetails(项目详细) */,
 				B2DB3813225C816000B17ACE /* TeamDetails(团队详细) */,
@@ -3030,9 +3493,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25F4059226021E4001218ED /* TSPoliciesAndRegulationsDetailView.xib in Resources */,
 				B2B4EF2D2252FA9A002267D8 /* StudentList.storyboard in Resources */,
 				22F3817222375DFB005A0AD7 /* avatar.png in Resources */,
 				B2DB3806225B519B00B17ACE /* TSAchievementDetailView.xib in Resources */,
+				B25F406A2262C036001218ED /* TSAnnouncementViewController.xib in Resources */,
 				B25F402E225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.xib in Resources */,
 				B2290A23224137FF009D91AC /* TSInstitutionStudentTableViewCell.xib in Resources */,
 				B2DB37CA22587E5B00B17ACE /* TSInternshipDetailView.xib in Resources */,
@@ -3047,6 +3512,7 @@
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				B2DB380E225C742500B17ACE /* 公告.jpg in Resources */,
+				B25F40BD22642160001218ED /* enterprise.png in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
 				B2DB3831225C826300B17ACE /* TSProjectDetailsViewController.xib in Resources */,
@@ -3056,19 +3522,26 @@
 				B2154741223BF3DC000AD9D8 /* InstitutionTableViewCell.xib in Resources */,
 				B24B75342248CDF600C293B7 /* school.png in Resources */,
 				B2DB37FB225B50E700B17ACE /* TSAchievementDetailViewController.xib in Resources */,
+				B25F40AF22642089001218ED /* TSLibraryViewController.xib in Resources */,
 				B24525D92252049A00180FCA /* TSTeacherListTableViewCell.xib in Resources */,
+				B25F40BE22642160001218ED /* association.png in Resources */,
+				B25F40C322642E85001218ED /* TSEnterpriseLibraryViewController.xib in Resources */,
+				B25F407A2262C0C1001218ED /* TSAnnouncementTableViewCell.xib in Resources */,
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
+				B25F40CB22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib in Resources */,
 				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
 				B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */,
 				22F3819D2237C6E8005A0AD7 /* CommerceCell.xib in Resources */,
 				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
 				22F381A02237C6E8005A0AD7 /* CommerceView.storyboard in Resources */,
+				B25F404E226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib in Resources */,
 				B2DB380C225C742500B17ACE /* 新闻.jpg in Resources */,
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */,
+				B25F407F2262C7DF001218ED /* TSAnnouncementDetailViewController.xib in Resources */,
 				B2E2B249225DD44400CB8441 /* TSProjectDetailsView.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
 				B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */,
@@ -3078,6 +3551,7 @@
 				B21C97442254A2C300257774 /* TSTeacherDetailViewController.xib in Resources */,
 				B2E2B23C225D9A7700CB8441 /* TSTechnicalRequirementsDetailViewController.xib in Resources */,
 				B2DB382C225C824B00B17ACE /* TSTeamDetailsView.xib in Resources */,
+				B25F40B42264209B001218ED /* TSLibraryTableViewCell.xib in Resources */,
 				B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
@@ -3226,6 +3700,7 @@
 				22F3813F22363C00005A0AD7 /* UIButton+Badge.m in Sources */,
 				B2E2B242225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m in Sources */,
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
+				B25F409A22631020001218ED /* TSIMViewController.m in Sources */,
 				B25F403B225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
 				B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */,
@@ -3233,11 +3708,15 @@
 				B2DB37FE225B50F800B17ACE /* TSAchievementDetailModel.m in Sources */,
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
+				B25F40852262C7FF001218ED /* TSAnnouncementDetailView.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
 				B2DB37C32255F18E00B17ACE /* TSInternshipDetailView.m in Sources */,
+				B25F40792262C0C1001218ED /* TSAnnouncementTableViewCell.m in Sources */,
 				B2B4EF31225306DB002267D8 /* TSStudentDetailViewController.m in Sources */,
 				B2DB3804225B511900B17ACE /* TSAchievementDetailViewModel.m in Sources */,
 				B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */,
+				B25F404D226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.m in Sources */,
+				B25F40B32264209B001218ED /* TSLibraryTableViewCell.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
 				B21C973722548C0900257774 /* TSTeacherDetailView.m in Sources */,
 				B23295B22255DD62003F9548 /* TSInternshipModel.m in Sources */,
@@ -3248,6 +3727,7 @@
 				B24525DC225204A800180FCA /* TSTeacherListViewModel.m in Sources */,
 				22F3817422375DFB005A0AD7 /* LPTagCollectionView.m in Sources */,
 				22F381A32237C6E8005A0AD7 /* CommerceCell.m in Sources */,
+				B25F40CA22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.m in Sources */,
 				B2DB3827225C823200B17ACE /* TSTeamDetailsView.m in Sources */,
 				B2DB3820225C821300B17ACE /* TSTeamDetailsViewController.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
@@ -3261,6 +3741,7 @@
 				22F3813D22363C00005A0AD7 /* UILabel+TextSize.m in Sources */,
 				22F382062238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.m in Sources */,
 				B21C97432254A2C300257774 /* TSTeacherDetailViewController.m in Sources */,
+				B25F40822262C7ED001218ED /* TSAnnouncementDetailModel.m in Sources */,
 				B24B75322248CD6100C293B7 /* UIImage+YPExtension.m in Sources */,
 				22F381C12238DA94005A0AD7 /* MemberListCell.m in Sources */,
 				B2C89994224B5D5F00F759D8 /* TSProgressHUD.m in Sources */,
@@ -3276,6 +3757,7 @@
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				B2E2B22D225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
+				B25F40C622642E9A001218ED /* TSEnterpriseLibraryModel.m in Sources */,
 				B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */,
 				B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */,
 				22F3822C2238F0BC005A0AD7 /* EduMeViewController.m in Sources */,
@@ -3284,6 +3766,7 @@
 				22F3811922363C00005A0AD7 /* UITabBar+DKSTabBar.m in Sources */,
 				B25F402D225F2A39001218ED /* TSInstitutionDetailTableViewCellSecond.m in Sources */,
 				22F381A52237C6E8005A0AD7 /* BottomView.m in Sources */,
+				B25F409722630E4E001218ED /* TSIMLoginTool.m in Sources */,
 				22F3814222363C00005A0AD7 /* UIWebView+Custom.m in Sources */,
 				22F3820F2238DB88005A0AD7 /* FriendListCell.m in Sources */,
 				B2290A0422413739009D91AC /* TSInstitutionMsgBoardView.m in Sources */,
@@ -3317,6 +3800,7 @@
 				22E16323223BA0C700821A1C /* LoginBottomView.m in Sources */,
 				22F3812A22363C00005A0AD7 /* NewEditAlertView.m in Sources */,
 				B2E2B245225D9A9800CB8441 /* TSTechnicalRequirementsDetailViewModel.m in Sources */,
+				B25F40AE22642089001218ED /* TSLibraryViewController.m in Sources */,
 				B22909CE223D3EDB009D91AC /* TSINSTMsgModel.m in Sources */,
 				22F3812122363C00005A0AD7 /* YKNavigationController.m in Sources */,
 				B2C8999A224B83DE00F759D8 /* TSTSInstitutionDetailAdvanceSubjectModel.m in Sources */,
@@ -3349,6 +3833,8 @@
 				22F3820D2238DB88005A0AD7 /* ChangePwdController.m in Sources */,
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
 				B2E2B23F225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m in Sources */,
+				B25F40692262C036001218ED /* TSAnnouncementViewController.m in Sources */,
+				B25F40882262C808001218ED /* TSAnnouncementDetailViewModel.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
 				B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
@@ -3358,6 +3844,7 @@
 				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
 				B22909FE22413719009D91AC /* TSInstitutionMsgBoardViewController.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
+				B25F4051226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m in Sources */,
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
 				B2DB37EB2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m in Sources */,
 				B2290A22224137FF009D91AC /* TSInstitutionStudentTableViewCell.m in Sources */,
@@ -3369,15 +3856,18 @@
 				B2E2B229225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m in Sources */,
 				B2290A0722413749009D91AC /* TSInstitutionStudentViewModel.m in Sources */,
 				22F381C42238DAF2005A0AD7 /* AddCommerceController.m in Sources */,
+				B25F40C222642E85001218ED /* TSEnterpriseLibraryViewController.m in Sources */,
 				B22909D1223D3EEC009D91AC /* TSINSTMsgView.m in Sources */,
 				22F3816F22375DFB005A0AD7 /* NSMutableArray+LPKit.m in Sources */,
 				22F381A82238D94D005A0AD7 /* SearchCommerceNameView.m in Sources */,
+				B25F406D2262C058001218ED /* TSAnnouncementViewModel.m in Sources */,
 				B2290A6D22433483009D91AC /* JQHeaderView.m in Sources */,
 				22F3823222390655005A0AD7 /* EduStuTeaHeader.m in Sources */,
 				22F382272238DC64005A0AD7 /* MineCompanyListController.m in Sources */,
 				B2E2B225225D884300CB8441 /* TSTechnicalRequirementsModel.m in Sources */,
 				B2290A7D22433AC1009D91AC /* UIImage+JQImage.m in Sources */,
 				B21DD94B224DF07600699355 /* NSString+TSExtension.m in Sources */,
+				B25F407E2262C7DF001218ED /* TSAnnouncementDetailViewController.m in Sources */,
 				22F3811A22363C00005A0AD7 /* UIView+DKSBadge.m in Sources */,
 				B2290A0122413727009D91AC /* TSInstitutionMsgBoardModel.m in Sources */,
 				22F381C02238DA94005A0AD7 /* MemberListController.m in Sources */,
@@ -3390,6 +3880,7 @@
 				B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */,
 				B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */,
 				B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */,
+				B25F4054226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
 				22F3812C22363C00005A0AD7 /* AlertView.m in Sources */,
 				B2290A1D224137E4009D91AC /* TSInstitutionTeacherTableViewCell.m in Sources */,
@@ -3404,13 +3895,16 @@
 				22F3813822363C00005A0AD7 /* UIImage+Custom.m in Sources */,
 				B24B752E2248C07000C293B7 /* NSString+TSAcademyType.m in Sources */,
 				22F3815022363C00005A0AD7 /* UINavigationController+Category.m in Sources */,
+				B25F40732262C07C001218ED /* TSAnnouncementModel.m in Sources */,
 				22F3819F2237C6E8005A0AD7 /* commerceDetailHeader.m in Sources */,
 				22F3814F22363C00005A0AD7 /* CatchCrash.m in Sources */,
 				B22909EB224136AB009D91AC /* TSInstitutionDetailViewController.m in Sources */,
 				22F381AE2238D9B0005A0AD7 /* HomeCommerceCell.m in Sources */,
 				22F3812622363C00005A0AD7 /* Reachability.m in Sources */,
+				B25F40CE22642EB7001218ED /* TSEnterpriseLibraryViewModel.m in Sources */,
 				22F3814E22363C00005A0AD7 /* Common.m in Sources */,
 				22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */,
+				B25F4057226021D7001218ED /* TSPoliciesAndRegulationsDetailViewModel.m in Sources */,
 				22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */,
 				B2DB37E02259D08800B17ACE /* TSAdvisoryHeaderView.m in Sources */,
 				B24525D12252047900180FCA /* TSTeacherListViewController.m in Sources */,
@@ -3423,6 +3917,7 @@
 				B2290A5722432444009D91AC /* TSMainTabBarViewController.m in Sources */,
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,
 				B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */,
+				B25F40BA226420C5001218ED /* TSLibraryModel.m in Sources */,
 				22F3813422363C00005A0AD7 /* UIImage+Rotate.m in Sources */,
 				22F3814622363C00005A0AD7 /* UIFont+Category.m in Sources */,
 				22F382292238DC64005A0AD7 /* CompanyListCell.m in Sources */,
@@ -3431,6 +3926,7 @@
 				22F3814022363C00005A0AD7 /* UIButton+Extension.m in Sources */,
 				B2290A13224137A9009D91AC /* TSInstitutionTeacherViewModel.m in Sources */,
 				22F3813722363C00005A0AD7 /* UIImage+Wechat.m in Sources */,
+				B25F40B7226420A9001218ED /* TSLibraryViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

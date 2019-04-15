@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="TSLibraryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enterprise.png" translatesAutoresizingMaskIntoConstraints="NO" id="ko7-Zf-xeK">
+                        <rect key="frame" x="12" y="12.5" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="30P-ZZ-6R0"/>
+                            <constraint firstAttribute="height" constant="64" id="Bb3-cu-egc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业文库" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5T-nX-txR">
+                        <rect key="frame" x="92" y="20.5" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enterprise Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZC-oM-qTP">
+                        <rect key="frame" x="92" y="52.5" width="108" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ko7-Zf-xeK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Na2-V5-P5E"/>
+                    <constraint firstItem="gZC-oM-qTP" firstAttribute="bottom" secondItem="ko7-Zf-xeK" secondAttribute="bottom" constant="-8" id="TYB-KB-W6E"/>
+                    <constraint firstItem="gZC-oM-qTP" firstAttribute="leading" secondItem="ko7-Zf-xeK" secondAttribute="trailing" constant="16" id="Wyp-mM-mz2"/>
+                    <constraint firstItem="e5T-nX-txR" firstAttribute="top" secondItem="ko7-Zf-xeK" secondAttribute="top" constant="8" id="clI-kY-G32"/>
+                    <constraint firstItem="e5T-nX-txR" firstAttribute="leading" secondItem="ko7-Zf-xeK" secondAttribute="trailing" constant="16" id="gIb-w0-A9B"/>
+                    <constraint firstItem="ko7-Zf-xeK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sze-O2-baR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="181.15942028985509" y="136.27232142857142"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="cUR-yI-KFr" customClass="TSLibraryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cUR-yI-KFr" id="HJh-1Y-jni">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="association.png" translatesAutoresizingMaskIntoConstraints="NO" id="rNx-bf-h3C">
+                        <rect key="frame" x="12" y="12.5" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="Q1y-pZ-bdC"/>
+                            <constraint firstAttribute="width" constant="64" id="zKF-UR-5ji"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社团文库" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBd-IG-thg">
+                        <rect key="frame" x="92" y="20.5" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIu-us-gZa">
+                        <rect key="frame" x="92" y="52.5" width="115" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MBd-IG-thg" firstAttribute="leading" secondItem="rNx-bf-h3C" secondAttribute="trailing" constant="16" id="7ul-Ay-Zlw"/>
+                    <constraint firstItem="mIu-us-gZa" firstAttribute="bottom" secondItem="rNx-bf-h3C" secondAttribute="bottom" constant="-8" id="Jm0-Na-jUZ"/>
+                    <constraint firstItem="rNx-bf-h3C" firstAttribute="centerY" secondItem="HJh-1Y-jni" secondAttribute="centerY" id="McJ-qK-YJR"/>
+                    <constraint firstItem="rNx-bf-h3C" firstAttribute="leading" secondItem="HJh-1Y-jni" secondAttribute="leading" constant="12" id="WLJ-cu-pSG"/>
+                    <constraint firstItem="mIu-us-gZa" firstAttribute="leading" secondItem="rNx-bf-h3C" secondAttribute="trailing" constant="16" id="Xkl-cq-32B"/>
+                    <constraint firstItem="MBd-IG-thg" firstAttribute="top" secondItem="rNx-bf-h3C" secondAttribute="top" constant="8" id="ypD-if-ReG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8Y6-Wr-o3v"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="181" y="28"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="association.png" width="300" height="300"/>
+        <image name="enterprise.png" width="300" height="300"/>
+    </resources>
+</document>

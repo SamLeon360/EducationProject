@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "EduMeViewController.h"
+
+#import "TSMainTabBarViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *phoneView;
 @property (weak, nonatomic) IBOutlet UIView *pwdView;
@@ -103,8 +105,23 @@
 //
 //                } seq:1];
             
-            EduMeViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMeViewController"];
-            [self.navigationController pushViewController:vc animated:YES];
+//            EduMeViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMeViewController"];
+//            [self.navigationController pushViewController:vc animated:YES];
+            
+//            EduNavController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"EduNavController"];
+//            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//            appDelegate.window.rootViewController = vc;
+//            [appDelegate.window makeKeyAndVisible];
+            
+            TSMainTabBarViewController *mainTabBarCtrl = [[TSMainTabBarViewController alloc]init];
+            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            appDelegate.window.rootViewController = mainTabBarCtrl;
+            [appDelegate.window makeKeyAndVisible];
+
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+            
             }else{
                 [AlertView showYMAlertView:blockSelf.view andtitle:responseDic[@"message"]];
             }

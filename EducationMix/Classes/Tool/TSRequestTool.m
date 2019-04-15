@@ -20,7 +20,10 @@
     TSNetManager *mgr = [TSNetManager shareManager];
     
     if (headers) {
-        [mgr.requestSerializer setValue:[[headers allValues] firstObject] forHTTPHeaderField:[[headers allKeys] firstObject]];
+//        [mgr.requestSerializer setValue:[[headers allValues] firstObject] forHTTPHeaderField:[[headers allKeys] firstObject]];
+        [headers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            [mgr.requestSerializer setValue:obj forHTTPHeaderField:key];
+        }];
     }
     
     NSURLSessionDataTask *task = [mgr GET:URLString parameters:parameters progress:downloadProgress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -45,7 +48,10 @@
     TSNetManager *mgr = [TSNetManager shareManager];
 
     if (headers) {
-        [mgr.requestSerializer setValue:[[headers allValues] firstObject] forHTTPHeaderField:[[headers allKeys] firstObject]];
+//        [mgr.requestSerializer setValue:[[headers allValues] firstObject] forHTTPHeaderField:[[headers allKeys] firstObject]];
+        [headers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+             [mgr.requestSerializer setValue:obj forHTTPHeaderField:key];
+        }];
     }
     
     NSURLSessionDataTask *task = [mgr POST:URLString parameters:parameters progress:uploadProgress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
