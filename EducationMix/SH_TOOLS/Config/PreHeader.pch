@@ -15,11 +15,13 @@
 #import "BlocksKit.h"
 #import "BlocksKit+UIKit.h"
 
-
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 #import <Masonry.h>
 #import "APIDefine.h"
+
+#import "CommerceAlertView.h"
+
 
 #import "AlertView.h"
 #import "WXApi.h"

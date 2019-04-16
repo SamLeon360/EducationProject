@@ -36,13 +36,13 @@
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"MainView" bundle:[NSBundle mainBundle]];
     
     HomeViewController *homeVC = [story instantiateViewControllerWithIdentifier:@"HomeViewController"];
-    homeVC.title = @"产教融";
+    homeVC.title = @"主页";
     
     TSIMViewController *IMVC = [[TSIMViewController alloc]init];
     IMVC.title = @"聊天";
     
-//    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
-//    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
+    UIStoryboard *studentListStory = [UIStoryboard storyboardWithName:@"StudentList" bundle:[NSBundle mainBundle]];
+    TSStudentListViewController *studentListVC = [studentListStory instantiateViewControllerWithIdentifier:@"TSStudentListViewController"];
     TSAdvisoryViewController *VC3 = [[TSAdvisoryViewController alloc] init];
     
     InstitutionViewController *VC44 = [[InstitutionViewController alloc] init];
@@ -56,12 +56,39 @@
     EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
     meVC.title = @"我的";
     
+    
     self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:IMVC]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:VC3]
                              ,[[TSMainNavigationController alloc]initWithRootViewController:meVC]];
     
+    
+    UITabBar *tabbar = self.tabBar;
+    
+    CGSize size = CGSizeMake(35, 36);
+    
+    UITabBarItem *item1 = [tabbar.items objectAtIndex:0];
+    item1.selectedImage = [[[UIImage imageNamed:@"资源 57"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item1.image = [[[UIImage imageNamed:@"资源 59"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UITabBarItem *item2 = [tabbar.items objectAtIndex:1];
+    item2.selectedImage = [[[UIImage imageNamed:@"资源 66"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item2.image = [[[UIImage imageNamed:@"资源 62"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    UITabBarItem *item3 = [tabbar.items objectAtIndex:2];
+    item3.selectedImage = [[[UIImage imageNamed:@"资源 65"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item3.image = [[[UIImage imageNamed:@"资源 61"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UITabBarItem *item4 = [tabbar.items objectAtIndex:3];
+    item4.selectedImage = [[[UIImage imageNamed:@"资源 67"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item4.image = [[[UIImage imageNamed:@"资源 63"] scaleToSize:size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:TSColor_RGB(252, 102, 32),UITextAttributeTextColor, nil] forState:UIControlStateSelected];
+
+    
     [[TSIMLoginTool shareManager] login];
+    
+    
     
     // Do any additional setup after loading the view.
 }

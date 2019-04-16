@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger,YKUserStatusType){
 
 @property (nonatomic, assign) NSString *TokenFrom;
 @property (nonatomic, assign) NSString *default_commerce_id;
+
 @property (nonatomic, assign) NSString *default_commerce_name;
 @property (nonatomic, assign) NSString *default_role_type;
 @property (nonatomic, assign) NSString *exp;

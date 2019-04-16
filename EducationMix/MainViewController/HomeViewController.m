@@ -22,6 +22,7 @@
 #import "TSInternshipViewController.h"
 #import "InstitutionViewController.h"
 #import "TSTechnicalRequirementsViewController.h"
+
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,LPSwitchTagDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *kefuImage;
@@ -63,6 +64,7 @@
         [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
     }];
 }
+
 -(void)viewWillLayoutSubviews{
     if (USER_SINGLE.token.length<= 0) {
         [[UIApplication sharedApplication].keyWindow addSubview:self.loginBtnView];

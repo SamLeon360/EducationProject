@@ -29,15 +29,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"技术需求";
-    [self.view addSubview:self.tableView];
     [self loadData];
     // Do any additional setup after loading the view from its nib.
 }
 
-
 - (void)loadData {
     
-    
+    [TSProgressHUD show];
     [self.viewModel loadDataArrFromNetwork];
     
     RACSignal *recommendContentSignal = [self.viewModel.requestCommand execute:nil];
@@ -46,16 +44,18 @@
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
         @strongify(self);
+        [self.view addSubview:self.tableView];
+
         [self.tableView reloadData];
         
-        
+        [TSProgressHUD dismiss];
+
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
         
         
     }];
     
-    [TSProgressHUD dismiss];
 }
 
 #pragma  mark - UITablViewDelegate

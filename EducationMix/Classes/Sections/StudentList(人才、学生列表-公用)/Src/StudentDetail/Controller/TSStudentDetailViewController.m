@@ -24,15 +24,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"学生详细"];
     [self loadData];
-    [self.view addSubview:self.tableView];
 
+    
     // Do any additional setup after loading the view from its nib.
 }
 
 
 - (void)loadData {
     
+    [TSProgressHUD show];
     [self.viewModel loadDataArrFromNetwork];
     
     RACSignal *recommendContentSignal = [self.viewModel.requestCommand execute:nil];
@@ -41,14 +43,15 @@
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
         @strongify(self);
+        [self.view addSubview:self.tableView];
         self.tableHeaderView.model = self.viewModel.model;
-        
+        [TSProgressHUD dismiss];
+
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
         
     }];
     
-    [TSProgressHUD dismiss];
     
 }
 
@@ -57,7 +60,7 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         
-        _tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH-44)];
+        _tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH)];
         
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         _tableView.backgroundColor = TSColor_RGB(235, 235, 235);

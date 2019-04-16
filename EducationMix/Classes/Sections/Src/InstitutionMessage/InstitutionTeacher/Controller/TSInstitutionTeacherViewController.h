@@ -14,7 +14,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//expert_id
+
+typedef void(^CallBackBlcok) (NSInteger expert_id);//1
+
 @interface TSInstitutionTeacherViewController : UIViewController
+
+@property (nonatomic, copy)CallBackBlcok callBackBlock;//2
 
 @property (nonatomic, strong) UITableView *tableView;
 

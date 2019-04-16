@@ -8,8 +8,10 @@
 
 #import "TSInstitutionStudentViewController.h"
 #import "TSInstitutionStudentTableViewCell.h"
-
+#import "TSInstitutionStudentModel.h"
 #import "TSInstitutionStudentViewModel.h"
+
+#import "TSStudentDetailViewController.h"
 
 @interface TSInstitutionStudentViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -47,6 +49,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSInstitutionStudentModel *model = self.studentVM.modelArr[indexPath.row];
+    if(self.callBackBlock) {
+        
+        self.callBackBlock(model.student_id);
+
+    }
+}
+
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -71,7 +83,7 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"TSInstitutionStudentTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
     cell.model = self.studentVM.modelArr[indexPath.row];
-
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -90,6 +102,7 @@
         
         
     } error:^(NSError *error) {
+        
         [TSProgressHUD showError:error.description];
         
     }];

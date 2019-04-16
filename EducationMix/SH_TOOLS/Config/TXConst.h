@@ -14,6 +14,7 @@
 
 
 #define MaxPhotoNum 1
+#define NAVBAR_CHANGE_POINT 100
 
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height

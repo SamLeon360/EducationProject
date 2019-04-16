@@ -9,6 +9,8 @@
 #import "TSInstitutionTeacherViewController.h"
 #import "TSINstitutionTeacherTableViewCell.h"
 #import "TSInstitutionTeacherViewModel.h"
+#import "TSTeacherDetailViewController.h"
+#import "TSInstitutionTeacherModel.h"
 
 @interface TSInstitutionTeacherViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,24 +28,41 @@
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self.view addSubview:self.tableView];
-        [self loadData];
     }
     return self;
 }
 
-- (TSInstitutionTeacherViewModel *)teacherVM {
- 
-    if(!_teacherVM) {
-        
-        _teacherVM = [[TSInstitutionTeacherViewModel alloc] init];
-    }
-    return  _teacherVM;
-}
 
+
+- (void)loadData {
+    
+    
+    [self.teacherVM loadDataArrFromNetwork];
+    [TSProgressHUD show];
+    RACSignal *recommendContentSignal = [self.teacherVM.requestCommand execute:nil];
+    
+    @weakify(self);
+    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
+        @strongify(self);
+        [TSProgressHUD dismiss];
+
+        [self.view addSubview:self.tableView];
+        
+        [self.tableView reloadData];
+
+        
+    } error:^(NSError *error) {
+        
+        [TSProgressHUD dismiss];
+    }];
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadData];
+
     // Do any additional setup after loading the view.
 }
 
@@ -51,6 +70,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSInstitutionTeacherModel *model = self.teacherVM.modelArr[indexPath.row];
+    
+    if(self.callBackBlock) {
+        self.callBackBlock(model.expert_id);
+    }
 }
 
 
@@ -83,25 +111,7 @@
 }
 
 
-- (void)loadData {
-    
-    [self.teacherVM loadDataArrFromNetwork];
-    
-    RACSignal *recommendContentSignal = [self.teacherVM.requestCommand execute:nil];
-    
-    @weakify(self);
-    [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
-        @strongify(self);
-        
-        [self.tableView reloadData];
-        
-    } error:^(NSError *error) {
-        
-    }];
-    
-    [TSProgressHUD dismiss];
-    
-}
+
 
 
 
@@ -136,7 +146,14 @@
     }
     return _modelArray;
 }
-
+- (TSInstitutionTeacherViewModel *)teacherVM {
+    
+    if(!_teacherVM) {
+        
+        _teacherVM = [[TSInstitutionTeacherViewModel alloc] init];
+    }
+    return  _teacherVM;
+}
 
 
 /*

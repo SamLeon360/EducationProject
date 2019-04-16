@@ -17,7 +17,8 @@
 #import "TSInstitutionTeacherViewController.h"
 #import "TSInstitutionMsgBoardViewController.h"
 
-
+#import "TSStudentDetailViewController.h"
+#import "TSTeacherDetailViewController.h"
 #define CATEGORY  @[@"院校信息",@"专家教授",@"优秀学生"]
 
 #define NAVBARHEIGHT 64.0f
@@ -287,6 +288,16 @@
             
             self.teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
             self.teacherViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        @weakify(self);
+
+        self.teacherViewController.callBackBlock = ^(NSInteger expert_id) {
+            @strongify(self);
+
+            TSTeacherDetailViewController *vc = [[TSTeacherDetailViewController alloc] init];
+            vc.expert_id = expert_id;
+
+            [self.navigationController pushViewController:vc animated:YES];
+        };
             
             //jsdTableViewController.view.backgroundColor = colors[i];
             [self.bottomScrollView addSubview:self.teacherViewController.view];
@@ -296,6 +307,14 @@
         
             self.studentViewController = [[TSInstitutionStudentViewController alloc] init];
             self.studentViewController.view.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+
+            self.studentViewController.callBackBlock = ^(NSInteger student_id) {
+                @strongify(self);
+
+                TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
+                vc.student_id = student_id;
+                [self.navigationController pushViewController:vc animated:YES];
+            };
         
             //jsdTableViewController.view.backgroundColor = colors[i];
             [self.bottomScrollView addSubview:self.studentViewController.view];
@@ -352,6 +371,8 @@
         TSInstitutionDetailViewController *detailViewController = [[TSInstitutionDetailViewController alloc] init];
         TSInstitutionTeacherViewController *teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
         TSInstitutionStudentViewController *studentViewController = [[TSInstitutionStudentViewController alloc] init];
+
+        
         TSInstitutionMsgBoardViewController *msgBoardViewController = [[TSInstitutionMsgBoardViewController alloc] init];
         
         [self.controlleres addObject:detailViewController];

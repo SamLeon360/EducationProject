@@ -4,22 +4,6 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Src/StudentDetail/ViewModel/TSStudentDetailViewModel.m"
-            timestampString = "575977837.368957"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-loadDataArrFromNetwork"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "No"
@@ -36,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/Internship(&#x5b9e;&#x4e60;&#x5c31;&#x4e1a;)/Controller/TSInternshipViewController.m"
-            timestampString = "577012916.981957"
+            timestampString = "577103368.179431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -52,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/Internship(&#x5b9e;&#x4e60;&#x5c31;&#x4e1a;)/Src/InternshipDetail(&#x5b9e;&#x4e60;&#x5c31;&#x4e1a;&#x8be6;&#x7ec6;)/Controller/TSInternshipDetailViewController.m"
-            timestampString = "577012916.9825881"
+            timestampString = "577103368.179828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -66,7 +50,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/Internship(&#x5b9e;&#x4e60;&#x5c31;&#x4e1a;)/Src/InternshipDetail(&#x5b9e;&#x4e60;&#x5c31;&#x4e1a;&#x8be6;&#x7ec6;)/Controller/TSInternshipDetailViewController.m"
-            timestampString = "577012916.98306"
+            timestampString = "577103368.180128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
@@ -96,7 +80,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/Advisory(&#x54a8;&#x8be2;)/Src/PoliciesAndRegulations(&#x653f;&#x7b56;&#x6cd5;&#x89c4;)/Src/PoliciesAndRegulationsDetail/ViewModel/TSPoliciesAndRegulationsDetailViewModel.m"
-            timestampString = "577012916.983397"
+            timestampString = "577103368.1803401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -112,7 +96,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/Advisory(&#x54a8;&#x8be2;)/Src/PoliciesAndRegulations(&#x653f;&#x7b56;&#x6cd5;&#x89c4;)/Src/PoliciesAndRegulationsDetail/ViewModel/TSPoliciesAndRegulationsDetailViewModel.m"
-            timestampString = "577012916.984373"
+            timestampString = "577103368.180608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -128,7 +112,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EducationMix/Classes/Sections/IM(&#x878d;&#x4e91;&#x804a;&#x5929;)/Controller/TSIMViewController.m"
-            timestampString = "577012916.984616"
+            timestampString = "577103368.18068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -165,6 +149,38 @@
                   offsetFromSymbolStart = "88">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/StudentList(&#x4eba;&#x624d;&#x3001;&#x5b66;&#x751f;&#x5217;&#x8868;-&#x516c;&#x7528;)/Controller/TSStudentListViewController.m"
+            timestampString = "577103368.180939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationMix/Classes/Sections/Src/InstitutionMessage/Controller/TSINSTMsgViewController.m"
+            timestampString = "577103368.181168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
+            landmarkName = "-controlleres"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

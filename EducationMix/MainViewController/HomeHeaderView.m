@@ -17,6 +17,7 @@
 @end
 
 @implementation HomeHeaderView
+
 -(void)setupTableView{
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -96,7 +97,7 @@
 
 -(void)tapAction3:(UIView *)tap {
     self.headerTagCallBackBlcok(3);
-
+    
     NSLog(@"3");
 }
 

@@ -25,7 +25,6 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self.view addSubview:self.tableView];
 
     }
     return self;
@@ -33,13 +32,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"专家详细"];
+    [self loadData];
+
     // Do any additional setup after loading the view.
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
-    [self loadData];
 }
 
 
@@ -55,7 +56,8 @@
         
         
         @strongify(self);
-        
+        [self.view addSubview:self.tableView];
+
         self.tableHeaderView.model = self.viewModel.model;
         [TSProgressHUD dismiss];
 

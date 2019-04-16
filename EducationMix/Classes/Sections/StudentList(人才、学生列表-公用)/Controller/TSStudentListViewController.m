@@ -49,7 +49,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.view addSubview:self.tableView];
     
     [self loadData];
     
@@ -58,6 +57,7 @@
 
 - (void)loadData {
     
+    [TSProgressHUD show];
     [self.studentVM loadDataArrFromNetwork];
     
     RACSignal *recommendContentSignal = [self.studentVM.requestCommand execute:nil];
@@ -66,15 +66,17 @@
     [[RACSignal combineLatest:@[recommendContentSignal]] subscribeNext:^(RACTuple *x) {
         
         @strongify(self);
+        [self.view addSubview:self.tableView];
+
         [self.tableView reloadData];
-        
+        [TSProgressHUD dismiss];
+
         
     } error:^(NSError *error) {
         [TSProgressHUD showError:error.description];
         
     }];
     
-    [TSProgressHUD dismiss];
     
 }
 
@@ -88,6 +90,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     
     TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
     TSStudentListModel *model = self.studentVM.modelArr[indexPath.row];

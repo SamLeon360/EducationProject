@@ -14,9 +14,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^CallBackBlcok) (NSInteger student_id);//1
+
+
 @interface TSInstitutionStudentViewController : UIViewController
 
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, copy)CallBackBlcok callBackBlock;//2
 
 
 @end
