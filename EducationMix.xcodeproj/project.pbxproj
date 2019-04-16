@@ -256,6 +256,8 @@
 		B25F43F72265E31D001218ED /* CommerceDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F43DB2265E31D001218ED /* CommerceDetailCell.m */; };
 		B25F43F82265E31D001218ED /* SearchCommerceTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F43DE2265E31D001218ED /* SearchCommerceTypeView.m */; };
 		B25F43F92265E31D001218ED /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25F43E12265E31D001218ED /* BottomView.m */; };
+		B25F43FC2265E7AE001218ED /* banner1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B25F43FA2265E7AE001218ED /* banner1.jpg */; };
+		B25F43FD2265E7AE001218ED /* banner2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B25F43FB2265E7AE001218ED /* banner2.jpg */; };
 		B2B4EF252252F8FD002267D8 /* TSStudentDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */; };
 		B2B4EF282252F90F002267D8 /* TSStudentDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF272252F90F002267D8 /* TSStudentDetailView.m */; };
 		B2B4EF2B2252F926002267D8 /* TSStudentDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4EF2A2252F926002267D8 /* TSStudentDetailViewModel.m */; };
@@ -803,6 +805,8 @@
 		B25F43E72265E31D001218ED /* CommerceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommerceCell.h; sourceTree = "<group>"; };
 		B25F43E82265E31D001218ED /* UploadCommerceControllerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadCommerceControllerController.h; sourceTree = "<group>"; };
 		B25F43E92265E31D001218ED /* AddCommerceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCommerceController.h; sourceTree = "<group>"; };
+		B25F43FA2265E7AE001218ED /* banner1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner1.jpg; sourceTree = "<group>"; };
+		B25F43FB2265E7AE001218ED /* banner2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner2.jpg; sourceTree = "<group>"; };
 		B2B4EF232252F8FD002267D8 /* TSStudentDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailModel.h; sourceTree = "<group>"; };
 		B2B4EF242252F8FD002267D8 /* TSStudentDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentDetailModel.m; sourceTree = "<group>"; };
 		B2B4EF262252F90F002267D8 /* TSStudentDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentDetailView.h; sourceTree = "<group>"; };
@@ -2310,6 +2314,8 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B25F43FA2265E7AE001218ED /* banner1.jpg */,
+				B25F43FB2265E7AE001218ED /* banner2.jpg */,
 				B25F40BC22642160001218ED /* association.png */,
 				B25F40BB22642160001218ED /* enterprise.png */,
 				B2DB380B225C742400B17ACE /* 法规.jpg */,
@@ -3564,9 +3570,11 @@
 				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
 				B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */,
+				B25F43FD2265E7AE001218ED /* banner2.jpg in Resources */,
 				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
 				B25F404E226021AD001218ED /* TSPoliciesAndRegulationsDetailViewController.xib in Resources */,
 				B2DB380C225C742500B17ACE /* 新闻.jpg in Resources */,
+				B25F43FC2265E7AE001218ED /* banner1.jpg in Resources */,
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				B22909F3224136DA009D91AC /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,

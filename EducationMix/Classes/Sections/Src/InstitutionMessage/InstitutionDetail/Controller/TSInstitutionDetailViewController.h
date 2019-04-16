@@ -15,11 +15,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^CallBackBlcokImg) (NSArray *imageUrl);//1
+
+
 @interface TSInstitutionDetailViewController : UIViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, assign) NSInteger academy_id;
+
+@property (nonatomic, copy)CallBackBlcokImg callBackBlock;//2
 
 @end
 

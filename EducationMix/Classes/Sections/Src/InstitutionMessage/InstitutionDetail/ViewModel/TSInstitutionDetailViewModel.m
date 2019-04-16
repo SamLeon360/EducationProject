@@ -40,7 +40,23 @@
                     
                     TSInstitutionDetailModel *model = [TSInstitutionDetailModel mj_objectWithKeyValues:responseObject[@"data"][0]];
                     
+                    //多张图片处理。但：为快速上线，先只显示第一张图片
+                    NSArray *photoArr = [model.graphic_attachments componentsSeparatedByString:@"|"]; //字符串按照【分隔成数组
+                    if(photoArr.count > 0){
+                        
+                        for (NSString *imageUrl in photoArr) {
+                            NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,imageUrl];
+                            [model.imageArr addObject:urlStr];
+                        }
+                        
+                    } else {
+                        
+                        NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.graphic_attachments];
+                        [model.imageArr addObject:urlStr];
+                    }
+                    
 //                    NSMutableArray *mArr = [[NSMutableArray alloc] init];
+                    self.model = model;
                     
                     NSArray *mArr = @[@{@"academy_type":[NSNumber numberWithInteger:model.academy_type],@"address":model.address},
                                       @{@"content":model.college_introduction},

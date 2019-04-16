@@ -83,7 +83,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"院校详细";
 //    self.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, ScreenH - 64);
 
     
@@ -274,11 +274,16 @@
         _bottomScrollView.delegate = self;
         _bottomScrollView.pagingEnabled = YES;
         
-        
+        @weakify(self);
+
             self.detailViewController = [[TSInstitutionDetailViewController alloc] init];
         
             self.detailViewController.academy_id = self.academy_id;
             self.detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        self.detailViewController.callBackBlock = ^(NSArray * _Nonnull imageUrl) {
+            @strongify(self);
+            self.cycleScrollView.imageURLStringsGroup = imageUrl;
+        };
             
             //jsdTableViewController.view.backgroundColor = colors[i];
             [self.bottomScrollView addSubview:self.detailViewController.view];
@@ -288,7 +293,6 @@
             
             self.teacherViewController = [[TSInstitutionTeacherViewController alloc] init];
             self.teacherViewController.view.frame = CGRectMake(SCREEN_WIDTH * 1, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        @weakify(self);
 
         self.teacherViewController.callBackBlock = ^(NSInteger expert_id) {
             @strongify(self);

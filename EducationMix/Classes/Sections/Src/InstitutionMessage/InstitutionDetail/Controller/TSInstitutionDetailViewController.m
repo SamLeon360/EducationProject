@@ -137,6 +137,11 @@
         
         [self.tableView reloadData];
         
+        if(self.callBackBlock){
+            
+            self.callBackBlock(self.detailVM.model.imageArr);
+        }
+        
     } error:^(NSError *error) {
         [TSProgressHUD showError:@"网络出错"];        //        [_contentTableView.mj_header endRefreshing];
     }];

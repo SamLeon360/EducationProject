@@ -161,7 +161,7 @@
         _headerView.cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
         _headerView.postArray = self.posterArray;
         [_headerView setupTableView];
-//        _headerView.cycleView.imageURLStringsGroup = self.posterArray;
+        _headerView.cycleView.localizationImageNamesGroup = @[@"banner1.jpg",@"banner2.jpg"];
         _headerView.cycleView.showPageControl = YES;
         [_headerView.cycleView setAutoScrollTimeInterval:5];
 //        _headerView.cycleView.autoScroll = self.posterArray.count >1?YES:NO;
@@ -183,10 +183,10 @@
             @strongify(self);
             
             if(index == 1){
-                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"CommerceView" bundle:[NSBundle mainBundle]];
-                SearchCommerceController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SearchCommerceController"];
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
+//                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"CommerceView" bundle:[NSBundle mainBundle]];
+//                SearchCommerceController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SearchCommerceController"];
+//                vc.hidesBottomBarWhenPushed = YES;
+//                [self.navigationController pushViewController:vc animated:YES];
             }
             
             UIViewController *vc = nil;

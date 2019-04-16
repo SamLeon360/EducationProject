@@ -23,5 +23,14 @@
     return oldValue;
 }
 
+- (NSMutableArray *)imageArr {
+    
+    if(!_imageArr) {
+        
+        _imageArr = [[NSMutableArray alloc] init];
+    }
+    return _imageArr;
+}
+
 
 @end
