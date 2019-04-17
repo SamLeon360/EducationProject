@@ -92,6 +92,7 @@
     cell.cellTitleLabel.text = arr[indexPath.row];
     return cell;
 }
+
 -(EduSchoolHeader *)eduSchoolHeader{
     if (_eduSchoolHeader == nil) {
         _eduSchoolHeader = [[NSBundle mainBundle] loadNibNamed:@"HomeXib" owner:self options:nil][2];
