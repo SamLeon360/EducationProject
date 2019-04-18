@@ -17,6 +17,7 @@
 #import "TSINSTMsgViewController.h"
 #import "TSAdvisoryViewController.h"
 #import "TSIMViewController.h"
+#import "TSMeViewController.h"
 
 #import "TSInternshipViewController.h"
 #import "TSStudentListViewController.h"
@@ -47,14 +48,15 @@
     
     InstitutionViewController *VC44 = [[InstitutionViewController alloc] init];
     
-    
+    TSMeViewController *meVC = [[TSMeViewController alloc] init];
+    meVC.title = @"我的";
     VC3.title = @"咨询";
     
     TSInternshipViewController *teacherListVC = [[TSInternshipViewController alloc] init];
     teacherListVC.title = @"教授";
     
-    EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
-    meVC.title = @"我的";
+//    EduMeViewController *meVC = [story instantiateViewControllerWithIdentifier:@"EduMeViewController"];
+//    meVC.title = @"我的";
     
     
     self.viewControllers = @[[[TSMainNavigationController alloc]initWithRootViewController:homeVC]

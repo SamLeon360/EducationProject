@@ -67,7 +67,7 @@
 
 -(void)viewWillLayoutSubviews{
     if (USER_SINGLE.token.length<= 0) {
-        [[UIApplication sharedApplication].keyWindow addSubview:self.loginBtnView];
+//        [[UIApplication sharedApplication].keyWindow addSubview:self.loginBtnView];
     }
     
 }

@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIView *phoneView;
 @property (weak, nonatomic) IBOutlet UIView *pwdView;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cancalBtn;
+
 @property (weak, nonatomic) IBOutlet UILabel *codeLoginLabel;
 @property (weak, nonatomic) IBOutlet UILabel *registerLabel;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
@@ -40,9 +42,12 @@
     [self setupViews];
 }
 -(void)setupViews{
+    
     [self.phoneView makeCorner:self.phoneView.frame.size.height/2];
     [self.pwdView makeCorner:self.pwdView.frame.size.height/2];
     [self.loginBtn makeCorner:self.loginBtn.frame.size.height/2];
+    [self.cancalBtn makeCorner:self.loginBtn.frame.size.height/2];
+    
 }
 -(void)setupClickAction{
     __block LoginViewController *blockSelf = self;
@@ -132,4 +137,14 @@
     }];
     
 }
+
+- (IBAction)cancelBtnAction:(id)sender {
+    
+    TSMainTabBarViewController *vc = [[TSMainTabBarViewController alloc] init];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.window.rootViewController = vc;
+    [appDelegate.window makeKeyAndVisible];
+    
+}
+
 @end

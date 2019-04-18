@@ -130,6 +130,22 @@
 		22F3823822390B98005A0AD7 /* EduMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823722390B98005A0AD7 /* EduMineCell.m */; };
 		22F3823B223A365E005A0AD7 /* HomeNewPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3823A223A365E005A0AD7 /* HomeNewPostCell.m */; };
 		2F7314590B836FD7D6E45AA9 /* libPods-EducationMixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */; };
+		B20C1D3D2266BD130026AF31 /* TSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D3B2266BD130026AF31 /* TSMeViewController.m */; };
+		B20C1D3E2266BD130026AF31 /* TSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D3C2266BD130026AF31 /* TSMeViewController.xib */; };
+		B20C1D412266BD2F0026AF31 /* TSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D402266BD2F0026AF31 /* TSMeModel.m */; };
+		B20C1D442266BD3E0026AF31 /* TSMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D432266BD3E0026AF31 /* TSMeView.m */; };
+		B20C1D472266BD4A0026AF31 /* TSMeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D462266BD4A0026AF31 /* TSMeViewModel.m */; };
+		B20C1D4A2266C1410026AF31 /* TSMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D492266C1410026AF31 /* TSMeHeaderView.m */; };
+		B20C1D4C2266C7240026AF31 /* TSMeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D4B2266C7240026AF31 /* TSMeHeaderView.xib */; };
+		B20C1D502266C7B50026AF31 /* TSMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D4E2266C7B50026AF31 /* TSMeTableViewCell.m */; };
+		B20C1D512266C7B50026AF31 /* TSMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D4F2266C7B50026AF31 /* TSMeTableViewCell.xib */; };
+		B20C1D542266C8A00026AF31 /* TSMeTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D532266C8A00026AF31 /* TSMeTableViewCellModel.m */; };
+		B20C1D56226726A80026AF31 /* addressbook_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D55226726A70026AF31 /* addressbook_fill.png */; };
+		B20C1D5A226803880026AF31 /* brush_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D57226803880026AF31 /* brush_fill.png */; };
+		B20C1D5B226803880026AF31 /* interactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D58226803880026AF31 /* interactive.png */; };
+		B20C1D5C226803880026AF31 /* setup_fill.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D59226803880026AF31 /* setup_fill.png */; };
+		B20C1D5F22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C1D5E22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m */; };
+		B20C1D612268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C1D602268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib */; };
 		B2154736223BF314000AD9D8 /* InstitutionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2154735223BF314000AD9D8 /* InstitutionViewModel.m */; };
 		B2154739223BF32F000AD9D8 /* InstitutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2154738223BF32F000AD9D8 /* InstitutionViewController.m */; };
 		B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B215473B223BF33C000AD9D8 /* InstitutionModel.m */; };
@@ -583,6 +599,30 @@
 		64BE79F514056314A55986A5 /* Pods-EducationMixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixUITests/Pods-EducationMixUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68D285078B8363B79F8EA713 /* libPods-EducationMixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EducationMixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A2C397B066478E0C78E651 /* Pods-EducationMixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EducationMixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EducationMixTests/Pods-EducationMixTests.release.xcconfig"; sourceTree = "<group>"; };
+		B20C1D3A2266BD130026AF31 /* TSMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeViewController.h; sourceTree = "<group>"; };
+		B20C1D3B2266BD130026AF31 /* TSMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeViewController.m; sourceTree = "<group>"; };
+		B20C1D3C2266BD130026AF31 /* TSMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSMeViewController.xib; sourceTree = "<group>"; };
+		B20C1D3F2266BD2F0026AF31 /* TSMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeModel.h; sourceTree = "<group>"; };
+		B20C1D402266BD2F0026AF31 /* TSMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeModel.m; sourceTree = "<group>"; };
+		B20C1D422266BD3E0026AF31 /* TSMeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeView.h; sourceTree = "<group>"; };
+		B20C1D432266BD3E0026AF31 /* TSMeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeView.m; sourceTree = "<group>"; };
+		B20C1D452266BD4A0026AF31 /* TSMeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeViewModel.h; sourceTree = "<group>"; };
+		B20C1D462266BD4A0026AF31 /* TSMeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeViewModel.m; sourceTree = "<group>"; };
+		B20C1D482266C1410026AF31 /* TSMeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeHeaderView.h; sourceTree = "<group>"; };
+		B20C1D492266C1410026AF31 /* TSMeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeHeaderView.m; sourceTree = "<group>"; };
+		B20C1D4B2266C7240026AF31 /* TSMeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSMeHeaderView.xib; sourceTree = "<group>"; };
+		B20C1D4D2266C7B50026AF31 /* TSMeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeTableViewCell.h; sourceTree = "<group>"; };
+		B20C1D4E2266C7B50026AF31 /* TSMeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeTableViewCell.m; sourceTree = "<group>"; };
+		B20C1D4F2266C7B50026AF31 /* TSMeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSMeTableViewCell.xib; sourceTree = "<group>"; };
+		B20C1D522266C8A00026AF31 /* TSMeTableViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeTableViewCellModel.h; sourceTree = "<group>"; };
+		B20C1D532266C8A00026AF31 /* TSMeTableViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeTableViewCellModel.m; sourceTree = "<group>"; };
+		B20C1D55226726A70026AF31 /* addressbook_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addressbook_fill.png; sourceTree = "<group>"; };
+		B20C1D57226803880026AF31 /* brush_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brush_fill.png; sourceTree = "<group>"; };
+		B20C1D58226803880026AF31 /* interactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interactive.png; sourceTree = "<group>"; };
+		B20C1D59226803880026AF31 /* setup_fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setup_fill.png; sourceTree = "<group>"; };
+		B20C1D5D22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMeNotLoggedInHeaderView.h; sourceTree = "<group>"; };
+		B20C1D5E22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSMeNotLoggedInHeaderView.m; sourceTree = "<group>"; };
+		B20C1D602268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSMeNotLoggedInHeaderView.xib; sourceTree = "<group>"; };
 		B2154734223BF314000AD9D8 /* InstitutionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstitutionViewModel.h; sourceTree = "<group>"; };
 		B2154735223BF314000AD9D8 /* InstitutionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstitutionViewModel.m; sourceTree = "<group>"; };
 		B2154737223BF32F000AD9D8 /* InstitutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstitutionViewController.h; sourceTree = "<group>"; };
@@ -1870,6 +1910,61 @@
 			path = CompanyList;
 			sourceTree = "<group>";
 		};
+		B20C1D352266B97A0026AF31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B20C1D3A2266BD130026AF31 /* TSMeViewController.h */,
+				B20C1D3B2266BD130026AF31 /* TSMeViewController.m */,
+				B20C1D3C2266BD130026AF31 /* TSMeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B20C1D362266B97A0026AF31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B20C1D3F2266BD2F0026AF31 /* TSMeModel.h */,
+				B20C1D402266BD2F0026AF31 /* TSMeModel.m */,
+				B20C1D522266C8A00026AF31 /* TSMeTableViewCellModel.h */,
+				B20C1D532266C8A00026AF31 /* TSMeTableViewCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B20C1D372266B97A0026AF31 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		B20C1D382266B97A0026AF31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20C1D422266BD3E0026AF31 /* TSMeView.h */,
+				B20C1D432266BD3E0026AF31 /* TSMeView.m */,
+				B20C1D482266C1410026AF31 /* TSMeHeaderView.h */,
+				B20C1D492266C1410026AF31 /* TSMeHeaderView.m */,
+				B20C1D4B2266C7240026AF31 /* TSMeHeaderView.xib */,
+				B20C1D4D2266C7B50026AF31 /* TSMeTableViewCell.h */,
+				B20C1D4E2266C7B50026AF31 /* TSMeTableViewCell.m */,
+				B20C1D4F2266C7B50026AF31 /* TSMeTableViewCell.xib */,
+				B20C1D5D22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.h */,
+				B20C1D5E22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m */,
+				B20C1D602268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B20C1D392266B97A0026AF31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B20C1D452266BD4A0026AF31 /* TSMeViewModel.h */,
+				B20C1D462266BD4A0026AF31 /* TSMeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B215472B223BF16F000AD9D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1906,6 +2001,7 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B25F43FE2266B88A001218ED /* Me(我的) */,
 				B25F40892262D06E001218ED /* IM(融云聊天) */,
 				B2E2B218225D87AF00CB8441 /* TechnicalRequirements(技术需求) */,
 				B2DB37D02259CD3A00B17ACE /* Advisory(咨询) */,
@@ -2314,6 +2410,10 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B20C1D57226803880026AF31 /* brush_fill.png */,
+				B20C1D58226803880026AF31 /* interactive.png */,
+				B20C1D59226803880026AF31 /* setup_fill.png */,
+				B20C1D55226726A70026AF31 /* addressbook_fill.png */,
 				B25F43FA2265E7AE001218ED /* banner1.jpg */,
 				B25F43FB2265E7AE001218ED /* banner2.jpg */,
 				B25F40BC22642160001218ED /* association.png */,
@@ -2897,6 +2997,18 @@
 				B25F43E92265E31D001218ED /* AddCommerceController.h */,
 			);
 			path = CommerceView;
+			sourceTree = "<group>";
+		};
+		B25F43FE2266B88A001218ED /* Me(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				B20C1D372266B97A0026AF31 /* Src */,
+				B20C1D352266B97A0026AF31 /* Controller */,
+				B20C1D362266B97A0026AF31 /* Model */,
+				B20C1D382266B97A0026AF31 /* View */,
+				B20C1D392266B97A0026AF31 /* ViewModel */,
+			);
+			path = "Me(我的)";
 			sourceTree = "<group>";
 		};
 		B2B4EF1A2252F838002267D8 /* Src */ = {
@@ -3543,17 +3655,21 @@
 				B23295B72255DD72003F9548 /* TSInternshipTableViewCell.xib in Resources */,
 				B24525CB2252045200180FCA /* TSStudentListTableViewCell.xib in Resources */,
 				22F3815A22374A4C005A0AD7 /* HomeXib.xib in Resources */,
+				B20C1D3E2266BD130026AF31 /* TSMeViewController.xib in Resources */,
 				B2290A832245CEEF009D91AC /* 学生头像.png in Resources */,
 				B2290A1E224137E4009D91AC /* TSInstitutionTeacherTableViewCell.xib in Resources */,
+				B20C1D4C2266C7240026AF31 /* TSMeHeaderView.xib in Resources */,
 				B25F4040225F3AED001218ED /* TSPoliciesAndRegulationsTableViewCell.xib in Resources */,
 				22F3802C2235FF7F005A0AD7 /* LaunchScreen.storyboard in Resources */,
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
+				B20C1D5A226803880026AF31 /* brush_fill.png in Resources */,
 				B2DB380E225C742500B17ACE /* 公告.jpg in Resources */,
 				B25F40BD22642160001218ED /* enterprise.png in Resources */,
 				B25F41122265B922001218ED /* AreaStringCell.xib in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
 				B2DB3831225C826300B17ACE /* TSProjectDetailsViewController.xib in Resources */,
+				B20C1D512266C7B50026AF31 /* TSMeTableViewCell.xib in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
 				B2B4EF32225306DB002267D8 /* TSStudentDetailViewController.xib in Resources */,
 				B2DB37DA2259D06E00B17ACE /* TSAdvisoryViewController.xib in Resources */,
@@ -3569,6 +3685,7 @@
 				B25F40CB22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib in Resources */,
 				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
+				B20C1D5C226803880026AF31 /* setup_fill.png in Resources */,
 				B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */,
 				B25F43FD2265E7AE001218ED /* banner2.jpg in Resources */,
 				B2290A5922432515009D91AC /* Main.storyboard in Resources */,
@@ -3594,7 +3711,10 @@
 				B2DB37EC2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.xib in Resources */,
 				B25F43EF2265E31D001218ED /* CommerceView.storyboard in Resources */,
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
+				B20C1D612268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib in Resources */,
+				B20C1D5B226803880026AF31 /* interactive.png in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
+				B20C1D56226726A80026AF31 /* addressbook_fill.png in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
 				B25F43EB2265E31D001218ED /* CommerceCell.xib in Resources */,
 				B2E2B247225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib in Resources */,
@@ -3751,6 +3871,7 @@
 				22F3813A22363C00005A0AD7 /* UIImage+Category.m in Sources */,
 				B25F40852262C7FF001218ED /* TSAnnouncementDetailView.m in Sources */,
 				22F3814722363C00005A0AD7 /* UINavigationItem+AddBarItem.m in Sources */,
+				B20C1D412266BD2F0026AF31 /* TSMeModel.m in Sources */,
 				B2DB37C32255F18E00B17ACE /* TSInternshipDetailView.m in Sources */,
 				B25F40792262C0C1001218ED /* TSAnnouncementTableViewCell.m in Sources */,
 				B25F43F32265E31D001218ED /* AddCommerceController.m in Sources */,
@@ -3790,11 +3911,13 @@
 				B25F43F12265E31D001218ED /* SearchCommerceController.m in Sources */,
 				B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */,
 				22F382162238DB88005A0AD7 /* EditUserDataController.m in Sources */,
+				B20C1D4A2266C1410026AF31 /* TSMeHeaderView.m in Sources */,
 				B21C973422548BE400257774 /* TSTeacherDetailModel.m in Sources */,
 				B22909E82241369F009D91AC /* TSInstitutionDetailViewModel.m in Sources */,
 				22F382142238DB88005A0AD7 /* FriendListController.m in Sources */,
 				B25F43EA2265E31D001218ED /* commerceDetailSection.m in Sources */,
 				B2DB37E32259D09700B17ACE /* TSAdvisoryViewModel.m in Sources */,
+				B20C1D502266C7B50026AF31 /* TSMeTableViewCell.m in Sources */,
 				22F3817622375DFB005A0AD7 /* LPTagModel.m in Sources */,
 				B2E2B22D225D885B00CB8441 /* TSTechnicalRequirementsViewModel.m in Sources */,
 				22F3817A22378B1C005A0AD7 /* HomeViewController.m in Sources */,
@@ -3883,10 +4006,12 @@
 				B25F40882262C808001218ED /* TSAnnouncementDetailViewModel.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
 				B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */,
+				B20C1D5F22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
 				B21DD951224DFDA800699355 /* NSDate+TSExtension.m in Sources */,
 				B2290A16224137B4009D91AC /* TSInstitutionTeacherViewController.m in Sources */,
 				22F3820A2238DB88005A0AD7 /* MemberHeaderSection.m in Sources */,
+				B20C1D442266BD3E0026AF31 /* TSMeView.m in Sources */,
 				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
 				B22909FE22413719009D91AC /* TSInstitutionMsgBoardViewController.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
@@ -3924,6 +4049,7 @@
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
 				B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */,
 				B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */,
+				B20C1D472266BD4A0026AF31 /* TSMeViewModel.m in Sources */,
 				B24B75372248D66200C293B7 /* UIImage+Util.m in Sources */,
 				B25F4054226021C6001218ED /* TSPoliciesAndRegulationsDetailView.m in Sources */,
 				22F3814D22363C00005A0AD7 /* UIViewController+BackButtonHandler.m in Sources */,
@@ -3963,6 +4089,7 @@
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,
 				B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */,
 				B25F40BA226420C5001218ED /* TSLibraryModel.m in Sources */,
+				B20C1D3D2266BD130026AF31 /* TSMeViewController.m in Sources */,
 				22F3813422363C00005A0AD7 /* UIImage+Rotate.m in Sources */,
 				B25F430F2265D293001218ED /* CommerceAlertView.m in Sources */,
 				22F3814622363C00005A0AD7 /* UIFont+Category.m in Sources */,
@@ -3972,6 +4099,7 @@
 				22F3814022363C00005A0AD7 /* UIButton+Extension.m in Sources */,
 				B2290A13224137A9009D91AC /* TSInstitutionTeacherViewModel.m in Sources */,
 				22F3813722363C00005A0AD7 /* UIImage+Wechat.m in Sources */,
+				B20C1D542266C8A00026AF31 /* TSMeTableViewCellModel.m in Sources */,
 				B25F40B7226420A9001218ED /* TSLibraryViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

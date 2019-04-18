@@ -45,12 +45,13 @@
         
         @strongify(self);
         [self.view addSubview:self.tableView];
-
+        
         [self.tableView reloadData];
         
         [TSProgressHUD dismiss];
 
     } error:^(NSError *error) {
+        
         [TSProgressHUD showError:error.description];
         
         
