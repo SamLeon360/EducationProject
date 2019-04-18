@@ -136,7 +136,7 @@
     } else if(self.btnInx == 1){
         
         TSTeamDetailsViewController *vc = [[TSTeamDetailsViewController alloc] init];
-        vc.title = @"成果详细";
+        vc.title = @"团队详细";
         TSAdvisoryModel *model = self.advisoryVM.modelArr[indexPath.row];
         vc.team_id = model.Id;
         vc.hidesBottomBarWhenPushed = YES;

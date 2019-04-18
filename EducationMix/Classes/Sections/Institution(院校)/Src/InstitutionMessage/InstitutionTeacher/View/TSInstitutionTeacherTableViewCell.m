@@ -48,7 +48,7 @@
     if (model.photo) {
         NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.photo];
         
-        [_teacherImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+        [_teacherImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"teacher_default_icon"] options:SDWebImageLowPriority];
     }
 //    _professionalField.text = model.major_field
 }

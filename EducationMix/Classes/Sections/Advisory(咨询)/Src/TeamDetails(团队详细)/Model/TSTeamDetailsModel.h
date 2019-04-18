@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *team_photo;
 @property(nonatomic,strong)NSString *research_subject;
 
+@property(nonatomic,strong)NSString *research_subject_new;
 
 //"apply_phone":"",
 //"apply_email":"",

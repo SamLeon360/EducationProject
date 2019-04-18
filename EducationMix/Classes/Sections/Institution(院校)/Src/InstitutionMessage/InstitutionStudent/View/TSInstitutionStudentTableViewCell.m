@@ -42,7 +42,7 @@
     if (model.photo) {
         NSString *urlStr = [NSString stringWithFormat:@"%@%@",AVATAR_HOST_URL,model.photo];
         
-        [_studentImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
+        [_studentImageView sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:[UIImage imageNamed:@"studen_default_icon"] options:SDWebImageLowPriority];
     }
     
     

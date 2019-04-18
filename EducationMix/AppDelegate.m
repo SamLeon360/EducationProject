@@ -20,6 +20,14 @@
     
     TSMainTabBarViewController *mainTabBarCtrl = [[TSMainTabBarViewController alloc]init];
     self.window.rootViewController = mainTabBarCtrl;
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:TSColor_RGB(252, 91, 32)];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont systemFontOfSize:17], NSFontAttributeName, nil]];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
     // Override point for customization after application launch.
     return YES;
 }

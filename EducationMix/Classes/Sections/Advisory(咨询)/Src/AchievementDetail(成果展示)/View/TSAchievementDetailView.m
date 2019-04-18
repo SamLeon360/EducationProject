@@ -49,6 +49,10 @@
 
 - (void)setModel:(TSAchievementDetailModel *)model {
     
+    if(!_model) {
+        _model = model;
+    }
+    
     _results_name.text = model.results_name;
     _research_introduction.text = model.research_introduction;
     _transfer_mode.text = model.transfer_mode;
@@ -74,10 +78,21 @@
     [_research_pictures sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
     
     
-    
-    
 }
 
+
+- (IBAction)telAction:(id)sender {
+    
+    NSString *string = [NSString stringWithFormat:@"telprompt://%@",self.model.contact_phone];
+    
+    NSURL *url = [NSURL URLWithString:string];
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+    } else {
+        // Fallback on earlier versions
+    }
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

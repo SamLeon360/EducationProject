@@ -11,6 +11,7 @@
 #import "SDCycleScrollView.h"
 #import "JQRefreshHeaader.h"
 #import "UIButton+Size.h"
+#import "UINavigationBar+Awesome.h"
 
 #import "TSInstitutionDetailViewController.h"
 #import "TSInstitutionStudentViewController.h"
@@ -26,7 +27,6 @@
 #define FONTMAX 15.0
 #define FONTMIN 16.0
 #define PADDING 15.0
-
 
 @interface TSINSTMsgViewController ()<UIScrollViewDelegate>
 
@@ -76,11 +76,6 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"院校详细";
@@ -103,11 +98,26 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillLayoutSubviews
-{
-//    self.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, ScreenH - 64);
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController.navigationBar lt_reset];
+
+}
+
+- (void)dealloc {
+    
+    [self.detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+    [self.teacherViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+    [self.studentViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
+}
 
 #pragma observe
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
@@ -148,12 +158,22 @@
         self.segmentScrollView.frame = CGRectMake(0, 64, SCREEN_WIDTH, 40);
         self.cycleScrollView.frame = CGRectMake(0, -136, SCREEN_WIDTH, 200);
     }
+    
+    UIColor * color = TSColor_RGB(252, 91, 32);
+    CGFloat offsetY = tableView.contentOffset.y;
+    if (offsetY > NAVBAR_CHANGE_POINT) {
+        CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
+    } else {
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+    }
 }
 
 
 
 #pragma mark -UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
     if (scrollView !=self.bottomScrollView) {
         return ;
     }
@@ -206,8 +226,11 @@
         
     }];
     
+
     
 }
+
+
 
 
 #pragma  - mark 选项卡点击事件
@@ -270,7 +293,7 @@
 - (UIScrollView *)bottomScrollView {
     
     if (!_bottomScrollView) {
-        _bottomScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, NAVBARHEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _bottomScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         _bottomScrollView.delegate = self;
         _bottomScrollView.pagingEnabled = YES;
         
@@ -280,6 +303,8 @@
         
             self.detailViewController.academy_id = self.academy_id;
             self.detailViewController.view.frame = CGRectMake(SCREEN_WIDTH * 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        
+        self.cycleScrollView.bannerImageViewContentMode = UIViewContentModeScaleAspectFill;
         self.detailViewController.callBackBlock = ^(NSArray * _Nonnull imageUrl) {
             @strongify(self);
             self.cycleScrollView.imageURLStringsGroup = imageUrl;
@@ -342,10 +367,10 @@
             
             
             
-//            NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-//            [self.detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-//            [self.teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
-//            [self.studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+            NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+            [self.detailViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+            [self.teacherViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
+            [self.studentViewController.tableView addObserver:self forKeyPath:@"contentOffset" options:options context:nil];
 //
         
 //        [detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
@@ -356,17 +381,6 @@
     }
     return _bottomScrollView;
 }
-
-- (void)viewWillDisappear:(BOOL)animated {
-    
-    [super viewWillDisappear:animated];
-//            [self.detailViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
-//            [self.teacherViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
-//            [self.studentViewController.tableView removeObserver:self forKeyPath:@"contentOffset"];
-
-
-}
-
 
 
 - (NSMutableArray *)controlleres {
@@ -395,7 +409,7 @@
     
     if (!_segmentScrollView) {
         
-        _segmentScrollView =  [[UIScrollView alloc]initWithFrame:CGRectMake(0, 200+NAVBARHEIGHT, SCREEN_WIDTH, 40)];
+        _segmentScrollView =  [[UIScrollView alloc]initWithFrame:CGRectMake(0, 200, SCREEN_WIDTH, 40)];
         [_segmentScrollView addSubview:self.currentSelectedItemImageView];
         _segmentScrollView.showsHorizontalScrollIndicator = NO;
         _segmentScrollView.showsVerticalScrollIndicator = NO;
@@ -465,7 +479,7 @@
             [imageMutableArray addObject:imageName];
         }
         
-        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, NAVBARHEIGHT, SCREEN_WIDTH, 200) imageNamesGroup:imageMutableArray];
+        _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200) imageNamesGroup:imageMutableArray];
         
         
     }

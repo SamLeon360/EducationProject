@@ -170,6 +170,8 @@
 		B23295B62255DD72003F9548 /* TSInternshipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B42255DD72003F9548 /* TSInternshipTableViewCell.m */; };
 		B23295B72255DD72003F9548 /* TSInternshipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23295B52255DD72003F9548 /* TSInternshipTableViewCell.xib */; };
 		B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B92255DD81003F9548 /* TSInternshipViewModel.m */; };
+		B243713E22685206001F9C8F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B243713D22685206001F9C8F /* UINavigationBar+Awesome.m */; };
+		B243714122686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m in Sources */ = {isa = PBXBuildFile; fileRef = B243714022686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m */; };
 		B24525C32252042500180FCA /* TSStudentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C22252042500180FCA /* TSStudentListViewController.m */; };
 		B24525C62252043D00180FCA /* TSStudentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C52252043D00180FCA /* TSStudentListModel.m */; };
 		B24525CA2252045200180FCA /* TSStudentListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C82252045200180FCA /* TSStudentListTableViewCell.m */; };
@@ -665,6 +667,10 @@
 		B23295B52255DD72003F9548 /* TSInternshipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSInternshipTableViewCell.xib; sourceTree = "<group>"; };
 		B23295B82255DD81003F9548 /* TSInternshipViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipViewModel.h; sourceTree = "<group>"; };
 		B23295B92255DD81003F9548 /* TSInternshipViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipViewModel.m; sourceTree = "<group>"; };
+		B243713C22685206001F9C8F /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		B243713D22685206001F9C8F /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		B243713F22686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsMAdvanceSubjectodel.h; sourceTree = "<group>"; };
+		B243714022686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsMAdvanceSubjectodel.m; sourceTree = "<group>"; };
 		B24525C12252042500180FCA /* TSStudentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListViewController.h; sourceTree = "<group>"; };
 		B24525C22252042500180FCA /* TSStudentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentListViewController.m; sourceTree = "<group>"; };
 		B24525C42252043D00180FCA /* TSStudentListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListModel.h; sourceTree = "<group>"; };
@@ -2275,6 +2281,8 @@
 		B24B752F2248CD6100C293B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B243713C22685206001F9C8F /* UINavigationBar+Awesome.h */,
+				B243713D22685206001F9C8F /* UINavigationBar+Awesome.m */,
 				B24B75302248CD6100C293B7 /* UIImage+YPExtension.m */,
 				B24B75312248CD6100C293B7 /* UIImage+YPExtension.h */,
 				B24B75352248D66200C293B7 /* UIImage+Util.h */,
@@ -3332,6 +3340,8 @@
 			children = (
 				B2DB3822225C821F00B17ACE /* TSTeamDetailsModel.h */,
 				B2DB3823225C821F00B17ACE /* TSTeamDetailsModel.m */,
+				B243713F22686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.h */,
+				B243714022686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4023,8 +4033,10 @@
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
 				B2DB37EB2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m in Sources */,
 				22F3820B2238DB88005A0AD7 /* FriendNotifyCell.m in Sources */,
+				B243713E22685206001F9C8F /* UINavigationBar+Awesome.m in Sources */,
 				22F3813222363C00005A0AD7 /* UIImage+SubImage.m in Sources */,
 				B24525D82252049A00180FCA /* TSTeacherListTableViewCell.m in Sources */,
+				B243714122686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m in Sources */,
 				22F3812D22363C00005A0AD7 /* RequestManager.m in Sources */,
 				B2E2B229225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.m in Sources */,
 				B25F40C222642E85001218ED /* TSEnterpriseLibraryViewController.m in Sources */,

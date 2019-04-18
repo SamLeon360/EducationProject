@@ -39,6 +39,10 @@
 
 - (void)setModel:(TSTeamDetailsModel *)model {
     
+    if(!_model){
+        _model = model;
+    }
+    
     _team_name.text = model.team_name;
     _professional_field.text = [NSString getProfessionalField:[model.professional_field integerValue]];
 
@@ -53,7 +57,7 @@
     _contact_number.text = model.contact_number;
     
     _email.text = model.email;
-    _research_subject.text = model.research_subject;
+    _research_subject.text = model.research_subject_new;
     _unit_type.text = [NSString getUnitType:model.unit_type];
     
     
@@ -68,6 +72,18 @@
         [_team_photo sd_setImageWithURL:[NSURL URLWithString:urlStr] placeholderImage:nil options:SDWebImageLowPriority];
     }
 
+}
+- (IBAction)telAction:(id)sender {
+    
+    NSString *string = [NSString stringWithFormat:@"telprompt://%@",self.model.contact_number];
+    
+    NSURL *url = [NSURL URLWithString:string];
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 /*

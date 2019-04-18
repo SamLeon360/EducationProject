@@ -7,6 +7,7 @@
 //
 
 #import "TSMainNavigationController.h"
+#import "UINavigationBar+Awesome.h"
 
 @interface TSMainNavigationController ()
 
@@ -27,10 +28,14 @@
     // 当导航栏用在XMGNavigationController中, appearance设置才会生效
     //    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:[UIImage imageNamed:@"navigation_bg"] forBarMetrics:UIBarMetricsDefault];
+//    [bar setBackgroundImage:[UIImage imageNamed:@"navigation_bg"] forBarMetrics:UIBarMetricsDefault];
     [bar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName : [UIColor whiteColor]}];
     [bar setTintColor:[UIColor whiteColor]];
-    [bar setBarTintColor:[UIColor whiteColor]];
+    [bar setBarTintColor:TSColor_RGB(252, 91, 32)];
+    
+    ///252    91    32
+//    [bar lt_setBackgroundColor:TSColor_RGB(252, 91, 32)];
+//    [bar setShadowImage:[UIImage new]];
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [bar setBarStyle:UIBarStyleBlack];
