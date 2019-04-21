@@ -22,6 +22,7 @@
 #import "TSInternshipViewController.h"
 #import "InstitutionViewController.h"
 #import "TSTechnicalRequirementsViewController.h"
+#import "TSBusinessAssociationViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,LPSwitchTagDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -193,7 +194,7 @@
             
             switch (index) {
                 case 1:
-//                    vc = [[SearchCommerceController alloc] init];
+                    vc = [[TSBusinessAssociationViewController alloc] init];
                     
                     break;
                 case 2:

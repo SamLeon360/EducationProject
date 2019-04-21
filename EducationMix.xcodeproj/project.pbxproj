@@ -172,6 +172,12 @@
 		B23295BA2255DD81003F9548 /* TSInternshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23295B92255DD81003F9548 /* TSInternshipViewModel.m */; };
 		B243713E22685206001F9C8F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B243713D22685206001F9C8F /* UINavigationBar+Awesome.m */; };
 		B243714122686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m in Sources */ = {isa = PBXBuildFile; fileRef = B243714022686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m */; };
+		B243714B226958F4001F9C8F /* TSBusinessAssociationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2437149226958F4001F9C8F /* TSBusinessAssociationViewController.m */; };
+		B243714C226958F4001F9C8F /* TSBusinessAssociationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243714A226958F4001F9C8F /* TSBusinessAssociationViewController.xib */; };
+		B243714F226958FF001F9C8F /* TSBusinessAssociationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B243714E226958FF001F9C8F /* TSBusinessAssociationModel.m */; };
+		B243715322695917001F9C8F /* TSBusinessAssociationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B243715122695917001F9C8F /* TSBusinessAssociationTableViewCell.m */; };
+		B243715422695917001F9C8F /* TSBusinessAssociationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243715222695917001F9C8F /* TSBusinessAssociationTableViewCell.xib */; };
+		B243715722695922001F9C8F /* TSBusinessAssociationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B243715622695922001F9C8F /* TSBusinessAssociationViewModel.m */; };
 		B24525C32252042500180FCA /* TSStudentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C22252042500180FCA /* TSStudentListViewController.m */; };
 		B24525C62252043D00180FCA /* TSStudentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C52252043D00180FCA /* TSStudentListModel.m */; };
 		B24525CA2252045200180FCA /* TSStudentListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B24525C82252045200180FCA /* TSStudentListTableViewCell.m */; };
@@ -284,6 +290,28 @@
 		B2C187022268236500058ADA /* TSInstitutionTeacherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C186E52268236500058ADA /* TSInstitutionTeacherModel.m */; };
 		B2C187032268236500058ADA /* TSInstitutionTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C186E92268236500058ADA /* TSInstitutionTeacherTableViewCell.xib */; };
 		B2C187042268236500058ADA /* TSInstitutionTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C186EA2268236500058ADA /* TSInstitutionTeacherTableViewCell.m */; };
+		B2C3EC1422696F0400FB324F /* TSBusinessAssociationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC1222696F0400FB324F /* TSBusinessAssociationDetailViewController.m */; };
+		B2C3EC1522696F0400FB324F /* TSBusinessAssociationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC1322696F0400FB324F /* TSBusinessAssociationDetailViewController.xib */; };
+		B2C3EC1822696F0D00FB324F /* TSBusinessAssociationDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC1722696F0D00FB324F /* TSBusinessAssociationDetailViewModel.m */; };
+		B2C3EC1B22696F1700FB324F /* TSBusinessAssociationDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC1A22696F1700FB324F /* TSBusinessAssociationDetailModel.m */; };
+		B2C3EC1E22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC1D22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.m */; };
+		B2C3EC2022696F3300FB324F /* TSBusinessAssociationDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC1F22696F3300FB324F /* TSBusinessAssociationDetailHeaderView.xib */; };
+		B2C3EC222269737A00FB324F /* 主页图标.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC212269737A00FB324F /* 主页图标.png */; };
+		B2C3EC2522697A2200FB324F /* 主页.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC2322697A2200FB324F /* 主页.png */; };
+		B2C3EC2622697A2200FB324F /* 主页64.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC2422697A2200FB324F /* 主页64.png */; };
+		B2C3EC2822697A8A00FB324F /* WechatIMG21.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC2722697A8A00FB324F /* WechatIMG21.png */; };
+		B2C3EC3B2269C3A900FB324F /* TSLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC3A2269C3A900FB324F /* TSLoginViewModel.m */; };
+		B2C3EC3E2269C3B200FB324F /* TSLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC3D2269C3B200FB324F /* TSLoginModel.m */; };
+		B2C3EC442269C3D100FB324F /* TSRegisteredViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC432269C3D100FB324F /* TSRegisteredViewModel.m */; };
+		B2C3EC482269C3DD00FB324F /* TSRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC462269C3DD00FB324F /* TSRegisteredViewController.m */; };
+		B2C3EC492269C3DD00FB324F /* TSRegisteredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC472269C3DD00FB324F /* TSRegisteredViewController.xib */; };
+		B2C3EC4C2269C3EE00FB324F /* TSRegisteredModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC4B2269C3EE00FB324F /* TSRegisteredModel.m */; };
+		B2C3EC4F2269C3F700FB324F /* TSRegisteredView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC4E2269C3F700FB324F /* TSRegisteredView.m */; };
+		B2C3EC5A226ABC0D00FB324F /* TSLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC59226ABC0D00FB324F /* TSLoginHeaderView.xib */; };
+		B2C3EC5E226ABC4900FB324F /* TSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC5C226ABC4900FB324F /* TSLoginViewController.m */; };
+		B2C3EC5F226ABC4900FB324F /* TSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3EC5D226ABC4900FB324F /* TSLoginViewController.xib */; };
+		B2C3EC62226ABCB800FB324F /* TSLoginHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC61226ABCB800FB324F /* TSLoginHeaderView.m */; };
+		B2C3EC65226AC6EC00FB324F /* TSLoginUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3EC64226AC6EC00FB324F /* TSLoginUserDataModel.m */; };
 		B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C89989224B12C800F759D8 /* TSInternshipViewController.m */; };
 		B2C89990224B5B0D00F759D8 /* TSRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */; };
 		B2C89991224B5B0D00F759D8 /* TSNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C8998D224B5B0D00F759D8 /* TSNetManager.m */; };
@@ -671,6 +699,16 @@
 		B243713D22685206001F9C8F /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		B243713F22686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTeamDetailsMAdvanceSubjectodel.h; sourceTree = "<group>"; };
 		B243714022686E51001F9C8F /* TSTeamDetailsMAdvanceSubjectodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTeamDetailsMAdvanceSubjectodel.m; sourceTree = "<group>"; };
+		B2437148226958F4001F9C8F /* TSBusinessAssociationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationViewController.h; sourceTree = "<group>"; };
+		B2437149226958F4001F9C8F /* TSBusinessAssociationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationViewController.m; sourceTree = "<group>"; };
+		B243714A226958F4001F9C8F /* TSBusinessAssociationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSBusinessAssociationViewController.xib; sourceTree = "<group>"; };
+		B243714D226958FF001F9C8F /* TSBusinessAssociationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationModel.h; sourceTree = "<group>"; };
+		B243714E226958FF001F9C8F /* TSBusinessAssociationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationModel.m; sourceTree = "<group>"; };
+		B243715022695917001F9C8F /* TSBusinessAssociationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationTableViewCell.h; sourceTree = "<group>"; };
+		B243715122695917001F9C8F /* TSBusinessAssociationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationTableViewCell.m; sourceTree = "<group>"; };
+		B243715222695917001F9C8F /* TSBusinessAssociationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSBusinessAssociationTableViewCell.xib; sourceTree = "<group>"; };
+		B243715522695922001F9C8F /* TSBusinessAssociationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationViewModel.h; sourceTree = "<group>"; };
+		B243715622695922001F9C8F /* TSBusinessAssociationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationViewModel.m; sourceTree = "<group>"; };
 		B24525C12252042500180FCA /* TSStudentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListViewController.h; sourceTree = "<group>"; };
 		B24525C22252042500180FCA /* TSStudentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentListViewController.m; sourceTree = "<group>"; };
 		B24525C42252043D00180FCA /* TSStudentListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentListModel.h; sourceTree = "<group>"; };
@@ -866,6 +904,41 @@
 		B2C186E82268236500058ADA /* TSInstitutionTeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSInstitutionTeacherTableViewCell.h; sourceTree = "<group>"; };
 		B2C186E92268236500058ADA /* TSInstitutionTeacherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSInstitutionTeacherTableViewCell.xib; sourceTree = "<group>"; };
 		B2C186EA2268236500058ADA /* TSInstitutionTeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSInstitutionTeacherTableViewCell.m; sourceTree = "<group>"; };
+		B2C3EC1122696F0400FB324F /* TSBusinessAssociationDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationDetailViewController.h; sourceTree = "<group>"; };
+		B2C3EC1222696F0400FB324F /* TSBusinessAssociationDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationDetailViewController.m; sourceTree = "<group>"; };
+		B2C3EC1322696F0400FB324F /* TSBusinessAssociationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSBusinessAssociationDetailViewController.xib; sourceTree = "<group>"; };
+		B2C3EC1622696F0D00FB324F /* TSBusinessAssociationDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationDetailViewModel.h; sourceTree = "<group>"; };
+		B2C3EC1722696F0D00FB324F /* TSBusinessAssociationDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationDetailViewModel.m; sourceTree = "<group>"; };
+		B2C3EC1922696F1700FB324F /* TSBusinessAssociationDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationDetailModel.h; sourceTree = "<group>"; };
+		B2C3EC1A22696F1700FB324F /* TSBusinessAssociationDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationDetailModel.m; sourceTree = "<group>"; };
+		B2C3EC1C22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBusinessAssociationDetailHeaderView.h; sourceTree = "<group>"; };
+		B2C3EC1D22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBusinessAssociationDetailHeaderView.m; sourceTree = "<group>"; };
+		B2C3EC1F22696F3300FB324F /* TSBusinessAssociationDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSBusinessAssociationDetailHeaderView.xib; sourceTree = "<group>"; };
+		B2C3EC212269737A00FB324F /* 主页图标.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主页图标.png"; sourceTree = "<group>"; };
+		B2C3EC2322697A2200FB324F /* 主页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主页.png"; sourceTree = "<group>"; };
+		B2C3EC2422697A2200FB324F /* 主页64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主页64.png"; sourceTree = "<group>"; };
+		B2C3EC2722697A8A00FB324F /* WechatIMG21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WechatIMG21.png; sourceTree = "<group>"; };
+		B2C3EC392269C3A900FB324F /* TSLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginViewModel.h; sourceTree = "<group>"; };
+		B2C3EC3A2269C3A900FB324F /* TSLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginViewModel.m; sourceTree = "<group>"; };
+		B2C3EC3C2269C3B200FB324F /* TSLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginModel.h; sourceTree = "<group>"; };
+		B2C3EC3D2269C3B200FB324F /* TSLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginModel.m; sourceTree = "<group>"; };
+		B2C3EC422269C3D100FB324F /* TSRegisteredViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSRegisteredViewModel.h; sourceTree = "<group>"; };
+		B2C3EC432269C3D100FB324F /* TSRegisteredViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSRegisteredViewModel.m; sourceTree = "<group>"; };
+		B2C3EC452269C3DD00FB324F /* TSRegisteredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSRegisteredViewController.h; sourceTree = "<group>"; };
+		B2C3EC462269C3DD00FB324F /* TSRegisteredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSRegisteredViewController.m; sourceTree = "<group>"; };
+		B2C3EC472269C3DD00FB324F /* TSRegisteredViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSRegisteredViewController.xib; sourceTree = "<group>"; };
+		B2C3EC4A2269C3EE00FB324F /* TSRegisteredModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSRegisteredModel.h; sourceTree = "<group>"; };
+		B2C3EC4B2269C3EE00FB324F /* TSRegisteredModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSRegisteredModel.m; sourceTree = "<group>"; };
+		B2C3EC4D2269C3F700FB324F /* TSRegisteredView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSRegisteredView.h; sourceTree = "<group>"; };
+		B2C3EC4E2269C3F700FB324F /* TSRegisteredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSRegisteredView.m; sourceTree = "<group>"; };
+		B2C3EC59226ABC0D00FB324F /* TSLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSLoginHeaderView.xib; sourceTree = "<group>"; };
+		B2C3EC5B226ABC4900FB324F /* TSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginViewController.h; sourceTree = "<group>"; };
+		B2C3EC5C226ABC4900FB324F /* TSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginViewController.m; sourceTree = "<group>"; };
+		B2C3EC5D226ABC4900FB324F /* TSLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSLoginViewController.xib; sourceTree = "<group>"; };
+		B2C3EC60226ABCB800FB324F /* TSLoginHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginHeaderView.h; sourceTree = "<group>"; };
+		B2C3EC61226ABCB800FB324F /* TSLoginHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginHeaderView.m; sourceTree = "<group>"; };
+		B2C3EC63226AC6EC00FB324F /* TSLoginUserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginUserDataModel.h; sourceTree = "<group>"; };
+		B2C3EC64226AC6EC00FB324F /* TSLoginUserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginUserDataModel.m; sourceTree = "<group>"; };
 		B2C89988224B12C800F759D8 /* TSInternshipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSInternshipViewController.h; sourceTree = "<group>"; };
 		B2C89989224B12C800F759D8 /* TSInternshipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSInternshipViewController.m; sourceTree = "<group>"; };
 		B2C8998C224B5B0D00F759D8 /* TSRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequestTool.m; sourceTree = "<group>"; };
@@ -2007,6 +2080,8 @@
 		B215472E223BF2FD000AD9D8 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B2C3EC292269C31200FB324F /* Login&Registered(登录注册) */,
+				B24371422269588D001F9C8F /* BusinessAssociation(商协会) */,
 				B25F43FE2266B88A001218ED /* Me(我的) */,
 				B25F40892262D06E001218ED /* IM(融云聊天) */,
 				B2E2B218225D87AF00CB8441 /* TechnicalRequirements(技术需求) */,
@@ -2160,6 +2235,10 @@
 		B2290A802245CEEF009D91AC /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				B2C3EC2722697A8A00FB324F /* WechatIMG21.png */,
+				B2C3EC2322697A2200FB324F /* 主页.png */,
+				B2C3EC2422697A2200FB324F /* 主页64.png */,
+				B2C3EC212269737A00FB324F /* 主页图标.png */,
 				B20C1D57226803880026AF31 /* brush_fill.png */,
 				B20C1D58226803880026AF31 /* interactive.png */,
 				B20C1D59226803880026AF31 /* setup_fill.png */,
@@ -2178,6 +2257,64 @@
 			name = Icon;
 			path = EducationMix/Icon;
 			sourceTree = SOURCE_ROOT;
+		};
+		B24371422269588D001F9C8F /* BusinessAssociation(商协会) */ = {
+			isa = PBXGroup;
+			children = (
+				B2437147226958D4001F9C8F /* Src */,
+				B2437145226958D4001F9C8F /* Controller */,
+				B2437143226958D4001F9C8F /* Model */,
+				B2437146226958D4001F9C8F /* View */,
+				B2437144226958D4001F9C8F /* ViewModel */,
+			);
+			path = "BusinessAssociation(商协会)";
+			sourceTree = "<group>";
+		};
+		B2437143226958D4001F9C8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B243714D226958FF001F9C8F /* TSBusinessAssociationModel.h */,
+				B243714E226958FF001F9C8F /* TSBusinessAssociationModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2437144226958D4001F9C8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B243715522695922001F9C8F /* TSBusinessAssociationViewModel.h */,
+				B243715622695922001F9C8F /* TSBusinessAssociationViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2437145226958D4001F9C8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2437148226958F4001F9C8F /* TSBusinessAssociationViewController.h */,
+				B2437149226958F4001F9C8F /* TSBusinessAssociationViewController.m */,
+				B243714A226958F4001F9C8F /* TSBusinessAssociationViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2437146226958D4001F9C8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B243715022695917001F9C8F /* TSBusinessAssociationTableViewCell.h */,
+				B243715122695917001F9C8F /* TSBusinessAssociationTableViewCell.m */,
+				B243715222695917001F9C8F /* TSBusinessAssociationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2437147226958D4001F9C8F /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC0C22696EF300FB324F /* BusinessAssociationDetail */,
+			);
+			path = Src;
+			sourceTree = "<group>";
 		};
 		B24525B72252037B00180FCA /* TeacherList(教授列表-公用) */ = {
 			isa = PBXGroup;
@@ -3075,6 +3212,163 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B2C3EC0C22696EF300FB324F /* BusinessAssociationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC0D22696EF300FB324F /* ViewModel */,
+				B2C3EC0E22696EF300FB324F /* Controller */,
+				B2C3EC0F22696EF300FB324F /* Model */,
+				B2C3EC1022696EF300FB324F /* View */,
+			);
+			path = BusinessAssociationDetail;
+			sourceTree = "<group>";
+		};
+		B2C3EC0D22696EF300FB324F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC1622696F0D00FB324F /* TSBusinessAssociationDetailViewModel.h */,
+				B2C3EC1722696F0D00FB324F /* TSBusinessAssociationDetailViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2C3EC0E22696EF300FB324F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC1122696F0400FB324F /* TSBusinessAssociationDetailViewController.h */,
+				B2C3EC1222696F0400FB324F /* TSBusinessAssociationDetailViewController.m */,
+				B2C3EC1322696F0400FB324F /* TSBusinessAssociationDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2C3EC0F22696EF300FB324F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC1922696F1700FB324F /* TSBusinessAssociationDetailModel.h */,
+				B2C3EC1A22696F1700FB324F /* TSBusinessAssociationDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2C3EC1022696EF300FB324F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC1C22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.h */,
+				B2C3EC1D22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.m */,
+				B2C3EC1F22696F3300FB324F /* TSBusinessAssociationDetailHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2C3EC292269C31200FB324F /* Login&Registered(登录注册) */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC2A2269C38800FB324F /* Login（登录） */,
+				B2C3EC2F2269C38800FB324F /* Registered（注册） */,
+			);
+			path = "Login&Registered(登录注册)";
+			sourceTree = "<group>";
+		};
+		B2C3EC2A2269C38800FB324F /* Login（登录） */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC2B2269C38800FB324F /* ViewModel */,
+				B2C3EC2C2269C38800FB324F /* Controller */,
+				B2C3EC2D2269C38800FB324F /* Model */,
+				B2C3EC2E2269C38800FB324F /* View */,
+			);
+			path = "Login（登录）";
+			sourceTree = "<group>";
+		};
+		B2C3EC2B2269C38800FB324F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC392269C3A900FB324F /* TSLoginViewModel.h */,
+				B2C3EC3A2269C3A900FB324F /* TSLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2C3EC2C2269C38800FB324F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC5B226ABC4900FB324F /* TSLoginViewController.h */,
+				B2C3EC5C226ABC4900FB324F /* TSLoginViewController.m */,
+				B2C3EC5D226ABC4900FB324F /* TSLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2C3EC2D2269C38800FB324F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC3C2269C3B200FB324F /* TSLoginModel.h */,
+				B2C3EC3D2269C3B200FB324F /* TSLoginModel.m */,
+				B2C3EC63226AC6EC00FB324F /* TSLoginUserDataModel.h */,
+				B2C3EC64226AC6EC00FB324F /* TSLoginUserDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2C3EC2E2269C38800FB324F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC59226ABC0D00FB324F /* TSLoginHeaderView.xib */,
+				B2C3EC60226ABCB800FB324F /* TSLoginHeaderView.h */,
+				B2C3EC61226ABCB800FB324F /* TSLoginHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2C3EC2F2269C38800FB324F /* Registered（注册） */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC302269C38800FB324F /* ViewModel */,
+				B2C3EC312269C38800FB324F /* Controller */,
+				B2C3EC322269C38800FB324F /* Model */,
+				B2C3EC332269C38800FB324F /* View */,
+			);
+			path = "Registered（注册）";
+			sourceTree = "<group>";
+		};
+		B2C3EC302269C38800FB324F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC422269C3D100FB324F /* TSRegisteredViewModel.h */,
+				B2C3EC432269C3D100FB324F /* TSRegisteredViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2C3EC312269C38800FB324F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC452269C3DD00FB324F /* TSRegisteredViewController.h */,
+				B2C3EC462269C3DD00FB324F /* TSRegisteredViewController.m */,
+				B2C3EC472269C3DD00FB324F /* TSRegisteredViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2C3EC322269C38800FB324F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC4A2269C3EE00FB324F /* TSRegisteredModel.h */,
+				B2C3EC4B2269C3EE00FB324F /* TSRegisteredModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2C3EC332269C38800FB324F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3EC4D2269C3F700FB324F /* TSRegisteredView.h */,
+				B2C3EC4E2269C3F700FB324F /* TSRegisteredView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2C89983224B11F500F759D8 /* Internship(实习就业) */ = {
 			isa = PBXGroup;
 			children = (
@@ -3671,11 +3965,15 @@
 				22F382282238DC64005A0AD7 /* CompanyView.storyboard in Resources */,
 				B20C1D5A226803880026AF31 /* brush_fill.png in Resources */,
 				B2DB380E225C742500B17ACE /* 公告.jpg in Resources */,
+				B2C3EC2822697A8A00FB324F /* WechatIMG21.png in Resources */,
 				B25F40BD22642160001218ED /* enterprise.png in Resources */,
+				B2C3EC5A226ABC0D00FB324F /* TSLoginHeaderView.xib in Resources */,
 				B25F41122265B922001218ED /* AreaStringCell.xib in Resources */,
 				22F380292235FF7F005A0AD7 /* Assets.xcassets in Resources */,
 				B2DB37CF225881EE00B17ACE /* TSInternshipDetailViewController.xib in Resources */,
 				B2DB3831225C826300B17ACE /* TSProjectDetailsViewController.xib in Resources */,
+				B2C3EC492269C3DD00FB324F /* TSRegisteredViewController.xib in Resources */,
+				B2C3EC2622697A2200FB324F /* 主页64.png in Resources */,
 				B2C186FB2268236500058ADA /* TSInstitutionDetailTableViewCell.xib in Resources */,
 				B20C1D512266C7B50026AF31 /* TSMeTableViewCell.xib in Resources */,
 				22F3812822363C00005A0AD7 /* NewEditAlertView.xib in Resources */,
@@ -3692,7 +3990,9 @@
 				22F3812B22363C00005A0AD7 /* AlertView.xib in Resources */,
 				B25F40CB22642EA9001218ED /* TSEnterpriseLibraryTableViewCell.xib in Resources */,
 				B2DB3821225C821300B17ACE /* TSTeamDetailsViewController.xib in Resources */,
+				B2C3EC2522697A2200FB324F /* 主页.png in Resources */,
 				22F3811C22363C00005A0AD7 /* README.txt in Resources */,
+				B243715422695917001F9C8F /* TSBusinessAssociationTableViewCell.xib in Resources */,
 				B20C1D5C226803880026AF31 /* setup_fill.png in Resources */,
 				B25F4038225F3AD0001218ED /* TSPoliciesAndRegulationsViewController.xib in Resources */,
 				B25F43FD2265E7AE001218ED /* banner2.jpg in Resources */,
@@ -3703,8 +4003,10 @@
 				22F3818522379EA0005A0AD7 /* HomeNewPostCell.xib in Resources */,
 				22F382072238DB88005A0AD7 /* YKEditTreePhotoCollectionViewCell.xib in Resources */,
 				B21C973C22548CC600257774 /* TSTeacherDetailView.xib in Resources */,
+				B2C3EC2022696F3300FB324F /* TSBusinessAssociationDetailHeaderView.xib in Resources */,
 				B25F407F2262C7DF001218ED /* TSAnnouncementDetailViewController.xib in Resources */,
 				B2E2B249225DD44400CB8441 /* TSProjectDetailsView.xib in Resources */,
+				B2C3EC1522696F0400FB324F /* TSBusinessAssociationDetailViewController.xib in Resources */,
 				22F3821C2238DB88005A0AD7 /* MineHeaderSection.xib in Resources */,
 				B2DB37F1225AD52D00B17ACE /* TSTSAdvisoryTableViewCell.xib in Resources */,
 				22E16324223BA0C700821A1C /* LoginBottomView.xib in Resources */,
@@ -3722,11 +4024,14 @@
 				22F381BF2238DA94005A0AD7 /* MemberList.storyboard in Resources */,
 				B20C1D612268127D0026AF31 /* TSMeNotLoggedInHeaderView.xib in Resources */,
 				B20C1D5B226803880026AF31 /* interactive.png in Resources */,
+				B2C3EC222269737A00FB324F /* 主页图标.png in Resources */,
 				22F380272235FF7D005A0AD7 /* Login.storyboard in Resources */,
 				B20C1D56226726A80026AF31 /* addressbook_fill.png in Resources */,
 				22F38155223652AB005A0AD7 /* MainView.storyboard in Resources */,
 				B25F43EB2265E31D001218ED /* CommerceCell.xib in Resources */,
 				B2E2B247225D9AA700CB8441 /* TSTechnicalRequirementsDetailView.xib in Resources */,
+				B243714C226958F4001F9C8F /* TSBusinessAssociationViewController.xib in Resources */,
+				B2C3EC5F226ABC4900FB324F /* TSLoginViewController.xib in Resources */,
 				B2E2B222225D883600CB8441 /* TSTechnicalRequirementsViewController.xib in Resources */,
 				B2E2B22A225D885100CB8441 /* TSTechnicalRequirementsTableViewCell.xib in Resources */,
 			);
@@ -3868,13 +4173,17 @@
 				22F3814422363C00005A0AD7 /* UIView+Genie.m in Sources */,
 				22F3813C22363C00005A0AD7 /* NSDictionary+Json.m in Sources */,
 				22F3813F22363C00005A0AD7 /* UIButton+Badge.m in Sources */,
+				B243714B226958F4001F9C8F /* TSBusinessAssociationViewController.m in Sources */,
 				B2E2B242225D9A8B00CB8441 /* TSTechnicalRequirementsDetailView.m in Sources */,
+				B2C3EC1822696F0D00FB324F /* TSBusinessAssociationDetailViewModel.m in Sources */,
 				22F3811F22363C00005A0AD7 /* WXApiRequestHandler.m in Sources */,
 				B25F409A22631020001218ED /* TSIMViewController.m in Sources */,
 				B2C186FE2268236500058ADA /* TSINSTMsgModel.m in Sources */,
+				B2C3EC62226ABCB800FB324F /* TSLoginHeaderView.m in Sources */,
 				B25F403B225F3ADA001218ED /* TSPoliciesAndRegulationsModel.m in Sources */,
 				22F3814122363C00005A0AD7 /* UIColor+RGBHex.m in Sources */,
 				B2DB383A225C828800B17ACE /* TSProjectDetailsViewModel.m in Sources */,
+				B2C3EC442269C3D100FB324F /* TSRegisteredViewModel.m in Sources */,
 				22F3812422363C00005A0AD7 /* WebViewJavascriptBridge.m in Sources */,
 				B2DB37FE225B50F800B17ACE /* TSAchievementDetailModel.m in Sources */,
 				B2C8998A224B12C800F759D8 /* TSInternshipViewController.m in Sources */,
@@ -3893,6 +4202,7 @@
 				B25F40B32264209B001218ED /* TSLibraryTableViewCell.m in Sources */,
 				22F3814922363C00005A0AD7 /* UIImageView+CustomImageView.m in Sources */,
 				B21C973722548C0900257774 /* TSTeacherDetailView.m in Sources */,
+				B243715722695922001F9C8F /* TSBusinessAssociationViewModel.m in Sources */,
 				B23295B22255DD62003F9548 /* TSInternshipModel.m in Sources */,
 				22F380572236367E005A0AD7 /* LoginViewController.m in Sources */,
 				B2C187022268236500058ADA /* TSInstitutionTeacherModel.m in Sources */,
@@ -3905,6 +4215,7 @@
 				B2DB3827225C823200B17ACE /* TSTeamDetailsView.m in Sources */,
 				B2DB3820225C821300B17ACE /* TSTeamDetailsViewController.m in Sources */,
 				22F3814522363C00005A0AD7 /* UIView+Masonry.m in Sources */,
+				B243714F226958FF001F9C8F /* TSBusinessAssociationModel.m in Sources */,
 				B2DB37FA225B50E700B17ACE /* TSAchievementDetailViewController.m in Sources */,
 				B2DB37C82255F1A700B17ACE /* TSInternshipDetailViewModel.m in Sources */,
 				B2C186FA2268236500058ADA /* TSInstitutionDetailTableViewCell.m in Sources */,
@@ -3927,6 +4238,7 @@
 				B2154740223BF3DC000AD9D8 /* InstitutionTableViewCell.m in Sources */,
 				22F382162238DB88005A0AD7 /* EditUserDataController.m in Sources */,
 				B20C1D4A2266C1410026AF31 /* TSMeHeaderView.m in Sources */,
+				B2C3EC4F2269C3F700FB324F /* TSRegisteredView.m in Sources */,
 				B21C973422548BE400257774 /* TSTeacherDetailModel.m in Sources */,
 				22F382142238DB88005A0AD7 /* FriendListController.m in Sources */,
 				B2C186F82268236500058ADA /* TSInstitutionDetailModel.m in Sources */,
@@ -3994,6 +4306,7 @@
 				22F3811B22363C00005A0AD7 /* UITabBar+XSDExt.m in Sources */,
 				B2154739223BF32F000AD9D8 /* InstitutionViewController.m in Sources */,
 				B24525CE2252046200180FCA /* TSStudentListViewModel.m in Sources */,
+				B2C3EC482269C3DD00FB324F /* TSRegisteredViewController.m in Sources */,
 				22F3812522363C00005A0AD7 /* WebViewJavascriptBridge_JS.m in Sources */,
 				22F381832237983E005A0AD7 /* HomeJobCell.m in Sources */,
 				22F382192238DB88005A0AD7 /* MemberIntroduceCell.m in Sources */,
@@ -4001,12 +4314,14 @@
 				22F3812922363C00005A0AD7 /* AlertViewModel.m in Sources */,
 				22F3815122363C00005A0AD7 /* UITabBar+badge.m in Sources */,
 				B25F43F02265E31D001218ED /* SearchCommerceNameView.m in Sources */,
+				B2C3EC3E2269C3B200FB324F /* TSLoginModel.m in Sources */,
 				22F3814B22363C00005A0AD7 /* NSString+Utils.m in Sources */,
 				B2C186F22268236500058ADA /* TSInstitutionStudentModel.m in Sources */,
 				22F3813622363C00005A0AD7 /* CustomFountion.m in Sources */,
 				B21C973A22548C1300257774 /* TSTeacherDetailViewModel.m in Sources */,
 				B2DB3834225C826E00B17ACE /* TSProjectDetailsModel.m in Sources */,
 				22F381B82238D9FE005A0AD7 /* TXWebViewController.m in Sources */,
+				B2C3EC1422696F0400FB324F /* TSBusinessAssociationDetailViewController.m in Sources */,
 				22F3815222363C00005A0AD7 /* UITextField+WJ.m in Sources */,
 				B25F410B2265B8D2001218ED /* GetAreaView.m in Sources */,
 				B2DB3837225C827900B17ACE /* TSProjectDetailsView.m in Sources */,
@@ -4018,6 +4333,7 @@
 				22F3813322363C00005A0AD7 /* UIImage+Gif.m in Sources */,
 				B2C186F02268236500058ADA /* TSInstitutionStudentViewModel.m in Sources */,
 				B2E2B23F225D9A8100CB8441 /* TSTechnicalRequirementsDetailModel.m in Sources */,
+				B2C3EC5E226ABC4900FB324F /* TSLoginViewController.m in Sources */,
 				B25F40692262C036001218ED /* TSAnnouncementViewController.m in Sources */,
 				B25F40882262C808001218ED /* TSAnnouncementDetailViewModel.m in Sources */,
 				B215473C223BF33C000AD9D8 /* InstitutionModel.m in Sources */,
@@ -4025,10 +4341,12 @@
 				B20C1D5F22680E7F0026AF31 /* TSMeNotLoggedInHeaderView.m in Sources */,
 				22F3814C22363C00005A0AD7 /* NSString+Category.m in Sources */,
 				B21DD951224DFDA800699355 /* NSDate+TSExtension.m in Sources */,
+				B2C3EC3B2269C3A900FB324F /* TSLoginViewModel.m in Sources */,
 				22F3820A2238DB88005A0AD7 /* MemberHeaderSection.m in Sources */,
 				B20C1D442266BD3E0026AF31 /* TSMeView.m in Sources */,
 				22F3817722375DFB005A0AD7 /* LPTagCell.m in Sources */,
 				22F3811822363C00005A0AD7 /* UITabBarItem+DKSBadge.m in Sources */,
+				B2C3EC65226AC6EC00FB324F /* TSLoginUserDataModel.m in Sources */,
 				B25F4051226021B9001218ED /* TSPoliciesAndRegulationsDetailModel.m in Sources */,
 				22F3813B22363C00005A0AD7 /* NSDictionary+MutableDeepCopy.m in Sources */,
 				B2DB37EB2259D4CF00B17ACE /* TSAdvisoryHeaderViewCollectionViewCell.m in Sources */,
@@ -4060,6 +4378,7 @@
 				B2C186EE2268236500058ADA /* TSInstitutionMsgBoardModel.m in Sources */,
 				B2DB3824225C821F00B17ACE /* TSTeamDetailsModel.m in Sources */,
 				22F382122238DB88005A0AD7 /* SHEditCommidityPhotoView.m in Sources */,
+				B2C3EC1B22696F1700FB324F /* TSBusinessAssociationDetailModel.m in Sources */,
 				B2DB3801225B510900B17ACE /* TSAchievementDetailView.m in Sources */,
 				B24B7540224A163B00C293B7 /* TSMainNavigationController.m in Sources */,
 				B20C1D472266BD4A0026AF31 /* TSMeViewModel.m in Sources */,
@@ -4091,14 +4410,17 @@
 				22F381882237B96F005A0AD7 /* NoPwdLoginController.m in Sources */,
 				B2DB37E02259D08800B17ACE /* TSAdvisoryHeaderView.m in Sources */,
 				B24525D12252047900180FCA /* TSTeacherListViewController.m in Sources */,
+				B2C3EC1E22696F2700FB324F /* TSBusinessAssociationDetailHeaderView.m in Sources */,
 				22F3817322375DFB005A0AD7 /* UIColor+SelectTags.m in Sources */,
 				B2DB3830225C826300B17ACE /* TSProjectDetailsViewController.m in Sources */,
+				B2C3EC4C2269C3EE00FB324F /* TSRegisteredModel.m in Sources */,
 				B2DB382A225C824000B17ACE /* TSTeamDetailsViewModel.m in Sources */,
 				B2C187042268236500058ADA /* TSInstitutionTeacherTableViewCell.m in Sources */,
 				22F3811E22363C00005A0AD7 /* WXApiResponseHandler.m in Sources */,
 				B2290A5722432444009D91AC /* TSMainTabBarViewController.m in Sources */,
 				22F3814A22363C00005A0AD7 /* UINavigationBar+Additions.m in Sources */,
 				B2290A7E22433AC1009D91AC /* UIButton+Size.m in Sources */,
+				B243715322695917001F9C8F /* TSBusinessAssociationTableViewCell.m in Sources */,
 				B25F40BA226420C5001218ED /* TSLibraryModel.m in Sources */,
 				B20C1D3D2266BD130026AF31 /* TSMeViewController.m in Sources */,
 				22F3813422363C00005A0AD7 /* UIImage+Rotate.m in Sources */,

@@ -33,7 +33,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiM-h9-Uf5">
-                        <rect key="frame" x="51" y="42.5" width="335" height="1"/>
+                        <rect key="frame" x="12" y="42.5" width="374" height="1"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="t57-Ij-9Xb"/>
@@ -52,11 +52,11 @@
                     <constraint firstAttribute="trailing" secondItem="xiM-h9-Uf5" secondAttribute="trailing" id="AlA-72-gqY"/>
                     <constraint firstItem="Ta0-ch-Ixy" firstAttribute="leading" secondItem="IV2-mk-GfV" secondAttribute="trailing" constant="8" id="B5v-JS-jGd"/>
                     <constraint firstAttribute="bottom" secondItem="xiM-h9-Uf5" secondAttribute="bottom" id="EaG-9C-bCx"/>
+                    <constraint firstItem="xiM-h9-Uf5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Ios-VN-q7r"/>
                     <constraint firstItem="Ta0-ch-Ixy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jcy-0J-t7m"/>
                     <constraint firstItem="zkJ-Oh-t5E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MXD-zp-dMk"/>
                     <constraint firstItem="IV2-mk-GfV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="QOO-IS-gXZ"/>
                     <constraint firstItem="IV2-mk-GfV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="S2V-D5-Tkv"/>
-                    <constraint firstItem="xiM-h9-Uf5" firstAttribute="leading" secondItem="IV2-mk-GfV" secondAttribute="trailing" constant="18" id="ZQa-3H-lmm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -64,7 +64,7 @@
                 <outlet property="iconImage" destination="IV2-mk-GfV" id="5Mo-5a-C5i"/>
                 <outlet property="title" destination="Ta0-ch-Ixy" id="VNR-7l-5j0"/>
             </connections>
-            <point key="canvasLocation" x="184" y="133"/>
+            <point key="canvasLocation" x="182.60869565217394" y="132.58928571428572"/>
         </tableViewCell>
     </objects>
     <resources>

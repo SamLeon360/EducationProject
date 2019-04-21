@@ -38,6 +38,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 //因接口缺陷，需要在本地映射基础资料（项目所属人类型）
 +(NSString *)getProjectOwnerType:(NSInteger)projectOwnerType;
+
+//因接口缺陷，需要在本地映射基础资料（商会类型）
++(NSString *)getCommerceType:(NSInteger)commerceType;
+
+/**
+ 手机号码验证
+ 
+ @param mobile 字符串类型电话号码
+ @return YES/NO
+ */
++ (BOOL) validateMobile:(NSString *)mobile;
+
 @end
 
 NS_ASSUME_NONNULL_END

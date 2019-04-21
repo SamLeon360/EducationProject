@@ -73,7 +73,8 @@
         NSArray *data = @[@{@"title":@"账号信息",@"imageName":@"addressbook_fill"},
                             @{@"title":@"编辑信息",@"imageName":@"brush_fill"},
                             @{@"title":@"设置",@"imageName":@"setup_fill"},
-                            @{@"title":@"我的消息",@"imageName":@"interactive"},];
+                            @{@"title":@"我的消息",@"imageName":@"interactive"},
+                          @{@"title":@"退出登录",@"imageName":@""}];
         _meCellModelArr = [TSMeTableViewCellModel mj_objectArrayWithKeyValuesArray:data];
     }
     return _meCellModelArr;

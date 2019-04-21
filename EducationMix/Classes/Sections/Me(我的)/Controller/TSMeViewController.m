@@ -10,6 +10,9 @@
 #import "TSMeHeaderView.h"
 #import "TSMeTableViewCell.h"
 #import "TSMeViewModel.h"
+#import "EduNavController.h"
+
+#import "TSLoginViewController.h"
 
 @interface TSMeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,11 +31,91 @@
 }
 
 
+- (IBAction)loginBtnAction:(id)sender {
+    
+    
+    TSLoginViewController *vc = [[TSLoginViewController alloc] init];
+    
+//    EduNavController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"EduNavController"];
+    
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    [self presentViewController:vc animated:YES completion:^{
+
+    }];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self updateTableViewHeaderView];
+
+    
+}
+
+- (void)updateTableViewHeaderView {
+    
+    UIView *tableHeaderView = nil;
+    
+    //未登录状态下需要显示的页面
+    if(USER_SINGLE.token.length<= 0) {
+        
+        tableHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"TSMeNotLoggedInHeaderView" owner:self options:nil] objectAtIndex:0];
+        
+    } else {
+        
+        NSInteger nibIndex = 3;
+        //登陆不同角色，显示不同UIVIew  10:校长，11:系主任，12:班主任，13:学生,14：老师
+        switch (USER_SINGLE.user_type) {
+            case 13:
+                nibIndex = 0; //学生
+                break;
+            case 11:
+                nibIndex = 1; //老师
+                break;
+            case 10:
+                nibIndex = 2; //学校
+                break;
+            default:
+                nibIndex = 1;
+                
+                break;
+        }
+        
+        tableHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"TSMeHeaderView" owner:self options:nil] objectAtIndex:nibIndex];
+    }
+    
+
+    _tableView.tableHeaderView = tableHeaderView;
+}
 
 #pragma mark - TableViewDelegate
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if(indexPath.row == 4){
+        
+        if(USER_SINGLE.token.length<= 0) {
+            return;
+        }
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"退出提示" message:@"是否退出登录" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            [USER_SINGLE logout];
+            [self updateTableViewHeaderView];
+
+        }];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:okAction];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+
+    }
     
     
 //    TSStudentDetailViewController *vc = [[TSStudentDetailViewController alloc] init];
@@ -94,21 +177,19 @@
         
         //未登录状态下需要显示的页面
         if(USER_SINGLE.token.length<= 0) {
-            
+            tableHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"TSMeNotLoggedInHeaderView" owner:self options:nil] objectAtIndex:0];
             
         } else {
             
-            
+            tableHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"TSMeHeaderView" owner:self options:nil] objectAtIndex:0];
         }
         
-        tableHeaderView = [[[NSBundle mainBundle] loadNibNamed:@"TSMeHeaderView" owner:self options:nil] objectAtIndex:0];
         
         _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         _tableView.tableHeaderView = tableHeaderView;
         
         
-        
-    }
+        }
     return _tableView;
 }
 

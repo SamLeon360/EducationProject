@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "EduMeViewController.h"
+#import "NoPwdLoginController.h"
 
 #import "TSMainTabBarViewController.h"
 @interface LoginViewController ()
@@ -62,6 +63,16 @@
   
     
 }
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+
+    
+}
+
 -(void)ClickToRegister{
     if (self.phoneTF.text.length <= 0 ) {
         [AlertView showYMAlertView:self.view andtitle:@"请输入账号"];
@@ -118,10 +129,10 @@
 //            appDelegate.window.rootViewController = vc;
 //            [appDelegate.window makeKeyAndVisible];
             
-            TSMainTabBarViewController *mainTabBarCtrl = [[TSMainTabBarViewController alloc]init];
-            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-            appDelegate.window.rootViewController = mainTabBarCtrl;
-            [appDelegate.window makeKeyAndVisible];
+//            TSMainTabBarViewController *mainTabBarCtrl = [[TSMainTabBarViewController alloc]init];
+//            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//            appDelegate.window.rootViewController = mainTabBarCtrl;
+//            [appDelegate.window makeKeyAndVisible];
 
             [self dismissViewControllerAnimated:YES completion:^{
                 
@@ -140,11 +151,26 @@
 
 - (IBAction)cancelBtnAction:(id)sender {
     
-    TSMainTabBarViewController *vc = [[TSMainTabBarViewController alloc] init];
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelegate.window.rootViewController = vc;
-    [appDelegate.window makeKeyAndVisible];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
+//    TSMainTabBarViewController *vc = [[TSMainTabBarViewController alloc] init];
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    appDelegate.window.rootViewController = vc;
+//    [appDelegate.window makeKeyAndVisible];
     
 }
 
+- (IBAction)registeredBtnAction:(id)sender {
+
+        NoPwdLoginController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"NoPwdLoginController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+//    [self presentViewController:vc animated:YES completion:^{
+//
+//    }];
+}
 @end

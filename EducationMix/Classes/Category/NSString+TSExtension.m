@@ -409,4 +409,58 @@
     
 }
 
+
++(NSString *)getCommerceType:(NSInteger)commerceType {
+ 
+    //'全部',
+    //'行业协会',
+    //'综合型商会',
+    //'地方商会',
+    //'异地商会'
+    NSString *result = @"";
+    
+    switch (commerceType) {
+        case 0:
+            result = @"全部";
+            break;
+        case 1:
+            result = @"行业协会";
+            break;
+        case 2:
+            result = @"综合型商会";
+            break;
+        case 3:
+            result = @"地方商会";
+            break;
+        case 4:
+            result = @"异地商会";
+            break;
+            
+        default:
+            result = @"其他";
+            
+            break;
+    }
+    
+    return result;
+    
+}
+
+
+//手机号码验证
+
+/**
+ 手机号码验证
+
+ @param mobile 字符串类型电话号码
+ @return YES/NO
+ */
++ (BOOL) validateMobile:(NSString *)mobile
+{
+    //手机号以13， 15，18开头，八个 \d 数字字符
+    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:mobile];
+}
+
 @end

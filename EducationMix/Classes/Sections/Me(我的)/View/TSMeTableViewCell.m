@@ -28,6 +28,8 @@
     _title.text = model.title;
     _iconImage.image = [UIImage imageNamed:model.imageName];
     
+    
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
