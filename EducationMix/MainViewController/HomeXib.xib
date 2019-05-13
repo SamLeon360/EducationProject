@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="435"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-ua-GHj" customClass="SDCycleScrollView">
@@ -24,10 +24,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-l2-gFb">
-                    <rect key="frame" x="0.0" y="155" width="414" height="195"/>
+                    <rect key="frame" x="0.0" y="155" width="414" height="110"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-8u-rdb">
-                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="97.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shangxiehui" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-K0-9TJ">
                                     <rect key="frame" x="30.5" y="17" width="43" height="43"/>
@@ -52,7 +52,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2I8-CL-BZC">
-                            <rect key="frame" x="103.5" y="0.0" width="103.5" height="97.5"/>
+                            <rect key="frame" x="103.5" y="0.0" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shixi" translatesAutoresizingMaskIntoConstraints="NO" id="rRF-Zy-r9K">
                                     <rect key="frame" x="30.5" y="17" width="43" height="43"/>
@@ -77,7 +77,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iic-fs-mqj">
-                            <rect key="frame" x="207" y="0.0" width="103.5" height="97.5"/>
+                            <rect key="frame" x="207" y="0.0" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jishu" translatesAutoresizingMaskIntoConstraints="NO" id="6Wm-s6-FoS">
                                     <rect key="frame" x="30.5" y="17" width="43" height="43"/>
@@ -102,7 +102,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vum-PA-eAC">
-                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="97.5"/>
+                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuanxiao" translatesAutoresizingMaskIntoConstraints="NO" id="sUF-6H-n7E">
                                     <rect key="frame" x="30.5" y="17" width="43" height="43"/>
@@ -126,8 +126,8 @@
                                 <constraint firstItem="sUF-6H-n7E" firstAttribute="leading" secondItem="Vum-PA-eAC" secondAttribute="leading" constant="30.5" id="z4S-o2-xgt"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtx-cr-73l">
-                            <rect key="frame" x="0.0" y="97.5" width="103.5" height="97.5"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtx-cr-73l">
+                            <rect key="frame" x="0.0" y="110" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiaoyi" translatesAutoresizingMaskIntoConstraints="NO" id="24u-lU-Muz">
                                     <rect key="frame" x="30.5" y="10" width="43" height="43"/>
@@ -151,8 +151,8 @@
                                 <constraint firstItem="5M0-SP-JtK" firstAttribute="top" secondItem="24u-lU-Muz" secondAttribute="bottom" constant="11" id="o55-wS-AVa"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-gd-T8q">
-                            <rect key="frame" x="103.5" y="97.5" width="103.5" height="97.5"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-gd-T8q">
+                            <rect key="frame" x="103.5" y="110" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuangchuang" translatesAutoresizingMaskIntoConstraints="NO" id="9Aa-kO-pcP">
                                     <rect key="frame" x="30.5" y="10" width="43" height="43"/>
@@ -176,8 +176,8 @@
                                 <constraint firstItem="9Aa-kO-pcP" firstAttribute="leading" secondItem="VmA-gd-T8q" secondAttribute="leading" constant="30.5" id="g7v-9r-qQ8"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS3-3a-cNc">
-                            <rect key="frame" x="207" y="97.5" width="103.5" height="97.5"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS3-3a-cNc">
+                            <rect key="frame" x="207" y="110" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quanmei" translatesAutoresizingMaskIntoConstraints="NO" id="n60-ne-TwT">
                                     <rect key="frame" x="30.5" y="10" width="43" height="43"/>
@@ -201,8 +201,8 @@
                                 <constraint firstItem="n60-ne-TwT" firstAttribute="top" secondItem="TS3-3a-cNc" secondAttribute="top" constant="10" id="rzQ-gW-7VT"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VV-NU-qfb">
-                            <rect key="frame" x="310.5" y="97.5" width="103.5" height="97.5"/>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VV-NU-qfb">
+                            <rect key="frame" x="310.5" y="110" width="103.5" height="110"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sousuo" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-eo-NVL">
                                     <rect key="frame" x="30.5" y="10" width="43" height="43"/>
@@ -235,11 +235,11 @@
                         <constraint firstItem="TS3-3a-cNc" firstAttribute="top" secondItem="Iic-fs-mqj" secondAttribute="bottom" id="2LV-wK-HLW"/>
                         <constraint firstItem="Iic-fs-mqj" firstAttribute="width" secondItem="6dA-8u-rdb" secondAttribute="width" id="3OL-ud-1O5"/>
                         <constraint firstItem="2I8-CL-BZC" firstAttribute="top" secondItem="yw6-l2-gFb" secondAttribute="top" id="7w4-qF-vkx"/>
-                        <constraint firstItem="6dA-8u-rdb" firstAttribute="height" secondItem="yw6-l2-gFb" secondAttribute="height" multiplier="1/2" id="8PE-e3-p2O"/>
+                        <constraint firstAttribute="height" constant="110" id="8JE-Qc-Bz8"/>
+                        <constraint firstItem="6dA-8u-rdb" firstAttribute="height" secondItem="yw6-l2-gFb" secondAttribute="height" id="8PE-e3-p2O"/>
                         <constraint firstItem="Jtx-cr-73l" firstAttribute="top" secondItem="6dA-8u-rdb" secondAttribute="bottom" id="9c5-ZO-jg7"/>
                         <constraint firstItem="TS3-3a-cNc" firstAttribute="height" secondItem="Jtx-cr-73l" secondAttribute="height" id="9h7-lm-xS3"/>
                         <constraint firstItem="Vum-PA-eAC" firstAttribute="leading" secondItem="Iic-fs-mqj" secondAttribute="trailing" id="C3p-UA-JXT"/>
-                        <constraint firstAttribute="width" secondItem="yw6-l2-gFb" secondAttribute="height" multiplier="138:65" id="HL8-yr-aMi"/>
                         <constraint firstItem="7VV-NU-qfb" firstAttribute="height" secondItem="TS3-3a-cNc" secondAttribute="height" id="Ju0-Em-cSv"/>
                         <constraint firstItem="2I8-CL-BZC" firstAttribute="leading" secondItem="6dA-8u-rdb" secondAttribute="trailing" id="KsJ-T1-fBd"/>
                         <constraint firstItem="Iic-fs-mqj" firstAttribute="leading" secondItem="2I8-CL-BZC" secondAttribute="trailing" id="N0f-CF-Hyv"/>
@@ -270,7 +270,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-is-Fce">
-                    <rect key="frame" x="0.0" y="361" width="414" height="59"/>
+                    <rect key="frame" x="0.0" y="276" width="414" height="59"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUi-QI-07G">
                             <rect key="frame" x="0.0" y="0.0" width="70" height="59"/>
@@ -344,7 +344,7 @@
                 <outlet property="threeView" destination="Iic-fs-mqj" id="fQo-hG-0Au"/>
                 <outlet property="twoView" destination="2I8-CL-BZC" id="XaN-nn-m63"/>
             </connections>
-            <point key="canvasLocation" x="56" y="48.125937031484263"/>
+            <point key="canvasLocation" x="56" y="21.139430284857571"/>
         </view>
         <view contentMode="scaleToFill" id="5vi-1k-Kro" customClass="HomeSectionView">
             <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
@@ -582,14 +582,14 @@
     </objects>
     <resources>
         <image name="home_bottom_two_line_bg" width="138.33332824707031" height="10.666666984558105"/>
-        <image name="jiaoyi" width="200" height="200"/>
-        <image name="jishu" width="200" height="200"/>
+        <image name="jiaoyi" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="jishu" width="66.666664123535156" height="66.666664123535156"/>
         <image name="new_post_icon" width="108.66666412353516" height="107"/>
-        <image name="quanmei" width="200" height="200"/>
-        <image name="shangxiehui" width="200" height="200"/>
-        <image name="shixi" width="200" height="200"/>
-        <image name="shuangchuang" width="200" height="200"/>
-        <image name="sousuo" width="200" height="200"/>
-        <image name="yuanxiao" width="200" height="200"/>
+        <image name="quanmei" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="shangxiehui" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="shixi" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="shuangchuang" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="sousuo" width="66.666664123535156" height="66.666664123535156"/>
+        <image name="yuanxiao" width="66.666664123535156" height="66.666664123535156"/>
     </resources>
 </document>

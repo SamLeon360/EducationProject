@@ -14,12 +14,22 @@
 #import "HomeSectionView.h"
 #import "EduNavController.h"
 #import "LoginBottomView.h"
-#import "EduMainViewController.h"
+#import "EduMeViewController.h"
+#import "TSInternshipDetailViewController.h"
+#import "TSTechnicalRequirementsDetailViewController.h"
+
+#import "SearchCommerceController.h"
+#import "TSInternshipViewController.h"
+#import "InstitutionViewController.h"
+#import "TSTechnicalRequirementsViewController.h"
+#import "TSBusinessAssociationViewController.h"
+
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,LPSwitchTagDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *kefuImage;
 @property (weak, nonatomic) IBOutlet UIImageView *msgIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *shareImage;
+
 @property (nonatomic) HomeHeaderView *headerView;
 @property (nonatomic) HomeSectionView *sectionView;
 @property (nonatomic) NSArray *workTypeArray ;
@@ -38,10 +48,13 @@
     self.workTypeArray =  @[@"全部",@"电子信息",@"装备制造", @"能源环保",@"生物技术与医药",@"新材料",@"现代农药", @"其他"];
     [self GetTJJob];
     [self GetNewPost];
-    
    
 }
--(void)GetTJJob{
+
+
+
+
+- (void)GetTJJob {
     NSDictionary *param = [[NSDictionary alloc] initWithObjectsAndKeys:@"",@"affiliated_area",@"",@"allow_publish",@"",@"commerce_id",@"",@"education",@"",@"enterprise_id",@"",@"ios",@"",@"job_name",@"",@"job_type",@"1",@"page",@"",@"receive_fresh_graduate",@"",@"work_type", nil];
     [HTTPREQUEST_SINGLE postWithURLString:SH_TUIJIAN_JOB parameters:param withHub:YES withCache:NO success:^(NSDictionary *responseDic) {
         if ([responseDic[@"code"] integerValue] == 1) {
@@ -52,9 +65,10 @@
         [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
     }];
 }
+
 -(void)viewWillLayoutSubviews{
     if (USER_SINGLE.token.length<= 0) {
-        [[UIApplication sharedApplication].keyWindow addSubview:self.loginBtnView];
+//        [[UIApplication sharedApplication].keyWindow addSubview:self.loginBtnView];
     }
     
 }
@@ -70,6 +84,21 @@
         [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
     }];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TSInternshipDetailViewController *vc = [[TSInternshipDetailViewController alloc] init];
+
+    NSDictionary *dic  = self.dataArray[indexPath.row];
+    vc.talent_id = [dic[@"talent_id"] integerValue];
+
+    vc.title = @"人才需求信息";
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -117,6 +146,7 @@
     tagCollectionView.scrollEnabled = NO;
     tagCollectionView.tagDelegate = self;
     [tagCollectionView reloadData];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -126,15 +156,69 @@
 -(HomeHeaderView *)headerView{
     if (_headerView == nil) {
         _headerView = [[NSBundle mainBundle] loadNibNamed:@"HomeXib" owner:self options:nil][0];
-        _headerView.frame = CGRectMake(0, 0, ScreenW, 435*kScale);
+//        _headerView.frame = CGRectMake(0, 0, ScreenW, 435*kScale);
+        _headerView.frame = CGRectMake(0, 0, ScreenW, 347);
+
         _headerView.cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
         _headerView.postArray = self.posterArray;
         [_headerView setupTableView];
-//        _headerView.cycleView.imageURLStringsGroup = self.posterArray;
+        _headerView.cycleView.localizationImageNamesGroup = @[@"banner1.jpg",@"banner2.jpg"];
         _headerView.cycleView.showPageControl = YES;
         [_headerView.cycleView setAutoScrollTimeInterval:5];
 //        _headerView.cycleView.autoScroll = self.posterArray.count >1?YES:NO;
         _headerView.cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+        
+        @weakify(self);
+
+        _headerView.callBackBlock = ^(NSDictionary * _Nonnull dic) {
+            @strongify(self);
+            TSTechnicalRequirementsDetailViewController *vc = [[TSTechnicalRequirementsDetailViewController alloc] init];
+            vc.technology_id = [dic[@"technology_id"] integerValue];
+            vc.commerce_id = [dic[@"commerce_id"] integerValue];
+            vc.title = @"技术需求详细";
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        };
+        
+        _headerView.headerTagCallBackBlcok = ^(NSInteger index) {
+            @strongify(self);
+            
+            if(index == 1){
+//                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"CommerceView" bundle:[NSBundle mainBundle]];
+//                SearchCommerceController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SearchCommerceController"];
+//                vc.hidesBottomBarWhenPushed = YES;
+//                [self.navigationController pushViewController:vc animated:YES];
+            }
+            
+            UIViewController *vc = nil;
+            
+            switch (index) {
+                case 1:
+                    vc = [[TSBusinessAssociationViewController alloc] init];
+                    
+                    break;
+                case 2:
+                    vc = [[TSInternshipViewController alloc] init];
+                    break;
+                case 3:
+                    vc = [[TSTechnicalRequirementsViewController alloc] init];
+
+                    break;
+                case 4:
+                    vc = [[InstitutionViewController alloc] init];
+
+
+                    break;
+                    
+                default:
+                    
+                    break;
+            }
+            
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+
+        };
         
     }
     return _headerView;
@@ -155,6 +239,10 @@
                 AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 appDelegate.window.rootViewController = vc;
                 [appDelegate.window makeKeyAndVisible];
+                
+//                [self presentViewController:vc animated:YES completion:nil];
+
+                
             });
         }];
         [_loginBtnView setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.7]];

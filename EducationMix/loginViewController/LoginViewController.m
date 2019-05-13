@@ -7,11 +7,16 @@
 //
 
 #import "LoginViewController.h"
-#import "EduMainViewController.h"
+#import "EduMeViewController.h"
+#import "NoPwdLoginController.h"
+
+#import "TSMainTabBarViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIView *phoneView;
 @property (weak, nonatomic) IBOutlet UIView *pwdView;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cancalBtn;
+
 @property (weak, nonatomic) IBOutlet UILabel *codeLoginLabel;
 @property (weak, nonatomic) IBOutlet UILabel *registerLabel;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
@@ -38,9 +43,12 @@
     [self setupViews];
 }
 -(void)setupViews{
+    
     [self.phoneView makeCorner:self.phoneView.frame.size.height/2];
     [self.pwdView makeCorner:self.pwdView.frame.size.height/2];
     [self.loginBtn makeCorner:self.loginBtn.frame.size.height/2];
+    [self.cancalBtn makeCorner:self.loginBtn.frame.size.height/2];
+    
 }
 -(void)setupClickAction{
     __block LoginViewController *blockSelf = self;
@@ -55,6 +63,16 @@
   
     
 }
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+
+    
+}
+
 -(void)ClickToRegister{
     if (self.phoneTF.text.length <= 0 ) {
         [AlertView showYMAlertView:self.view andtitle:@"请输入账号"];
@@ -103,8 +121,23 @@
 //
 //                } seq:1];
             
-            EduMainViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMainViewController"];
-            [self.navigationController pushViewController:vc animated:YES];
+//            EduMeViewController *vc = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateViewControllerWithIdentifier:@"EduMeViewController"];
+//            [self.navigationController pushViewController:vc animated:YES];
+            
+//            EduNavController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"EduNavController"];
+//            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//            appDelegate.window.rootViewController = vc;
+//            [appDelegate.window makeKeyAndVisible];
+            
+//            TSMainTabBarViewController *mainTabBarCtrl = [[TSMainTabBarViewController alloc]init];
+//            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//            appDelegate.window.rootViewController = mainTabBarCtrl;
+//            [appDelegate.window makeKeyAndVisible];
+
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+            
             }else{
                 [AlertView showYMAlertView:blockSelf.view andtitle:responseDic[@"message"]];
             }
@@ -114,5 +147,30 @@
         [AlertView showYMAlertView:self.view andtitle:@"网络异常，请检查网络"];
     }];
     
+}
+
+- (IBAction)cancelBtnAction:(id)sender {
+    
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
+//    TSMainTabBarViewController *vc = [[TSMainTabBarViewController alloc] init];
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    appDelegate.window.rootViewController = vc;
+//    [appDelegate.window makeKeyAndVisible];
+    
+}
+
+- (IBAction)registeredBtnAction:(id)sender {
+
+        NoPwdLoginController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"NoPwdLoginController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+//    [self presentViewController:vc animated:YES completion:^{
+//
+//    }];
 }
 @end

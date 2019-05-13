@@ -8,11 +8,13 @@
 
 #import "TXWebViewController.h"
 #import "WKWebViewJavascriptBridge.h"
-#import "LoginViewController.h"
-#import "EduNavController.h"
+//#import "TXLoginController.h"
+//#import "TXLoginNavControllerViewController.h"
 #import "Appdelegate.h"
-//#import "MemberDetailController.h"
+#import "MemberDetailController.h"
+
 @interface TXWebViewController ()<WKUIDelegate,WKNavigationDelegate>
+
 @property (nonatomic,strong) UIProgressView *progressView;
 @property (nonatomic) UIButton *reloadBtn;
 @property (weak, nonatomic) IBOutlet UILabel *titleHead;
@@ -29,15 +31,19 @@
     [super viewDidLoad];
     __block TXWebViewController *blockSelf = self;
     if (self.dataDic!=nil) {
-         webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 130, ScreenW, ScreenH+20)];
+        webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 130, ScreenW, ScreenH+20)];
     }else{
         self.titleHead.hidden = YES;
         self.timeLabel.hidden = YES;
-         webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 60, ScreenW, ScreenH-20)];
+        webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 60, ScreenW, ScreenH-20)];
     }
     [webView setNavigationDelegate:self];
     webView.clipsToBounds = YES;
-    [self.navigationController setNavigationBarHidden:YES];
+    if ([self.wayIn isEqualToString:@"综合"]||[self.wayIn isEqualToString:@"创业"]) {
+        [self.navigationController setNavigationBarHidden:NO];
+    }else{
+        [self.navigationController setNavigationBarHidden:YES];
+    }
     webView.UIDelegate = self;
     [self.view addSubview:webView];
     wkwebJsBrideg = [WKWebViewJavascriptBridge bridgeForWebView:webView];
@@ -60,9 +66,10 @@
         }
     }];
     if (self.webUrl != nil) {
-           [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webUrl ]]];
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webUrl ]]];
     }else{
         if (self.dataDic) {
+            [self.navigationController setNavigationBarHidden:NO];
             NSDictionary *param = [[NSDictionary alloc] initWithObjectsAndKeys:@"1",@"first",self.dataDic[@"id"],@"id",@"3",@"jump_flag", nil];
             [HTTPREQUEST_SINGLE postWithURLString:SH_WEB_DETAIL parameters:param withHub:YES withCache:NO success:^(NSDictionary *responseDic) {
                 NSArray *arr = responseDic[@"data"];
@@ -78,199 +85,205 @@
         }
         
     }
-//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, -20, ScreenW, 20)];
-//    [view setBackgroundColor:[UIColor colorWithRGB:0x3e85fb]];
-//    [self.view addSubview:view];
-//      self.navigationController.navigationBar.barTintColor = [UIColor colorWithRGB:0x3e85fb];
+    //    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, -20, ScreenW, 20)];
+    //    [view setBackgroundColor:[UIColor colorWithRGB:0x3e85fb]];
+    //    [self.view addSubview:view];
+    //      self.navigationController.navigationBar.barTintColor = [UIColor colorWithRGB:0x3e85fb];
     ///https://app.tianxun168.com/h5/demmo.html
-//    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://app.tianxun168.com/h5/demmo.html"]]];
+    //    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://app.tianxun168.com/h5/demmo.html"]]];
     [self setupNavStyle];
     [self setupFouction];
     [self setupPopBtn];
 }
 -(void)viewWillAppear:(BOOL)animated{
-    if (self.localHTML == nil&&self.dataDic==nil) {
-         [self.navigationController setNavigationBarHidden:YES];
+    if (self.localHTML == nil&&self.dataDic==nil&&self.wayIn == nil) {
+        [self.navigationController setNavigationBarHidden:YES];
     }else{
         [self.navigationController setNavigationBarHidden:NO];
     }
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-//        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRGB:0x202c3d];
-//    [self.navigationController setNavigationBarHidden:NO];
+    //        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRGB:0x202c3d];
+    //    [self.navigationController setNavigationBarHidden:NO];
 }
 
 -(void)linkToView{
     
-        switch (self.intype) {
-            case 0:{
-                self.title = @"商圈";
-                [self setupNavStyle];
-                [self.navigationController setNavigationBarHidden:YES];
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/moment_index/1"]]]];
-            }break;
-            case 1:{
-                self.title = @"我的";
-                [self setupNavStyle];
-                [self.navigationController setNavigationBarHidden:YES];
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/profile"]]]];
-            }break;
-            case 2:{
-                self.title = @"聊天";
-                [self setupNavStyle];
-                [self.navigationController setNavigationBarHidden:YES];
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/chat_list//"]]]];
-            }break;
-            case 3:{
-                self.title = @"社团查询";
-                NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"home/common_square"]);
-                NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"home/common_square"]);
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"commerce_list///1//1"]]]];
-            }break;
-            case 4:{
-                self.title = @"招商引资";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"merchants/new_merchants/0/1"]]]];
-            }break;
-            case 5:{
-                self.title = @"创业宝典";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/0///1"]]]];
-            }break;
-            case 6:{
-                self.title = @"综合服务";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"integrated_service/integrated_service_index/1/2//1"]]]];
-            }break;
-            case 7:{
-                self.title = @"人才需求";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_talent/1//1/////2//1"]]]];
-            }break;
-            case 8:{
-                self.title = @"产教融";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/1"]]]];
-            }break;
-            case 9:{
-                self.title = @"文库";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/list_library/0/1"]]]];
-            }break;
-            case 10:{
-                self.title = @"新政新规";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/new_deal_list/1////1"]]]];
-            }break;
-            case 11:{
-                self.title = @"同籍社团";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/third_part/2/1"]]]];
-            }break;
-            case 12:{
-                self.title = @"同城社团";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/third_part/1/1"]]]];
-            }break;
-            case 13:{
-                self.title = @"行业查找";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/enterprise_search///1"]]]];
-            }break;
-            case 14:{
-                self.title = @"产品需求信息";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_product/1//////1"]]]];
-            }break;
-            case 15:{
-                self.title = @"服务需求信息";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_service/1//////1"]]]];
-            }break;
-            case 16:{
-                self.title = @"社团文库";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/commerce_library_list/1/1////1/1"]]]];
-            }break;
-            case 17:{
-                self.title = @"企业文库";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/commerce_library_list/1/2////1/1"]]]];
-            }break;
-            case 18:{
-                self.title = @"企业管理";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/manager/list_bind_enterprise//1"]]]];
-            }break;
-            case 19:{
-                self.title = @"基地";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/base/list_base/1"]]]];
-            }break;
-            case 20:{
-                self.title = @"工作";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/jobs/list_job/1/1"]]]];
-            }break;
-            case 21:{
-                self.title = @"实习审核";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/internship_handle/list_internship_apply/1//1"]]]];
-            }break;
-            case 22:{
-                self.title = @"实习需求";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"common/pef_internship_list/1//////1"]]]];
-            }break;
-            case 23:{
-                self.title = @"项目合作";
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"common/common_project_list/1////1"]]]];
-            }break;
-            case 24:{
-                self.title = @"隐私策略";
-                [self.navigationController setNavigationBarHidden:YES];
-                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"about_privacy"]]]];
-            }
-                break;
-//            case 25:{
-//                self.title = @"社团查询";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"commerce_list///1//"]]]];
-//            }
-//                break;
-//            case 26:{
-//                self.title = @"招商引资";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"merchants/new_merchants/0/"]]]];
-//            }
-//                break;
-//            case 27:{
-//                self.title = @"创业宝典";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/1////"]);
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/1////"]]]];
-//            }
-//                break;
-//            case 28:{
-//                self.title = @"综合服务";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"integrated_service/integrated_service_index/1/2///"]]]];
-//            }
-//                break;
-//            case 29:{
-//                self.title = @"人才需求";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,[NSString stringWithFormat:@"list_talent/1/%@/1/////2//",USER_SINGLE.default_commerce_id]]]]];
-//            }
-//                break;
-//            case 30:{
-//                self.title = @"产教融";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/"]]]];
-//            }
-//                break;
-//            case 31:{
-//                self.title = @"文库";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/list_library/0/"]]]];
-//            }
-//                break;
-//            case 32:{
-//                self.title = @"新政新规";
-//                [self.navigationController setNavigationBarHidden:YES];
-//                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/new_deal_list/1////"]]]];
-//            }
-//                break;
-            case 33:{
-                self.title = @"通知详情";
-                [self.navigationController setNavigationBarHidden:NO];
-                [webView loadHTMLString:self.localHTML baseURL:[NSURL URLWithString:@"https://app.tianxun168.com/h5/#/member/commerce_notify//"]];
-            }
-            default:
-                break;
+    switch (self.intype) {
+        case 0:{
+            self.title = @"商圈";
+            [self setupNavStyle];
+            [self.navigationController setNavigationBarHidden:YES];
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/moment_index/1"]]]];
+        }break;
+        case 1:{
+            self.title = @"我的";
+            [self setupNavStyle];
+            [self.navigationController setNavigationBarHidden:YES];
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/profile"]]]];
+        }break;
+        case 2:{
+            self.title = @"聊天";
+            [self setupNavStyle];
+            [self.navigationController setNavigationBarHidden:YES];
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/chat_list//"]]]];
+        }break;
+        case 3:{
+            self.title = @"社团查询";
+            NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"home/common_square"]);
+            NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"home/common_square"]);
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"commerce_list///1//1"]]]];
+        }break;
+        case 4:{
+            self.title = @"招商引资";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"merchants/new_merchants/0/1"]]]];
+        }break;
+        case 5:{
+            self.title = @"创业宝典";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/0///1"]]]];
+        }break;
+        case 6:{
+            self.title = @"综合服务";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"integrated_service/integrated_service_index/1/2//1"]]]];
+        }break;
+        case 7:{
+            self.title = @"人才需求";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_talent/1//1/////2//1"]]]];
+        }break;
+        case 8:{
+            self.title = @"产教融";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/1"]]]];
+        }break;
+        case 9:{
+            self.title = @"文库";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/list_library/0/1"]]]];
+        }break;
+        case 10:{
+            self.title = @"新政新规";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/new_deal_list/1////1"]]]];
+        }break;
+        case 11:{
+            self.title = @"同籍社团";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/third_part/2/1"]]]];
+        }break;
+        case 12:{
+            self.title = @"同城社团";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/third_part/1/1"]]]];
+        }break;
+        case 13:{
+            self.title = @"行业查找";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"platform/enterprise_search///1"]]]];
+        }break;
+        case 14:{
+            self.title = @"产品需求信息";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_product/1//////1"]]]];
+        }break;
+        case 15:{
+            self.title = @"服务需求信息";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"list_service/1//////1"]]]];
+        }break;
+        case 16:{
+            self.title = @"社团文库";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/commerce_library_list/1/1////1/1"]]]];
+        }break;
+        case 17:{
+            self.title = @"企业文库";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/commerce_library_list/1/2////1/1"]]]];
+        }break;
+        case 18:{
+            self.title = @"企业管理";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"member/manager/list_bind_enterprise//1"]]]];
+        }break;
+        case 19:{
+            self.title = @"基地";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/base/list_base/1"]]]];
+        }break;
+        case 20:{
+            self.title = @"工作";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/jobs/list_job/1/1"]]]];
+        }break;
+        case 21:{
+            self.title = @"实习审核";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"enterprise/internship_handle/list_internship_apply/1//1"]]]];
+        }break;
+        case 22:{
+            self.title = @"实习需求";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"common/pef_internship_list/1//////1"]]]];
+        }break;
+        case 23:{
+            self.title = @"项目合作";
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"common/common_project_list/1////1"]]]];
+        }break;
+        case 24:{
+            self.title = @"隐私策略";
+            [self.navigationController setNavigationBarHidden:YES];
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"about_privacy"]]]];
         }
+            break;
+            //            case 25:{
+            //                self.title = @"社团查询";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"commerce_list///1//"]]]];
+            //            }
+            //                break;
+            //            case 26:{
+            //                self.title = @"招商引资";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"merchants/new_merchants/0/"]]]];
+            //            }
+            //                break;
+            //            case 27:{
+            //                self.title = @"创业宝典";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                NSLog(@"%@",[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/1////"]);
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"entrepreneurship_index/1////"]]]];
+            //            }
+            //                break;
+            //            case 28:{
+            //                self.title = @"综合服务";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"integrated_service/integrated_service_index/1/2///"]]]];
+            //            }
+            //                break;
+            //            case 29:{
+            //                self.title = @"人才需求";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,[NSString stringWithFormat:@"list_talent/1/%@/1/////2//",USER_SINGLE.default_commerce_id]]]]];
+            //            }
+            //                break;
+            //            case 30:{
+            //                self.title = @"产教融";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/"]]]];
+            //            }
+            //                break;
+            //            case 31:{
+            //                self.title = @"文库";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"library/list_library/0/"]]]];
+            //            }
+            //                break;
+            //            case 32:{
+            //                self.title = @"新政新规";
+            //                [self.navigationController setNavigationBarHidden:YES];
+            //                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",WEB_HOST_URL,@"produce_education_financial/new_deal_list/1////"]]]];
+            //            }
+            //                break;
+        case 33:{
+            self.title = @"通知详情";
+            [self.navigationController setNavigationBarHidden:NO];
+            [webView loadHTMLString:self.localHTML baseURL:[NSURL URLWithString:@"https://app.tianxun168.com/h5/#/member/commerce_notify//"]];
+        }
+        default:{
+            if ([self.wayIn isEqualToString:@"综合"]) {
+                [self.navigationController setNavigationBarHidden:YES];
+            }else{
+                [self.navigationController setNavigationBarHidden:NO];
+                [webView loadHTMLString:self.localHTML baseURL:nil];
+            }
+        }break;
+    }
     
 }
 
@@ -352,7 +365,7 @@
     }];
     
     [wkwebJsBrideg registerHandler:@"clickToChat" handler:^(id data, WVJBResponseCallback responseCallback) {
-//        RCConversationModel *model = data;
+        //        RCConversationModel *model = data;
         [self.navigationController setNavigationBarHidden:NO];
         RCConversationViewController *conversationVC = [[RCConversationViewController alloc]init];
         conversationVC.conversationType = ConversationType_PRIVATE;
@@ -373,15 +386,18 @@
     [wkwebJsBrideg registerHandler:@"jumpToApp" handler:^(id data, WVJBResponseCallback responseCallback) {
         NSString *type = data;
         if ([type isEqualToString:@"login"]) {
-//            TXLoginNavControllerViewController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"TXLoginNavControllerViewController"];
-//
-//            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//
-//            appDelegate.window.rootViewController = vc;
-//            [appDelegate.window makeKeyAndVisible];
+            //            TXLoginNavControllerViewController *vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"TXLoginNavControllerViewController"];
+            //
+            //            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            //
+            //            appDelegate.window.rootViewController = vc;
+            //            [appDelegate.window makeKeyAndVisible];
         }
     }];
     [wkwebJsBrideg registerHandler:@"clickToUserMessage" handler:^(id data, WVJBResponseCallback responseCallback) {
+        if (!(SHOW_WEB)) {
+            return;
+        }
         NSDictionary *dic = data;
         [self.navigationController setNavigationBarHidden:NO animated:NO];
         self.navigationController.navigationBar.barTintColor = [UIColor colorWithRGB:0x3e85fb];
@@ -389,14 +405,14 @@
         UICollectionViewFlowLayout *layout =[[UICollectionViewFlowLayout alloc]init];
         layout.sectionInset =UIEdgeInsetsMake(0,0, 0, 0);
         layout.headerReferenceSize =CGSizeMake(ScreenW,208*kScale);
-//        MemberDetailController *vc = [[UIStoryboard storyboardWithName:@"MineView" bundle:nil] instantiateViewControllerWithIdentifier:@"MemberDetailController"];
-//        vc.wayIn = @"web";
-//        vc.memberDic = dic;
-//        [self.navigationController pushViewController:vc animated:YES];
+        MemberDetailController *vc = [[UIStoryboard storyboardWithName:@"MineView" bundle:nil] instantiateViewControllerWithIdentifier:@"MemberDetailController"];
+        vc.wayIn = @"web";
+        vc.memberDic = dic;
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     [wkwebJsBrideg registerHandler:@"getStorageData" handler:^(id data, WVJBResponseCallback responseCallback) {
         NSDictionary *userdic = [[NSDictionary alloc] initWithObjectsAndKeys:USER_SINGLE.TokenFrom,@"TokenFrom",USER_SINGLE.default_commerce_id,@"default_commerce_id",USER_SINGLE.default_commerce_name,@"default_commerce_name",USER_SINGLE.default_role_type,@"default_role_type",USER_SINGLE.exp,@"exp",USER_SINGLE.token,@"token",USER_SINGLE.member_id,@"member_id",USER_SINGLE.role_type,@"role_type",USER_SINGLE.isSecretary,@"i", USER_SINGLE.commerceDic==nil?@"":USER_SINGLE.commerceDic,@"s",nil];
-            responseCallback([Common convertToJsonData:userdic]);
+        responseCallback([Common convertToJsonData:userdic]);
     }];
     [wkwebJsBrideg registerHandler:@"gobackView" handler:^(id data, WVJBResponseCallback responseCallback) {
         [self.navigationController setNavigationBarHidden:NO];
@@ -433,7 +449,7 @@
     NSLog(@"%@",URL);
     
     decisionHandler(WKNavigationActionPolicyAllow);
-
+    
 }
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     if (self.reloadBtn) {
@@ -444,9 +460,9 @@
     }
 }
 -(void)setupNavStyle{
-//    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRGB:0x3e85fb];
-//    self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:18]};
-//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRGB:0x3e85fb];
+    //    self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:18]};
+    //    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 @end

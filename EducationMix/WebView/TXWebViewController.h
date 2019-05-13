@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *localHTML;
 @property (nonatomic) NSDictionary *dataDic;
 @property (nonatomic) INTYPE intype;
+@property (nonatomic) NSString *wayIn;
+
 @end
 
 NS_ASSUME_NONNULL_END

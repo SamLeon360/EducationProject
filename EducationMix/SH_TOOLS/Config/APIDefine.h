@@ -58,8 +58,14 @@
 #define SH_GET_MEMBERS_MESSAGE @"common/getMemberNameByIds"
 
 #define SH_DETAIL_NEWS @"news/detailCommerceNews"
-
+#define SH_LIST_NEWS @"news/listCommerceNews"
 #define SH_NOTIFY_MESSAGE @"notify/get_secretary_notify"
+
+#define SH_COMMERCE_DETAIL @"common/load_commerce_detail_by_id"
+
+#define SH_LIST_CHUANGYE @"profession/list_msg_focus"
+
+#define SH_ENTRE_LIST_DETAIL @"profession/detail_msg_focus"
 
 #define SH_SEARCH_COMMERCE_LIST @"common/get_member_search_list_by_search_type"
 
@@ -116,14 +122,43 @@
 #define SH_CHECK_PAY_ZONGHE @"pioneer_park/trackTheOrderSynthesis"
 
 #define SH_INVESTMENT_LIST @"merchants/merchants_list"
-#define SH_MOTION_LIST @"common/list_collect"
+#define SH_MOTION_LIST @"common/list_collection"
 #define SH_INVESTMEMT_DETAIL @"merchants/merchants_detail"
+
+#define SH_STUDENT_JOB_LIST @"common/list_demand_talent"
+
 #define SH_SHOW_MESSAGE @"merchants/merchants_show_message"
 
 #define SH_ADD_MESSAGE @"merchants/merchants_add_message"
 
 #define SH_ADD_COLLECTION @"common/add_collection"
 #define SH_DELETE_COLLECTION @"common/delete_collection"
+
+#define SH_GET_VERSION @"common/getVersionsControl"
+
+#define SH_JOB_STU_DETAIL @"common/detail_demand_talent"
+
+#define SH_OTHER_JOB @"common/list_demand_talent"
+
+#define SH_COMMENT_REPAY @"demand/replayComments"
+
+#define SH_COMMENT_LIST @"demand/listCommentsNew"
+
+#define SH_PRODUCTION_LIST @"common/list_demand_product"
+
+#define SH_FILE_LIST @"common/listFile"
+#define SH_FILE_PREVIEW @"common/getPreviewFile"
+#define SH_DETAIL_FILE @"common/detailFile"
+#define SH_LIST_COMMENTS @"common/listComments"
+#define SH_REPAY_COMMENTS @"common/ratingMessage"
+
+#define SH_ADD_TALENT @"demand/addUpdateTalent"
+#define SH_HANDLE_TALENT @"demand/handleDemand"
+#define SH_DETAIL_TALENT @"common/detail_demand_talent"
+#define SH_PROJECT_DETAIL @"common/detail_demand_product"
+#define SH_PRODUCT_COMMENTS @"demand/listComments"
+#define SH_ADD_PRODUCTION @"demand/addUpdateProduct"
+
 
 
 #define SH_TUIJIAN_JOB @"common/list_demand_talent"
@@ -133,4 +168,6 @@
 #define SH_STUDENT_DETAIL @"student/detail_student"
 #define SH_TEACHER_DETAIL @"expert/detail_expert_info"
 
+
+#define SH_NEW_GET_AREA @"commerce_work/getRegion"
 #endif /* APIDefine_h */

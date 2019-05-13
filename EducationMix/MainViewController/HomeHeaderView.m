@@ -11,12 +11,17 @@
 @interface HomeHeaderView()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) dispatch_source_t timer;
 @property (nonatomic) int index;
+
+@property(nonatomic, strong)NSMutableArray *tagArr;
+
 @end
 
 @implementation HomeHeaderView
+
 -(void)setupTableView{
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.scrollEnabled = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"HomeNewPostCell" bundle:nil] forCellReuseIdentifier:@"HomeNewPostCell"];
   self.index = 0;
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -43,7 +48,74 @@
     // 启动定时器
     dispatch_resume(self.timer);
     [self.tableView reloadData];
+    
+    
+    UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+
+    [_oneView addGestureRecognizer:tapGesturRecognizer];
+    
+    UITapGestureRecognizer *tapGesturRecognizer2 =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction2:)];
+    
+    [_twoView addGestureRecognizer:tapGesturRecognizer2];
+
+    UITapGestureRecognizer *tapGesturRecognizer3 =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction3:)];
+    
+    [_threeView addGestureRecognizer:tapGesturRecognizer3];
+    
+    UITapGestureRecognizer *tapGesturRecognizer4 =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction4:)];
+    
+    [_fourView addGestureRecognizer:tapGesturRecognizer4];
 }
+
+- (NSMutableArray *)tagArr {
+    
+    if(!_tagArr){
+        _tagArr = [[NSMutableArray alloc] initWithObjects:_oneView,_twoView,_threeView,_fourView, nil];
+
+        for (UIView *view in _tagArr) {
+            UITapGestureRecognizer *tapGesturRecognizer=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+            [view addGestureRecognizer:tapGesturRecognizer];
+
+        }
+        
+    }
+    return _tagArr;
+    
+}
+
+-(void)tapAction:(UIView *)tap {
+    
+    self.headerTagCallBackBlcok(1);
+    NSLog(@"1");
+}
+
+-(void)tapAction2:(UIView *)tap {
+    self.headerTagCallBackBlcok(2);
+
+    NSLog(@"2");
+}
+
+-(void)tapAction3:(UIView *)tap {
+    self.headerTagCallBackBlcok(3);
+    
+    NSLog(@"3");
+}
+
+-(void)tapAction4:(UIView *)tap {
+    self.headerTagCallBackBlcok(4);
+
+    NSLog(@"4");
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSDictionary *dic = self.postArray[indexPath.row];
+//    NSString *content = dic[@"technology_name"];
+    
+    self.callBackBlock(dic);//回调进入技术需求详细
+}
+
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -53,6 +125,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 59;
 }
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeNewPostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeNewPostCell"];
     NSDictionary *dic = self.postArray[indexPath.row];

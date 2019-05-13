@@ -10,6 +10,10 @@
 #import "SDCycleScrollView.h"
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^CallBackBlcok) (NSDictionary *dic);//1
+typedef void(^HeaderTagCallBackBlcok) (NSInteger index);//1
+
+
 @interface HomeHeaderView : UIView
 ///轮播图
 @property (weak, nonatomic) IBOutlet SDCycleScrollView *cycleView;
@@ -34,7 +38,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (nonatomic) NSArray *postArray;
+
 -(void)setupTableView;
+
+@property (nonatomic,copy)CallBackBlcok callBackBlock;//2
+
+@property (nonatomic,copy)HeaderTagCallBackBlcok headerTagCallBackBlcok;//2
+
 @end
 
 NS_ASSUME_NONNULL_END
